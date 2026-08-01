@@ -188,7 +188,7 @@ function addMember(body) {
     name:    name,
     show:    String(body.show || '').trim(),
     time:    String(body.time || '').trim(),
-    section: body.section === 'Management' ? 'Management' : 'Personalities',
+    section: 'Personalities', // panel can only add Radio Personalities — Management is fixed
     url:     url,
   });
   saveTeamList(team);
@@ -202,7 +202,12 @@ function updateMember(body) {
   if (body.name && String(body.name).trim()) member.name = String(body.name).trim();
   if (body.show !== undefined) member.show = String(body.show).trim();
   if (body.time !== undefined) member.time = String(body.time).trim();
-  if (body.section) member.section = body.section === 'Management' ? 'Management' : 'Personalities';
+  if (body.section) {
+    // Panel can't promote anyone into Management — only an already-Management
+    // member re-saves as Management; everyone else lands as Personalities.
+    member.section = (body.section === 'Management' && member.section === 'Management')
+      ? 'Management' : 'Personalities';
+  }
   if (body.imageData) {
     trashDriveLogo(member.url);
     member.url = saveTeamPhotoToDrive(body.imageData, member.name);

@@ -215,45 +215,11 @@
     // ─────────────────────────────────────────────────────────────────────────
     const TEAM_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwV99T1Owt69gFQYtdOmqGUJjtMME1y0bUBjJ9XHN1CjzPXMhfPeI8xNFZOUUI6hsB7/exec';
 
-    // Built-in fallback data — used only if the backend can't be reached
-    // For multiple shows, add extra rows with the same Name/Photo/Section
+    // Built-in fallback data — used only if the backend can't be reached.
+    // Radio Personalities are managed entirely from the DJ panel now (no
+    // fallback needed there); Management is fixed and kept here too so the
+    // page still shows leadership even if the backend is down.
     const FALLBACK_MEMBERS = [
-      { name: 'Alayna Baker',     show: 'Co-Host, RU For Real?',      time: '',  photo: '/images/squarespace/P1083983.jpg',        section: 'Personalities' },
-      { name: 'Jackson Blanton',  show: 'Co-Host, Theory Killers',    time: '',  photo: '/images/squarespace/P1083832.jpg',        section: 'Personalities' },
-      { name: 'Josh Bobay',       show: 'Co-Host, 9th Inning',        time: '',  photo: '/images/squarespace/P1083898.jpg',        section: 'Personalities' },
-      { name: 'Graysen Branam',   show: 'Co-Host, Question the Truth',time: '',  photo: '/images/squarespace/P1083967.jpg',        section: 'Personalities' },
-      { name: 'Caroline Burns',   show: 'Co-Host, RU For Real?',      time: '',  photo: '/images/squarespace/P1084000.jpg',        section: 'Personalities' },
-      { name: 'Will Chiaruttini', show: 'Co-Host, 9th Inning',        time: '',  photo: '/images/squarespace/P1083913.jpg',        section: 'Personalities' },
-      { name: 'Grace Dickmeyer',  show: 'Co-Host, RU For Real?',      time: '',  photo: '/images/squarespace/P1083985.jpg',        section: 'Personalities' },
-      { name: 'Christian Dollens',show: 'Co-Host, Boomer Vs. Zoomer', time: '',  photo: '/images/squarespace/P1083823.jpg',        section: 'Personalities' },
-      { name: 'Abegail Donaldson',show: 'Co-Host, Theory Killers',    time: '',  photo: '/images/squarespace/P1083761.jpg',        section: 'Personalities' },
-      { name: 'Jacob Erb',        show: 'Co-Host, Sports Corner',     time: '',  photo: '/images/squarespace/P1083952.jpg',        section: 'Personalities' },
-      { name: 'Justin Estrada',   show: 'Co-Host, The Big Q',         time: '',  photo: '/images/squarespace/P1083855.jpg',        section: 'Personalities' },
-      { name: 'Justin Estrada',   show: 'Co-Host, The R.P.G.s',       time: '',  photo: '/images/squarespace/P1083855.jpg',        section: 'Personalities' },
-      { name: 'Josiah Exford',    show: 'Co-Host, 9th Inning',        time: '',  photo: '/images/squarespace/P1083904.jpg',        section: 'Personalities' },
-      { name: 'Graham DeWitte',   show: 'Co-Host, The Big Q',         time: '',  photo: '/images/squarespace/P1083764.jpg',        section: 'Personalities' },
-      { name: 'Graham DeWitte',   show: 'Co-Host, The Final Drive',   time: '',  photo: '/images/squarespace/P1083764.jpg',        section: 'Personalities' },
-      { name: 'Ian Fraser',       show: 'Co-Host, 8-bit Boys',        time: '',  photo: '/images/squarespace/P1083788.jpg',        section: 'Personalities' },
-      { name: 'Braxton Hall',     show: 'Basketball Commentator',     time: '',  photo: '/images/squarespace/P1083908.jpg',        section: 'Personalities' },
-      { name: 'Braxton Hall',     show: 'Co-Host, The Final Drive',   time: '',  photo: '/images/squarespace/P1083908.jpg',        section: 'Personalities' },
-      { name: 'DaVon Hawkins',    show: 'Co-Host, The Really Phantastic Gamers', time: '', photo: '/images/squarespace/P1083862.jpg', section: 'Personalities' },
-      { name: 'Noah Lancz',       show: 'Basketball Commentator',     time: '',  photo: '/images/squarespace/P1083890.jpg',        section: 'Personalities' },
-      { name: 'Noah Lancz',       show: 'Co-Host, The Final Drive',   time: '',  photo: '/images/squarespace/P1083890.jpg',        section: 'Personalities' },
-      { name: 'Jacob Lanier',     show: 'Co-Host, Boomer Vs. Zoomer', time: '',  photo: '/images/squarespace/P1083776.jpg',        section: 'Personalities' },
-      { name: 'Noah Lanier',      show: 'Co-Host, 8-bit Boys',        time: '',  photo: '/images/squarespace/P1083811.jpg',        section: 'Personalities' },
-      { name: 'Keegan McClure',   show: 'Co-Host, 9th Inning',        time: '',  photo: '/images/squarespace/P1083919.jpg',        section: 'Personalities' },
-      { name: 'C.J. Majewski',    show: 'Co-Host, My For You Page',   time: '',  photo: '/images/squarespace/P1083844.jpg',        section: 'Personalities' },
-      { name: 'Kyle Malone',      show: 'Co-Host, Sports Corner',     time: '',  photo: '/images/squarespace/P1083934.jpg',        section: 'Personalities' },
-      { name: 'Cole Obioma',      show: 'Co-Host, SpelChek',          time: '',  photo: '/images/squarespace/P1084111.jpg',        section: 'Personalities' },
-      { name: 'Zenaido Ochoa',    show: 'Co-Host, Theory Killers',    time: '',  photo: '/images/squarespace/P1083836.jpg',        section: 'Personalities' },
-      { name: 'Matthew Otten',    show: 'Co-Host, The Final Drive',   time: '',  photo: '/images/squarespace/P1083929.jpg',        section: 'Personalities' },
-      { name: 'Logan Poswinski',  show: 'Co-Host, Sports Corner',     time: '',  photo: '/images/squarespace/P1083925.jpg',        section: 'Personalities' },
-      { name: 'Carter Schwartz',  show: 'Co-Host, Question the Truth',time: '',  photo: '/images/squarespace/P1083877-Edit.png',   section: 'Personalities' },
-      { name: 'Andrea Valcarcel', show: 'Co-Host, SpelChek',          time: '',  photo: '/images/squarespace/P1084088.jpg',        section: 'Personalities' },
-      { name: 'Michael White',    show: 'Co-Host, Sports Corner',     time: '',  photo: '/images/squarespace/P1083943.jpg',        section: 'Personalities' },
-      { name: 'Jake Zishka',      show: 'Co-Host, My For You Page',   time: '',  photo: '/images/squarespace/P1083874.jpg',        section: 'Personalities' },
-      { name: 'Anelia Rybka',     show: 'Co-Host, Entertainment Island', time: '', photo: '/images/squarespace/P1084161.jpg',  section: 'Personalities' },
-      { name: 'Dax Thakker',      show: 'Co-Host, The R.P.G.s',       time: '',  photo: '/images/squarespace/P1084155.jpg',      section: 'Personalities' },
       { name: 'Andy Dunn',        show: 'General Manager',            time: '',  photo: '/images/squarespace/P1083956.jpg',        section: 'Management' },
       { name: 'Adam Schenkel',    show: 'Radio/TV Director',          time: '',  photo: '/images/squarespace/P1083964.jpg',        section: 'Management' },
     ];

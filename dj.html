@@ -324,8 +324,9 @@
           <label for="team-section">Section</label>
           <select id="team-section">
             <option value="Personalities">Personalities</option>
-            <option value="Management">Management</option>
+            <option value="Management" id="team-section-mgmt-opt" disabled>Management</option>
           </select>
+          <span style="font-size:12px;color:var(--muted);">Management is fixed — new members always go into Personalities.</span>
         </div>
         <div class="field">
           <label for="team-photo-file">Photo <span style="font-weight:400;color:var(--muted)">(optional — square works best. Adding a second show for someone already on the roster? Leave this blank and their existing photo stays.)</span></label>
@@ -658,6 +659,7 @@
     document.getElementById('team-name').value = member.name;
     document.getElementById('team-show').value = member.show || '';
     document.getElementById('team-time').value = member.time || '';
+    document.getElementById('team-section-mgmt-opt').disabled = member.section !== 'Management';
     document.getElementById('team-section').value = member.section;
     document.getElementById('team-photo-file').value = '';
     document.getElementById('team-form-title').textContent = 'Edit Team Member';
@@ -671,6 +673,7 @@
     document.getElementById('team-name').value = '';
     document.getElementById('team-show').value = '';
     document.getElementById('team-time').value = '';
+    document.getElementById('team-section-mgmt-opt').disabled = true;
     document.getElementById('team-section').value = 'Personalities';
     document.getElementById('team-photo-file').value = '';
     document.getElementById('team-form-title').textContent = 'Add a Team Member';
