@@ -299,6 +299,45 @@
       </div>
     </div>
 
+    <!-- Team roster ("Our Team" page at /team.html) -->
+    <div class="panel-card">
+      <div class="card-title">Team Roster</div>
+      <button class="btn btn-secondary" id="btn-manage-team" onclick="toggleTeamManage()" style="width:100%;">＋ Manage Our Team page</button>
+
+      <div id="manage-team" style="display:none; margin-top:16px;">
+        <div id="team-list" style="display:flex; flex-direction:column; gap:8px; margin-bottom:18px;"></div>
+
+        <div class="card-title" id="team-form-title">Add a Team Member</div>
+        <div class="field">
+          <label for="team-name">Name</label>
+          <input type="text" id="team-name" placeholder="e.g. Alayna Baker">
+        </div>
+        <div class="field">
+          <label for="team-show">Show / Role</label>
+          <input type="text" id="team-show" placeholder="e.g. Co-Host, RU For Real?">
+        </div>
+        <div class="field">
+          <label for="team-time">Air Time <span style="font-weight:400;color:var(--muted)">(optional)</span></label>
+          <input type="text" id="team-time" placeholder="e.g. Mon/Wed 7–8am">
+        </div>
+        <div class="field">
+          <label for="team-section">Section</label>
+          <select id="team-section">
+            <option value="Personalities">Personalities</option>
+            <option value="Management">Management</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="team-photo-file">Photo <span style="font-weight:400;color:var(--muted)">(optional — square works best. Adding a second show for someone already on the roster? Leave this blank and their existing photo stays.)</span></label>
+          <input type="file" id="team-photo-file" accept="image/*">
+        </div>
+        <div style="display:flex; gap:10px;">
+          <button class="btn btn-primary" id="btn-add-team" onclick="submitTeamMember()" style="flex:1;">＋ Add Team Member</button>
+          <button class="btn btn-secondary" id="btn-cancel-team-edit" onclick="cancelTeamEdit()" style="display:none;">Cancel</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Now playing override -->
     <div class="panel-card">
       <div class="card-title">Now Playing Override <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></div>
@@ -563,6 +602,121 @@
     } catch (e) { showMsg('Delete failed: ' + e.message, 'error'); }
   }
 
+  // ── Team roster ("Our Team" page — team.html reads this same list) ──
+  let TEAM = [];
+  let editingMemberId = null;
+
+  function toggleTeamManage() {
+    const box = document.getElementById('manage-team');
+    const open = box.style.display !== 'none';
+    box.style.display = open ? 'none' : 'block';
+    document.getElementById('btn-manage-team').textContent = open ? '＋ Manage Our Team page' : '－ Close Team Roster';
+    if (!open) renderTeamList();
+  }
+
+  function renderTeamList() {
+    const list = document.getElementById('team-list');
+    list.innerHTML = '';
+    const sorted = [...TEAM].sort((a, b) => {
+      if (a.section !== b.section) return a.section === 'Management' ? -1 : 1;
+      return a.name.localeCompare(b.name);
+    });
+    sorted.forEach(member => {
+      const row = document.createElement('div');
+      row.className = 'show-row';
+      const img = document.createElement('img');
+      img.src = member.url || '';
+      img.alt = '';
+      img.onerror = () => { img.style.visibility = 'hidden'; };
+      const info = document.createElement('div');
+      info.className = 'show-row-name';
+      const badge = member.section === 'Management' ? '👑' : '🎙';
+      info.textContent = badge + ' ' + member.name + ' — ' + (member.show || 'No role set') + (member.time ? ' (' + member.time + ')' : '');
+      row.append(img, info,
+        mkBtn('✏️', 'Edit', () => startEditMember(member.id)),
+        mkBtn('🗑', 'Delete', () => removeMember(member.id), true));
+      list.appendChild(row);
+    });
+  }
+
+  async function teamCall(payload) {
+    const res = await fetch(SCRIPT_URL, {
+      method: 'POST',
+      body: JSON.stringify(Object.assign({ password: panelPassword }, payload))
+    });
+    const data = await res.json();
+    if (!data.ok) throw new Error(data.error || 'request failed');
+    TEAM = data.team || TEAM;
+    renderTeamList();
+    return data;
+  }
+
+  function startEditMember(id) {
+    const member = TEAM.find(m => m.id === id);
+    if (!member) return;
+    editingMemberId = id;
+    document.getElementById('team-name').value = member.name;
+    document.getElementById('team-show').value = member.show || '';
+    document.getElementById('team-time').value = member.time || '';
+    document.getElementById('team-section').value = member.section;
+    document.getElementById('team-photo-file').value = '';
+    document.getElementById('team-form-title').textContent = 'Edit Team Member';
+    document.getElementById('btn-add-team').textContent = '💾 Save Changes';
+    document.getElementById('btn-cancel-team-edit').style.display = '';
+    document.getElementById('team-name').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  function cancelTeamEdit() {
+    editingMemberId = null;
+    document.getElementById('team-name').value = '';
+    document.getElementById('team-show').value = '';
+    document.getElementById('team-time').value = '';
+    document.getElementById('team-section').value = 'Personalities';
+    document.getElementById('team-photo-file').value = '';
+    document.getElementById('team-form-title').textContent = 'Add a Team Member';
+    document.getElementById('btn-add-team').textContent = '＋ Add Team Member';
+    document.getElementById('btn-cancel-team-edit').style.display = 'none';
+  }
+
+  async function submitTeamMember() {
+    const name    = document.getElementById('team-name').value.trim();
+    const show    = document.getElementById('team-show').value.trim();
+    const time    = document.getElementById('team-time').value.trim();
+    const section = document.getElementById('team-section').value;
+    const file    = document.getElementById('team-photo-file').files[0];
+    if (!name) { showMsg('Give the team member a name first.', 'error'); return; }
+
+    const btn = document.getElementById('btn-add-team');
+    btn.disabled = true; btn.textContent = editingMemberId ? 'Saving…' : 'Uploading…';
+    try {
+      const imageData = file ? await readAndResize(file) : null;
+      if (editingMemberId) {
+        await teamCall({ action: 'updateMember', id: editingMemberId, name, show, time, section, imageData });
+        showMsg('"' + name + '" updated.', 'ok');
+      } else {
+        await teamCall({ action: 'addMember', name, show, time, section, imageData });
+        showMsg('"' + name + '" added to the team page.', 'ok');
+      }
+      cancelTeamEdit();
+    } catch (e) {
+      showMsg('Could not save: ' + e.message, 'error');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = editingMemberId ? '💾 Save Changes' : '＋ Add Team Member';
+    }
+  }
+
+  async function removeMember(id) {
+    const member = TEAM.find(m => m.id === id);
+    if (!member) return;
+    if (!confirm('Remove "' + member.name + '" (' + (member.show || 'no role') + ') from the team page? This can\'t be undone.')) return;
+    try {
+      await teamCall({ action: 'deleteMember', id });
+      showMsg('Removed.', 'ok');
+      if (editingMemberId === id) cancelTeamEdit();
+    } catch (e) { showMsg('Delete failed: ' + e.message, 'error'); }
+  }
+
   // ── Load current state from Apps Script ───────────────────────────
   async function loadCurrentState() {
     if (!SCRIPT_URL) return;
@@ -570,6 +724,8 @@
       const res = await fetch(SCRIPT_URL, { cache: 'no-store' });
       const data = await res.json();
       SHOWS = data.shows || [];
+      TEAM  = data.team  || [];
+      if (document.getElementById('manage-team').style.display !== 'none') renderTeamList();
       const rec = data.record || {};
       const s = rec[activeStation] || {};
 

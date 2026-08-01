@@ -205,20 +205,17 @@
 
   <script>
     // ─────────────────────────────────────────────────────────────────────────
-    // TEAM PAGE — Google Sheet config
-    //
-    // Sheet columns: Name | Show | Time | Photo | Section
-    //   - Section must be "Personalities" or "Management"
-    //   - Time is optional (e.g. "Mon/Wed 7–8am")
-    //   - For a student with multiple shows, add one row per show
-    //     with the same Name and Photo — they will be grouped on one card
-    //
-    // To publish: File → Share → Publish to web → Sheet1 → CSV → Publish
-    // Paste the URL below.
+    // TEAM PAGE — reads the roster from the same Apps Script backend that
+    // powers the DJ Panel (dj.html → "Team Roster"). Manage the roster there
+    // instead of a spreadsheet — add/edit/remove team members, upload a
+    // photo, and this page picks it up automatically (data.team from doGet()
+    // in dj-backend.gs). A student with multiple shows gets one row per show
+    // in the panel, sharing the same name — they're grouped onto one card
+    // below, same as before.
     // ─────────────────────────────────────────────────────────────────────────
-    const TEAM_SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSkht4RErJ_OYuqhoSw54AUUwNjfl-D-pNX-n_eH4PoKGtYOLW6FEy_aKG_cyyvTAPDZKBs0vgo1LTD/pub?gid=0&single=true&output=csv';
+    const TEAM_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwV99T1Owt69gFQYtdOmqGUJjtMME1y0bUBjJ9XHN1CjzPXMhfPeI8xNFZOUUI6hsB7/exec';
 
-    // Built-in fallback data — used when TEAM_SHEET_URL is empty
+    // Built-in fallback data — used only if the backend can't be reached
     // For multiple shows, add extra rows with the same Name/Photo/Section
     const FALLBACK_MEMBERS = [
       { name: 'Alayna Baker',     show: 'Co-Host, RU For Real?',      time: '',  photo: '/images/squarespace/P1083983.jpg',        section: 'Personalities' },
@@ -263,38 +260,6 @@
 
     function esc(s) {
       return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-    }
-
-    function parseCSV(text) {
-      const rows = [];
-      const lines = text.trim().split(/\r?\n/);
-      const headers = splitCSVLine(lines[0]).map(h => h.trim().toLowerCase());
-      for (let i = 1; i < lines.length; i++) {
-        if (!lines[i].trim()) continue;
-        const vals = splitCSVLine(lines[i]);
-        const obj = {};
-        headers.forEach((h, j) => { obj[h] = (vals[j] ?? '').trim(); });
-        rows.push(obj);
-      }
-      return rows;
-    }
-
-    function splitCSVLine(line) {
-      const result = [];
-      let cur = '', inQ = false;
-      for (let i = 0; i < line.length; i++) {
-        const c = line[i];
-        if (c === '"') {
-          if (inQ && line[i+1] === '"') { cur += '"'; i++; }
-          else inQ = !inQ;
-        } else if (c === ',' && !inQ) {
-          result.push(cur); cur = '';
-        } else {
-          cur += c;
-        }
-      }
-      result.push(cur);
-      return result;
     }
 
     function photoUrl(url) {
@@ -342,10 +307,14 @@
       }
     }
 
-    if (TEAM_SHEET_URL) {
-      fetch(TEAM_SHEET_URL)
-        .then(r => r.text())
-        .then(csv => renderTeam(parseCSV(csv)))
+    if (TEAM_SCRIPT_URL) {
+      fetch(TEAM_SCRIPT_URL, { cache: 'no-store' })
+        .then(r => r.json())
+        .then(data => {
+          const team = data.team || [];
+          if (!team.length) { renderTeam(FALLBACK_MEMBERS); return; }
+          renderTeam(team.map(m => ({ name: m.name, show: m.show, time: m.time, photo: m.url, section: m.section })));
+        })
         .catch(() => renderTeam(FALLBACK_MEMBERS));
     } else {
       renderTeam(FALLBACK_MEMBERS);

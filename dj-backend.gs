@@ -1,9 +1,9 @@
 /**
  * WCYT DJ Panel backend — Google Apps Script
  *
- * Stores the DJ on-air state AND the show library (names + logos) in
- * Script Properties, and saves uploaded logo images to a Google Drive
- * folder called "WCYT Show Logos".
+ * Stores the DJ on-air state, the show library (names + logos), and the
+ * "Our Team" roster (team.html) in Script Properties, saving uploaded
+ * images to Google Drive folders "WCYT Show Logos" and "WCYT Team Photos".
  *
  * FIRST-TIME SETUP (~3 minutes):
  *   1. Go to https://script.google.com → New project
@@ -32,6 +32,7 @@ const PASSWORD_HASH = 'd6242d92fd958617bd2530f19bc9c95ac147c87b77968b30553e4dc61
 const DEFAULT_STATE = '{"wcyt":{"active":false},"2pt0":{"active":false}}';
 
 const LOGO_FOLDER_NAME = 'WCYT Show Logos';
+const TEAM_PHOTO_FOLDER_NAME = 'WCYT Team Photos';
 
 // Seed library — the shows that existed before the library moved into this
 // backend. Used only the first time, when no 'shows' property exists yet.
@@ -51,21 +52,26 @@ const DEFAULT_SHOWS = [
 // Run this once from the editor after pasting new code, to grant Drive access.
 function authorize() {
   getLogoFolder();
-  Logger.log('Authorized. Logo folder ready: ' + LOGO_FOLDER_NAME);
+  getTeamPhotoFolder();
+  Logger.log('Authorized. Logo folder ready: ' + LOGO_FOLDER_NAME + ', team photo folder ready: ' + TEAM_PHOTO_FOLDER_NAME);
 }
 
-// ── Public read — the DJ panel, playlist widget, and studio display poll this
+// ── Public read — the DJ panel, playlist widget, studio display, and team
+// page all poll this
 function doGet() {
   const state = PropertiesService.getScriptProperties().getProperty('state') || DEFAULT_STATE;
-  return jsonOut({ record: JSON.parse(state), shows: getShows() });
+  return jsonOut({ record: JSON.parse(state), shows: getShows(), team: getTeam() });
 }
 
 // ── Password-protected writes ──────────────────────────────────────────
 // The DJ panel posts { password, action, ... }. Actions:
-//   (none)       { station, patch, historyEntry } — merge on-air state (original behavior)
-//   'addShow'    { name, imageData? }             — imageData is a data: URL; omitted = default logo
-//   'updateShow' { id, name?, imageData? }
-//   'deleteShow' { id }
+//   (none)         { station, patch, historyEntry } — merge on-air state (original behavior)
+//   'addShow'      { name, imageData? }             — imageData is a data: URL; omitted = default logo
+//   'updateShow'   { id, name?, imageData? }
+//   'deleteShow'   { id }
+//   'addMember'    { name, show?, time?, section, imageData? } — team roster (team.html)
+//   'updateMember' { id, name?, show?, time?, section?, imageData? }
+//   'deleteMember' { id }
 function doPost(e) {
   let body;
   try { body = JSON.parse(e.postData.contents); }
@@ -79,10 +85,13 @@ function doPost(e) {
   lock.waitLock(10000);
   try {
     switch (body.action) {
-      case 'addShow':    return jsonOut(addShow(body));
-      case 'updateShow': return jsonOut(updateShow(body));
-      case 'deleteShow': return jsonOut(deleteShow(body));
-      default:           return jsonOut(patchState(body));
+      case 'addShow':      return jsonOut(addShow(body));
+      case 'updateShow':   return jsonOut(updateShow(body));
+      case 'deleteShow':   return jsonOut(deleteShow(body));
+      case 'addMember':    return jsonOut(addMember(body));
+      case 'updateMember': return jsonOut(updateMember(body));
+      case 'deleteMember': return jsonOut(deleteMember(body));
+      default:              return jsonOut(patchState(body));
     }
   } catch (err) {
     return jsonOut({ ok: false, error: String(err) });
@@ -153,6 +162,79 @@ function deleteShow(body) {
   trashDriveLogo(show.url);
   saveShows(shows.filter(s => s.id !== body.id));
   return { ok: true, shows: shows.filter(s => s.id !== body.id) };
+}
+
+// ── Team roster (team.html "Our Team" page) ─────────────────────────────
+// Started empty — no seed data. Each entry is one person+show row, same
+// shape the team page used to read from its CSV: { id, name, show, time,
+// section, url }. A person with multiple shows gets one row per show, all
+// sharing the same name; team.html groups rows by name onto a single card.
+function getTeam() {
+  const raw = PropertiesService.getScriptProperties().getProperty('team');
+  return raw ? JSON.parse(raw) : [];
+}
+
+function saveTeamList(team) {
+  PropertiesService.getScriptProperties().setProperty('team', JSON.stringify(team));
+}
+
+function addMember(body) {
+  const name = String(body.name || '').trim();
+  if (!name) return { ok: false, error: 'name required' };
+  const team = getTeam();
+  const url = body.imageData ? saveTeamPhotoToDrive(body.imageData, name) : '';
+  team.push({
+    id:      Utilities.getUuid(),
+    name:    name,
+    show:    String(body.show || '').trim(),
+    time:    String(body.time || '').trim(),
+    section: body.section === 'Management' ? 'Management' : 'Personalities',
+    url:     url,
+  });
+  saveTeamList(team);
+  return { ok: true, team: team };
+}
+
+function updateMember(body) {
+  const team = getTeam();
+  const member = team.find(function (m) { return m.id === body.id; });
+  if (!member) return { ok: false, error: 'team member not found' };
+  if (body.name && String(body.name).trim()) member.name = String(body.name).trim();
+  if (body.show !== undefined) member.show = String(body.show).trim();
+  if (body.time !== undefined) member.time = String(body.time).trim();
+  if (body.section) member.section = body.section === 'Management' ? 'Management' : 'Personalities';
+  if (body.imageData) {
+    trashDriveLogo(member.url);
+    member.url = saveTeamPhotoToDrive(body.imageData, member.name);
+  }
+  saveTeamList(team);
+  return { ok: true, team: team };
+}
+
+function deleteMember(body) {
+  const team = getTeam();
+  const member = team.find(function (m) { return m.id === body.id; });
+  if (!member) return { ok: false, error: 'team member not found' };
+  trashDriveLogo(member.url);
+  const remaining = team.filter(function (m) { return m.id !== body.id; });
+  saveTeamList(remaining);
+  return { ok: true, team: remaining };
+}
+
+function getTeamPhotoFolder() {
+  const it = DriveApp.getFoldersByName(TEAM_PHOTO_FOLDER_NAME);
+  return it.hasNext() ? it.next() : DriveApp.createFolder(TEAM_PHOTO_FOLDER_NAME);
+}
+
+// imageData is a data: URL from the panel (already resized in the browser).
+function saveTeamPhotoToDrive(imageData, memberName) {
+  const m = String(imageData).match(/^data:(image\/(png|jpeg|webp|gif));base64,(.+)$/);
+  if (!m) throw new Error('bad image data');
+  const ext = m[2] === 'jpeg' ? 'jpg' : m[2];
+  const blob = Utilities.newBlob(Utilities.base64Decode(m[3]), m[1], memberName + '.' + ext);
+  const file = getTeamPhotoFolder().createFile(blob);
+  file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+  return 'https://lh3.googleusercontent.com/d/' + file.getId();
 }
 
 // ── Drive storage for uploaded logos ───────────────────────────────────
