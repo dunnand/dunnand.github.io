@@ -392,30 +392,37 @@ function validCatsForSlot(slot) {
 }
 
 // ── Library rendering ─────────────────────────────────────────────────────────
+// Stable per-station library order: grouped by category, shuffled once per page
+// load (and again on New Clock) — NOT on every interaction, so the list doesn't
+// reorder while a student is scrolling/searching for their next song.
+const libOrder = {};
+function getLibOrder() {
+  if (!libOrder[station]) {
+    const songs = SONGS[station];
+    const meta  = META[station].cats;
+    const catKeys = Object.keys(meta).sort((a,b) => (meta[a].order||99)-(meta[b].order||99));
+    libOrder[station] = catKeys.map(c => {
+      const g = songs.filter(s => s.cat === c);
+      for(let i=g.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[g[i],g[j]]=[g[j],g[i]];}
+      return g;
+    }).flat();
+  }
+  return libOrder[station];
+}
+
 function buildDispList(forceCats) {
-  const songs = SONGS[station];
-  const meta  = META[station].cats;
-  const q     = (document.getElementById('lib-search').value || '').toLowerCase();
+  const q = (document.getElementById('lib-search').value || '').toLowerCase();
 
   // If a slot is selected, show only valid cats for that slot
   const filterCats = forceCats || getActiveCatFilter();
 
-  let filtered = songs.filter(s => {
+  dispList = getLibOrder().filter(s => {
     if (filterCats !== 'ALL' && !filterCats.has(s.cat)) return false;
     if (q && !s.title.toLowerCase().includes(q) &&
              !s.artist.toLowerCase().includes(q) &&
              !s.album.toLowerCase().includes(q)) return false;
     return true;
   });
-
-  // Group by category (in category order) then shuffle within each group
-  const catKeys = Object.keys(meta).sort((a,b) => (meta[a].order||99)-(meta[b].order||99));
-  const grouped = catKeys.map(c => {
-    const g = filtered.filter(s => s.cat === c);
-    for(let i=g.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[g[i],g[j]]=[g[j],g[i]];}
-    return g;
-  });
-  dispList = grouped.flat();
   dispOffset = 0;
 }
 
@@ -551,7 +558,7 @@ function renderPlaylist() {
       const s = slot.song;
       const dur = s ? s.dur : fmt(def.approx || 0);
       const cm = s ? catMeta(s.cat) : null;
-      html += '<div class="slot fixed' + (canDrop && !s ? ' empty' : '') + '" id="sl-' + slot.id + '"'
+      html += '<div class="slot fixed' + (canDrop && !s ? ' empty' : '') + (selSlot === slot.id ? ' target' : '') + '" id="sl-' + slot.id + '"'
         + (canDrop ? ' data-slotid="' + slot.id + '"' : '')
         + (canDrop && s ? ' draggable="true"' : '') + '>'
         + '<span class="slot-n">' + (canDrop ? (s ? '🔓' : '↓') : '🔒') + '</span>'
@@ -587,7 +594,7 @@ function renderPlaylist() {
     if (def.type === 'liner') {
       const s = slot.song;
       const warn = surrounded.has(slot.id);
-      html += '<div class="slot liner-slot' + (!s ? ' empty' : '') + (warn ? ' wrong' : '') + '" id="sl-' + slot.id + '" data-slotid="' + slot.id + '"'
+      html += '<div class="slot liner-slot' + (!s ? ' empty' : '') + (warn ? ' wrong' : '') + (selSlot === slot.id ? ' target' : '') + '" id="sl-' + slot.id + '" data-slotid="' + slot.id + '"'
         + (s ? ' draggable="true"' : '') + '>'
         + '<span class="slot-n" style="color:var(--teal)">LIN</span>'
         + '<div class="slot-body">'
@@ -611,7 +618,7 @@ function renderPlaylist() {
     const m = catMeta(def.primary);
     const fb = def.fallback ? catMeta(def.fallback) : null;
 
-    let cls = 'slot ' + (s ? status : (isTarget ? 'target' : 'empty'));
+    let cls = 'slot ' + (s ? status + (isTarget ? ' target' : '') : (isTarget ? 'target' : 'empty'));
 
     html += '<div class="' + cls + '" id="sl-' + slot.id + '" data-slotid="' + slot.id + '"' + (s ? ' draggable="true"' : '') + '>';
     html += '<span class="slot-n">' + songNum + '</span>';
@@ -637,6 +644,7 @@ function renderPlaylist() {
         + '<div class="slot-sub"><span class="artist">' + esc(s.artist) + '</span>' + (s.year ? ' <span style="font-size:11px">· ' + s.year + '</span>' : '')
         + (status === 'fallback' ? ' <span style="color:#f39c12;font-size:10px">▲ fallback</span>' : '')
         + (status === 'wrong'    ? ' <span style="color:#e74c3c;font-size:10px">⚠ wrong category</span>' : '')
+        + (isTarget ? ' <span style="color:#a78bfa;font-size:11px">← pick a replacement from library</span>' : '')
         + '</div>'
         + (s.src ? '<div class="slot-src">' + esc(s.src) + '</div>' : '');
     } else {
@@ -756,19 +764,21 @@ function renderHourTabs() {
   }
 }
 
-// Shuffle (new hour)
+// Shuffle (new hour) — also reshuffles the library order for fresh discovery
 document.getElementById('btn-shuffle').addEventListener('click', () => {
   hours[station][curHour] = makePlaylist();
+  delete libOrder[station];
   selSlot = null;
   renderLibrary(null);
   renderPlaylist();
 });
 
-// Clear songs (keep structure, remove songs from song/liner slots)
+// Clear songs (keep structure, remove songs from song/liner/droppable fixed slots)
 document.getElementById('btn-clear').addEventListener('click', () => {
   if (!confirm('Remove all songs from Hour ' + (curHour+1) + '?')) return;
   getPlaylist().forEach(s => {
     if (s.type === 'song' || s.type === 'liner') s.song = null;
+    if (s.type === 'fixed' && (s.def.cat || s.id === 'sponsor')) s.song = null;
   });
   selSlot = null;
   renderLibrary(null);
@@ -886,7 +896,7 @@ function addSong(song) {
   }
 }
 
-// Click empty slot to target it / click filled slot to do nothing
+// Click a slot to target it — empty slots fill, filled slots get replaced
 document.getElementById('plist-scroll').addEventListener('click', e => {
   // Remove button
   const xBtn = e.target.closest('.slot-x');
@@ -899,12 +909,12 @@ document.getElementById('plist-scroll').addEventListener('click', e => {
     renderPlaylist();
     return;
   }
-  // Click on song slot to target it
+  // Click on song slot to target it (filled slots too — picking then replaces)
   const slotEl = e.target.closest('[data-slotid]');
   if (slotEl) {
     const id   = slotEl.dataset.slotid;
     const slot = getPlaylist().find(s => s.id === id);
-    if (!slot || slot.song) return;  // filled slots don't need targeting
+    if (!slot) return;
     selSlot = (selSlot === id) ? null : id;
     renderLibrary(selSlot);
     renderPlaylist();
@@ -1126,7 +1136,7 @@ document.getElementById('btn-save').addEventListener('click', () => {
   const name = (document.getElementById('inp-name').value.trim() || 'broadcast')
                .replace(/[^a-z0-9_\- ]/gi, '_');
   a.href = url;
-  a.download = name + '_hour' + (curHour + 1) + '.json';
+  a.download = name + '_broadcast_plan.json';
   a.click();
   URL.revokeObjectURL(url);
 });
