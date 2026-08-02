@@ -299,7 +299,38 @@
       </div>
     </div>
 
-    <!-- Team roster ("Our Team" page at /team.html) -->
+    <!-- Now playing override -->
+    <div class="panel-card">
+      <div class="card-title">Now Playing Override <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></div>
+
+      <div class="field">
+        <label for="manual-artist">Artist / DJ Name</label>
+        <input type="text" id="manual-artist" placeholder="e.g. Taylor Swift   or   Live with DJ Alex">
+      </div>
+
+      <div class="field">
+        <label for="manual-title">Song Title / Description</label>
+        <input type="text" id="manual-title" placeholder="e.g. Anti-Hero   or   Taking your requests!">
+      </div>
+
+      <div class="tip">
+        <strong>Tip:</strong> Leave these blank to let the system auto-detect what's playing from the stream.
+        Fill them in when you're on mic, on a break, or playing something the system won't recognize.
+      </div>
+    </div>
+
+    <!-- Action buttons -->
+    <div class="panel-card">
+      <div class="card-title">Status</div>
+      <div class="action-btns">
+        <button class="btn btn-green btn-lg" id="btn-onair"  onclick="goOnAir()">🎙 On Air</button>
+        <button class="btn btn-yellow btn-lg" id="btn-break" onclick="goOnBreak()">☕ On Break</button>
+        <button class="btn btn-danger btn-lg btn-end" id="btn-end" onclick="endShow()">⏹ End Show</button>
+      </div>
+      <div class="save-msg" id="save-msg"></div>
+    </div>
+
+    <!-- Team roster ("Our Team" page at /team.html) — rarely needed, kept at the bottom -->
     <div class="panel-card">
       <div class="card-title">Team Roster</div>
       <button class="btn btn-secondary" id="btn-manage-team" onclick="toggleTeamManage()" style="width:100%;">＋ Manage Our Team page</button>
@@ -337,37 +368,6 @@
           <button class="btn btn-secondary" id="btn-cancel-team-edit" onclick="cancelTeamEdit()" style="display:none;">Cancel</button>
         </div>
       </div>
-    </div>
-
-    <!-- Now playing override -->
-    <div class="panel-card">
-      <div class="card-title">Now Playing Override <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></div>
-
-      <div class="field">
-        <label for="manual-artist">Artist / DJ Name</label>
-        <input type="text" id="manual-artist" placeholder="e.g. Taylor Swift   or   Live with DJ Alex">
-      </div>
-
-      <div class="field">
-        <label for="manual-title">Song Title / Description</label>
-        <input type="text" id="manual-title" placeholder="e.g. Anti-Hero   or   Taking your requests!">
-      </div>
-
-      <div class="tip">
-        <strong>Tip:</strong> Leave these blank to let the system auto-detect what's playing from the stream.
-        Fill them in when you're on mic, on a break, or playing something the system won't recognize.
-      </div>
-    </div>
-
-    <!-- Action buttons -->
-    <div class="panel-card">
-      <div class="card-title">Status</div>
-      <div class="action-btns">
-        <button class="btn btn-green btn-lg" id="btn-onair"  onclick="goOnAir()">🎙 On Air</button>
-        <button class="btn btn-yellow btn-lg" id="btn-break" onclick="goOnBreak()">☕ On Break</button>
-        <button class="btn btn-danger btn-lg btn-end" id="btn-end" onclick="endShow()">⏹ End Show</button>
-      </div>
-      <div class="save-msg" id="save-msg"></div>
     </div>
 
   </main>
