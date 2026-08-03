@@ -29,6 +29,11 @@
 // SHA-256 of the DJ panel password (same hash as in dj.html)
 const PASSWORD_HASH = 'd6242d92fd958617bd2530f19bc9c95ac147c87b77968b30553e4dc61e2b3117';
 
+// SHA-256 of the teacher-only password (same hash as in dj.html). Anyone with
+// the regular panel password can add a team member; only the teacher password
+// can edit or remove an existing one — checked separately below.
+const TEACHER_PASSWORD_HASH = '5313e5bf17148de844ff74be3663d47c6e361ca469b30a36337701233c89a15e';
+
 const DEFAULT_STATE = '{"wcyt":{"active":false},"2pt0":{"active":false}}';
 
 const LOGO_FOLDER_NAME = 'WCYT Show Logos';
@@ -79,6 +84,14 @@ function doPost(e) {
 
   if (sha256Hex(body.password || '') !== PASSWORD_HASH) {
     return jsonOut({ ok: false, error: 'unauthorized' });
+  }
+
+  // Editing or removing an existing team member requires the separate teacher
+  // password, checked in addition to the general panel password above.
+  const TEACHER_ONLY_ACTIONS = ['updateMember', 'deleteMember'];
+  if (TEACHER_ONLY_ACTIONS.indexOf(body.action) !== -1 &&
+      sha256Hex(body.teacherPassword || '') !== TEACHER_PASSWORD_HASH) {
+    return jsonOut({ ok: false, error: 'teacher password required' });
   }
 
   const lock = LockService.getScriptLock();

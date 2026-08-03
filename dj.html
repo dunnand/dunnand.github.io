@@ -336,6 +336,9 @@
       <button class="btn btn-secondary" id="btn-manage-team" onclick="toggleTeamManage()" style="width:100%;">＋ Manage Our Team page</button>
 
       <div id="manage-team" style="display:none; margin-top:16px;">
+        <div style="display:flex; justify-content:flex-end; margin-bottom:8px;">
+          <button class="btn btn-secondary" id="btn-unlock-teacher" onclick="unlockTeacher()" style="font-size:12px; padding:6px 10px;">🔒 Teacher Unlock (Edit/Remove)</button>
+        </div>
         <div id="team-list" style="display:flex; flex-direction:column; gap:8px; margin-bottom:18px;"></div>
 
         <div class="card-title" id="team-form-title">Add a Team Member</div>
@@ -386,10 +389,18 @@
   // hash the new one (https://emn178.github.io/online-tools/sha256.html) and
   // paste the hash here. Do not write the password itself anywhere in this file.
   const PASSWORD_HASH = 'd6242d92fd958617bd2530f19bc9c95ac147c87b77968b30553e4dc61e2b3117';
+
+  // Teacher password hash — required to edit or remove an existing Team
+  // Roster member. Anyone with the panel password above can still add a
+  // new member. To change it, hash the new password the same way and
+  // paste the hash here AND in dj-backend.gs, then redeploy the script.
+  const TEACHER_PASSWORD_HASH = '5313e5bf17148de844ff74be3663d47c6e361ca469b30a36337701233c89a15e';
   // ─────────────────────────────────────────────────────────────────
 
   let activeStation = 'wcyt';
   let panelPassword = '';   // held in memory after login; sent with each write
+  let teacherPassword = '';    // held in memory once unlocked; sent with edit/delete member calls
+  let teacherUnlocked = false;
 
   // ── Password ───────────────────────────────────────────────────────
   async function sha256(str) {
@@ -410,6 +421,37 @@
       document.getElementById('pw-input').value = '';
     }
   }
+
+  async function unlockTeacher() {
+    if (teacherUnlocked) {
+      teacherUnlocked = false;
+      teacherPassword = '';
+      sessionStorage.removeItem('wcyt-dj-teacher-pw');
+      if (editingMemberId !== null) cancelTeamEdit();
+      renderTeamList();
+      return;
+    }
+    const pw = prompt('Enter the teacher password to edit or remove team members:');
+    if (!pw) return;
+    const hash = await sha256(pw);
+    if (hash === TEACHER_PASSWORD_HASH) {
+      teacherPassword = pw;
+      teacherUnlocked = true;
+      sessionStorage.setItem('wcyt-dj-teacher-pw', pw);
+      renderTeamList();
+    } else {
+      alert('Incorrect teacher password.');
+    }
+  }
+
+  // Auto-restore teacher unlock if session active (re-verify the stored password's hash)
+  (async () => {
+    const savedTeacher = sessionStorage.getItem('wcyt-dj-teacher-pw');
+    if (savedTeacher && await sha256(savedTeacher) === TEACHER_PASSWORD_HASH) {
+      teacherPassword = savedTeacher;
+      teacherUnlocked = true;
+    }
+  })();
 
   document.getElementById('pw-input').addEventListener('keydown', e => {
     if (e.key === 'Enter') checkPassword();
@@ -616,6 +658,8 @@
   }
 
   function renderTeamList() {
+    const unlockBtn = document.getElementById('btn-unlock-teacher');
+    if (unlockBtn) unlockBtn.textContent = teacherUnlocked ? '🔓 Teacher Unlocked (tap to lock)' : '🔒 Teacher Unlock (Edit/Remove)';
     const list = document.getElementById('team-list');
     list.innerHTML = '';
     const sorted = [...TEAM].sort((a, b) => {
@@ -633,9 +677,12 @@
       info.className = 'show-row-name';
       const badge = member.section === 'Management' ? '👑' : '🎙';
       info.textContent = badge + ' ' + member.name + ' — ' + (member.show || 'No role set') + (member.time ? ' (' + member.time + ')' : '');
-      row.append(img, info,
-        mkBtn('✏️', 'Edit', () => startEditMember(member.id)),
-        mkBtn('🗑', 'Delete', () => removeMember(member.id), true));
+      row.append(img, info);
+      if (teacherUnlocked) {
+        row.append(
+          mkBtn('✏️', 'Edit', () => startEditMember(member.id)),
+          mkBtn('🗑', 'Delete', () => removeMember(member.id), true));
+      }
       list.appendChild(row);
     });
   }
@@ -643,7 +690,7 @@
   async function teamCall(payload) {
     const res = await fetch(SCRIPT_URL, {
       method: 'POST',
-      body: JSON.stringify(Object.assign({ password: panelPassword }, payload))
+      body: JSON.stringify(Object.assign({ password: panelPassword, teacherPassword: teacherPassword }, payload))
     });
     const data = await res.json();
     if (!data.ok) throw new Error(data.error || 'request failed');
