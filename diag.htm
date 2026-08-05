@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WCYT Display Diagnostics</title>
+  <style>
+    body { background:#000; color:#fff; font-family:Consolas, monospace; padding:24px; font-size:20px; }
+    h1 { font-size:1.4em; margin-bottom:16px; }
+    .test { margin-bottom:14px; padding:10px 14px; border-radius:8px; background:#111; }
+    .pass { color:#4caf50; font-weight:bold; }
+    .fail { color:#f44336; font-weight:bold; }
+    .pend { color:#999; }
+    .detail { color:#aaa; font-size:0.8em; margin-top:4px; word-break:break-all; }
+    .ua { color:#666; font-size:0.7em; margin-top:24px; word-break:break-all; }
+  </style>
+</head>
+<body>
+  <h1>WCYT Display Diagnostics</h1>
+  <div id="tests"></div>
+  <div class="ua" id="ua"></div>
+  <script>
+    var RAW = 'https://raw.githubusercontent.com/dunnand/WCYT-NowPlaying/main';
+    var TESTS = [
+      { name: 'Icecast stream titles (securestreams2.autopo.st)',
+        url: 'https://securestreams2.autopo.st:1069/status-json.xsl',
+        check: function (d) {
+          var srcs = (d.icestats && d.icestats.source) || [];
+          if (!Array.isArray(srcs)) srcs = [srcs];
+          var out = [];
+          for (var i = 0; i < srcs.length; i++) {
+            var u = (srcs[i].listenurl || '').toLowerCase();
+            if (u.indexOf('wcyt.mp3') >= 0 || u.indexOf('wcythd2.mp3') >= 0)
+              out.push(u.split('/').pop() + ': ' + srcs[i].title);
+          }
+          return out.join(' | ') || 'no WCYT mounts found';
+        } },
+      { name: 'GitHub raw — Point JSON (source of the album line)',
+        url: RAW + '/point_recent.json?t=' + Date.now(),
+        check: function (d) {
+          return 'updated ' + d.updatedAt + ' — now: ' + d.now.artist + ' - ' +
+                 d.now.title + ' — album: "' + (d.now.album || 'EMPTY') + '"';
+        } },
+      { name: 'GitHub raw — 2.0 JSON (source of the album line)',
+        url: RAW + '/wcyt2_recent.json?t=' + Date.now(),
+        check: function (d) {
+          return 'updated ' + d.updatedAt + ' — now: ' + d.now.artist + ' - ' +
+                 d.now.title + ' — album: "' + (d.now.album || 'EMPTY') + '"';
+        } },
+      { name: 'Album art overrides (wcyt.org)',
+        url: '/images/art_overrides.json',
+        check: function (d) {
+          return Object.keys(d.overrides || {}).length + ' art entries loaded';
+        } }
+    ];
+
+    var wrap = document.getElementById('tests');
+    TESTS.forEach(function (t, i) {
+      var div = document.createElement('div');
+      div.className = 'test';
+      div.innerHTML = '<span class="pend" id="s' + i + '">RUNNING…</span> ' + t.name +
+                      '<div class="detail" id="d' + i + '"></div>';
+      wrap.appendChild(div);
+      fetch(t.url, { cache: 'no-store' })
+        .then(function (r) {
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          return r.json();
+        })
+        .then(function (d) {
+          document.getElementById('s' + i).outerHTML = '<span class="pass">PASS</span>';
+          document.getElementById('d' + i).textContent = t.check(d);
+        })
+        .catch(function (e) {
+          document.getElementById('s' + i).outerHTML = '<span class="fail">FAIL</span>';
+          document.getElementById('d' + i).textContent = e.message + ' — ' + t.url;
+        });
+    });
+    document.getElementById('ua').textContent = 'Browser: ' + navigator.userAgent;
+  </script>
+</body>
+</html>
