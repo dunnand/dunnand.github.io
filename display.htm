@@ -709,8 +709,10 @@
       if (songKey === state[key].currentKey) {
         const el = document.getElementById(key + '-album');
         const bsiMatch = bsi.album && normStr(bsi.title) === normStr(parsed.title);
-        // Update album on title match, or fill a blank album line (catches BSI lag)
-        if (el && bsi.album && (bsiMatch || !el.textContent.trim())) el.textContent = bsi.album;
+        // Show BSI's latest album even without an exact title match — BSI's own
+        // status file often lags the real Icecast title change by up to a minute
+        // or more, so waiting for a match left the line blank for most short songs.
+        if (el && bsi.album) el.textContent = bsi.album;
         if (showActive && dj.imageUrl) {
           artEl.src = dj.imageUrl;
         } else if (!showActive && state[key].djActive) {
@@ -799,8 +801,6 @@
       artEl.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
       artEl.classList.add('fading');
 
-      const bsiTitleMatch = bsi.title && normStr(bsi.title) === normStr(parsed.title);
-
       // Populate once art resolves, then reveal
       const art = showActive && dj.imageUrl
         ? dj.imageUrl
@@ -811,8 +811,9 @@
       fitArtist(key + '-artist');
       set(key + '-title',  parsed.title);
       fitText(key + '-title');
-      // Only write album if BSI title matches — leave blank otherwise until BSI catches up
-      if (bsiTitleMatch) set(key + '-album', bsi.album);
+      // Show BSI's latest album even if it hasn't caught up to this exact title yet
+      // (self-corrects on the next poll once BSI's status file updates)
+      if (bsi.album) set(key + '-album', bsi.album);
       fitInfoBlock();
       // Reset any inline styles onerror may have set, then swap art
       artEl.style.objectFit = '';
