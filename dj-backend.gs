@@ -61,15 +61,16 @@ function authorize() {
   Logger.log('Authorized. Logo folder ready: ' + LOGO_FOLDER_NAME + ', team photo folder ready: ' + TEAM_PHOTO_FOLDER_NAME);
 }
 
-// ── Public read — the DJ panel, playlist widget, studio display, and team
-// page all poll this
+// ── Public read — the DJ panel, playlist widget, studio display, team
+// page, and radio app all poll this
 function doGet() {
   const state = PropertiesService.getScriptProperties().getProperty('state') || DEFAULT_STATE;
-  return jsonOut({ record: JSON.parse(state), shows: getShows(), team: getTeam() });
+  return jsonOut({ record: JSON.parse(state), shows: getShows(), team: getTeam(), flags: getFlags() });
 }
 
-// ── Password-protected writes ──────────────────────────────────────────
-// The DJ panel posts { password, action, ... }. Actions:
+// ── Writes ────────────────────────────────────────────────────────────
+// The DJ panel (and radio app, for 'flagSong') posts { password, action, ... }.
+// Actions:
 //   (none)         { station, patch, historyEntry } — merge on-air state (original behavior)
 //   'addShow'      { name, imageData? }             — imageData is a data: URL; omitted = default logo
 //   'updateShow'   { id, name?, imageData? }
@@ -77,10 +78,23 @@ function doGet() {
 //   'addMember'    { name, show?, time?, section, imageData? } — team roster (team.html)
 //   'updateMember' { id, name?, show?, time?, section?, imageData? }
 //   'deleteMember' { id }
+//   'flagSong'     { station, artist, title, album?, note? } — NO PASSWORD; public,
+//                  from the radio app's "flag this song" button (see radio/index.html)
+//   'dismissFlag'  { id } — password-protected; clears one flagged-song entry
 function doPost(e) {
   let body;
   try { body = JSON.parse(e.postData.contents); }
   catch (err) { return jsonOut({ ok: false, error: 'bad request' }); }
+
+  // Only unauthenticated write — anyone listening can flag a song. Worst case
+  // is noise in the review queue, which a human always triages before anything
+  // is actually pulled from rotation, so no password is required here.
+  if (body.action === 'flagSong') {
+    const lock = LockService.getScriptLock();
+    lock.waitLock(10000);
+    try { return jsonOut(flagSong(body)); }
+    finally { lock.releaseLock(); }
+  }
 
   if (sha256Hex(body.password || '') !== PASSWORD_HASH) {
     return jsonOut({ ok: false, error: 'unauthorized' });
@@ -104,6 +118,7 @@ function doPost(e) {
       case 'addMember':    return jsonOut(addMember(body));
       case 'updateMember': return jsonOut(updateMember(body));
       case 'deleteMember': return jsonOut(deleteMember(body));
+      case 'dismissFlag':  return jsonOut(dismissFlag(body));
       default:              return jsonOut(patchState(body));
     }
   } catch (err) {
@@ -175,6 +190,70 @@ function deleteShow(body) {
   trashDriveLogo(show.url);
   saveShows(shows.filter(s => s.id !== body.id));
   return { ok: true, shows: shows.filter(s => s.id !== body.id) };
+}
+
+// ── Flagged songs (radio app "🚩 Flag this song" button) ─────────────────
+// Listeners report a song without any login. Repeated flags for the same
+// song increment a count instead of piling up duplicate rows, which is a
+// stronger signal than a raw list and keeps storage bounded on its own.
+const FLAG_MAX       = 500;  // hard cap — oldest (by lastFlaggedAt) evicted first
+const FLAG_NOTES_MAX = 10;   // per-song note cap, same idea
+
+function normFlagText(s) {
+  return String(s || '')
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+}
+
+function getFlags() {
+  const raw = PropertiesService.getScriptProperties().getProperty('flags');
+  return raw ? JSON.parse(raw) : [];
+}
+
+function saveFlags(flags) {
+  PropertiesService.getScriptProperties().setProperty('flags', JSON.stringify(flags));
+}
+
+function flagSong(body) {
+  const artist = String(body.artist || '').trim();
+  const title  = String(body.title  || '').trim();
+  if (!artist || !title) return { ok: false, error: 'artist and title required' };
+  const station = body.station === '2pt0' ? '2pt0' : 'wcyt';
+  const note     = String(body.note || '').trim().slice(0, 300);
+  const now      = new Date().toISOString();
+
+  const flags = getFlags();
+  const na = normFlagText(artist), nt = normFlagText(title);
+  let entry = flags.find(f => f.station === station && f.na === na && f.nt === nt);
+  if (entry) {
+    entry.count++;
+    entry.lastFlaggedAt = now;
+    if (note) {
+      entry.notes = entry.notes || [];
+      entry.notes.push(note);
+      if (entry.notes.length > FLAG_NOTES_MAX) entry.notes = entry.notes.slice(-FLAG_NOTES_MAX);
+    }
+  } else {
+    entry = {
+      id: Utilities.getUuid(), station: station,
+      artist: artist, title: title, album: String(body.album || '').trim(),
+      na: na, nt: nt, count: 1,
+      firstFlaggedAt: now, lastFlaggedAt: now,
+      notes: note ? [note] : [],
+    };
+    flags.push(entry);
+  }
+
+  flags.sort((a, b) => new Date(b.lastFlaggedAt) - new Date(a.lastFlaggedAt));
+  saveFlags(flags.slice(0, FLAG_MAX));
+  return { ok: true };
+}
+
+function dismissFlag(body) {
+  const flags = getFlags();
+  const remaining = flags.filter(f => f.id !== body.id);
+  saveFlags(remaining);
+  return { ok: true, flags: remaining };
 }
 
 // ── Team roster (team.html "Our Team" page) ─────────────────────────────

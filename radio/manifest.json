@@ -1,0 +1,17 @@
+{
+  "name": "WCYT Radio",
+  "short_name": "WCYT Radio",
+  "description": "Listen live to WCYT The Point 91FM and 2.0, and flag a song for review.",
+  "start_url": "/radio/",
+  "scope": "/radio/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#111111",
+  "theme_color": "#c8102e",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-192-maskable.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
