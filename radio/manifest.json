@@ -1,7 +1,7 @@
 {
-  "name": "WCYT Radio",
-  "short_name": "WCYT Radio",
-  "description": "Listen live to WCYT The Point 91FM and 2.0, and flag a song for review.",
+  "name": "WCYT Song Flag",
+  "short_name": "WCYT Flag",
+  "description": "Personal tool: flag a WCYT/2.0 song for removal from rotation.",
   "start_url": "/radio/",
   "scope": "/radio/",
   "display": "standalone",

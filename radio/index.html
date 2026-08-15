@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>WCYT Radio</title>
-<meta name="description" content="Listen live to WCYT The Point 91FM and 2.0.">
+<title>WCYT Song Flag</title>
+<meta name="description" content="Personal tool: flag a WCYT/2.0 song for removal from rotation.">
 <meta name="theme-color" content="#c8102e">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="WCYT Radio">
+<meta name="apple-mobile-web-app-title" content="WCYT Song Flag">
 <meta name="robots" content="noindex, nofollow">
 <style>
 :root { color-scheme: dark; }
@@ -51,40 +51,27 @@ body {
   padding: 11px 8px; border-radius: 10px; font-size: 14px; font-weight: 700; cursor: pointer; }
 .tab.active { background: #c8102e; border-color: #c8102e; color: #fff; }
 
-.player-card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 18px;
-  padding: 20px; display: flex; flex-direction: column; align-items: center; text-align: center; }
-.art-wrap { width: 220px; height: 220px; max-width: 60vw; max-height: 60vw; border-radius: 16px;
-  overflow: hidden; background: #222; margin-bottom: 18px; position: relative;
-  box-shadow: 0 8px 30px rgba(0,0,0,.5); }
-.art-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.live-dot { position: absolute; top: 10px; left: 10px; display: flex; align-items: center; gap: 5px;
-  background: rgba(0,0,0,.55); padding: 4px 8px 4px 6px; border-radius: 20px; font-size: 10px;
-  font-weight: 800; letter-spacing: .08em; color: #fff; }
-.live-dot .dot { width: 7px; height: 7px; border-radius: 50%; background: #ef4444; }
-.live-dot .dot.paused { background: #666; }
+/* ── Now playing ── */
+.now-card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 16px; padding: 16px; }
+.now-top { display: flex; gap: 14px; align-items: center; }
+.now-art { width: 64px; height: 64px; border-radius: 10px; object-fit: cover; background: #222; flex-shrink: 0; }
+.now-label { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: #666; margin-bottom: 3px; }
+.now-info { min-width: 0; }
+#np-artist { font-size: 17px; font-weight: 800; line-height: 1.25; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#np-title  { font-size: 14px; color: #bbb; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#np-album  { font-size: 11px; color: #777; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
-#np-artist { font-size: 20px; font-weight: 800; line-height: 1.25; }
-#np-title  { font-size: 15px; color: #bbb; margin-top: 3px; }
-#np-album  { font-size: 12px; color: #777; margin-top: 5px; }
-.station-tagline { font-size: 11px; color: #c8102e; font-weight: 700; letter-spacing: .08em;
-  margin-top: 10px; text-transform: uppercase; }
-
-.controls { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 22px; }
-.play-btn { width: 68px; height: 68px; border-radius: 50%; background: #c8102e; border: none;
-  color: #fff; font-size: 26px; cursor: pointer; display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 4px 16px rgba(200,16,46,.4); }
-.play-btn:active { transform: scale(.96); }
-.vol-wrap { display: flex; align-items: center; gap: 8px; width: 100%; margin-top: 18px; }
-.vol-wrap span { font-size: 14px; color: #888; }
-.vol-wrap input { flex: 1; accent-color: #c8102e; }
-
-.flag-row { width: 100%; margin-top: 20px; }
+/* ── Flag buttons ── */
 .flag-btn { width: 100%; background: #2a2a2a; border: 1px solid #3a3a3a; color: #f59e0b;
-  padding: 12px; border-radius: 10px; font-size: 14px; font-weight: 700; cursor: pointer; }
+  padding: 12px; border-radius: 10px; font-size: 14px; font-weight: 700; cursor: pointer; margin-top: 14px; }
 .flag-btn:disabled { color: #16a34a; border-color: #16a34a44; cursor: default; }
 .flag-btn:hover:not(:disabled) { border-color: #f59e0b; }
+.flag-btn-sm { background: none; border: 1px solid #3a3a3a; color: #f59e0b; border-radius: 8px;
+  width: 34px; height: 34px; font-size: 15px; cursor: pointer; flex-shrink: 0; }
+.flag-btn-sm:disabled { color: #16a34a; border-color: #16a34a44; cursor: default; }
+.flag-btn-sm:hover:not(:disabled) { border-color: #f59e0b; }
 
-.flag-panel { width: 100%; margin-top: 12px; background: #201a12; border: 1px solid #f59e0b55;
+.flag-panel { width: 100%; margin-top: 14px; background: #201a12; border: 1px solid #f59e0b55;
   border-radius: 10px; padding: 14px; text-align: left; display: none; }
 .flag-panel.open { display: block; }
 .flag-panel p { font-size: 13px; color: #ddd; margin-bottom: 10px; line-height: 1.4; }
@@ -100,14 +87,17 @@ body {
 .flag-status.err { color: #f87171; }
 .flag-status.ok  { color: #86efac; }
 
-.recent { margin-top: 26px; }
+/* ── Recently played ── */
+.recent { margin-top: 22px; }
 .recent h2 { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #666;
   margin-bottom: 10px; }
-.recent ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-.recent li { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; }
-.recent .who { color: #ddd; }
+.recent ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.recent li { display: flex; align-items: center; gap: 10px; background: #1a1a1a;
+  border: 1px solid #2a2a2a; border-radius: 10px; padding: 9px 10px 9px 12px; }
+.recent .meta { min-width: 0; flex: 1; }
+.recent .who { font-size: 13px; color: #ddd; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .recent .who b { font-weight: 700; }
-.recent .time { color: #666; flex-shrink: 0; }
+.recent .time { font-size: 10px; color: #666; margin-top: 1px; }
 
 .offline-banner { background: #3f1d1d; border: 1px solid #b91c1c; color: #fca5a5; font-size: 13px;
   padding: 10px 14px; border-radius: 8px; margin-bottom: 16px; display: none; }
@@ -121,7 +111,7 @@ footer a { color: #666; }
 <div id="gate">
   <div class="gate-card">
     <img src="icons/icon-192.png" alt="">
-    <h2>WCYT Radio</h2>
+    <h2>WCYT Song Flag</h2>
     <p>Personal — enter your passcode</p>
     <input type="password" inputmode="numeric" id="gate-input" maxlength="20"
            autocomplete="off" onkeydown="if(event.key==='Enter')checkPasscode()">
@@ -135,8 +125,8 @@ footer a { color: #666; }
 <div class="header">
   <img src="icons/icon-192.png" alt="">
   <div>
-    <h1>WCYT Radio</h1>
-    <div class="sub">Fort&nbsp;Wayne, Indiana &middot; 91.1&nbsp;FM</div>
+    <h1>WCYT Song Flag</h1>
+    <div class="sub">Tap a song to flag it for removal</div>
   </div>
 </div>
 
@@ -147,36 +137,26 @@ footer a { color: #666; }
   <button class="tab" id="tab-2pt0" onclick="switchStation('2pt0')">2.0</button>
 </div>
 
-<div class="player-card">
-  <div class="art-wrap">
-    <img id="art-img" src="icons/icon-512.png" alt="">
-    <div class="live-dot"><span class="dot paused" id="live-dot-el"></span><span id="live-label">PAUSED</span></div>
-  </div>
-
-  <div id="np-artist">Loading&hellip;</div>
-  <div id="np-title"></div>
-  <div id="np-album"></div>
-  <div class="station-tagline" id="station-tagline">Where Music is the Point</div>
-
-  <div class="controls">
-    <button class="play-btn" id="play-btn" onclick="togglePlay()" aria-label="Play">&#9658;</button>
-  </div>
-  <div class="vol-wrap">
-    <span>&#128266;</span>
-    <input type="range" id="vol" min="0" max="1" step="0.01" value="1" oninput="setVolume(this.value)">
-  </div>
-
-  <div class="flag-row">
-    <button class="flag-btn" id="flag-btn" onclick="openFlagPanel()">&#128681; Flag this song</button>
-    <div class="flag-panel" id="flag-panel">
-      <p id="flag-prompt"></p>
-      <textarea id="flag-note" maxlength="300" placeholder="Optional — why should this come off the playlist?"></textarea>
-      <div class="row">
-        <button class="btn-cancel" onclick="closeFlagPanel()">Cancel</button>
-        <button class="btn-confirm" id="flag-confirm-btn" onclick="submitFlag()">Report song</button>
-      </div>
-      <div class="flag-status" id="flag-status"></div>
+<div class="now-card">
+  <div class="now-top">
+    <img id="art-img" class="now-art" src="icons/icon-512.png" alt="">
+    <div class="now-info">
+      <div class="now-label">Now playing</div>
+      <div id="np-artist">Loading&hellip;</div>
+      <div id="np-title"></div>
+      <div id="np-album"></div>
     </div>
+  </div>
+  <button class="flag-btn" id="flag-btn-now" onclick="openFlagPanelForNow()">&#128681; Flag this song</button>
+
+  <div class="flag-panel" id="flag-panel">
+    <p id="flag-prompt"></p>
+    <textarea id="flag-note" maxlength="300" placeholder="Optional — why should this come off the playlist?"></textarea>
+    <div class="row">
+      <button class="btn-cancel" onclick="closeFlagPanel()">Cancel</button>
+      <button class="btn-confirm" id="flag-confirm-btn" onclick="submitFlag()">Report song</button>
+    </div>
+    <div class="flag-status" id="flag-status"></div>
   </div>
 </div>
 
@@ -195,30 +175,20 @@ footer a { color: #666; }
 const RAW_BASE     = 'https://raw.githubusercontent.com/dunnand/WCYT-NowPlaying/main';
 const DJPANEL_URL  = 'https://script.google.com/macros/s/AKfycbwV99T1Owt69gFQYtdOmqGUJjtMME1y0bUBjJ9XHN1CjzPXMhfPeI8xNFZOUUI6hsB7/exec';
 const OVERRIDES_URL = '/images/art_overrides.json';
-const FALLBACK_ART  = { wcyt: 'icons/icon-512.png', '2pt0': 'icons/icon-512.png' };
+const FALLBACK_ART  = 'icons/icon-512.png';
 const POLL_MS       = 10_000;
-const FLAG_COOLDOWN_MS = 10 * 60 * 1000; // don't let one device spam-flag the same song
+const FLAG_COOLDOWN_MS = 10 * 60 * 1000; // don't let a stray double-tap file two reports
 
 const STATIONS = {
-  wcyt: {
-    label: 'The Point', tagline: 'Where Music is the Point',
-    stream: 'https://securestreams2.autopo.st:1069/WCYT.mp3',
-    nowFile: '/point_recent.json',
-  },
-  '2pt0': {
-    label: '2.0', tagline: 'The Next Level of Radio',
-    stream: 'https://securestreams2.autopo.st:1069/wcythd2.mp3',
-    nowFile: '/wcyt2_recent.json',
-  },
+  wcyt:  { label: 'The Point', nowFile: '/point_recent.json' },
+  '2pt0': { label: '2.0',      nowFile: '/wcyt2_recent.json' },
 };
 
-let station     = localStorage.getItem('wcyt-radio-station') || 'wcyt';
-let overrides   = {};
-let nowData     = null;
-let pollTimer   = null;
-let isPlaying   = false;
-const audio     = new Audio();
-audio.preload   = 'none';
+let station   = localStorage.getItem('wcyt-radio-station') || 'wcyt';
+let overrides = {};
+let nowData   = null;
+let pollTimer = null;
+let flagTarget = null; // the track object currently shown in the flag panel
 
 function esc(s) {
   return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
@@ -243,7 +213,7 @@ async function loadOverrides() {
     const res = await fetch(OVERRIDES_URL, { cache: 'no-cache' });
     const data = await res.json();
     overrides = data.overrides || {};
-  } catch { /* fine — art just falls back to the station logo */ }
+  } catch { /* fine — art just falls back to the icon */ }
 }
 
 // ── Now playing ───────────────────────────────────────────────────────
@@ -255,13 +225,17 @@ function setOffline(msg) {
 
 async function pollNowPlaying() {
   try {
-    const res = await fetch(RAW_BASE + STATIONS[station].nowFile, { cache: 'no-store' });
+    // raw.githubusercontent.com caches at the CDN edge for 5 min — cache: 'no-store'
+    // only stops the browser's own cache, so a timestamp query param is needed too
+    // (same trick playlist-widget.js's fetchBSIData already uses) or "now playing"
+    // lags behind by however long ago that edge copy was cached.
+    const res = await fetch(RAW_BASE + STATIONS[station].nowFile + '?t=' + Date.now(), { cache: 'no-store' });
     if (!res.ok) throw new Error('HTTP ' + res.status);
     nowData = await res.json();
     setOffline(null);
     renderNow();
   } catch (e) {
-    setOffline('Can’t reach the now-playing feed — audio still streams live.');
+    setOffline('Can’t reach the now-playing feed — try again in a moment.');
   }
 }
 
@@ -271,20 +245,33 @@ function renderNow() {
   document.getElementById('np-artist').textContent = n.artist || 'WCYT';
   document.getElementById('np-title').textContent  = n.title || '';
   document.getElementById('np-album').textContent  = n.album || '';
+  document.getElementById('art-img').src = resolveArt(n.artist, n.album) || FALLBACK_ART;
+  refreshFlagButton(document.getElementById('flag-btn-now'), n);
 
-  const artUrl = resolveArt(n.artist, n.album);
-  document.getElementById('art-img').src = artUrl || FALLBACK_ART[station];
+  // recent[0] usually duplicates "now" — skip it there so the same song
+  // doesn't show twice on screen.
+  let recent = nowData.recent || [];
+  if (recent.length && recent[0].artist === n.artist && recent[0].title === n.title) {
+    recent = recent.slice(1);
+  }
 
   const list = document.getElementById('recent-list');
   list.innerHTML = '';
-  (nowData.recent || []).slice(0, 8).forEach((r) => {
+  recent.slice(0, 8).forEach((r) => {
     const li = document.createElement('li');
-    li.innerHTML = '<span class="who"><b>' + esc(r.artist) + '</b> — ' + esc(r.title) + '</span>'
-      + '<span class="time">' + esc(r.time || '') + '</span>';
+    const meta = document.createElement('div');
+    meta.className = 'meta';
+    meta.innerHTML = '<div class="who"><b>' + esc(r.artist) + '</b> — ' + esc(r.title) + '</div>'
+      + '<div class="time">' + esc(r.time || '') + '</div>';
+    const btn = document.createElement('button');
+    btn.className = 'flag-btn-sm';
+    btn.innerHTML = '&#128681;';
+    btn.onclick = () => openFlagPanel(r);
+    refreshFlagButton(btn, r);
+    li.appendChild(meta);
+    li.appendChild(btn);
     list.appendChild(li);
   });
-
-  refreshFlagButtonState();
 }
 
 // ── Station switching ────────────────────────────────────────────────
@@ -294,49 +281,15 @@ function switchStation(s) {
   localStorage.setItem('wcyt-radio-station', s);
   document.getElementById('tab-wcyt').classList.toggle('active', s === 'wcyt');
   document.getElementById('tab-2pt0').classList.toggle('active', s === '2pt0');
-  document.getElementById('station-tagline').textContent = STATIONS[s].tagline;
   document.getElementById('np-artist').textContent = 'Loading…';
   document.getElementById('np-title').textContent = '';
   document.getElementById('np-album').textContent = '';
-  document.getElementById('art-img').src = FALLBACK_ART[s];
+  document.getElementById('art-img').src = FALLBACK_ART;
+  document.getElementById('recent-list').innerHTML = '';
   closeFlagPanel();
-
-  const wasPlaying = isPlaying;
-  audio.pause();
-  audio.src = STATIONS[s].stream;
-  if (wasPlaying) audio.play().catch(onPlayError);
-
   nowData = null;
   pollNowPlaying();
 }
-
-// ── Playback ──────────────────────────────────────────────────────────
-function onPlayError(e) {
-  setOffline('Couldn’t start the stream — check your connection and try again.');
-  setPlayingUI(false);
-}
-function setPlayingUI(playing) {
-  isPlaying = playing;
-  document.getElementById('play-btn').innerHTML = playing ? '&#10074;&#10074;' : '&#9658;';
-  document.getElementById('play-btn').setAttribute('aria-label', playing ? 'Pause' : 'Play');
-  document.getElementById('live-dot-el').classList.toggle('paused', !playing);
-  document.getElementById('live-label').textContent = playing ? 'LIVE' : 'PAUSED';
-}
-function togglePlay() {
-  if (isPlaying) {
-    audio.pause();
-    setPlayingUI(false);
-    return;
-  }
-  if (!audio.src) audio.src = STATIONS[station].stream;
-  setOffline(null);
-  audio.play().then(() => setPlayingUI(true)).catch(onPlayError);
-}
-function setVolume(v) { audio.volume = parseFloat(v); }
-audio.addEventListener('waiting', () => setOffline('Buffering…'));
-audio.addEventListener('playing', () => setOffline(null));
-audio.addEventListener('error', () => onPlayError());
-audio.addEventListener('pause', () => { if (isPlaying) setPlayingUI(false); });
 
 // ── Flagging ──────────────────────────────────────────────────────────
 function flaggedSongsMap() {
@@ -344,43 +297,47 @@ function flaggedSongsMap() {
 }
 function saveFlaggedSongsMap(m) { localStorage.setItem('wcyt-radio-flagged', JSON.stringify(m)); }
 
-function currentSongFingerprint() {
-  if (!nowData || !nowData.now || !nowData.now.artist) return null;
-  return station + '|' + artKey(nowData.now.artist, nowData.now.title);
+function fingerprint(track) {
+  if (!track || !track.artist) return null;
+  return station + '|' + artKey(track.artist, track.title);
 }
 
-function refreshFlagButtonState() {
-  const btn = document.getElementById('flag-btn');
-  const fp = currentSongFingerprint();
-  if (!fp) { btn.disabled = true; btn.textContent = '\u{1F6A9} Flag this song'; return; }
+function refreshFlagButton(btn, track) {
+  if (!btn) return;
+  const fp = fingerprint(track);
+  const isNowBtn = btn.id === 'flag-btn-now';
+  if (!fp) { btn.disabled = true; return; }
   const flagged = flaggedSongsMap();
   const ts = flagged[fp];
-  if (ts && Date.now() - ts < FLAG_COOLDOWN_MS) {
-    btn.disabled = true;
-    btn.textContent = '✓ Flagged — thanks';
-  } else {
-    btn.disabled = false;
-    btn.textContent = '\u{1F6A9} Flag this song';
-  }
+  const recentlyFlagged = ts && Date.now() - ts < FLAG_COOLDOWN_MS;
+  btn.disabled = recentlyFlagged;
+  if (isNowBtn) btn.textContent = recentlyFlagged ? '✓ Flagged — thanks' : '\u{1F6A9} Flag this song';
+  else          btn.innerHTML   = recentlyFlagged ? '&#9989;' : '&#128681;';
 }
 
-function openFlagPanel() {
-  if (!nowData || !nowData.now) return;
-  const n = nowData.now;
+function openFlagPanelForNow() {
+  if (nowData && nowData.now) openFlagPanel(nowData.now);
+}
+
+function openFlagPanel(track) {
+  if (!track || !track.artist) return;
+  flagTarget = track;
   document.getElementById('flag-prompt').textContent =
-    'Report "' + (n.title || 'this song') + '" by ' + (n.artist || 'this artist') + ' for review?';
+    'Report "' + (track.title || 'this song') + '" by ' + (track.artist || 'this artist') + ' for review?';
   document.getElementById('flag-note').value = '';
   document.getElementById('flag-status').textContent = '';
   document.getElementById('flag-status').className = 'flag-status';
   document.getElementById('flag-panel').classList.add('open');
+  document.getElementById('flag-panel').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 function closeFlagPanel() {
   document.getElementById('flag-panel').classList.remove('open');
+  flagTarget = null;
 }
 
 async function submitFlag() {
-  const n = nowData && nowData.now;
-  if (!n || !n.artist) return;
+  const track = flagTarget;
+  if (!track || !track.artist) return;
   const confirmBtn = document.getElementById('flag-confirm-btn');
   const statusEl   = document.getElementById('flag-status');
   confirmBtn.disabled = true;
@@ -390,9 +347,9 @@ async function submitFlag() {
   const body = {
     action: 'flagSong',
     station: station,
-    artist: n.artist,
-    title:  n.title || '',
-    album:  n.album || '',
+    artist: track.artist,
+    title:  track.title || '',
+    album:  track.album || '',
     note:   document.getElementById('flag-note').value.trim().slice(0, 300),
   };
 
@@ -405,7 +362,7 @@ async function submitFlag() {
     const data = await res.json();
     if (!data.ok) throw new Error(data.error || 'server error');
 
-    const fp = currentSongFingerprint();
+    const fp = fingerprint(track);
     if (fp) {
       const m = flaggedSongsMap();
       m[fp] = Date.now();
@@ -413,7 +370,7 @@ async function submitFlag() {
     }
     statusEl.textContent = 'Reported — thank you.';
     statusEl.className = 'flag-status ok';
-    refreshFlagButtonState();
+    renderNow(); // refreshes every flag button's disabled/label state
     setTimeout(closeFlagPanel, 1400);
   } catch (e) {
     statusEl.textContent = 'Couldn’t send — check your connection and try again.';
@@ -473,10 +430,7 @@ function startApp() {
 
   document.getElementById('tab-' + station).classList.add('active');
   if (station === '2pt0') document.getElementById('tab-wcyt').classList.remove('active');
-  document.getElementById('station-tagline').textContent = STATIONS[station].tagline;
-  document.getElementById('art-img').src = FALLBACK_ART[station];
-  audio.src = STATIONS[station].stream;
-  setVolume(document.getElementById('vol').value);
+  document.getElementById('art-img').src = FALLBACK_ART;
 
   loadOverrides().then(() => { pollNowPlaying(); pollTimer = setInterval(pollNowPlaying, POLL_MS); });
 

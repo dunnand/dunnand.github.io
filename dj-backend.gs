@@ -78,22 +78,28 @@ function doGet() {
 //   'addMember'    { name, show?, time?, section, imageData? } — team roster (team.html)
 //   'updateMember' { id, name?, show?, time?, section?, imageData? }
 //   'deleteMember' { id }
-//   'flagSong'     { station, artist, title, album?, note? } — NO PASSWORD; public,
-//                  from the radio app's "flag this song" button (see radio/index.html)
-//   'dismissFlag'  { id } — password-protected; clears one flagged-song entry
+//   'flagSong'     { station, artist, title, album?, note? } — NO PASSWORD; personal
+//                  flag-tracking app (see radio/index.html)
+//   'dismissFlag'  { id } — NO PASSWORD; called only from review_server.py on Andy's
+//                  own PC, never from a page a stranger could load, so no password
+//                  gate is needed — clears one flagged-song entry for good
 function doPost(e) {
   let body;
   try { body = JSON.parse(e.postData.contents); }
   catch (err) { return jsonOut({ ok: false, error: 'bad request' }); }
 
-  // Only unauthenticated write — anyone listening can flag a song. Worst case
-  // is noise in the review queue, which a human always triages before anything
-  // is actually pulled from rotation, so no password is required here.
-  if (body.action === 'flagSong') {
+  // Unauthenticated writes — flagging/unflagging a song is low-stakes (a human
+  // always triages before anything is actually pulled from rotation) and
+  // neither is reachable from a page a stranger would ever load.
+  const OPEN_ACTIONS = ['flagSong', 'dismissFlag'];
+  if (OPEN_ACTIONS.indexOf(body.action) !== -1) {
     const lock = LockService.getScriptLock();
     lock.waitLock(10000);
-    try { return jsonOut(flagSong(body)); }
-    finally { lock.releaseLock(); }
+    try {
+      return jsonOut(body.action === 'flagSong' ? flagSong(body) : dismissFlag(body));
+    } finally {
+      lock.releaseLock();
+    }
   }
 
   if (sha256Hex(body.password || '') !== PASSWORD_HASH) {
@@ -118,7 +124,6 @@ function doPost(e) {
       case 'addMember':    return jsonOut(addMember(body));
       case 'updateMember': return jsonOut(updateMember(body));
       case 'deleteMember': return jsonOut(deleteMember(body));
-      case 'dismissFlag':  return jsonOut(dismissFlag(body));
       default:              return jsonOut(patchState(body));
     }
   } catch (err) {
