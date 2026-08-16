@@ -440,6 +440,27 @@ function startApp() {
     navigator.serviceWorker.register('sw.js').catch(() => {});
   }
 }
+
+// Mobile browsers pause/throttle setInterval while the screen is locked or
+// the app is backgrounded — on an installed PWA this can leave "now playing"
+// showing whatever last loaded before the phone locked, sometimes for a long
+// time, since the interval doesn't reliably fire the moment you come back.
+// Force an immediate fresh poll (and restart the interval cleanly) whenever
+// the page becomes visible again, or gets restored from the back/forward
+// cache (bfcache) — a full resume without re-running scripts from scratch,
+// which is common when reopening a PWA from the home screen.
+function resumePolling() {
+  if (!appStarted) return;
+  clearInterval(pollTimer);
+  pollNowPlaying();
+  pollTimer = setInterval(pollNowPlaying, POLL_MS);
+}
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') resumePolling();
+});
+window.addEventListener('pageshow', (e) => {
+  if (e.persisted) resumePolling();
+});
 </script>
 </body>
 </html>

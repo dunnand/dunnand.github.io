@@ -3,7 +3,7 @@
 // JSON: those must always come from the network. Only the static app shell
 // is cached, so the icon/name still resolve if the app is opened offline
 // right after install; everything else is network-first / network-only.
-const SHELL_CACHE = 'wcyt-radio-shell-v1';
+const SHELL_CACHE = 'wcyt-radio-shell-v2'; // bumped to flush the old buggy-matched cache
 const SHELL_FILES = [
   './',
   './index.html',
@@ -28,10 +28,16 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
+// Exact pathnames, resolved once against this SW's own scope — the previous
+// endsWith() check had a bug: './'.replace('./','') is '', and every string
+// endsWith(''), so it was accidentally treating ALL same-origin requests
+// (including the raw now-playing... no, that's cross-origin, but e.g.
+// /images/art_overrides.json) as shell files needing this caching layer.
+const SHELL_PATHS = new Set(SHELL_FILES.map((f) => new URL(f, self.registration.scope).pathname));
+
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
-  const isShellFile = url.origin === self.location.origin &&
-    SHELL_FILES.some((f) => url.pathname.endsWith(f.replace('./', '')));
+  const isShellFile = url.origin === self.location.origin && SHELL_PATHS.has(url.pathname);
   if (!isShellFile) return; // let the browser handle everything else normally
 
   event.respondWith(
