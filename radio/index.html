@@ -74,7 +74,10 @@ body {
 .flag-panel { width: 100%; margin-top: 14px; background: #201a12; border: 1px solid #f59e0b55;
   border-radius: 10px; padding: 14px; text-align: left; display: none; }
 .flag-panel.open { display: block; }
-.flag-panel p { font-size: 13px; color: #ddd; margin-bottom: 10px; line-height: 1.4; }
+.flag-panel-head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.flag-panel-art { width: 48px; height: 48px; border-radius: 8px; object-fit: cover;
+  background: #161616; flex-shrink: 0; }
+.flag-panel p { font-size: 13px; color: #ddd; line-height: 1.4; }
 .flag-panel textarea { width: 100%; background: #161616; border: 1px solid #3a3a3a; color: #eee;
   border-radius: 8px; padding: 8px 10px; font-size: 13px; font-family: inherit; resize: vertical;
   min-height: 44px; margin-bottom: 10px; }
@@ -93,7 +96,9 @@ body {
   margin-bottom: 10px; }
 .recent ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
 .recent li { display: flex; align-items: center; gap: 10px; background: #1a1a1a;
-  border: 1px solid #2a2a2a; border-radius: 10px; padding: 9px 10px 9px 12px; }
+  border: 1px solid #2a2a2a; border-radius: 10px; padding: 8px 10px 8px 8px; }
+.recent .thumb { width: 38px; height: 38px; border-radius: 7px; object-fit: cover;
+  background: #222; flex-shrink: 0; }
 .recent .meta { min-width: 0; flex: 1; }
 .recent .who { font-size: 13px; color: #ddd; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .recent .who b { font-weight: 700; }
@@ -150,7 +155,10 @@ footer a { color: #666; }
   <button class="flag-btn" id="flag-btn-now" onclick="openFlagPanelForNow()">&#128681; Flag this song</button>
 
   <div class="flag-panel" id="flag-panel">
-    <p id="flag-prompt"></p>
+    <div class="flag-panel-head">
+      <img id="flag-panel-art" class="flag-panel-art" src="" alt="">
+      <p id="flag-prompt"></p>
+    </div>
     <textarea id="flag-note" maxlength="300" placeholder="Optional — why should this come off the playlist?"></textarea>
     <div class="row">
       <button class="btn-cancel" onclick="closeFlagPanel()">Cancel</button>
@@ -200,12 +208,21 @@ function esc(s) {
 function artKey(artist, title) {
   return (artist + '|' + (title || '')).toLowerCase();
 }
-function resolveArt(artist, album) {
+// Same 3-tier fallback as display.htm's fetchArt(): overrides are keyed
+// primarily by SONG TITLE (that's what card_key/song_key use), with the
+// album name only as a fallback for the "WAV tagged with album as title"
+// edge case — looking up by album alone (the original version of this
+// function) missed the vast majority of real matches.
+function resolveArt(artist, title, album) {
+  let key = artKey(artist, title);
+  if (overrides[key]) return overrides[key];
   if (!album) return null;
+  key = artKey(artist, album);
+  if (overrides[key]) return overrides[key];
   const m = album.match(/^(.+?)\s*[•·]\s*\d{4}\s*$/);
   const albumName = m ? m[1].trim() : album.trim();
   if (!albumName) return null;
-  const key = artKey(artist, albumName);
+  key = artKey(artist, albumName);
   return overrides[key] || null;
 }
 async function loadOverrides() {
@@ -245,7 +262,7 @@ function renderNow() {
   document.getElementById('np-artist').textContent = n.artist || 'WCYT';
   document.getElementById('np-title').textContent  = n.title || '';
   document.getElementById('np-album').textContent  = n.album || '';
-  document.getElementById('art-img').src = resolveArt(n.artist, n.album) || FALLBACK_ART;
+  document.getElementById('art-img').src = resolveArt(n.artist, n.title, n.album) || FALLBACK_ART;
   refreshFlagButton(document.getElementById('flag-btn-now'), n);
 
   // recent[0] usually duplicates "now" — skip it there so the same song
@@ -259,6 +276,10 @@ function renderNow() {
   list.innerHTML = '';
   recent.slice(0, 8).forEach((r) => {
     const li = document.createElement('li');
+    const thumb = document.createElement('img');
+    thumb.className = 'thumb';
+    thumb.loading = 'lazy';
+    thumb.src = resolveArt(r.artist, r.title, r.album) || FALLBACK_ART;
     const meta = document.createElement('div');
     meta.className = 'meta';
     meta.innerHTML = '<div class="who"><b>' + esc(r.artist) + '</b> — ' + esc(r.title) + '</div>'
@@ -268,6 +289,7 @@ function renderNow() {
     btn.innerHTML = '&#128681;';
     btn.onclick = () => openFlagPanel(r);
     refreshFlagButton(btn, r);
+    li.appendChild(thumb);
     li.appendChild(meta);
     li.appendChild(btn);
     list.appendChild(li);
@@ -322,6 +344,7 @@ function openFlagPanelForNow() {
 function openFlagPanel(track) {
   if (!track || !track.artist) return;
   flagTarget = track;
+  document.getElementById('flag-panel-art').src = resolveArt(track.artist, track.title, track.album) || FALLBACK_ART;
   document.getElementById('flag-prompt').textContent =
     'Report "' + (track.title || 'this song') + '" by ' + (track.artist || 'this artist') + ' for review?';
   document.getElementById('flag-note').value = '';
