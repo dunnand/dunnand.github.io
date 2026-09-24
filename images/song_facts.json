@@ -48,10 +48,6 @@
       "fact": "Despite the name, Alabama Shakes' “Shoegaze” isn't about the genre - it's a song about restlessness and loneliness, pivoting on the line “It ain't no fun to be lonely.”",
       "source": "https://readdork.com/track/alabama-shakes-shoegaze"
     },
-    "sigur ros|inni mer syngur vitleysingur": {
-      "fact": "Sigur Ros' Icelandic song title “Inní mér syngur vitleysingur” translates to “Within me a lunatic sings.” It's the second track on their 2008 album Með suð í eyrum við spilum endalaust.",
-      "source": "https://sigurros.com/music/inni-mer-syngur-vitleysingur/"
-    },
     "tv on the radio|dlz": {
       "fact": "TV on the Radio's “DLZ” stands for “Dawn of the Loser,” a phrase from the song's final lines. It wasn't released as a single, but got a big boost in popularity after appearing in a season 2 episode of Breaking Bad.",
       "source": "https://www.songfacts.com/facts/tv-on-the-radio/dlz"
@@ -104,10 +100,6 @@
       "fact": "Mary in the Junkyard's “Myrtle” is named for a comforting turtle character - “Myrtle told me that I don't need to worry” - part of a concept album imagining the singer's past life as a fisherman.",
       "source": "https://atwoodmagazine.com/mtjd-mary-in-the-junkyard-drains-song-review-music-interview/"
     },
-    "beach house|april suzanne": {
-      "fact": "Beach House's “April Suzanne” is a cover of a 1976 song by Robert Lester Folsom, released as a limited 7″ single (only 1,000 copies worldwide) to celebrate the 50th anniversary of his album Music and Dreams.",
-      "source": "https://northerntransmissions.com/beach-house-cover-robert-lester-folsoms-april-suzanne/"
-    },
     "spoon|got nuffin": {
       "fact": "Spoon's Britt Daniel described “Got Nuffin” as being about having “nothing to lose but darkness and shadows” - a song about the relief of shaking off negative thoughts.",
       "source": "https://www.songfacts.com/facts/spoon/got-nuffin"
@@ -131,10 +123,6 @@
     "slow pulp|red car": {
       "fact": "On Slow Pulp's “Red Car,” a 1996 Mazda becomes a stand-in for the possibility of starting over - part of their album Melodie, about feeling stuck and finding a way to move on.",
       "source": "https://newnoisemagazine.com/reviews/album-review-slow-pulp-melodie/"
-    },
-    "mitski|first love / late spring": {
-      "fact": "Mitski has said “First Love / Late Spring” came from falling in love at a moment when she really couldn't afford to. The song describes crying like a “tall child” - looking like an adult while feeling as overwhelmed as a kid.",
-      "source": "https://faroutmagazine.co.uk/lyrically-speaking-the-wildness-of-falling-in-love-with-mitskis-first-love-late-spring/"
     },
     "pavement|unseen power of the picket fence": {
       "fact": "Pavement wrote “The Unseen Power of the Picket Fence” as a loving, joke-filled tribute to R.E.M. for a 1994 charity compilation - Stephen Malkmus jokingly name-drops their songs and admits “Time After Time” was his least favorite, which reportedly needled Michael Stipe a little.",
@@ -199,6 +187,18 @@
     "sharp pins|it's a mod mod world": {
       "fact": "Sharp Pins is the lo-fi pop project of Chicago musician Kai Slater (also of the band Lifeguard) - “It's a Mod Mod World” is deliberately recorded to sound like catching a British Invasion hit on a handheld AM radio in the 1960s.",
       "source": "https://www.hilorecords.co.uk/blogs/new-blog-post/newsletter-its-a-mod-mod-world"
+    },
+    "sigur ros|inni mer syngur vitleysingur (inside me sings a lunatic)": {
+      "fact": "Sigur Ros' Icelandic song title “Inní mér syngur vitleysingur” translates to “Within me a lunatic sings.” It's the second track on their 2008 album Með suð í eyrum við spilum endalaust.",
+      "source": "https://sigurros.com/music/inni-mer-syngur-vitleysingur/"
+    },
+    "beach house|april suzanne (cover version)": {
+      "fact": "Beach House's “April Suzanne” is a cover of a 1976 song by Robert Lester Folsom, released as a limited 7″ single (only 1,000 copies worldwide) to celebrate the 50th anniversary of his album Music and Dreams.",
+      "source": "https://northerntransmissions.com/beach-house-cover-robert-lester-folsoms-april-suzanne/"
+    },
+    "mitski|first love-late spring": {
+      "fact": "Mitski has said “First Love / Late Spring” came from falling in love at a moment when she really couldn't afford to. The song describes crying like a “tall child” - looking like an adult while feeling as overwhelmed as a kid.",
+      "source": "https://faroutmagazine.co.uk/lyrically-speaking-the-wildness-of-falling-in-love-with-mitskis-first-love-late-spring/"
     }
   }
 }
