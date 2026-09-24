@@ -35,6 +35,170 @@
     "my morning jacket|i will sing you songs": {
       "fact": "My Morning Jacket recorded It Still Moves, home to the nearly eight-minute I Will Sing You Songs, at Above the Cadillac Studios in rural Shelbyville, Kentucky - with the album's horn parts tracked separately at Memphis's famous Royal Studios.",
       "source": "https://en.wikipedia.org/wiki/It_Still_Moves"
+    },
+    "the strokes|someday": {
+      "fact": "The melody for The Strokes' “Someday” reportedly came to Julian Casablancas while singing in the bathroom, nursing a hangover at drummer Fabrizio Moretti's house - the band built the song around what they heard him singing.",
+      "source": "https://www.songfacts.com/facts/the-strokes/someday"
+    },
+    "the decemberists|a beginning song": {
+      "fact": "The Decemberists closed their album What a Terrible World, What a Beautiful World with “A Beginning Song” - a hopeful, cathartic track meant to feel like something new being born out of the album's earlier, heavier songs.",
+      "source": "https://www.udiscovermusic.com/stories/the-decemberists-what-a-terrible-world-what-a-beautiful-world/"
+    },
+    "alabama shakes|shoegaze": {
+      "fact": "Despite the name, Alabama Shakes' “Shoegaze” isn't about the genre - it's a song about restlessness and loneliness, pivoting on the line “It ain't no fun to be lonely.”",
+      "source": "https://readdork.com/track/alabama-shakes-shoegaze"
+    },
+    "sigur ros|inni mer syngur vitleysingur": {
+      "fact": "Sigur Ros' Icelandic song title “Inní mér syngur vitleysingur” translates to “Within me a lunatic sings.” It's the second track on their 2008 album Með suð í eyrum við spilum endalaust.",
+      "source": "https://sigurros.com/music/inni-mer-syngur-vitleysingur/"
+    },
+    "tv on the radio|dlz": {
+      "fact": "TV on the Radio's “DLZ” stands for “Dawn of the Loser,” a phrase from the song's final lines. It wasn't released as a single, but got a big boost in popularity after appearing in a season 2 episode of Breaking Bad.",
+      "source": "https://www.songfacts.com/facts/tv-on-the-radio/dlz"
+    },
+    "the cure|catch": {
+      "fact": "The Cure's “Catch” is a light, whimsical love song about a girl from Robert Smith's past whose name he can barely remember - a deliberate 180-degree turn from the album's more aggressive opening track.",
+      "source": "https://en.wikipedia.org/wiki/Catch_(The_Cure_song)"
+    },
+    "kate bush|this woman's work": {
+      "fact": "Kate Bush wrote “This Woman's Work” for the 1988 film She's Having a Baby, matching her lyrics to a dramatic hospital scene the director had already sent her - it's sung from the perspective of a partner realizing how much he loves her.",
+      "source": "https://www.songfacts.com/facts/kate-bush/this-womans-work"
+    },
+    "sault|let me go": {
+      "fact": "SAULT is an anonymous British music collective that avoids media interviews entirely - even their exact lineup is unconfirmed, though producer Dean “Inflo” Josiah Cover (who's worked with Michael Kiwanuka and Little Simz) is rumored to be a member.",
+      "source": "https://www.kexp.org/podcasts/song-of-the-day/2019/9/4/sault-let-me-go/"
+    },
+    "khruangbin|time (you and i)": {
+      "fact": "Khruangbin's album Mordechai is named after a friend of bassist Laura Lee Ochoa who once encouraged her to jump off a waterfall - the feeling of that leap stuck with her, including on “Time (You and I),” a song about wishing you had more time with the people you love.",
+      "source": "https://www.songtell.com/khruangbin/time-you-and-i"
+    },
+    "broadcast|valerie": {
+      "fact": "Broadcast's “Valerie” takes its name and melody from the 1970 Czech film Valerie and Her Week of Wonders, a major inspiration for the band's dreamy, psychedelic sound.",
+      "source": "https://www.last.fm/music/Broadcast/Haha+Sound/Valerie"
+    },
+    "cherry glazerr|grilled cheese": {
+      "fact": "Cherry Glazerr's “Grilled Cheese” is exactly what it sounds like - a whimsical garage-pop song about grilled cheese sandwiches, written when the band members were still in high school.",
+      "source": "https://en.wikipedia.org/wiki/Cherry_Glazerr"
+    },
+    "boygenius|bite the hand": {
+      "fact": "boygenius wrote “Bite the Hand” about the strange etiquette of fame - not feeling obligated to give fans a piece of yourself just because they bought a ticket, while still making music that's honest.",
+      "source": "https://www.songfacts.com/facts/boygenius/bite-the-hand"
+    },
+    "beabadoobee|beaches": {
+      "fact": "beabadoobee's “Beaches” is a song about self-discovery and not waiting around for the right moment - “Don't wait for the tide, just to dip both your feet in” - built on crunchy guitars that recall Weezer's “Island in the Sun.”",
+      "source": "https://www.stayfreeradioip.com/post/beabadoobee-beaches-meaning-and-review"
+    },
+    "anna burch|tea-soaked letter": {
+      "fact": "In the video for Anna Burch's “Tea-Soaked Letter,” she makes tea, makes toast, and reads tarot cards while waiting to hear from the person she's singing about - a song asking a love interest to actually follow through on better communication.",
+      "source": "https://www.thelineofbestfit.com/new-music/song-of-the-day/anna-burch-tea-soaked-letter"
+    },
+    "phoebe bridgers|bobby": {
+      "fact": "Phoebe Bridgers' “Bobby” is her most straightforward love song yet, widely believed to be about her partner Bo Burnham - a warm departure from the melancholic tone of her earlier album Punisher.",
+      "source": "https://slate.com/culture/2026/08/phoebe-bridgers-lost-weekend-album-review-bobby-lyrics.html"
+    },
+    "hum|why i like the robins": {
+      "fact": "Hum's “Why I Like the Robins” comes from You'd Prefer an Astronaut, an album full of space imagery - this song imagines watching from a window for the robins to return, and seeing the world through a loved one's eyes.",
+      "source": "https://impact89fm.org/125855/music/rose-tinted-perspective-why-i-like-the-robins-by-hum/"
+    },
+    "mary in the junkyard|myrtle": {
+      "fact": "Mary in the Junkyard's “Myrtle” is named for a comforting turtle character - “Myrtle told me that I don't need to worry” - part of a concept album imagining the singer's past life as a fisherman.",
+      "source": "https://atwoodmagazine.com/mtjd-mary-in-the-junkyard-drains-song-review-music-interview/"
+    },
+    "beach house|april suzanne": {
+      "fact": "Beach House's “April Suzanne” is a cover of a 1976 song by Robert Lester Folsom, released as a limited 7″ single (only 1,000 copies worldwide) to celebrate the 50th anniversary of his album Music and Dreams.",
+      "source": "https://northerntransmissions.com/beach-house-cover-robert-lester-folsoms-april-suzanne/"
+    },
+    "spoon|got nuffin": {
+      "fact": "Spoon's Britt Daniel described “Got Nuffin” as being about having “nothing to lose but darkness and shadows” - a song about the relief of shaking off negative thoughts.",
+      "source": "https://www.songfacts.com/facts/spoon/got-nuffin"
+    },
+    "hoodoo gurus|i want you back": {
+      "fact": "Hoodoo Gurus' “I Want You Back” sounds like a breakup song, but frontman Dave Faulkner wrote it about a former bandmate who quit and was dismissive on the way out - he flipped the anger into a mock “spurned lover” song aimed right at him.",
+      "source": "https://en.wikipedia.org/wiki/I_Want_You_Back_(Hoodoo_Gurus_song)"
+    },
+    "hatchie|quicksand": {
+      "fact": "Hatchie's “Quicksand” catches her in a familiar cycle - feeling ungrateful even when things in her life are, on paper, going well.",
+      "source": "https://www.nylon.com/entertainment/hatchie-quicksand-giving-the-world-away-new-album"
+    },
+    "weyes blood|movies": {
+      "fact": "Weyes Blood's “Movies” is an ode to cinema as a modern myth-maker - she wants her own life to have the meaning a movie does, even while admitting “the meaning of life doesn't seem to shine like that screen.”",
+      "source": "https://stereogum.com/2037195/weyes-blood-titanic-rising-review/reviews/album-of-the-week"
+    },
+    "m83|midnight city": {
+      "fact": "M83's “Midnight City” was inspired by late nights watching Downtown Los Angeles come alive, and ends with a now-iconic saxophone solo played by James King of Fitz and the Tantrums.",
+      "source": "https://www.songfacts.com/facts/m83/midnight-city"
+    },
+    "slow pulp|red car": {
+      "fact": "On Slow Pulp's “Red Car,” a 1996 Mazda becomes a stand-in for the possibility of starting over - part of their album Melodie, about feeling stuck and finding a way to move on.",
+      "source": "https://newnoisemagazine.com/reviews/album-review-slow-pulp-melodie/"
+    },
+    "mitski|first love / late spring": {
+      "fact": "Mitski has said “First Love / Late Spring” came from falling in love at a moment when she really couldn't afford to. The song describes crying like a “tall child” - looking like an adult while feeling as overwhelmed as a kid.",
+      "source": "https://faroutmagazine.co.uk/lyrically-speaking-the-wildness-of-falling-in-love-with-mitskis-first-love-late-spring/"
+    },
+    "pavement|unseen power of the picket fence": {
+      "fact": "Pavement wrote “The Unseen Power of the Picket Fence” as a loving, joke-filled tribute to R.E.M. for a 1994 charity compilation - Stephen Malkmus jokingly name-drops their songs and admits “Time After Time” was his least favorite, which reportedly needled Michael Stipe a little.",
+      "source": "https://faroutmagazine.co.uk/pavement-the-unseen-power-of-the-picket-fence/"
+    },
+    "the sundays|life goes on": {
+      "fact": "The Sundays' “Life Goes On” opens with “Build me up don't get me down, weather the storm, well, life goes on” - a simple, steady message of resilience from their final album, Static & Silence.",
+      "source": "https://en.wikipedia.org/wiki/Cry_(The_Sundays_song)"
+    },
+    "kurt vile|99 bpm": {
+      "fact": "Kurt Vile's “99 BPM” is a nostalgic nod to playing in bands with a friend named Rob back around 2012 - “99 BPM, well, what's that between friends?”",
+      "source": "https://www.thelineofbestfit.com/features/interviews/kurt-vile-unstoppable-staycation"
+    },
+    "black midi|hogwash and balderdash": {
+      "fact": "black midi's “Hogwash and Balderdash” tells the story of two runaway convicts on the run from the law - who happen to be chickens named Hogwash and Balderdash.",
+      "source": "https://www.lyreka.com/song/black-midi-hogwash-and-balderdash-lyrics"
+    },
+    "ween|learnin' to love": {
+      "fact": "Ween's “Learnin' to Love” came together after Gene Ween stumbled on a website full of horse-racing betting slang and turned it into a song.",
+      "source": "https://www.ween.wiki/wiki/Learnin'_to_Love"
+    },
+    "sports team|i'm in love (subaru)": {
+      "fact": "Sports Team's “I'm In Love (Subaru)” is a love song about a shiny red Subaru - a stand-in for an idealized, “sorted” adult life that, the song admits, can't actually be bought.",
+      "source": "https://readdork.com/features/sports-team-im-in-love-subaru-meaning-explained-7219a44a1c"
+    },
+    "dazy|beat change": {
+      "fact": "Dazy is the one-man project of James Goodson, who started anonymously posting songs on Bandcamp during the pandemic summer of 2020 before it grew into a full band.",
+      "source": "https://stereogum.com/2509885/dazy-announces-maximumblastsuperloud-vol-2-comp-with-seven-new-songs-hear-beat-change/music"
+    },
+    "talking heads|memories can't wait": {
+      "fact": "David Byrne described Talking Heads' “Memories Can't Wait” as the band's version of a metal song - about memories that keep flooding back no matter how much you try to move on.",
+      "source": "https://www.songfacts.com/facts/talking-heads/memories-cant-wait"
+    },
+    "vampire weekend|obvious bicycle": {
+      "fact": "Vampire Weekend's “Obvious Bicycle” never actually says the words “obvious” or “bicycle” anywhere in the lyrics - it was just the title Rostam Batmanglij gave the demo the day he wrote it, and it stuck.",
+      "source": "https://www.songfacts.com/facts/vampire-weekend/obvious-bicycle"
+    },
+    "angel olsen|all mirrors": {
+      "fact": "Angel Olsen has said “All Mirrors” grew from the idea that “we are all mirrors to and for each other” - a song about how people and memories keep echoing each other over time.",
+      "source": "https://www.songmeaningsandfacts.com/all-mirrors-a-reflection-on-the-echoes-of-the-self/"
+    },
+    "francis of delirium|it's a beautiful life": {
+      "fact": "Francis of Delirium built “It's a Beautiful Life” out of small real moments - coffee with a pianist about to play a Philip Glass piece, and watching a choir rehearse in a basement - finding beauty alongside everyday loneliness.",
+      "source": "https://diymag.com/news/francis-of-delirium-new-album-run-run-pure-beauty-its-a-beautiful-life"
+    },
+    "swapmeet|bonny": {
+      "fact": "Swapmeet's “Bonny” includes a shoutout to the TV show Malcolm in the Middle - the band has said it made the cut mainly because it fit the syllable count of the line.",
+      "source": "https://www.rollingstone.com/music/music-features/swapmeet-australia-indie-band-interview-1235547652/"
+    },
+    "future islands|the tower": {
+      "fact": "Future Islands' “The Tower” takes its name and theme from W.B. Yeats' 1928 poem of the same name, about aging and the passage of time, built around the image of a lighthouse cutting through darkness.",
+      "source": "https://atwoodmagazine.com/fstw-future-islands-the-tower-song-review/"
+    },
+    "bon iver|heavenly father - mediolanum, milan, it. nov 05 2022": {
+      "fact": "Bon Iver's Justin Vernon wrote “Heavenly Father” for Zach Braff's film Wish I Was Here after talking with his own brother about the film's story of two brothers - it became a song about searching for peace.",
+      "source": "https://www.songfacts.com/facts/bon-iver/heavenly-father"
+    },
+    "black marble|it always comes to me": {
+      "fact": "Black Marble's “It Always Comes to Me” sketches a character who always seems to get away with things, charm or deceit - a modern cousin of The Kinks' “Dedicated Follower of Fashion.”",
+      "source": "https://post-punk.com/black-marble-keeps-calm-amidst-the-clamor-of-nyc-in-video-for-it-always-comes-to-me/"
+    },
+    "sharp pins|it's a mod mod world": {
+      "fact": "Sharp Pins is the lo-fi pop project of Chicago musician Kai Slater (also of the band Lifeguard) - “It's a Mod Mod World” is deliberately recorded to sound like catching a British Invasion hit on a handheld AM radio in the 1960s.",
+      "source": "https://www.hilorecords.co.uk/blogs/new-blog-post/newsletter-its-a-mod-mod-world"
     }
   }
 }
