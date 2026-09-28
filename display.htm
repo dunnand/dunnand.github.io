@@ -1065,8 +1065,10 @@
     setInterval(loadArtOverrides, 10 * 60_000); // refresh overrides every 10 min
     fetchDJPanel();
     setInterval(fetchDJPanel, 5 * 60_000);
-    fetchHomesteadLive();
-    setInterval(fetchHomesteadLive, 5 * 60_000);
+    if (STATION === 'point') {
+      fetchHomesteadLive();
+      setInterval(fetchHomesteadLive, 5 * 60_000);
+    }
     setInterval(poll, 10_000);
     if (BADGES_ON) {
       pollStatus();
