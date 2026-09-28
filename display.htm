@@ -379,7 +379,30 @@
     }
     .point .show-name { color: #fff; }
     .wcyt  .show-name { color: #111; }
+
+    /* ── Homestead Live bar ── */
+    .live-bar {
+      background: #0a0a0a;
+      border-top: 1px solid #c8102e;
+      padding: 10px 24px;
+      flex-shrink: 0;
+    }
+    .live-bar-inner {
+      display: flex;
+      align-items: stretch;
+      gap: 0;
+    }
+    .live-game { flex: 1; display: flex; align-items: baseline; gap: 12px; padding: 4px 18px; flex-wrap: wrap; }
+    .live-game-sep { width: 1px; background: #222; margin: 2px 0; flex-shrink: 0; }
+    .live-game-when {
+      font-size: 0.68em; font-weight: 700; letter-spacing: 2px;
+      color: #c8102e; text-transform: uppercase; flex-shrink: 0;
+    }
+    .live-game-title { font-size: 0.95em; font-weight: 600; color: #fff; }
+    .live-game-crew { font-size: 0.75em; color: #888; flex-basis: 100%; }
   </style>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 </head>
 <body>
 
@@ -467,6 +490,10 @@
 
   </div>
 
+  <div class="live-bar" id="live-bar" hidden>
+    <div class="live-bar-inner" id="live-bar-content"></div>
+  </div>
+
   <div class="clock-bar">
     <div class="player-controls">
       <button class="player-stn-btn active" id="btn-point" onclick="switchStream(0)">THE POINT 91FM</button>
@@ -511,6 +538,75 @@
         const data = await res.json();
         djPanel = data.record || {};
       } catch {}
+    }
+
+    // ── Homestead Live — today's/yesterday's broadcast + crew (Firestore) ──────
+    // Same public Firebase project the homestead_media site itself reads/writes
+    // (collection hm_broadcasts) — read-only here, no auth needed.
+    const HM_FIREBASE_CONFIG = {
+      apiKey: "AIzaSyADo4bTrSIgnLwQkYXsIIbivyZSPcNHATM",
+      authDomain: "audioaficionados-21ba0.firebaseapp.com",
+      projectId: "audioaficionados-21ba0",
+      storageBucket: "audioaficionados-21ba0.firebasestorage.app",
+      messagingSenderId: "94178984100",
+      appId: "1:94178984100:web:0b60930161c8c882e02631"
+    };
+    const HM_LIVE_ROLES = [
+      'Play-by-Play', 'Color Analyst', 'Sideline Reporter',
+      'Producer', 'Technical Director', 'Director', 'Main Camera',
+      'Camera 2', 'Camera 3', 'Roam 1', 'Roam 2', 'Jumbotron'
+    ];
+    const HM_TYPE_LABELS = {
+      football: 'Football', basketball_boys: 'Boys Basketball', basketball_girls: 'Girls Basketball',
+      volleyball: 'Volleyball', soccer_boys: 'Boys Soccer', soccer_girls: 'Girls Soccer',
+      golf_boys: 'Boys Golf', golf_girls: 'Girls Golf', baseball: 'Baseball', softball: 'Softball',
+      cross_country: 'Cross Country', swimming: 'Swimming', tennis_boys: 'Boys Tennis', tennis_girls: 'Girls Tennis'
+    };
+
+    let hmDb = null;
+    function getHmDb() {
+      if (hmDb) return hmDb;
+      if (typeof firebase === 'undefined') return null;
+      if (!firebase.apps.length) firebase.initializeApp(HM_FIREBASE_CONFIG);
+      hmDb = firebase.firestore();
+      return hmDb;
+    }
+    function hmYmd(d) {
+      return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+    }
+    function hmCrewList(roles) {
+      if (!roles) return [];
+      return HM_LIVE_ROLES.filter(r => roles[r]).map(r => `${r}: ${roles[r]}`);
+    }
+    async function fetchHomesteadLive() {
+      const bar = document.getElementById('live-bar');
+      const content = document.getElementById('live-bar-content');
+      const db = getHmDb();
+      if (!db) { bar.hidden = true; return; }
+      try {
+        const today = new Date();
+        const yesterday = new Date(today);
+        yesterday.setDate(today.getDate() - 1);
+        const todayStr = hmYmd(today), yestStr = hmYmd(yesterday);
+        const snap = await db.collection('hm_broadcasts').where('date', 'in', [todayStr, yestStr]).get();
+        const games = [];
+        snap.forEach(doc => games.push({ id: doc.id, ...doc.data() }));
+        if (!games.length) { bar.hidden = true; return; }
+        games.sort((a, b) => (a.date < b.date ? 1 : -1)); // today first
+        content.innerHTML = games.map(g => {
+          const when = g.date === todayStr ? 'Today' : 'Yesterday';
+          const typeLabel = HM_TYPE_LABELS[g.type] || (g.type || '').replace(/_/g, ' ');
+          const crew = hmCrewList(g.roles);
+          return `<div class="live-game">
+              <span class="live-game-when">${esc(when)}${g.gameTime ? ' &middot; ' + esc(g.gameTime) : ''}</span>
+              <span class="live-game-title">${esc(g.title || typeLabel)}</span>
+              <span class="live-game-crew">${crew.length ? crew.map(esc).join('&nbsp;&nbsp;&middot;&nbsp;&nbsp;') : 'Crew not yet assigned'}</span>
+            </div>`;
+        }).join('<div class="live-game-sep"></div>');
+        bar.hidden = false;
+      } catch {
+        bar.hidden = true;
+      }
     }
 
     // ── Art overrides (gallery-curated URLs) ──────────────────────────────────
@@ -968,6 +1064,8 @@
     setInterval(loadArtOverrides, 10 * 60_000); // refresh overrides every 10 min
     fetchDJPanel();
     setInterval(fetchDJPanel, 5 * 60_000);
+    fetchHomesteadLive();
+    setInterval(fetchHomesteadLive, 5 * 60_000);
     setInterval(poll, 10_000);
     if (BADGES_ON) {
       pollStatus();
