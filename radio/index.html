@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WCYT Song Flag</title>
+<meta name="description" content="Personal tool: flag a WCYT/2.0 song for removal from rotation.">
+<meta name="theme-color" content="#c8102e">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="WCYT Song Flag">
+<meta name="robots" content="noindex, nofollow">
+<style>
+:root { color-scheme: dark; }
+* , *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+html, body { height: 100%; }
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #111; color: #eee;
+  padding: max(16px, env(safe-area-inset-top)) 16px max(16px, env(safe-area-inset-bottom));
+  display: flex; flex-direction: column; min-height: 100%;
+}
+/* ── Passcode gate ── */
+#gate { position: fixed; inset: 0; z-index: 100; background: #111; display: flex;
+  align-items: center; justify-content: center; padding: 24px; }
+#gate.unlocked { display: none; }
+.gate-card { width: 100%; max-width: 300px; text-align: center; }
+.gate-card img { width: 56px; height: 56px; border-radius: 12px; margin-bottom: 16px; }
+.gate-card h2 { font-size: 17px; font-weight: 800; margin-bottom: 6px; }
+.gate-card p { font-size: 13px; color: #888; margin-bottom: 20px; }
+.gate-card input { width: 100%; background: #1a1a1a; border: 1px solid #333; color: #eee;
+  padding: 13px 14px; border-radius: 10px; font-size: 20px; text-align: center;
+  letter-spacing: .3em; outline: none; margin-bottom: 12px; }
+.gate-card input:focus { border-color: #c8102e; }
+.gate-card button { width: 100%; background: #c8102e; color: #fff; border: none;
+  padding: 12px; border-radius: 10px; font-size: 14px; font-weight: 700; cursor: pointer; }
+.gate-error { font-size: 12px; color: #f87171; margin-top: 10px; min-height: 16px; }
+#app { display: none; }
+#app.unlocked { display: flex; flex-direction: column; flex: 1; }
+
+.header { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+.header img { width: 34px; height: 34px; border-radius: 8px; }
+.header h1 { font-size: 17px; font-weight: 800; letter-spacing: .02em; }
+.header .sub { font-size: 11px; color: #888; }
+
+.tabs { display: flex; gap: 8px; margin-bottom: 20px; }
+.tab { flex: 1; background: #1a1a1a; border: 1px solid #2a2a2a; color: #aaa;
+  padding: 11px 8px; border-radius: 10px; font-size: 14px; font-weight: 700; cursor: pointer; }
+.tab.active { background: #c8102e; border-color: #c8102e; color: #fff; }
+
+/* ── Now playing ── */
+.now-card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 16px; padding: 16px; }
+.now-top { display: flex; gap: 14px; align-items: center; }
+.now-art { width: 64px; height: 64px; border-radius: 10px; object-fit: cover; background: #222; flex-shrink: 0; }
+.now-label { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: #666; margin-bottom: 3px; }
+.now-info { min-width: 0; }
+#np-artist { font-size: 17px; font-weight: 800; line-height: 1.25; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#np-title  { font-size: 14px; color: #bbb; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#np-album  { font-size: 11px; color: #777; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ── Flag buttons ── */
+.flag-btn { width: 100%; background: #2a2a2a; border: 1px solid #3a3a3a; color: #f59e0b;
+  padding: 12px; border-radius: 10px; font-size: 14px; font-weight: 700; cursor: pointer; margin-top: 14px; }
+.flag-btn:disabled { color: #16a34a; border-color: #16a34a44; cursor: default; }
+.flag-btn:hover:not(:disabled) { border-color: #f59e0b; }
+.flag-btn-sm { background: none; border: 1px solid #3a3a3a; color: #f59e0b; border-radius: 8px;
+  width: 34px; height: 34px; font-size: 15px; cursor: pointer; flex-shrink: 0; }
+.flag-btn-sm:disabled { color: #16a34a; border-color: #16a34a44; cursor: default; }
+.flag-btn-sm:hover:not(:disabled) { border-color: #f59e0b; }
+
+.flag-panel { width: 100%; margin-top: 14px; background: #201a12; border: 1px solid #f59e0b55;
+  border-radius: 10px; padding: 14px; text-align: left; display: none; }
+.flag-panel.open { display: block; }
+.flag-panel-head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.flag-panel-art { width: 48px; height: 48px; border-radius: 8px; object-fit: cover;
+  background: #161616; flex-shrink: 0; }
+.flag-panel p { font-size: 13px; color: #ddd; line-height: 1.4; }
+.flag-panel textarea { width: 100%; background: #161616; border: 1px solid #3a3a3a; color: #eee;
+  border-radius: 8px; padding: 8px 10px; font-size: 13px; font-family: inherit; resize: vertical;
+  min-height: 44px; margin-bottom: 10px; }
+.flag-panel .row { display: flex; gap: 8px; }
+.flag-panel button { flex: 1; border: none; padding: 10px; border-radius: 8px; font-size: 13px;
+  font-weight: 700; cursor: pointer; }
+.btn-confirm { background: #f59e0b; color: #1a1200; }
+.btn-cancel  { background: #2a2a2a; color: #ccc; }
+.flag-status { font-size: 12px; margin-top: 8px; min-height: 16px; }
+.flag-status.err { color: #f87171; }
+.flag-status.ok  { color: #86efac; }
+
+/* ── Recently played ── */
+.recent { margin-top: 22px; }
+.recent h2 { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #666;
+  margin-bottom: 10px; }
+.recent ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.recent li { display: flex; align-items: center; gap: 10px; background: #1a1a1a;
+  border: 1px solid #2a2a2a; border-radius: 10px; padding: 8px 10px 8px 8px; }
+.recent .thumb { width: 38px; height: 38px; border-radius: 7px; object-fit: cover;
+  background: #222; flex-shrink: 0; }
+.recent .meta { min-width: 0; flex: 1; }
+.recent .who { font-size: 13px; color: #ddd; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.recent .who b { font-weight: 700; }
+.recent .time { font-size: 10px; color: #666; margin-top: 1px; }
+
+.offline-banner { background: #3f1d1d; border: 1px solid #b91c1c; color: #fca5a5; font-size: 13px;
+  padding: 10px 14px; border-radius: 8px; margin-bottom: 16px; display: none; }
+.offline-banner.show { display: block; }
+footer { margin-top: auto; padding-top: 24px; text-align: center; font-size: 11px; color: #444; }
+footer a { color: #666; }
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <div class="gate-card">
+    <img src="icons/icon-192.png" alt="">
+    <h2>WCYT Song Flag</h2>
+    <p>Personal — enter your passcode</p>
+    <input type="password" inputmode="numeric" id="gate-input" maxlength="20"
+           autocomplete="off" onkeydown="if(event.key==='Enter')checkPasscode()">
+    <button onclick="checkPasscode()">Unlock</button>
+    <div class="gate-error" id="gate-error"></div>
+  </div>
+</div>
+
+<div id="app">
+
+<div class="header">
+  <img src="icons/icon-192.png" alt="">
+  <div>
+    <h1>WCYT Song Flag</h1>
+    <div class="sub">Tap a song to flag it for removal</div>
+  </div>
+</div>
+
+<div id="offline-banner" class="offline-banner"></div>
+
+<div class="tabs">
+  <button class="tab active" id="tab-wcyt" onclick="switchStation('wcyt')">The Point</button>
+  <button class="tab" id="tab-2pt0" onclick="switchStation('2pt0')">2.0</button>
+</div>
+
+<div class="now-card">
+  <div class="now-top">
+    <img id="art-img" class="now-art" src="icons/icon-512.png" alt="">
+    <div class="now-info">
+      <div class="now-label">Now playing</div>
+      <div id="np-artist">Loading&hellip;</div>
+      <div id="np-title"></div>
+      <div id="np-album"></div>
+    </div>
+  </div>
+  <button class="flag-btn" id="flag-btn-now" onclick="openFlagPanelForNow()">&#128681; Flag this song</button>
+
+  <div class="flag-panel" id="flag-panel">
+    <div class="flag-panel-head">
+      <img id="flag-panel-art" class="flag-panel-art" src="" alt="">
+      <p id="flag-prompt"></p>
+    </div>
+    <textarea id="flag-note" maxlength="300" placeholder="Optional — why should this come off the playlist?"></textarea>
+    <div class="row">
+      <button class="btn-cancel" onclick="closeFlagPanel()">Cancel</button>
+      <button class="btn-confirm" id="flag-confirm-btn" onclick="submitFlag()">Report song</button>
+    </div>
+    <div class="flag-status" id="flag-status"></div>
+  </div>
+</div>
+
+<div class="recent">
+  <h2>Recently played</h2>
+  <ul id="recent-list"></ul>
+</div>
+
+<footer>WCYT &middot; wcyt.org</footer>
+
+</div><!-- #app -->
+
+<script>
+'use strict';
+
+const RAW_BASE     = 'https://raw.githubusercontent.com/dunnand/WCYT-NowPlaying/main';
+const DJPANEL_URL  = 'https://script.google.com/macros/s/AKfycbwV99T1Owt69gFQYtdOmqGUJjtMME1y0bUBjJ9XHN1CjzPXMhfPeI8xNFZOUUI6hsB7/exec';
+const OVERRIDES_URL = '/images/art_overrides.json';
+const FALLBACK_ART  = 'icons/icon-512.png';
+const POLL_MS       = 10_000;
+const FLAG_COOLDOWN_MS = 10 * 60 * 1000; // don't let a stray double-tap file two reports
+
+const STATIONS = {
+  wcyt:  { label: 'The Point', nowFile: '/point_recent.json' },
+  '2pt0': { label: '2.0',      nowFile: '/wcyt2_recent.json' },
+};
+
+let station   = localStorage.getItem('wcyt-radio-station') || 'wcyt';
+let overrides = {};
+let nowData   = null;
+let pollTimer = null;
+let flagTarget = null; // the track object currently shown in the flag panel
+
+function esc(s) {
+  return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+}
+
+// ── Art lookup — mirrors playlist-widget.js/display.htm: art comes ONLY
+// from the curated, human-approved overrides file, never a live lookup, so
+// nothing unreviewed can ever show here either. ─────────────────────────
+function artKey(artist, title) {
+  return (artist + '|' + (title || '')).toLowerCase();
+}
+// Same 3-tier fallback as display.htm's fetchArt(): overrides are keyed
+// primarily by SONG TITLE (that's what card_key/song_key use), with the
+// album name only as a fallback for the "WAV tagged with album as title"
+// edge case — looking up by album alone (the original version of this
+// function) missed the vast majority of real matches.
+function resolveArt(artist, title, album) {
+  let key = artKey(artist, title);
+  if (overrides[key]) return overrides[key];
+  if (!album) return null;
+  key = artKey(artist, album);
+  if (overrides[key]) return overrides[key];
+  const m = album.match(/^(.+?)\s*[•·]\s*\d{4}\s*$/);
+  const albumName = m ? m[1].trim() : album.trim();
+  if (!albumName) return null;
+  key = artKey(artist, albumName);
+  return overrides[key] || null;
+}
+async function loadOverrides() {
+  try {
+    const res = await fetch(OVERRIDES_URL, { cache: 'no-cache' });
+    const data = await res.json();
+    overrides = data.overrides || {};
+  } catch { /* fine — art just falls back to the icon */ }
+}
+
+// ── Now playing ───────────────────────────────────────────────────────
+function setOffline(msg) {
+  const el = document.getElementById('offline-banner');
+  if (msg) { el.textContent = msg; el.classList.add('show'); }
+  else      { el.classList.remove('show'); }
+}
+
+async function pollNowPlaying() {
+  try {
+    // raw.githubusercontent.com caches at the CDN edge for 5 min — cache: 'no-store'
+    // only stops the browser's own cache, so a timestamp query param is needed too
+    // (same trick playlist-widget.js's fetchBSIData already uses) or "now playing"
+    // lags behind by however long ago that edge copy was cached.
+    const res = await fetch(RAW_BASE + STATIONS[station].nowFile + '?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    nowData = await res.json();
+    setOffline(null);
+    renderNow();
+  } catch (e) {
+    setOffline('Can’t reach the now-playing feed — try again in a moment.');
+  }
+}
+
+function renderNow() {
+  if (!nowData || !nowData.now) return;
+  const n = nowData.now;
+  document.getElementById('np-artist').textContent = n.artist || 'WCYT';
+  document.getElementById('np-title').textContent  = n.title || '';
+  document.getElementById('np-album').textContent  = n.album || '';
+  document.getElementById('art-img').src = resolveArt(n.artist, n.title, n.album) || FALLBACK_ART;
+  refreshFlagButton(document.getElementById('flag-btn-now'), n);
+
+  // recent[0] usually duplicates "now" — skip it there so the same song
+  // doesn't show twice on screen.
+  let recent = nowData.recent || [];
+  if (recent.length && recent[0].artist === n.artist && recent[0].title === n.title) {
+    recent = recent.slice(1);
+  }
+
+  const list = document.getElementById('recent-list');
+  list.innerHTML = '';
+  recent.slice(0, 8).forEach((r) => {
+    const li = document.createElement('li');
+    const thumb = document.createElement('img');
+    thumb.className = 'thumb';
+    thumb.loading = 'lazy';
+    thumb.src = resolveArt(r.artist, r.title, r.album) || FALLBACK_ART;
+    const meta = document.createElement('div');
+    meta.className = 'meta';
+    meta.innerHTML = '<div class="who"><b>' + esc(r.artist) + '</b> — ' + esc(r.title) + '</div>'
+      + '<div class="time">' + esc(r.time || '') + '</div>';
+    const btn = document.createElement('button');
+    btn.className = 'flag-btn-sm';
+    btn.innerHTML = '&#128681;';
+    btn.onclick = () => openFlagPanel(r);
+    refreshFlagButton(btn, r);
+    li.appendChild(thumb);
+    li.appendChild(meta);
+    li.appendChild(btn);
+    list.appendChild(li);
+  });
+}
+
+// ── Station switching ────────────────────────────────────────────────
+function switchStation(s) {
+  if (s === station) return;
+  station = s;
+  localStorage.setItem('wcyt-radio-station', s);
+  document.getElementById('tab-wcyt').classList.toggle('active', s === 'wcyt');
+  document.getElementById('tab-2pt0').classList.toggle('active', s === '2pt0');
+  document.getElementById('np-artist').textContent = 'Loading…';
+  document.getElementById('np-title').textContent = '';
+  document.getElementById('np-album').textContent = '';
+  document.getElementById('art-img').src = FALLBACK_ART;
+  document.getElementById('recent-list').innerHTML = '';
+  closeFlagPanel();
+  nowData = null;
+  pollNowPlaying();
+}
+
+// ── Flagging ──────────────────────────────────────────────────────────
+function flaggedSongsMap() {
+  try { return JSON.parse(localStorage.getItem('wcyt-radio-flagged') || '{}'); } catch { return {}; }
+}
+function saveFlaggedSongsMap(m) { localStorage.setItem('wcyt-radio-flagged', JSON.stringify(m)); }
+
+function fingerprint(track) {
+  if (!track || !track.artist) return null;
+  return station + '|' + artKey(track.artist, track.title);
+}
+
+function refreshFlagButton(btn, track) {
+  if (!btn) return;
+  const fp = fingerprint(track);
+  const isNowBtn = btn.id === 'flag-btn-now';
+  if (!fp) { btn.disabled = true; return; }
+  const flagged = flaggedSongsMap();
+  const ts = flagged[fp];
+  const recentlyFlagged = ts && Date.now() - ts < FLAG_COOLDOWN_MS;
+  btn.disabled = recentlyFlagged;
+  if (isNowBtn) btn.textContent = recentlyFlagged ? '✓ Flagged — thanks' : '\u{1F6A9} Flag this song';
+  else          btn.innerHTML   = recentlyFlagged ? '&#9989;' : '&#128681;';
+}
+
+function openFlagPanelForNow() {
+  if (nowData && nowData.now) openFlagPanel(nowData.now);
+}
+
+function openFlagPanel(track) {
+  if (!track || !track.artist) return;
+  flagTarget = track;
+  document.getElementById('flag-panel-art').src = resolveArt(track.artist, track.title, track.album) || FALLBACK_ART;
+  document.getElementById('flag-prompt').textContent =
+    'Report "' + (track.title || 'this song') + '" by ' + (track.artist || 'this artist') + ' for review?';
+  document.getElementById('flag-note').value = '';
+  document.getElementById('flag-status').textContent = '';
+  document.getElementById('flag-status').className = 'flag-status';
+  document.getElementById('flag-panel').classList.add('open');
+  document.getElementById('flag-panel').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+function closeFlagPanel() {
+  document.getElementById('flag-panel').classList.remove('open');
+  flagTarget = null;
+}
+
+async function submitFlag() {
+  const track = flagTarget;
+  if (!track || !track.artist) return;
+  const confirmBtn = document.getElementById('flag-confirm-btn');
+  const statusEl   = document.getElementById('flag-status');
+  confirmBtn.disabled = true;
+  statusEl.className = 'flag-status';
+  statusEl.textContent = 'Sending…';
+
+  const body = {
+    action: 'flagSong',
+    station: station,
+    artist: track.artist,
+    title:  track.title || '',
+    album:  track.album || '',
+    note:   document.getElementById('flag-note').value.trim().slice(0, 300),
+  };
+
+  try {
+    const res = await fetch(DJPANEL_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' }, // avoids a CORS preflight to Apps Script
+      body: JSON.stringify(body),
+    });
+    const data = await res.json();
+    if (!data.ok) throw new Error(data.error || 'server error');
+
+    const fp = fingerprint(track);
+    if (fp) {
+      const m = flaggedSongsMap();
+      m[fp] = Date.now();
+      saveFlaggedSongsMap(m);
+    }
+    statusEl.textContent = 'Reported — thank you.';
+    statusEl.className = 'flag-status ok';
+    renderNow(); // refreshes every flag button's disabled/label state
+    setTimeout(closeFlagPanel, 1400);
+  } catch (e) {
+    statusEl.textContent = 'Couldn’t send — check your connection and try again.';
+    statusEl.className = 'flag-status err';
+  } finally {
+    confirmBtn.disabled = false;
+  }
+}
+
+// ── Passcode gate — personal use only, not a public station feature.
+// Client-side only (same pattern as dj.html's DJ panel login): the page
+// source is always fetchable since this is static hosting, but a stumbled-on
+// URL or a search-engine crawl won't produce anything usable without it.
+// To change the passcode: pick a new one, hash it (Python: hashlib.sha256(
+// b'yourcode').hexdigest()), and replace GATE_HASH below.
+const GATE_HASH    = '90095fe92ecf6b77b8e7669fcd6cb7c6f60e7f000997e12450146b7032de8afb';
+const GATE_LS_KEY  = 'wcyt-radio-passcode';
+
+async function sha256(str) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+function unlockApp() {
+  document.getElementById('gate').classList.add('unlocked');
+  document.getElementById('app').classList.add('unlocked');
+  startApp();
+}
+
+async function checkPasscode() {
+  const input = document.getElementById('gate-input');
+  const code  = input.value.trim();
+  if (await sha256(code) === GATE_HASH) {
+    localStorage.setItem(GATE_LS_KEY, code);
+    unlockApp();
+  } else {
+    document.getElementById('gate-error').textContent = 'Wrong passcode.';
+    input.value = '';
+    input.focus();
+  }
+}
+
+(async function initGate() {
+  const saved = localStorage.getItem(GATE_LS_KEY);
+  if (saved && await sha256(saved) === GATE_HASH) {
+    unlockApp();
+  } else {
+    document.getElementById('gate-input').focus();
+  }
+})();
+
+// ── App init — runs once, after the passcode gate is passed ─────────────
+let appStarted = false;
+function startApp() {
+  if (appStarted) return;
+  appStarted = true;
+
+  document.getElementById('tab-' + station).classList.add('active');
+  if (station === '2pt0') document.getElementById('tab-wcyt').classList.remove('active');
+  document.getElementById('art-img').src = FALLBACK_ART;
+
+  loadOverrides().then(() => { pollNowPlaying(); pollTimer = setInterval(pollNowPlaying, POLL_MS); });
+
+  // No 'load' listener here — by the time startApp() runs (after the user
+  // clears the passcode gate) window's load event has long since fired.
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  }
+}
+
+// Mobile browsers pause/throttle setInterval while the screen is locked or
+// the app is backgrounded — on an installed PWA this can leave "now playing"
+// showing whatever last loaded before the phone locked, sometimes for a long
+// time, since the interval doesn't reliably fire the moment you come back.
+// Force an immediate fresh poll (and restart the interval cleanly) whenever
+// the page becomes visible again, or gets restored from the back/forward
+// cache (bfcache) — a full resume without re-running scripts from scratch,
+// which is common when reopening a PWA from the home screen.
+function resumePolling() {
+  if (!appStarted) return;
+  clearInterval(pollTimer);
+  pollNowPlaying();
+  pollTimer = setInterval(pollNowPlaying, POLL_MS);
+}
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') resumePolling();
+});
+window.addEventListener('pageshow', (e) => {
+  if (e.persisted) resumePolling();
+});
+</script>
+</body>
+</html>

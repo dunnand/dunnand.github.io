@@ -1,0 +1,17 @@
+{
+  "name": "WCYT Song Flag",
+  "short_name": "WCYT Flag",
+  "description": "Personal tool: flag a WCYT/2.0 song for removal from rotation.",
+  "start_url": "/radio/",
+  "scope": "/radio/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#111111",
+  "theme_color": "#c8102e",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-192-maskable.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
