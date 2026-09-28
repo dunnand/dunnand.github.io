@@ -380,26 +380,33 @@
     .point .show-name { color: #fff; }
     .wcyt  .show-name { color: #111; }
 
-    /* ── Homestead Live bar ── */
-    .live-bar {
-      background: #0a0a0a;
-      border-top: 1px solid #c8102e;
-      padding: 10px 24px;
-      flex-shrink: 0;
-    }
-    .live-bar-inner {
+    /* ── Homestead Live — flips with Recently Played in Point's bottom panel ── */
+    #point-bottom { position: relative; padding: 0; display: block; }
+    #point-bottom .bottom-face {
+      position: absolute;
+      inset: 0;
+      padding: 16px 24px;
       display: flex;
-      align-items: stretch;
-      gap: 0;
+      flex-direction: column;
+      overflow: hidden;
+      opacity: 1;
+      transition: opacity 0.8s ease;
     }
-    .live-game { flex: 1; display: flex; align-items: baseline; gap: 12px; padding: 4px 18px; flex-wrap: wrap; }
-    .live-game-sep { width: 1px; background: #222; margin: 2px 0; flex-shrink: 0; }
-    .live-game-when {
+    #point-bottom .bottom-face.face-hidden { opacity: 0; pointer-events: none; }
+
+    .live-info-game { flex-shrink: 0; margin-bottom: 14px; }
+    .live-info-when {
       font-size: 0.68em; font-weight: 700; letter-spacing: 2px;
-      color: #c8102e; text-transform: uppercase; flex-shrink: 0;
+      color: #c8102e; text-transform: uppercase;
     }
-    .live-game-title { font-size: 0.95em; font-weight: 600; color: #fff; }
-    .live-game-crew { font-size: 0.75em; color: #888; flex-basis: 100%; }
+    .live-info-title { font-size: 1.05em; font-weight: 600; color: #fff; margin: 5px 0 8px; }
+    .live-info-crew-row {
+      display: flex; justify-content: space-between; gap: 10px;
+      padding: 5px 0; border-bottom: 1px solid #111; font-size: 0.85em;
+    }
+    .live-info-crew-row:last-child { border-bottom: none; }
+    .live-info-crew-role { color: #666; }
+    .live-info-crew-name { color: #ddd; font-weight: 600; }
   </style>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
@@ -441,9 +448,15 @@
           <div id="point-album"  class="album-line"></div>
         </div>
       </div>
-      <div class="bottom">
-        <div class="panel-label">Recently Played</div>
-        <div id="point-recent"></div>
+      <div class="bottom" id="point-bottom">
+        <div class="bottom-face" id="point-face-recent">
+          <div class="panel-label">Recently Played</div>
+          <div id="point-recent"></div>
+        </div>
+        <div class="bottom-face face-hidden" id="point-face-live">
+          <div class="panel-label">Homestead Live</div>
+          <div id="point-live-content"></div>
+        </div>
       </div>
     </div>
 
@@ -488,10 +501,6 @@
       </div>
     </div>
 
-  </div>
-
-  <div class="live-bar" id="live-bar" hidden>
-    <div class="live-bar-inner" id="live-bar-content"></div>
   </div>
 
   <div class="clock-bar">
@@ -574,15 +583,13 @@
     function hmYmd(d) {
       return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
     }
-    function hmCrewList(roles) {
-      if (!roles) return [];
-      return HM_LIVE_ROLES.filter(r => roles[r]).map(r => `${r}: ${roles[r]}`);
-    }
+    // hmGames holds whatever's found for today/yesterday; renderHomesteadLive()
+    // draws it into the (hidden-until-flipped) live face; flipPointBottomFace()
+    // alternates that face with Recently Played so neither ever gets crowded out.
+    let hmGames = [];
     async function fetchHomesteadLive() {
-      const bar = document.getElementById('live-bar');
-      const content = document.getElementById('live-bar-content');
       const db = getHmDb();
-      if (!db) { bar.hidden = true; return; }
+      if (!db) { hmGames = []; renderHomesteadLive(); return; }
       try {
         const today = new Date();
         const yesterday = new Date(today);
@@ -591,22 +598,42 @@
         const snap = await db.collection('hm_broadcasts').where('date', 'in', [todayStr, yestStr]).get();
         const games = [];
         snap.forEach(doc => games.push({ id: doc.id, ...doc.data() }));
-        if (!games.length) { bar.hidden = true; return; }
         games.sort((a, b) => (a.date < b.date ? 1 : -1)); // today first
-        content.innerHTML = games.map(g => {
-          const when = g.date === todayStr ? 'Today' : 'Yesterday';
-          const typeLabel = HM_TYPE_LABELS[g.type] || (g.type || '').replace(/_/g, ' ');
-          const crew = hmCrewList(g.roles);
-          return `<div class="live-game">
-              <span class="live-game-when">${esc(when)}${g.gameTime ? ' &middot; ' + esc(g.gameTime) : ''}</span>
-              <span class="live-game-title">${esc(g.title || typeLabel)}</span>
-              <span class="live-game-crew">${crew.length ? crew.map(esc).join('&nbsp;&nbsp;&middot;&nbsp;&nbsp;') : 'Crew not yet assigned'}</span>
-            </div>`;
-        }).join('<div class="live-game-sep"></div>');
-        bar.hidden = false;
+        hmGames = games.map(g => ({ ...g, when: g.date === todayStr ? 'Today' : 'Yesterday' }));
       } catch {
-        bar.hidden = true;
+        hmGames = [];
       }
+      renderHomesteadLive();
+    }
+    function renderHomesteadLive() {
+      const content = document.getElementById('point-live-content');
+      if (!content) return;
+      if (!hmGames.length) { content.innerHTML = ''; return; }
+      content.innerHTML = hmGames.map(g => {
+        const typeLabel = HM_TYPE_LABELS[g.type] || (g.type || '').replace(/_/g, ' ');
+        const crew = HM_LIVE_ROLES.filter(r => g.roles && g.roles[r]);
+        const crewHtml = crew.length
+          ? crew.map(r => `<div class="live-info-crew-row"><span class="live-info-crew-role">${esc(r)}</span><span class="live-info-crew-name">${esc(g.roles[r])}</span></div>`).join('')
+          : `<div class="live-info-crew-row"><span class="live-info-crew-role">Crew not yet assigned</span></div>`;
+        return `<div class="live-info-game">
+            <div class="live-info-when">${esc(g.when)}${g.gameTime ? ' &middot; ' + esc(g.gameTime) : ''}</div>
+            <div class="live-info-title">${esc(g.title || typeLabel)}</div>
+            ${crewHtml}
+          </div>`;
+      }).join('');
+    }
+    // Alternates Point's bottom panel between Recently Played and Homestead Live —
+    // only runs on the single-station Point view, and only once there's actually
+    // a broadcast to show for today/yesterday.
+    let hmShowingLive = false;
+    function flipPointBottomFace() {
+      if (!hmGames.length) return;
+      const recentFace = document.getElementById('point-face-recent');
+      const liveFace   = document.getElementById('point-face-live');
+      if (!recentFace || !liveFace) return;
+      hmShowingLive = !hmShowingLive;
+      recentFace.classList.toggle('face-hidden', hmShowingLive);
+      liveFace.classList.toggle('face-hidden', !hmShowingLive);
     }
 
     // ── Art overrides (gallery-curated URLs) ──────────────────────────────────
@@ -1068,6 +1095,7 @@
     if (STATION === 'point') {
       fetchHomesteadLive();
       setInterval(fetchHomesteadLive, 5 * 60_000);
+      setInterval(flipPointBottomFace, 15_000); // alternate Recently Played / Homestead Live every 15s
     }
     setInterval(poll, 10_000);
     if (BADGES_ON) {
