@@ -3,6 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Now Playing — WCYT</title>
+  <script>
+    // ── Cache-buster ─────────────────────────────────────────────────────────
+    // GitHub Pages caches this page for 10 min (Cache-Control: max-age=600), so
+    // a plain reload on the lobby TV can keep showing an old version. Bump
+    // DISPLAY_VERSION on every edit — it forces one redirect to a URL the CDN
+    // has never cached, guaranteeing the fresh copy loads. (Mirrors the same
+    // pattern homestead_media's script.js uses for APP_VERSION.)
+    const DISPLAY_VERSION = '20260928a';
+    (function() {
+      try {
+        const k = 'display_version';
+        if (localStorage.getItem(k) === DISPLAY_VERSION) return;
+        const url = new URL(location.href);
+        if (url.searchParams.get('_v') === DISPLAY_VERSION) {
+          localStorage.setItem(k, DISPLAY_VERSION);
+          return;
+        }
+        localStorage.setItem(k, DISPLAY_VERSION);
+        url.searchParams.set('_v', DISPLAY_VERSION);
+        location.replace(url.toString());
+      } catch (e) { /* localStorage blocked — skip version check */ }
+    })();
+  </script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -380,9 +403,9 @@
     .point .show-name { color: #fff; }
     .wcyt  .show-name { color: #111; }
 
-    /* ── Homestead Live — flips with Recently Played in Point's bottom panel ── */
-    #point-bottom { position: relative; padding: 0; display: block; }
-    #point-bottom .bottom-face {
+    /* ── Homestead Live — flips with Recently Played in each station's bottom panel ── */
+    .bottom-flip { position: relative; padding: 0; display: block; }
+    .bottom-flip .bottom-face {
       position: absolute;
       inset: 0;
       padding: 16px 24px;
@@ -392,21 +415,27 @@
       opacity: 1;
       transition: opacity 0.8s ease;
     }
-    #point-bottom .bottom-face.face-hidden { opacity: 0; pointer-events: none; }
+    .bottom-flip .bottom-face.face-hidden { opacity: 0; pointer-events: none; }
 
     .live-info-game { flex-shrink: 0; margin-bottom: 14px; }
     .live-info-when {
       font-size: 0.68em; font-weight: 700; letter-spacing: 2px;
       color: #c8102e; text-transform: uppercase;
     }
-    .live-info-title { font-size: 1.05em; font-weight: 600; color: #fff; margin: 5px 0 8px; }
+    .point .live-info-when { color: #c8102e; }
+    .wcyt  .live-info-when { color: #a30d24; }
+    .live-info-title { font-size: 1.05em; font-weight: 600; margin: 5px 0 8px; }
+    .point .live-info-title { color: #fff; }
+    .wcyt  .live-info-title { color: #111; }
     .live-info-crew-row {
       display: flex; justify-content: space-between; gap: 10px;
       padding: 5px 0; border-bottom: 1px solid #111; font-size: 0.85em;
     }
+    .wcyt .live-info-crew-row { border-bottom: 1px solid #ddd; }
     .live-info-crew-row:last-child { border-bottom: none; }
     .live-info-crew-role { color: #666; }
     .live-info-crew-name { color: #ddd; font-weight: 600; }
+    .wcyt .live-info-crew-name { color: #222; }
   </style>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
@@ -448,7 +477,7 @@
           <div id="point-album"  class="album-line"></div>
         </div>
       </div>
-      <div class="bottom" id="point-bottom">
+      <div class="bottom bottom-flip" id="point-bottom">
         <div class="bottom-face" id="point-face-recent">
           <div class="panel-label">Recently Played</div>
           <div id="point-recent"></div>
@@ -495,9 +524,15 @@
           <div id="wcyt-album"  class="album-line"></div>
         </div>
       </div>
-      <div class="bottom">
-        <div class="panel-label">Recently Played</div>
-        <div id="wcyt-recent"></div>
+      <div class="bottom bottom-flip" id="wcyt-bottom">
+        <div class="bottom-face" id="wcyt-face-recent">
+          <div class="panel-label">Recently Played</div>
+          <div id="wcyt-recent"></div>
+        </div>
+        <div class="bottom-face face-hidden" id="wcyt-face-live">
+          <div class="panel-label">Homestead Live</div>
+          <div id="wcyt-live-content"></div>
+        </div>
       </div>
     </div>
 
@@ -584,8 +619,8 @@
       return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
     }
     // hmGames holds whatever's found for today/yesterday; renderHomesteadLive()
-    // draws it into the (hidden-until-flipped) live face; flipPointBottomFace()
-    // alternates that face with Recently Played so neither ever gets crowded out.
+    // draws it into both stations' (hidden-until-flipped) live faces; flipBottomFace()
+    // alternates a given station's face with Recently Played so neither gets crowded out.
     let hmGames = [];
     async function fetchHomesteadLive() {
       const db = getHmDb();
@@ -606,10 +641,7 @@
       renderHomesteadLive();
     }
     function renderHomesteadLive() {
-      const content = document.getElementById('point-live-content');
-      if (!content) return;
-      if (!hmGames.length) { content.innerHTML = ''; return; }
-      content.innerHTML = hmGames.map(g => {
+      const html = !hmGames.length ? '' : hmGames.map(g => {
         const typeLabel = HM_TYPE_LABELS[g.type] || (g.type || '').replace(/_/g, ' ');
         const crew = HM_LIVE_ROLES.filter(r => g.roles && g.roles[r]);
         const crewHtml = crew.length
@@ -621,19 +653,23 @@
             ${crewHtml}
           </div>`;
       }).join('');
+      for (const id of ['point-live-content', 'wcyt-live-content']) {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = html;
+      }
     }
-    // Alternates Point's bottom panel between Recently Played and Homestead Live —
-    // only runs on the single-station Point view, and only once there's actually
-    // a broadcast to show for today/yesterday.
-    let hmShowingLive = false;
-    function flipPointBottomFace() {
+    // Alternates a station's bottom panel between Recently Played and Homestead
+    // Live — only called for whichever single-station view is active, and only
+    // once there's actually a broadcast to show for today/yesterday.
+    const hmFlipState = {};
+    function flipBottomFace(prefix) {
       if (!hmGames.length) return;
-      const recentFace = document.getElementById('point-face-recent');
-      const liveFace   = document.getElementById('point-face-live');
+      const recentFace = document.getElementById(prefix + '-face-recent');
+      const liveFace   = document.getElementById(prefix + '-face-live');
       if (!recentFace || !liveFace) return;
-      hmShowingLive = !hmShowingLive;
-      recentFace.classList.toggle('face-hidden', hmShowingLive);
-      liveFace.classList.toggle('face-hidden', !hmShowingLive);
+      hmFlipState[prefix] = !hmFlipState[prefix];
+      recentFace.classList.toggle('face-hidden', hmFlipState[prefix]);
+      liveFace.classList.toggle('face-hidden', !hmFlipState[prefix]);
     }
 
     // ── Art overrides (gallery-curated URLs) ──────────────────────────────────
@@ -1092,10 +1128,10 @@
     setInterval(loadArtOverrides, 10 * 60_000); // refresh overrides every 10 min
     fetchDJPanel();
     setInterval(fetchDJPanel, 5 * 60_000);
-    if (STATION === 'point') {
+    if (STATION === 'point' || STATION === 'wcyt') {
       fetchHomesteadLive();
       setInterval(fetchHomesteadLive, 5 * 60_000);
-      setInterval(flipPointBottomFace, 15_000); // alternate Recently Played / Homestead Live every 15s
+      setInterval(() => flipBottomFace(STATION), 15_000); // alternate Recently Played / Homestead Live every 15s
     }
     setInterval(poll, 10_000);
     if (BADGES_ON) {
