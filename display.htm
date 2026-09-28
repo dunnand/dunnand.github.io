@@ -10,7 +10,7 @@
     // DISPLAY_VERSION on every edit — it forces one redirect to a URL the CDN
     // has never cached, guaranteeing the fresh copy loads. (Mirrors the same
     // pattern homestead_media's script.js uses for APP_VERSION.)
-    const DISPLAY_VERSION = '20260928b';
+    const DISPLAY_VERSION = '20260928c';
     (function() {
       try {
         const k = 'display_version';
@@ -432,12 +432,23 @@
     }
     .point .live-info-call { color: #e8a0ab; }
     .wcyt  .live-info-call { color: #a30d24; }
+    /* Two columns so up to 12 crew roles fit the panel's height without clipping */
+    .live-info-crew-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 20px;
+    }
     .live-info-crew-row {
       display: flex; justify-content: space-between; gap: 10px;
-      padding: 8px 0; border-bottom: 1px solid #111; font-size: 1.15em;
+      padding: 6px 0; border-bottom: 1px solid #111; font-size: 1.05em;
+      min-width: 0;
+    }
+    .live-info-crew-role, .live-info-crew-name {
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
     }
     .wcyt .live-info-crew-row { border-bottom: 1px solid #ddd; }
-    .live-info-crew-row:last-child { border-bottom: none; }
+    /* last-in-column borders removed via nth-child since it's a grid, not a list */
+    .live-info-crew-row:nth-last-child(-n+2) { border-bottom: none; }
     .live-info-crew-role { color: #777; }
     .live-info-crew-name { color: #eee; font-weight: 600; }
     .wcyt .live-info-crew-name { color: #222; }
@@ -686,7 +697,7 @@
         const typeLabel = HM_TYPE_LABELS[g.type] || (g.type || '').replace(/_/g, ' ');
         const crew = HM_LIVE_ROLES.filter(r => g.roles && g.roles[r]);
         const crewHtml = crew.length
-          ? crew.map(r => `<div class="live-info-crew-row"><span class="live-info-crew-role">${esc(r)}</span><span class="live-info-crew-name">${esc(g.roles[r])}</span></div>`).join('')
+          ? `<div class="live-info-crew-list">${crew.map(r => `<div class="live-info-crew-row"><span class="live-info-crew-role">${esc(r)}</span><span class="live-info-crew-name">${esc(g.roles[r])}</span></div>`).join('')}</div>`
           : `<div class="live-info-crew-row"><span class="live-info-crew-role">Crew not yet assigned</span></div>`;
         const doorTime    = hmComputeDoorTime(g.gameTime, g.type);
         const arrivalTime = hmComputeArrival(g.gameTime, g.type);
