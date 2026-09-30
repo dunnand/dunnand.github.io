@@ -3351,6 +3351,958 @@
     "radiohead|(nice dream)": {
       "fact": "Radiohead wrote \"(Nice Dream)\" back in 1992, and producer John Leckie shaped its atmosphere on The Bends to echo George Harrison's \"My Sweet Lord,\" aiming for the feel of a guardian angel and a calm, garden-like setting. It was one of four songs, alongside \"Sulk,\" \"The Bends,\" and \"Killer Cars,\" recorded first as possible singles when album sessions began at RAK Studios in March 1994.",
       "source": "https://citizeninsane.eu/music/bends/nicedream.html"
+    },
+    "built to spill|traces": {
+      "fact": "Traces is the second track on Built to Spill's 2006 album You in Reverse. It was the first Built to Spill album recorded as a four-piece, with guitarist Jim Roth joining the lineup, and the first record since their 1993 debut not produced by longtime collaborator Phil Ek.",
+      "source": "https://en.wikipedia.org/wiki/You_in_Reverse"
+    },
+    "beirut|cliquot": {
+      "fact": "Cliquot appears on Beirut's 2007 album The Flying Club Cup. While making the record, bandleader Zach Condon immersed himself in Jacques Brel and French chanson music, picking up new instruments like French horns and euphoniums to build out the album's brass-heavy sound, while violinist and composer Owen Pallett contributed orchestral string arrangements.",
+      "source": "https://en.wikipedia.org/wiki/The_Flying_Club_Cup"
+    },
+    "husker du|never talking to you again": {
+      "fact": "This Grant Hart-written track appears on Husker Du's sprawling 1984 concept album Zen Arcade. In the middle of an otherwise loud hardcore record, it stands out as one of the band's first entirely acoustic recordings, built around interweaving vocals from Hart and Bob Mould over just a guitar. After Hart's death in 2017, Mould performed the song live as a tribute to his former bandmate.",
+      "source": "https://www.thecurrent.org/feature/2017/10/09/watch-bob-mould-dedicate-never-talking-to-you-again-to-grant-hart-at-cal-jam"
+    },
+    "ween|birthday boy": {
+      "fact": "Birthday Boy was written by Aaron Freeman (Gene Ween) and appears on Ween's 1990 album GodWeenSatan: The Oneness. Gene Ween had actually been playing the song solo and acoustic during radio session appearances months before the studio version came out, and it remained a recurring pick in his acoustic sets for years afterward.",
+      "source": "https://readdork.com/track/ween-birthday-boy"
+    },
+    "the mars volta|roulette dares (the haunt of)": {
+      "fact": "Roulette Dares (The Haunt Of) comes from The Mars Volta's 2003 debut album, De-Loused in the Comatorium, made after the breakup of El Paso band At the Drive-In. Written by Omar Rodriguez-Lopez and Cedric Bixler-Zavala, the track stretches into extended, Pink Floyd-style instrumental passages that became a hallmark of the band's prog-influenced sound. The album eventually went Gold in the US.",
+      "source": "https://www.udiscovermusic.com/stories/the-mars-volta-de-loused-in-the-comatorium/"
+    },
+    "alvvays|tile by tile": {
+      "fact": "Tile By Tile, written by Molly Rankin and Alec O'Hanley, is track nine on Alvvays' 2022 album Blue Rev. The band recorded the album with producer Shawn Everett at his Los Angeles studio, where they famously played through the entire record front-to-back twice in a single day to capture a live, unpolished energy.",
+      "source": "https://en.wikipedia.org/wiki/Blue_Rev"
+    },
+    "tame impala|new person, same old mistakes": {
+      "fact": "This closing track from Tame Impala's 2015 album Currents was written, performed, and produced almost entirely by Kevin Parker. He originally pictured the song being sung by 1990s R&B trio TLC, since many of his songs start out as ideas he imagines giving to other artists. In 2016, Rihanna covered it as \"Same Ol' Mistakes\" on her album Anti.",
+      "source": "https://en.wikipedia.org/wiki/New_Person,_Same_Old_Mistakes"
+    },
+    "alex g|sarah": {
+      "fact": "Sarah was written around 2011-2012, the same era as Alex G's album Trick, but wasn't officially released until it appeared on a 2015 reissue and later as a standalone single in 2022. It found a huge new audience nearly a decade after it was written, going viral on TikTok and streaming platforms alongside another older track, \"Mary.\"",
+      "source": "https://www.thefader.com/2015/01/26/is-sarah-the-best-alex-g-song"
+    },
+    "vampire weekend|hold you now": {
+      "fact": "Hold You Now opens Vampire Weekend's 2019 album Father of the Bride as a duet with Danielle Haim, an idea that grew out of a conversation Ezra Koenig and Haim had years earlier in 2010. The track carries a co-writing credit for film composer Hans Zimmer, because it samples a Melanesian choral recording, \"God Yu Tekem Laef Blong Mi,\" that Zimmer had used in his score for the 1998 film The Thin Red Line.",
+      "source": "https://www.whosampled.com/Vampire-Weekend/Hold-You-Now/"
+    },
+    "angel olsen|(we are all mirrors)": {
+      "fact": "This is the stripped-down solo version of the title track from Angel Olsen's 2019 album All Mirrors. Olsen originally planned to release a bare-bones solo record alongside a full-band version of the same songs, recording the intimate takes with producer Michael Harris in Anacortes, Washington, before building the orchestral title track with producer John Congleton and a 14-piece orchestra arranged by Jherek Bischoff.",
+      "source": "https://en.wikipedia.org/wiki/All_Mirrors"
+    },
+    "ride|last frontier": {
+      "fact": "Last Frontier, from Ride's 2024 album Interplay, started as a rough demo out of guitarist Mark Gardener's home studio that almost didn't make the record until producer Richie Kennedy heard potential in it and reworked the arrangement with a driving, Joy Division-inspired backbone. Singer Andy Bell wrote the vocal melody by improvising live at the microphone rather than working it out in advance, a first for him.",
+      "source": "https://www.undertheradarmag.com/news/ride_share_new_song_last_frontier_and_announce_new_tour_dates"
+    },
+    "nick cave and the bad seeds|from her to eternity": {
+      "fact": "From Her to Eternity is the title track and debut single of Nick Cave and the Bad Seeds' first album, released in 1984 after Cave's previous band, The Birthday Party, broke up. The group briefly called themselves \"Nick Cave and the Cavemen\" before settling on \"The Bad Seeds,\" a nod to The Birthday Party's final EP, The Bad Seed. The track was recorded at Trident Studios in London and produced by Flood.",
+      "source": "https://en.wikipedia.org/wiki/From_Her_to_Eternity_(song)"
+    },
+    "courtney barnett|rae street": {
+      "fact": "Rae Street was the lead single from Courtney Barnett's 2021 album Things Take Time, Take Time. Its refrain, \"time is money, and money is no man's friend,\" is a repurposed saying from Barnett's father. The album was recorded across Sydney, northern New South Wales, and Melbourne with producer and drummer Stella Mozgawa of Warpaint.",
+      "source": "https://www.nme.com/news/music/courtney-barnett-announces-new-album-things-take-time-take-time-shares-new-single-rae-street-2987863"
+    },
+    "future islands|the great fire": {
+      "fact": "The Great Fire is a duet from Future Islands' 2011 album On the Water, pairing frontman Samuel T. Herring's vocals with Jenn Wasner of the band Wye Oak. It's one of several notable Future Islands tracks built around a guest vocal trade-off, a formula the band would return to years later with Debbie Harry on \"Shadows.\"",
+      "source": "https://en.wikipedia.org/wiki/On_the_Water_(album)"
+    },
+    "sufjan stevens|will anybody ever love me": {
+      "fact": "This 2023 single from Sufjan Stevens' album Javelin was self-produced, with additional vocals from writer and activist adrienne maree brown, along with Hannah Cohen and Megan Lui. Its kaleidoscopic music video was animated by Stephen Halker, a longtime visual collaborator of Stevens.",
+      "source": "https://uproxx.com/indie/sufjan-stevens-will-anybody-ever-love-me/"
+    },
+    "sufjan stevens|a running start": {
+      "fact": "A Running Start is a single from Sufjan Stevens' 2023 album Javelin, which he described as being about the exhilarating rush of first loves and first kisses set against the beauty of nature. Stevens played every instrument on the track himself, with additional vocals from Nedelle Torrisi, Hannah Cohen, and Megan Lui.",
+      "source": "https://www.euphoriazine.com/blog/2023/10/music/tracks-sufjan-stevens-a-running-start/"
+    },
+    "radiohead|street spirit": {
+      "fact": "Street Spirit (Fade Out) closes Radiohead's 1995 album The Bends and was released as a single in January 1996, reaching number five on the UK charts, the band's highest position at that point. Thom Yorke cited the music of R.E.M. and Ben Okri's novel The Famished Road as inspirations, and the black-and-white music video was directed by Jonathan Glazer, who later directed Radiohead's \"Karma Police\" video.",
+      "source": "https://en.wikipedia.org/wiki/Street_Spirit_(Fade_Out)"
+    },
+    "the bug club|jealous boy": {
+      "fact": "Jealous Boy appears on Welsh band The Bug Club's 2025 Sub Pop album Very Human Features. Core members Sam Willmett and Tilly Harris met in school at age 14 and have traded vocals ever since; on this track the two go back-and-forth on lead lines. The band's quirky name comes from a childhood bug-collecting club started by Willmett's brother.",
+      "source": "https://wdet.org/2025/03/27/in-the-groove-pick-of-the-week-the-bug-club-jealous-boy/"
+    },
+    "the decemberists|foregone": {
+      "fact": "\"Foregone\" was recorded during the same early-2010 sessions at Pendarvis Farm outside Portland, Oregon, that produced The Decemberists' twangy, folk-leaning album The King Is Dead. The band held the song back and released it more than a year later as the second track on Long Live the King, a six-song EP collecting outtakes from those sessions, where its pedal-steel-flecked, country-rock feel fit right in.",
+      "source": "https://en.wikipedia.org/wiki/Long_Live_the_King_(EP)"
+    },
+    "panda bear and sonic boom|graveyard": {
+      "fact": "\"Graveyard\" closes out A ? of WHEN, the second full-length collaboration between Animal Collective's Noah Lennox (Panda Bear) and Spacemen 3 co-founder Peter Kember (Sonic Boom), released in 2026 on Domino. Despite the title, the track leans into a bright, glammy '70s synth-pop sound rather than anything gloomy, a playful contrast to the duo's usual hazy psychedelic textures.",
+      "source": "https://echoesanddust.com/2026/08/panda-bear-and-sonic-boom-a-of-when/"
+    },
+    "acopia|real life": {
+      "fact": "\"Real Life\" is the third single from Melbourne trio Acopia's 2025 debut album, Blush Response, released on Scenic Route Records. The band - Kate Durman, Lachlan McGeehan, and Morgan Wright - built the song around a looping arpeggiated synth motif and recorded it in a rooftop studio inside a mostly abandoned office building in Melbourne's South Yarra neighborhood.",
+      "source": "https://highclouds.org/acopia-real-life-blush-response/"
+    },
+    "spellling|sometimes": {
+      "fact": "\"Sometimes\" closes out SPELLLING's 2025 album Portrait of My Heart, and it's actually a cover of the My Bloody Valentine shoegaze classic. Where the original buries its vocals in a wash of guitar noise, Bay Area artist Tia Cabral (who records as SPELLLING) brings the melody to the forefront over a dancier, synth-driven arrangement.",
+      "source": "https://www.silentradio.co.uk/03/22/album-review-spellling-portrait-of-my-heart/"
+    },
+    "beach fossils|careless": {
+      "fact": "\"Careless\" was the first single from Beach Fossils' 2013 album Clash the Truth, arriving in December 2012 on Captured Tracks a couple months ahead of the record. It's a hazy, reverb-soaked jangle-pop track that previewed the faster, more urgent direction the Brooklyn band pushed on the rest of the album.",
+      "source": "https://www.kexp.org/read/2013/02/25/song-of-the-day-beach-fossils-careless/"
+    },
+    "dean johnson|before you hit the ground": {
+      "fact": "\"Before You Hit the Ground\" was the lead single from Seattle songwriter Dean Johnson's 2025 sophomore album, I Hope We Can Still Be Friends, released on Saddle Creek Records. The album was produced by fellow Pacific Northwest musician Sera Cahoone, following up Johnson's 2023 debut, Nothing For Me, Please.",
+      "source": "https://stereogum.com/2312086/dean-johnson-announces-new-album-i-hope-we-can-still-be-friends-hear-before-you-hit-the-ground/music"
+    },
+    "the magnetic fields|you and me and the moon": {
+      "fact": "\"You and Me and the Moon\" is track five on The Magnetic Fields' 1995 album Get Lost, written by the band's Stephin Merritt. In 2018, singer-songwriter Owen Ashworth covered it under his Advance Base project for the album Animal Companionship, part of a long line of artists who've cited Merritt's songwriting as a major influence.",
+      "source": "https://en.wikipedia.org/wiki/Animal_Companionship"
+    },
+    "the fall|garden": {
+      "fact": "\"Garden\" appeared on The Fall's 1983 album Perverted by Language. Around the same time, the band recorded it for a BBC session for DJ John Peel, taped on December 12, 1983 and broadcast the following January alongside session versions of \"Smile\" and \"Eat Y'self Fitter,\" part of the band's long-running relationship with Peel's show.",
+      "source": "https://peel.fandom.com/wiki/Fall:_Sessions"
+    },
+    "nation of language|september again": {
+      "fact": "\"September Again\" is a synth-pop track from Nation of Language's 2020 debut album, Introduction, Presence. Frontman Ian Devaney and synth player Aidan Noell, who are married, funded part of the recording by asking wedding guests to contribute to a studio fund instead of giving traditional gifts, turning their reception into an unlikely album budget.",
+      "source": "https://www.billboard.com/music/music-news/nation-of-language-ian-devaney-aidan-noell-tour-new-album-1235401964/"
+    },
+    "hatchie|lose it again": {
+      "fact": "\"Lose It Again\" is the lead single from Hatchie's 2025 album Liquorice, the follow-up to her 2022 record Giving The World Away. Harriette Pilbeam, who records as Hatchie, co-wrote the song with fellow Australian musician Jenny McLennan, who performs under the name Orchin.",
+      "source": "https://musicfeeds.com.au/news/hatchie-announces-third-album-liquourice-shares-lose-it-again/"
+    },
+    "the strokes|happy ending": {
+      "fact": "\"Happy Ending\" closes out The Strokes' 2013 album Comedown Machine. Guitarists Nick Valensi and Albert Hammond Jr. ran their guitars through effects to make them sound like vintage synthesizers, an '80s-leaning production trick that gives the track its funky, electro-tinged groove.",
+      "source": "https://www.tenementtv.com/album_reviews/the-strokes-comedown-machine/"
+    },
+    "beat happening|indian summer": {
+      "fact": "\"Indian Summer\" is the best-known song from Beat Happening's 1988 album Jamboree, reportedly one of Kurt Cobain's favorite records. Dream-pop band Luna covered it, and Death Cab for Cutie's Ben Gibbard recorded his own version for the soundtrack of the Cobain documentary About a Son.",
+      "source": "https://en.wikipedia.org/wiki/Jamboree_(Beat_Happening_album)"
+    },
+    "big thief|happy with you": {
+      "fact": "\"Happy with You\" appears on Big Thief's 2025 album Double Infinity. It was co-written by all three band members - Adrianne Lenker, Buck Meek, and James Krivchenia - the first time songs on a Big Thief album carried all three names, and its lyrics are structured in the form of a haiku.",
+      "source": "https://en.wikipedia.org/wiki/Double_Infinity"
+    },
+    "camera obscura|let's get out of this country": {
+      "fact": "\"Let's Get Out of This Country\" is the title track of Camera Obscura's 2006 album, recorded in Stockholm, Sweden with producer Jari Haapalainen and arranged by Björn Yttling of Peter Bjorn and John. The Scottish band worked fast, cutting 15 songs in about two weeks and keeping the best 10, giving the record a live, in-the-room energy.",
+      "source": "https://en.wikipedia.org/wiki/Let's_Get_Out_of_This_Country"
+    },
+    "cheekface|growth sux": {
+      "fact": "\"Growth Sux\" is a standalone single the Los Angeles trio Cheekface released in January 2025. It's built around a drum machine, marking the first time the band - Greg Katz, Amanda Tannen, and Mark Edwards - centered a song on programmed rather than live drums.",
+      "source": "https://www.stereogum.com/2293931/cheekface-growth-sux/music/"
+    },
+    "bright eyes|another travelin' song": {
+      "fact": "\"Another Travelin' Song\" appears on Bright Eyes' 2005 album I'm Wide Awake, It's Morning. The rollicking, rockabilly-tinged track features backing vocals from country legend Emmylou Harris, who also guested on two other songs on the record as part of its Nashville-influenced sound.",
+      "source": "https://en.wikipedia.org/wiki/I%27m_Wide_Awake,_It%27s_Morning"
+    },
+    "hot chip|one pure thought": {
+      "fact": "\"One Pure Thought\" was the third single from Hot Chip's 2008 album Made in the Dark, credited to all five band members: Owen Clarke, Al Doyle, Joe Goddard, Felix Martin, and Alexis Taylor. Critics likened its bright, driving synth-pop sound to a mashup of Paul McCartney and New Order, and its music video set animated versions of the band inside a colorful, geometric \"pointillist\" world.",
+      "source": "https://en.wikipedia.org/wiki/One_Pure_Thought"
+    },
+    "beastie boys|shake your rump": {
+      "fact": "\"Shake Your Rump\" is one of the most heavily sampled tracks on Paul's Boutique, built from a collage of more than a dozen source records. Its backbone drum groove comes from jazz drummer Alphonse Mouzon's \"Funky Snakefoot,\" layered with pieces of songs by Rose Royce, Afrika Bambaataa, and Funky 4+1, among others. The concluding drum fill before the final rap section is even lifted from Led Zeppelin's \"Good Times Bad Times.\" The Dust Brothers and the Beastie Boys built the whole of Paul's Boutique this way, splicing together an estimated 100 to 300 samples across the album.",
+      "source": "https://www.whosampled.com/Beastie-Boys/Shake-Your-Rump/"
+    },
+    "the feelies|moscow nights": {
+      "fact": "\"Moscow Nights\" appears on The Feelies' 1980 debut album Crazy Rhythms, recorded at Vanguard Studios in New York. The band refused to let an outside producer shape their sound, and it reportedly took them weeks of experimentation to land on their tight, jittery guitar tone. They got it in part by plugging their guitars directly into the recorder with no amplifiers in the signal chain at all.",
+      "source": "https://en.wikipedia.org/wiki/Crazy_Rhythms"
+    },
+    "andy shauf|you're out wasting": {
+      "fact": "\"You're Out Wasting\" comes from Andy Shauf's 2012 album The Bearer of Bad News, which he wrote over four years and recorded almost entirely by himself in a home studio set up in his parents' basement in Saskatchewan. He played nearly every instrument on the record, leaning on his grandfather's old guitar and a clarinet he'd been given as a Christmas gift. The album built a cult following and was reissued in 2015 on Tender Loving Empire and Party Damage Records.",
+      "source": "https://tonearm.medium.com/the-bearer-of-bad-news-by-andy-shauf-2978eac07c8a"
+    },
+    "yo la tengo|ohm": {
+      "fact": "\"Ohm\" opens Yo La Tengo's 2013 album Fade, the first record the band made with producer John McEntire (Tortoise, The Sea and Cake) instead of longtime collaborator Roger Moutenot, who had produced every album since 1993. The title plays on a double meaning: an ohm is the electrical unit of resistance, but it's pronounced like the meditative \"om\" chant used in Hinduism and Buddhism. Recorded at Soma Studios in Chicago in summer 2012, the seven-minute track builds around a raga-influenced groove and one of guitarist Ira Kaplan's fuzziest solos on the record.",
+      "source": "https://en.wikipedia.org/wiki/Fade_(Yo_La_Tengo_album)"
+    },
+    "parquet courts|tenderness": {
+      "fact": "\"Tenderness\" closes out Parquet Courts' 2018 album Wide Awake!, the band's first collaboration with producer Brian Burton, better known as Danger Mouse. It was recorded at Sonic Ranch in Tornillo, Texas, and Electric Lady Studios in New York City. The sunny, piano-driven closer is a deliberate change of pace from the album's punkier tracks, with frontman Andrew Savage singing about slowing down in a world that feels sped up.",
+      "source": "https://en.wikipedia.org/wiki/Wide_Awake!"
+    },
+    "adrianne lenker|not a lot, just forever": {
+      "fact": "\"not a lot, just forever\" is from Adrianne Lenker's 2020 album songs, recorded in a cabin in Westhampton, Massachusetts, with engineer Phil Weinrobe. The pair recorded everything \"AAA\" (analog, analog, analog) with zero digital processing, and hit early setbacks with unreliable electricity and gear, at one point relying on Weinrobe's battery-powered Sony Walkman as their only working tape machine before an Otari eight-track recorder arrived. Most of the album's songs, including this one, were written right there during the sessions.",
+      "source": "https://en.wikipedia.org/wiki/Songs_and_Instrumentals"
+    },
+    "bully|where to start": {
+      "fact": "Bully frontwoman Alicia Bognanno has said \"Where to Start\" was partly inspired by Chumbawamba's 1997 hit \"Tubthumping\" -- she was picking apart its melodic structure and trying to mimic it when the song came together. It appears on 2020's SUGAREGG, the first Bully album written and recorded as Bognanno's solo project. The track was originally tracked at Pachyderm Studios before being re-recorded at Palace Studios in Toronto with engineer Graham Walsh.",
+      "source": "https://www.rollingstone.com/music/music-news/bully-sugaregg-1012982/"
+    },
+    "coral grief|rockhounds": {
+      "fact": "\"Rockhounds\" is the lead single from Coral Grief's debut album Air Between Us on Suicide Squeeze Records. Singer-bassist Lena Farr-Morrissey has described it as a song about navigating your 20s, using the imagery of beachcombing to capture how the search itself can be worthwhile even when you come up empty. The Seattle trio worked with engineer Nich Wilbur to make their three-piece setup sound as lush and full as possible.",
+      "source": "https://stereogum.com/2307914/coral-grief-announce-debut-album-air-between-us-hear-rockhounds/music"
+    },
+    "cake|short skirt/long jacket": {
+      "fact": "CAKE frontman John McCrea wrote \"Short Skirt/Long Jacket\" after noticing someone wearing two visually opposite fashion choices at once, and built the song around that kind of contradiction. It was the lead single from 2001's Comfort Eagle, but its radio momentum stalled when it came out right around the September 11 attacks, leaving it with a modest chart peak. It's remained one of CAKE's most popular songs anyway, and an instrumental version became the theme song for the NBC series Chuck.",
+      "source": "https://www.songfacts.com/facts/cake/short-skirt-long-jacket"
+    },
+    "this is lorelei|billy came back": {
+      "fact": "\"Billy Came Back\" is the lead single from This Is Lorelei's Matador Records debut, The Singer in My Band, released in September 2026. Songwriter Nate Amos (also of Water From Your Eyes) based it on a real local karaoke singer he knew but lost touch with in 2022. The album's cast of characters, including Billy, took shape slowly while Amos was on tour, developing in his head as what he called an \"intangible thing\" while looking out the van window.",
+      "source": "https://www.songfacts.com/articles/the-meaning-behind-billy-came-back-by-this-is-lorelei-and-the-karaoke-legend-that-inspired-it/"
+    },
+    "sylvan esso|parad(w/m)e": {
+      "fact": "The title \"PARAD(w/m)E\" is a visual pun meant to be read as \"parade with me.\" Sylvan Esso -- the duo of Amelia Meath and Nick Sanborn -- released it as a stand-alone single in January 2018, in between their albums What Now and Free Love. The accompanying music video, directed by Dan Huiting, is a bright, high-energy dance-party clip built around the song's title.",
+      "source": "https://imvdb.com/video/sylvan-esso/paradwme"
+    },
+    "spoon|my babe": {
+      "fact": "\"My Babe\" appears on Spoon's 2022 album Lucifer on the Sofa, the first record the Austin band tracked in its own hometown studios in more than a decade. It was co-produced by Spoon and engineer Mark Rankin, with additional contributions from Dave Fridmann and Justin Raisen. The song shifts from a wistful acoustic ballad opening into a punchier, full-band second half.",
+      "source": "https://www.rollingstone.com/music/music-news/spoon-new-song-my-babe-lucifer-on-the-sofa-1296684/"
+    },
+    "car seat headrest|we can't afford (your depression anymore)": {
+      "fact": "This song comes from Nervous Young Man, the sprawling two-hour double album Will Toledo self-released on Bandcamp in August 2013 under the name Car Seat Headrest, subtitled as \"a collection of songs written between ages 17 and 21.\" It was Toledo's last release as a purely solo, self-recorded project before he assembled a full band and signed to Matador Records in 2015. A few of its songs, and the album's title, were reworked from an even earlier high school recording project called Nervous Young Men.",
+      "source": "https://uproxx.com/music/car-seat-headrest-bandcamp-albums/"
+    },
+    "beck|uneventful days": {
+      "fact": "\"Uneventful Days\" is one of seven tracks Beck co-wrote and co-produced with Pharrell Williams on his 2019 album Hyperspace, a collaboration Beck had wanted to make for years before their schedules finally lined up after his Colors tour. Its music video, directed by Dev Hynes, stars Evan Rachel Wood, Tessa Thompson, and Alia Shawkat, and nods to earlier Beck videos like \"Devils Haircut\" and \"Sexx Laws.\"",
+      "source": "https://www.rollingstone.com/music/music-news/beck-hyperspace-uneventful-days-hyperlife-900216/"
+    },
+    "beck|seventh heaven": {
+      "fact": "\"Seventh Heaven\" comes from Beck's 2017 album Colors, which he recorded over several years with producer Greg Kurstin at Kurstin's Los Angeles studio, with the two of them playing nearly every instrument themselves. Q magazine called it a \"lost '80s pop classic,\" and Rolling Stone described it as \"a chiming anthem about falling in love.\" Introducing it live, Beck has jokingly warned crowds, \"This is a very feel-good song, I'm warning you.\"",
+      "source": "https://whiskeyclone.net/ghost/songinfo.php?songID=1506"
+    },
+    "sebadoh|skull": {
+      "fact": "\"Skull\" is from Sebadoh's 1994 album Bakesale, written by Lou Barlow and produced by Tim O'Heir, recorded partly at Fort Apache Studios and partly at home. It was the first Sebadoh album made after founding member Eric Gaffney left the band, though he still played drums on four of its tracks. Sub Pop released \"Skull\" as a single with a black-and-white video, and it reached number 84 on the UK singles chart.",
+      "source": "https://en.wikipedia.org/wiki/Skull_(song)"
+    },
+    "sprints|descartes": {
+      "fact": "\"Descartes\" is the lead single from Irish band SPRINTS' sophomore album All That Is Over, released via Sub Pop and City Slang. Frontperson Karla Chubb flips philosopher Rene Descartes' famous \"I think, therefore I am\" into her own version, \"I speak so therefore I understand,\" and has said the song was partly sparked by a line about vanity from Rachel Cusk's novel Outline.",
+      "source": "https://www.undertheradarmag.com/news/sprints_announce_sophomore_album_and_share_its_lead_single_descartes"
+    },
+    "cassandra jenkins|hard drive": {
+      "fact": "\"Hard Drive\" is a spoken-word centerpiece of Cassandra Jenkins' 2021 album An Overview on Phenomenal Nature, built around her recollections of brief encounters with strangers like a museum security guard, a bookmaker, and a driving instructor. One of those exchanges, a museum guard's offhand promise to give her the \"overview\" of an exhibit, ended up giving the whole album its title. Producer and guitarist Josh Kaufman and saxophonist Stuart Bogie fill out the track's hushed, looping arrangement.",
+      "source": "https://stereogum.com/2113631/cassandra-jenkins-hard-drive/music"
+    },
+    "quadeca|texas blue (with kevin abstract)": {
+      "fact": "\"TEXAS BLUE\" pairs Quadeca with Brockhampton's Kevin Abstract on Quadeca's mixtape Scrapyard, a collection built from songs cut while making his album I Didn't Mean to Haunt You. The two artists met online in 2023, and the track layers Abstract's vocals over a looping, showtune-style piano line with string arrangements from producers Johan Lenox and Oleka. It's known among fans for its emotional, country-tinged take on emo rap.",
+      "source": "https://www.hotnewhiphop.com/765242-quadeca-kevin-abstract-texas-blue-new-song-stream-hip-hop-news"
+    },
+    "the weather station|neon signs": {
+      "fact": "\"Neon Signs\" is the first single from The Weather Station's 2025 album Humanhood on Fat Possum Records. Tamara Lindeman co-produced the record with Marcus Paquin, recording it in fall 2023 with a live band featuring drummer Kieran Adams, keyboardist Ben Boye, percussionist Philippe Melanson, reed player Karen Ng, and bassist Ben Whiteley. Lindeman also co-directed the song's music video.",
+      "source": "https://www.undertheradarmag.com/news/the_weather_station_announces_new_album_shares_video_new_song_neon_signs"
+    },
+    "jeff tweedy|guess again": {
+      "fact": "\"Guess Again\" is the lead single from Jeff Tweedy's 2020 solo album Love Is the King, recorded at Wilco's home studio, the Loft in Chicago. It's a family affair: Tweedy sings and plays acoustic, electric, and bass guitar, his son Spencer Tweedy plays drums and tambourine, and another son, Sammy Tweedy, sings harmony vocals.",
+      "source": "https://jefftweedy.bandcamp.com/track/guess-again"
+    },
+    "geese|100 horses": {
+      "fact": "Geese, the band behind \"100 Horses\" from their 2025 album Getting Killed, actually formed back in 2016 while its members were still in high school at Brooklyn Friends School and Little Red School House. They rehearsed and recorded in drummer Max Bassin's basement, and the band's name comes from guitarist Emily Green's childhood nickname, \"Goose.\" The group planned to split up after graduating in 2020 but stuck together once Partisan Records signed them.",
+      "source": "https://en.wikipedia.org/wiki/Geese_(band)"
+    },
+    "superchunk|precision auto": {
+      "fact": "\"Precision Auto\" opens Superchunk's 1993 album On the Mouth, produced by John Reis of Rocket From the Crypt alongside the band. The song's revved-up energy has made it a favorite for other bands to cover, most notably Jimmy Eat World, who recorded their own version for their 2010 album Invented.",
+      "source": "https://en.wikipedia.org/wiki/On_the_Mouth"
+    },
+    "king gizzard and the lizard wizard|the lord of lightning": {
+      "fact": "\"The Lord of Lightning\" comes from King Gizzard & the Lizard Wizard's 2017 concept album Murder of the Universe, which is built entirely around narrated fantasy stories. This track features spoken narration from Australian singer-songwriter Leah Senior, and its heavy garage-rock sound deliberately echoes the band's breakthrough 2016 album Nonagon Infinity, even repeating that album's title in the lyrics.",
+      "source": "https://kglw.net/song/the-lord-of-lightning/about?artist_id=1"
+    },
+    "woods|love is love": {
+      "fact": "\"Love Is Love\" is the title track of Woods' 2017 mini-album of the same name, a six-song set the band wrote and recorded quickly and released on their own Woodsist label. Musically, the song draws as much from Ethiopian jazz as it does from 1960s American rock, giving it a warm, loping feel.",
+      "source": "https://stereogum.com/1928675/woods-love-is-love/music"
+    },
+    "blood orange|vivid light": {
+      "fact": "\"Vivid Light\" is a highlight from Blood Orange mastermind Dev Hynes' 2025 album Essex Honey, and it features an unexpected guest vocalist: acclaimed novelist Zadie Smith, a longtime friend of Hynes who had never sung on a record before. The two later performed the song together live on BBC Radio 6 Music.",
+      "source": "https://www.russh.com/zadie-smith-music/"
+    },
+    "perfume genius|fool": {
+      "fact": "\"Fool\" appears on Perfume Genius's 2014 album Too Bright and leans into an almost 1950s doo-wop sound, built around finger snaps and warm backing vocals. It was the third single and music video released from the album.",
+      "source": "https://www.stereofox.com/articles/perfume-genius-fool/"
+    },
+    "kate bush|cloudbusting": {
+      "fact": "The famous \"Cloudbusting\" video, the second single from Bush's 1985 album Hounds of Love, was co-conceived by Bush and director Terry Gilliam and stars Donald Sutherland, already a major movie star from M*A*S*H and Ordinary People. Sutherland turned the role down multiple times and only agreed after Bush personally showed up at his door to ask him herself; since he couldn't get a work visa on short notice, he ended up filming it for free.",
+      "source": "https://americansongwriter.com/remember-when-donald-sutherland-starred-in-kate-bushs-1985-cloudbusting-music-video-for-free/"
+    },
+    "radiohead|go to sleep": {
+      "fact": "\"Go to Sleep\" is a track from Radiohead's 2003 album Hail to the Thief, produced with longtime collaborator Nigel Godrich. The band recorded most of the album in just two weeks at Ocean Way Recording in Hollywood, then finished additional recording and mixing at their own studio in Oxfordshire, England.",
+      "source": "https://en.wikipedia.org/wiki/Hail_to_the_Thief"
+    },
+    "runo plum|halfway up the lawn": {
+      "fact": "\"Halfway Up The Lawn\" is a single from runo plum's debut album patching, released in November 2025. The Minneapolis songwriter grew up in a small town in rural Minnesota, discovered music through Perpich Arts High School, and taught herself production after leaving college in 2019, ultimately recording patching with co-producer Lutalo Jones in a rented cabin in Vermont.",
+      "source": "https://www.thecurrent.org/feature/2025/11/03/interview-runo-plum-shares-the-world-of-debut-album-patching"
+    },
+    "amber arcades|where did you go": {
+      "fact": "\"Where Did You Go\" is the fourth single from Dutch musician Annelotte de Graaf's (Amber Arcades) 2018 album European Heartbreak. In its music video, de Graaf and her partner pin a map of Europe to a wall and throw a dart to pick their next home, then blindfold each other to wander a forest when the dart lands on open grass.",
+      "source": "https://undertheradarmag.com/news/amber_arcades_shares_video_for_new_song_where_did_you_go"
+    },
+    "t. rex|mambo sun": {
+      "fact": "\"Mambo Sun\" opens T. Rex's 1971 glam-rock landmark Electric Warrior, produced by Tony Visconti. The album was pieced together across four different studios on two continents: Trident and Advision in London, Wally Heider's in Hollywood, and Mediasound in New York City.",
+      "source": "https://en.wikipedia.org/wiki/Electric_Warrior"
+    },
+    "jens lekman|on a pier, on the hudson": {
+      "fact": "\"On a Pier, On the Hudson,\" featuring singer Matilda Sargren, appears on Jens Lekman's 2025 album Songs for Other People's Weddings. It's part of a full narrative concept album about a fictional wedding singer, released alongside a companion novel Lekman co-wrote with author David Levithan.",
+      "source": "https://en.wikipedia.org/wiki/Songs_for_Other_People%27s_Weddings"
+    },
+    "sleater-kinney|hell": {
+      "fact": "\"Hell\" was the lead single from Sleater-Kinney's 2024 album Little Rope, produced by John Congleton and recorded at Flora Recording & Playback in Portland, Oregon. Its striking music video was directed by Ashley Connor and stars filmmaker and actress Miranda July in a theatrical, abstract performance piece.",
+      "source": "https://www.undertheradarmag.com/news/sleater_kinney_announce_new_album_and_tour_share_video_for_new_song_hell/"
+    },
+    "waxahatchee|fire": {
+      "fact": "Katie Crutchfield wrote much of \"Fire,\" the first single from Waxahatchee's 2020 album Saint Cloud, while actually driving. The melody and lyrics came to her while crossing the Memphis & Arkansas Bridge on a road trip, which she says almost never happens since she usually writes at an instrument or with pen and paper.",
+      "source": "https://www.npr.org/2020/01/22/798199677/waxahatchee-announces-new-album-saint-cloud-shares-first-single-fire"
+    },
+    "saint etienne|take me to the pilot": {
+      "fact": "Despite sharing its title with a classic 1970 Elton John song, Saint Etienne's \"Take Me To The Pilot\" is a completely original 2025 track, co-written and co-produced with Paul Hartnoll of the electronic duo Orbital. Frontman Bob Stanley describes it as a swirling, futuristic tune about escape and reinvention.",
+      "source": "https://stereogum.com/2318268/saint-etienne-take-me-to-the-pilot/music"
+    },
+    "broken social scene|anthems for a seventeen year-old girl": {
+      "fact": "\"Anthems for a Seventeen Year-Old Girl\" is a standout from Broken Social Scene's landmark 2002 album You Forgot It in People, built from a simple opening banjo line that gradually layers in strings, horns, and percussion. Twenty years later, the band marked the album's anniversary with a tribute record featuring a cover of the song by Maggie Rogers and Sylvan Esso.",
+      "source": "https://stereogum.com/2305460/broken-social-scene-you-forgot-it-in-people-covers-album-announced-hear-maggie-rogers-sylvan-essos-anthems-for-a-seventeen-year-old-girl/music"
+    },
+    "cut worms|sold my soul": {
+      "fact": "\"Sold My Soul\" was one of two lead singles, alongside \"God Bless the Day,\" from Cut Worms' 2020 double album Nobody Lives Here Anymore, released on Jagjaguwar. Songwriter Max Clarke gives the track an old-timey, high-lonesome twang, borrowing the \"sold my soul\" phrase as a classic old blues and folk turn of expression rather than anything literal.",
+      "source": "https://www.thelineofbestfit.com/news/latest-news/cut-worms-announces-double-lp-lead-tracks-sold-my-soul-god-bless-the-day"
+    },
+    "destroyer|chinatown": {
+      "fact": "\"Chinatown\" opens Destroyer's 2011 album Kaputt, recorded over roughly two years by Dan Bejar with producers John Collins and David Carswell at their JC/DC studio in Vancouver. The track's warm, sax-and-trumpet-soaked sound (trumpet courtesy of JP Carter) marked a dramatic left turn from Destroyer's earlier guitar-rock records toward a smoky, late-night jazz-pop feel reminiscent of Roxy Music. The song became many critics' entry point into the album, which was widely named one of the best records of 2011.",
+      "source": "https://www.thelineofbestfit.com/reviews/albums/destroyer-kaputt-48373"
+    },
+    "japanese breakfast|slide tackle": {
+      "fact": "Despite its title, \"Slide Tackle\" from Japanese Breakfast's 2021 album Jubilee has nothing to do with soccer - Michelle Zauner has said she hasn't played since third grade. She explained that she liked the idea of literally wrestling or tackling her own brain into submission, forcing herself to feel joy, and that image became the song's central idea.",
+      "source": "https://www.songfacts.com/facts/japanese-breakfast/slide-tackle"
+    },
+    "caroline|total euphoria": {
+      "fact": "\"Total euphoria\" was the London seven-piece caroline's first new song in three years when it arrived in March 2025 via Rough Trade, later appearing on their second album, Caroline 2. The track actually began as early as 2020, when members Mike, Casper, and Jasper played a rough version as a three-piece while writing their debut album; Jasper later built out the chords and topline before the full band layered in strings, brass, and interlocking guitar parts.",
+      "source": "https://stereogum.com/2300765/caroline-total-euphoria/music"
+    },
+    "frankie cosmos|young": {
+      "fact": "\"Young\" appears on Frankie Cosmos' 2015 EP Fit Me In, which Greta Kline recorded with Aaron Maine of Porches using mostly electronic instrumentation, a departure from her earlier lo-fi guitar records. Kline has said the song was one of the first things she wrote in reaction to having her music - and herself - suddenly open to public scrutiny after her debut album Zentropy's success.",
+      "source": "https://consequence.net/2015/11/frankie-cosmos-shares-tender-new-song-young-listen/"
+    },
+    "wilco|impossible germany": {
+      "fact": "\"Impossible Germany,\" from Wilco's 2007 album Sky Blue Sky, is built around an extended Nels Cline guitar solo that covers more than half the song. Cline has said he originally planned a scripted instrumental coda inspired by Television's \"The Dream's Dream,\" but Jeff Tweedy talked him into just soloing instead. Live, the arrangement often stretches toward ten minutes, with Tweedy and Pat Sansone each playing separate interlocking guitar parts that build to meet Cline's solo.",
+      "source": "https://www.songfacts.com/facts/wilco/impossible-germany"
+    },
+    "bauhaus|she's in parties": {
+      "fact": "\"She's in Parties\" was Bauhaus's final single, released in 1983 and later included on their album Burning from the Inside; it reached number 26 on the UK Singles Chart. Guitarist Daniel Ash recalled that the lyrics were written as a group exercise on a tour bus, with all three other members shouting out lines and images for singer Peter Murphy to piece together. The band split the following year, with Murphy going solo and the rest forming Love and Rockets.",
+      "source": "https://www.songfacts.com/facts/bauhaus/shes-in-parties"
+    },
+    "cate le bon|is it worth it (happy birthday)?": {
+      "fact": "\"Is It Worth It (Happy Birthday)?\" is the sprawling, six-minute centerpiece of Cate Le Bon's seventh album, Michelangelo Dying (2025), which she produced herself alongside Samur Khouja. The track layers fluorescent synths and dazed guitar with saxophone from Euan Hinshelwood, piano from Paul Jones, and percussion from Dylan Hadley and Valentina Magaletti.",
+      "source": "https://mexicansummer.com/cate-le-bons-new-single-is-it-worth-it-happy-birthday-out-today/"
+    },
+    "big thief|forgotten eyes": {
+      "fact": "\"Forgotten Eyes\" appears on Big Thief's 2019 album Two Hands, which the band tracked live at Sonic Ranch studio in the desert outside El Paso, Texas, with almost no overdubs. Nearly every vocal on the record was a single live take, and the song opens with drummer James Krivchenia's kit mic'd so closely it sounds like he's playing in the room with the listener. The album arrived just months after its companion release, U.F.O.F., giving Big Thief two studio albums in a single year.",
+      "source": "https://northerntransmissions.com/two-hands-big-thief/"
+    },
+    "the smiths|i know it's over": {
+      "fact": "\"I Know It's Over\" was recorded in 1985 at Jacobs Studios for The Smiths' 1986 album The Queen Is Dead. The band originally considered adding trumpet over the song's closing refrain, even joking about a Shirley Bassey-style horn flourish, before scrapping the idea. Johnny Marr has called Morrissey's vocal take on the song one of the best performances of his career, saying simply, \"It was that good, that strong.\"",
+      "source": "https://www.songfacts.com/facts/the-smiths/i-know-its-over"
+    },
+    "snocaps|coast": {
+      "fact": "\"Coast\" is the lead single from the surprise debut album by Snocaps, a new project from twin sisters Katie Crutchfield (Waxahatchee) and Allison Crutchfield (Swearin'), released on Halloween 2025. The record was made with producer and multi-instrumentalist Brad Cook, with additional contributions from MJ Lenderman. The sisters made their television debut performing \"Coast\" on The Tonight Show Starring Jimmy Fallon that November.",
+      "source": "https://www.rollingstone.com/music/music-news/snocaps-surprise-album-crutchfield-sisters-1235457115/"
+    },
+    "ride|monaco": {
+      "fact": "\"Monaco\" comes from Ride's 2024 album Interplay, the shoegaze band's third studio release since reuniting in 2014. It was produced by the band with Richie Kennedy and mixed by Claudius Mittendorfer. Ride actually debuted the then-unreleased song live back in February 2023, sneaking the new track into a tour where they were otherwise performing their classic 1990 debut album, Nowhere, start to finish.",
+      "source": "https://northerntransmissions.com/ride-announce-new-album-interplay/"
+    },
+    "mac demarco|brother": {
+      "fact": "\"Brother\" comes from Mac DeMarco's 2014 album Salad Days, which he wrote, performed, and recorded entirely by himself in about a month at his small Brooklyn apartment. He tracked the whole record on a Fostex A-8 reel-to-reel tape machine rather than in a professional studio.",
+      "source": "https://equipboard.com/albums/mac-demarco-mac-demarco-salad-days"
+    },
+    "skullcrusher|dragon": {
+      "fact": "\"Dragon\" appears on Skullcrusher's (Helen Ballentine's) 2025 sophomore album And Your Song Is Like a Circle. The track is built from a looping piano arpeggio mirrored by a programmed, washed-out drum loop, giving it a murky, echoing quality. Its music video plays with scale, showing a miniature version of Ballentine surrounded by trinkets and toys on a desk while a human-sized version of her sits beside it and sings.",
+      "source": "https://femmusic.com/2025/09/10/skullcrusher-dragon/"
+    },
+    "beastie boys|egg man": {
+      "fact": "\"Egg Man,\" from the Beastie Boys' 1989 album Paul's Boutique, opens with the screeching strings of Bernard Herrmann's score for Alfred Hitchcock's Psycho, sampling the famous \"Murder\" cue from the shower scene. The track later folds in a nod to John Williams' Jaws theme as well. It's one of dozens of samples packed into Paul's Boutique, an album famous for its dense, collage-like production by the Dust Brothers.",
+      "source": "https://www.whosampled.com/sample/12650/Beastie-Boys-Egg-Man-Bernard-Herrmann-The-Murder/"
+    },
+    "the smile|bending hectic": {
+      "fact": "\"Bending Hectic,\" from The Smile's 2024 album Wall of Eyes, was recorded at Abbey Road Studios with string arrangements by the London Contemporary Orchestra. The eight-minute track, written by Thom Yorke, Jonny Greenwood, and Tom Skinner, was performed live nearly two years before its release, debuting at Switzerland's Montreux Jazz Festival in July 2022. It builds slowly from a single detuned guitar into a heavy, crashing crescendo.",
+      "source": "https://en.wikipedia.org/wiki/Bending_Hectic"
+    },
+    "the national|you had your soul with you": {
+      "fact": "\"You Had Your Soul With You\" is the opening track and lead single from The National's 2019 album I Am Easy to Find. The song features a co-lead vocal from Gail Ann Dorsey, the longtime bassist and vocalist in David Bowie's band from 1995 until his final tour in 2004, who also sang lead on live versions of \"Under Pressure\" alongside Bowie.",
+      "source": "https://www.davidbowienews.com/2019/03/gail-ann-dorsey-is-guest-vocalist-on-new-single-from-the-national-you-had-your-soul-with-you/"
+    },
+    "mitski|washing machine heart": {
+      "fact": "\"Washing Machine Heart,\" from Mitski's 2018 album Be the Cowboy, is one of the shortest songs on the record at just over two minutes. Producer Patrick Hyland has said the track almost didn't make the album at all. Its black-and-white music video, directed by Zia Anger and funded by Tidal, was released that November.",
+      "source": "https://en.wikipedia.org/wiki/Washing_Machine_Heart"
+    },
+    "stereolab|fed up with your job": {
+      "fact": "\"Fed Up With Your Job\" is one of two songs Stereolab released together as a single in September 2025, following Instant Holograms on Metal Film, their first studio album in fifteen years. It arrived as a limited seven-inch vinyl pressing of just 3,000 copies, timed to coincide with the start of a 41-date North and South American tour.",
+      "source": "https://ourculturemag.com/2025/09/12/stereolab-share-new-songs-fed-up-with-your-job-and-constant-and-uniform-movement-unknown/"
+    },
+    "wednesday|bath county": {
+      "fact": "Wednesday's \"Bath County,\" from their 2023 album Rat Saw God, gets its title from an actual trip songwriter Karly Hartzman took with her partner, which included a stop at Dollywood and time spent sitting on a porch in Bath County, Virginia, where she wrote the song. The Asheville band's lineup on the record includes guitarist MJ Lenderman, bassist Margo Shultz, drummer Alan Miller, and pedal steel player Xandy Chelmis.",
+      "source": "https://www.brooklynvegan.com/wednesday-share-new-single-bath-county-from-rat-saw-god/"
+    },
+    "andrew bird|anonanimal": {
+      "fact": "\"Anonanimal,\" from Andrew Bird's 2009 album Noble Beast, showcases his signature technique of building songs out of layered, looped plucked violin combined with acoustic guitar. The song shifts through several distinct sections, including a jammy detour near the end that critics have compared to Wilco's extended live workouts. Bird is known for building these looped violin parts live on stage in real time rather than relying on pre-recorded tracks.",
+      "source": "https://www.popmatters.com/69122-andrew-bird-noble-beast-useless-creatures-2496074711.html"
+    },
+    "x-ray spex|germ free adolescents": {
+      "fact": "X-Ray Spex's Germfree Adolescents came out on November 10, 1978, and stood out among punk records of the era for putting saxophone front and center alongside the guitars. Frontwoman Poly Styrene wrote every song on the album, and critics praised her sharp, sing-song melodies over the band's distinctively off-kilter horn section. The Guinness Encyclopedia of Popular Music later named it one of the greatest punk albums ever released.",
+      "source": "https://en.wikipedia.org/wiki/Germfree_Adolescents"
+    },
+    "jack white|that's how i'm feeling": {
+      "fact": "\"That's How I'm Feeling\" comes from Jack White's 2024 album No Name, which had one of the most unusual rollouts in recent memory: White first gave the record away free as unmarked white-label vinyl to customers at Third Man Records stores in Nashville, Detroit, and London, with no artist name or song titles printed anywhere on the sleeve. He wrote, recorded, and produced the entire record himself at his own Third Man Studio.",
+      "source": "https://en.wikipedia.org/wiki/No_Name_(album)"
+    },
+    "fiona apple|drumset": {
+      "fact": "\"Drumset\" closes out Fiona Apple's 2020 album Fetch the Bolt Cutters, which she recorded mostly at her own home in Venice, California, with percussionist Amy Aileen Wood, bassist Sebastian Steinberg, and multi-instrumentalist Davíd Garza. The homemade, lived-in feel was intentional; Apple wanted the whole album to sound like it was made in a room rather than a polished studio.",
+      "source": "https://en.wikipedia.org/wiki/Fetch_the_Bolt_Cutters"
+    },
+    "buzzcocks|ever fallen in love (with some you shouldn't've?)": {
+      "fact": "Pete Shelley wrote \"Ever Fallen in Love (With Someone You Shouldn't've?)\" in 1978 at just 23, inspired by a line of dialogue from the film Guys and Dolls that he half-caught on TV while the band stayed overnight at an Edinburgh guesthouse. He finished the lyrics the next day sitting in the band's tour van outside the city's main post office. The song reached number 12 on the UK singles chart and was named NME's Track of the Year for 1978.",
+      "source": "https://www.uncut.co.uk/features/the-making-of-buzzcocks-ever-fallen-in-love-with-someone-you-shouldn-t-ve-12825/"
+    },
+    "dean johnson|death of the party": {
+      "fact": "\"Death of the Party\" is a single from singer-songwriter Dean Johnson's 2025 debut album for Saddle Creek Records, I Hope We Can Still Be Friends. The wry, wordy track skewers \"energy vampires\" - the exhausting motormouths who trap you in one-sided conversations at parties - set against brushed drums, bright acoustic strumming, and warm keys. Johnson spent years as a bartender before his music career took off, and the song draws on that experience of people-watching from behind the bar.",
+      "source": "https://klofmag.com/2025/07/dean-johnson-new-single-death-of-the-party/"
+    },
+    "st. vincent|broken man": {
+      "fact": "\"Broken Man\" was the first single from St. Vincent's 2024 album All Born Screaming, the first record she produced entirely by herself. The rhythm section is stacked with session heavyweights: Foo Fighters' Dave Grohl and drummer Mark Guiliana both appear on drums, Justin Meldal-Johnsen plays bass, and David Ralicke adds saxophone.",
+      "source": "https://en.wikipedia.org/wiki/Broken_Man_(song)"
+    },
+    "spiritualized|hey jane": {
+      "fact": "\"Hey Jane\" is the nearly 10-minute lead single from Spiritualized's 2012 album Sweet Heart Sweet Light - essentially two songs stitched into one, complete with a fake ending partway through before it lurches into a completely different second half. Frontman Jason Pierce recorded the album piecemeal across studios in Wales, Los Angeles, Reykjavik, and London over roughly two years, then spent another full year mixing it alone at home.",
+      "source": "https://en.wikipedia.org/wiki/Sweet_Heart_Sweet_Light"
+    },
+    "runnner|coinstar": {
+      "fact": "\"Coinstar,\" released by Runnner (Noah Weinman) in January 2025, was the first song since starting the project that Weinman wanted to record with a full, big studio sound, complete with soaring pedal steel. He's described it as being about the tug-of-war between wanting a stable, settled life and wanting to keep touring, using a coin flip as a running metaphor for that indecision.",
+      "source": "https://www.stereogum.com/2292396/runnner-coinstar/music/"
+    },
+    "the breeders|doe": {
+      "fact": "\"Doe\" opens the Breeders' 1990 debut album Pod, recorded in just two weeks in Edinburgh, Scotland, with producer Steve Albini, fresh off producing the Pixies' Surfer Rosa. Kim Deal started the Breeders as a side project with Throwing Muses guitarist Tanya Donnelly, rounding out the lineup with bassist Josephine Wiggs and Slint drummer Britt Walford. Pod became a favorite of Kurt Cobain's, who named it one of his all-time favorite albums.",
+      "source": "https://albumism.com/features/the-breeders-debut-album-pod-album-anniversary"
+    },
+    "the stone roses|i am the resurrection": {
+      "fact": "\"I Am the Resurrection\" grew out of a joke in rehearsal: bassist Mani liked playing the riff from the Beatles' \"Taxman\" backwards while guitarist John Squire and drummer Reni fooled around on top of it. The eight-minute track closes the Stone Roses' 1989 debut album, and the band nailed its extended instrumental outro in a single take. It became the traditional set-closer at nearly every Stone Roses concert from then on.",
+      "source": "https://www.songfacts.com/facts/the-stone-roses/i-am-the-resurrection"
+    },
+    "beirut|east harlem": {
+      "fact": "Zach Condon wrote the melody for \"East Harlem\" when he was just 17, years before Beirut existed, and rediscovered it while combing through old home recordings while making 2011's The Rip Tide. The song was released as the album's lead single and was named Pitchfork's \"Best New Track\" upon release.",
+      "source": "https://en.wikipedia.org/wiki/East_Harlem_(song)"
+    },
+    "real estate|green aisles": {
+      "fact": "\"Green Aisles,\" written by frontman Martin Courtney, is the second track on Real Estate's 2011 album Days, recorded over five months in a converted barn in New Paltz, New York, with producer Kevin McMahon. Lyrically, it's a wistful look back at aimless summer drives from the band's suburban New Jersey adolescence.",
+      "source": "https://en.wikipedia.org/wiki/Days_(album)"
+    },
+    "just mustard|we were just here": {
+      "fact": "\"WE WERE JUST HERE\" is the title track from Irish band Just Mustard's third album, released in October 2025 and mixed by David Wrench, known for his work with FKA twigs, Frank Ocean, and Sampha. Its synth-driven, propulsive pulse has drawn comparisons to early New Order.",
+      "source": "https://www.clashmusic.com/reviews/just-mustard-we-were-just-here/"
+    },
+    "iron and wine|call it dreaming": {
+      "fact": "\"Call It Dreaming\" was the lead single from Iron & Wine's 2017 album Beast Epic, which went on to earn a Grammy nomination for Best Americana Album. Sam Beam has described the song as a \"prayer and a dream,\" written from a weathered but still hopeful middle-aged perspective, and its ghostly layered vocals echo the stripped-down, home-recorded feel of his earliest work on The Creek Drank the Cradle.",
+      "source": "https://www.kexp.org/read/2017/10/02/song-of-the-day-iron-and-wine-call-it-dreaming/"
+    },
+    "yo la tengo|from a motel 6": {
+      "fact": "The title \"From a Motel 6\" is a cheeky riff on Bob Dylan's \"From a Buick 6,\" and the song appears on Yo La Tengo's 1993 album Painful. It's become a fan favorite for the way Ira Kaplan and Georgia Hubley's soft, dreamy harmonies float over slow-building waves of guitar feedback.",
+      "source": "https://www.discogs.com/release/1458259-Yo-La-Tengo-From-A-Motel-6"
+    },
+    "wipers|return of the rat": {
+      "fact": "\"Return of the Rat\" comes from Portland punk band the Wipers, led by guitarist Greg Sage, whose stripped-down, fuzzed-out sound became a direct blueprint for the grunge scene that followed a decade later. Kurt Cobain repeatedly named Wipers albums among the most influential records on Nirvana's own sound, and Nirvana recorded a faithful studio cover of \"Return of the Rat\" that was later released as a B-side.",
+      "source": "https://www.rollingstone.com/music/music-features/wipers-greg-sage-interview-is-this-real-1049335/"
+    },
+    "the mountain goats|cold at night": {
+      "fact": "\"Cold at Night\" comes from the Mountain Goats' 2025 concept album Through This Fire Across From Peter Balkan, about a group of shipwreck survivors stranded on a desert island, dedicated to longtime bassist Peter Hughes. The track brings in a stacked list of guest players: bass from Tommy Stinson (the Replacements, Guns N' Roses), guitar from Josh Kaufman (Bonny Light Horseman, the National), harp from Mikaela Davis, and harmony vocals from Lin-Manuel Miranda.",
+      "source": "https://www.stereogum.com/2325598/the-mountain-goats-cold-at-night-rocks-in-my-pocket/music"
+    },
+    "father john misty|i'm writing a novel": {
+      "fact": "\"I'm Writing a Novel,\" from Father John Misty's 2012 debut Fear Fun, is a surreal, Dylan-esque romp that mythologizes the writing of the album itself, complete with a tongue-in-cheek alternate title tacked onto the song. Josh Tillman wasn't writing a novel at all; he was busy finishing the twelve songs that made up Fear Fun, produced with the help of Jonathan Wilson and Phil Ek.",
+      "source": "https://fatherjohnmisty.bandcamp.com/track/im-writing-a-novel"
+    },
+    "the sundays|you're not the only one i know": {
+      "fact": "\"You're Not the Only One I Know\" appears on the Sundays' 1990 debut album Reading, Writing and Arithmetic, one of the era-defining releases of the British jangle-pop scene. Thirty-five years after its release, the song found a whole new audience when it went viral on social media alongside the band's other classic tracks.",
+      "source": "https://brockpress.com/the-sundays-reading-writing-and-arithmetic-remains-an-indie-pop-classic-after-35-years/"
+    },
+    "the beths|take": {
+      "fact": "\"Take\" is track seven on the Beths' 2025 album Straight Line Was a Lie, produced by the band's guitarist Jonathan Pearce. Singer Liz Stokes has said the song grew out of a distinctive 16th-note drum pattern their drummer came up with, which ended up dictating the whole track's tempo, and she considers it a musical sister song to \"Not Running\" from earlier in their catalog.",
+      "source": "https://stereogum.com/2320940/the-story-behind-every-song-on-the-beths-new-album-straight-line-was-a-lie/interviews"
+    },
+    "cheekface|hostile street": {
+      "fact": "Cheekface's 2026 single \"Hostile Street\" was produced and mixed by Eric Palmquist at his Los Angeles studio and mastered by David Kutch. The track opens with real dog barks from bassist Amanda Tannen's dog Stubbs and includes a guest vocal sample from rapper McKinley Dixon.",
+      "source": "https://cheekface.bandcamp.com/track/hostile-street"
+    },
+    "big thief|ufof": {
+      "fact": "\"UFOF,\" the title track of Big Thief's 2019 album U.F.O.F., gets its name from the phrase \"UFO friend.\" The song opens with Adrianne Lenker bidding goodbye to a mysterious, otherworldly \"UFO friend\" who is \"taking up root in the sky,\" making it one of the band's most ethereal, dreamlike tracks.",
+      "source": "https://www.songfacts.com/facts/big-thief/ufof"
+    },
+    "hovvdy|jean": {
+      "fact": "\"Jean\" is a 2023 single by the Texas duo Hovvdy (Charlie Martin and Will Taylor), produced by Andrew Sarlo. The song pushes the band into new territory with Auto-Tuned vocals and a skittish rhythm, while lyrically it's about wanting to do right by the people you love even amid self-doubt.",
+      "source": "https://stereogum.com/2241932/hovvdy-jean/music"
+    },
+    "wild pink|round of applause at the end of the world": {
+      "fact": "The lead single from Wild Pink's 2026 album Still Coming Down, led by singer-songwriter John Ross, brought in a stacked guest list: Wednesday's Xandy Chelmis on pedal steel, plus Hand Habits' Meg Duffy and members of MJ Lenderman's backing band The Wind. Ross himself plays the song's wheezing harmonica and accordion parts.",
+      "source": "https://stereogum.com/2500228/wild-pink-detail-new-album-still-coming-down-feat-wednesday-members-hand-habits-hear-round-of-applause-at-the-end-of-the-world/music"
+    },
+    "bon iver|towers": {
+      "fact": "\"Towers\" appears on Bon Iver's self-titled 2011 album, whose ten songs are all named after real or invented places meaningful to frontman Justin Vernon. The record was made at April Base Studios, a former veterinary clinic in Fall Creek, Wisconsin that Vernon and his brother bought and converted into a recording studio.",
+      "source": "https://www.rollingstone.com/music/music-news/bon-ivers-bon-iver-a-track-by-track-breakdown-248588/"
+    },
+    "bon iver, dijon and flock of dimes|day one": {
+      "fact": "\"Day One,\" from Bon Iver's 2025 album SABLE, fABLE, features Dijon and Flock of Dimes; Justin Vernon has called Dijon his favorite artist in the world and wanted his voice on the record any way he could get it. Its music video is a comedic mock-audition to replace Bon Iver, with cameos from St. Vincent, Jacob Elordi, and Cristin Milioti alongside the two featured guests.",
+      "source": "https://stereogum.com/2302092/bon-iver-on-new-album-feat-mk-gee-dijon-we-dont-got-much-time-to-live-lets-be-sexy/news"
+    },
+    "ed o'brien|obrigado": {
+      "fact": "\"Obrigado\" closes Ed O'Brien's 2026 album Blue Morpho, his first release under his own name after his 2020 debut Earth, which came out under the moniker EOB. The nearly ten-minute closer travels from a sunny, Balearic-tinged opening through a chillwave midsection into a proggy, Pink Floyd-style guitar finale.",
+      "source": "https://www.nme.com/reviews/album/ed-obrien-blue-morpho-review-radiohead-3946323"
+    },
+    "parquet courts|dust": {
+      "fact": "\"Dust\" opens Parquet Courts' 2016 album Human Performance with a Talking Heads-inspired groove and a chorus that simply repeats \"dust is everywhere, sweep.\" Frontman Andrew Savage said the album grew out of him \"questioning my humanity\" and feeling \"like a machine programmed to be human showing signs of defect.\"",
+      "source": "https://www.pastemagazine.com/music/parquet-courts/parquet-courts-human-performance-turns-10-years-old"
+    },
+    "jack white|dollar bill": {
+      "fact": "\"Dollar Bill,\" from Jack White's 2026 album Frozen Charlotte, is built as a stripped-down, nursery-rhyme-like chant — reviewers have noted it uses only around 32 unique words across the whole song. Its repeated hook, \"I did it for the love and the dollar, a dollar bill,\" gives the track its title.",
+      "source": "https://consequence.net/2026/06/jack-white-dollar-bill-new-song-review/"
+    },
+    "bully|trying": {
+      "fact": "\"Trying\" is a standout single from Bully's 2023 album Lucky for You, the project of Nashville singer-songwriter Alicia Bognanno, released via Sub Pop. The song's howling chorus and driving rhythm section examine Bognanno's tendency toward self-criticism.",
+      "source": "https://www.pastemagazine.com/music/bully/lucky-for-you-review"
+    },
+    "spoon|whisperi'lllistentohearit": {
+      "fact": "Despite how it looks on a cuesheet, \"WhisperI'lllistentohearit\" is the real title of a track from Spoon's 2017 album Hot Thoughts, written by Britt Daniel and produced by Dave Fridmann. It was recorded across three different studios in New York, Texas, and California, and shows off Spoon's trick of making just a couple of instruments sound like a full band.",
+      "source": "https://en.wikipedia.org/wiki/Hot_Thoughts"
+    },
+    "kurt vile|rock o' stone": {
+      "fact": "\"Rock o' Stone\" appears on Kurt Vile's 2026 album Philadelphia's Been Good to Me, which he recorded at his home studio, OKV Central, in the Mount Airy neighborhood of Philadelphia. Vile has described the record as his way of \"bringing it all back home to Philly.\"",
+      "source": "https://www.pastemagazine.com/music/kurt-vile/kurt-vile-philadelphias-been-good-to-me-album-review"
+    },
+    "nina garbus|overture": {
+      "fact": "\"Overture\" opens Nina Garbus's 2026 album Secrets of the Fifth Angel. Nina Garbus is an experimental art-pop group from Atlanta formed in 2019 by four friends who met in high school, and the group has since grown into a five-piece band.",
+      "source": "https://candlepinrecords.bandcamp.com/album/secrets-of-the-fifth-angel"
+    },
+    "weird nightmare|might see you there": {
+      "fact": "\"Might See You There,\" from the 2026 album Hoopla, is a jangly, nostalgic song about hometown boredom, hanging out in basements, and learning an entire punk catalog with friends. Weird Nightmare is the melodic solo project of Alex Edkins, better known as the frontman of the band METZ.",
+      "source": "https://www.thecurrent.org/episode/2026/03/03/weird-nightmare-might-see-you-there"
+    },
+    "adrianne lenker|zombie girl": {
+      "fact": "\"zombie girl\" appears on Adrianne Lenker's 2020 album songs, which she recorded in a cabin in Westhampton, Massachusetts with producer Phil Weinrobe after a tour was cancelled. Lenker has said the song grew out of a sleep-paralysis-like state, using the eerie \"zombie girl\" image to capture the strange half-awake feeling of missing someone after a breakup.",
+      "source": "https://songtell.com/adrianne-lenker/zombie-girl"
+    },
+    "fontaines d.c.|in the modern world": {
+      "fact": "\"In the Modern World,\" from Fontaines D.C.'s 2024 album Romance, was inspired by frontman Grian Chatten's love of the 1988 anime film Akira — he wanted to capture the kind of romance that blossoms even as the world around it falls apart. Bassist Conor Deegan's line \"Come away with me and Sal\" nods to Sal Paradise, the narrator of Jack Kerouac's On the Road.",
+      "source": "https://www.billboard.com/music/rock/fontaines-dc-romance-album-interview-1235756613/"
+    },
+    "the xx|islands": {
+      "fact": "\"Islands,\" the third single from The xx's self-titled 2009 debut, was co-written by all four original members: Romy Madley Croft, Oliver Sim, Jamie xx, and then-member Baria Qureshi. Its spare, house-influenced production and interlocking male-female vocals helped define the London band's minimalist early sound.",
+      "source": "https://en.wikipedia.org/wiki/Islands_(The_xx_song)"
+    },
+    "kevin morby|the jester, the tramp & the acrobat": {
+      "fact": "\"The Jester, The Tramp & The Acrobat\" opens Kevin Morby's 2014 sophomore album Still Life, released on Woodsist Records. The song leans on circus and performance imagery, framing itself as one of several traveling, larger-than-life characters who recur throughout the record.",
+      "source": "https://kevinmorby.bandcamp.com/track/the-jester-the-tramp-the-acrobat"
+    },
+    "future islands|the fountain": {
+      "fact": "\"The Fountain\" started out as a non-album single, released on a 2012 7\" paired with \"Tomorrow,\" years before Future Islands broke through with Singles. It finally found a home on 2026's From a Hole in the Floor to a Fountain of Youth, a career-spanning compilation the band released for its 20th anniversary.",
+      "source": "https://www.hotpress.com/music/future-islands-announce-20th-anniversary-album-from-a-hole-in-the-floor-to-a-fountain-of-youth-23135285"
+    },
+    "the mountain goats|training montage": {
+      "fact": "\"Training Montage\" is the lead single from The Mountain Goats' 2022 album Bleed Out, which John Darnielle wrote by pausing favorite action movies from the '60s, '70s and '80s to jot lyrics on a boombox before hitting play again. The album was produced by Alicia Bognanno, frontwoman of the band Bully.",
+      "source": "https://www.pastemagazine.com/music/the-mountain-goats/john-darnielle-interview-new-album-bleed-out"
+    },
+    "the shins|know your onion!": {
+      "fact": "\"Know Your Onion!\" opens The Shins' 2001 debut, Oh, Inverted World. Frontman James Mercer has said the song is about a young person who feels overwhelmed and misunderstood, finding escape in music and books; he name-checks \"lucked out and found my favorite record lying in wait at the Birmingham mall.\" The title itself borrows the old idiom \"know your onions,\" meaning to really know your stuff.",
+      "source": "https://www.musicianwages.com/the-meaning-behind-the-song-know-your-onion-by-the-shins-2/"
+    },
+    "power snatch|perfect hand (power snatch version)": {
+      "fact": "\"Perfect Hand\" was written and released by Nate Amos as This Is Lorelei for the deluxe edition of \"Box for Buddy, Box for Star.\" Paramore's Hayley Williams and producer Daniel James loved it so much that covering the song together is literally what got their new side project, Power Snatch, started — their glitchy, hazier version became the band's debut release.",
+      "source": "https://www.nme.com/news/music/hayley-williams-new-group-power-snatch-share-captivating-cover-of-this-is-loreleis-perfect-hand-3933781"
+    },
+    "andrew bird|pulaski at night": {
+      "fact": "The title comes from an offhand remark: a visiting Thai exchange student once wistfully told a friend of Andrew Bird's, \"I want to see Pulaski at night\" — funny and absurd, since Pulaski is a gritty stretch of road running the length of Chicago's west side, not a sightseeing spot. The phrase stuck with Bird for two decades before he built this ambivalent, loving ode to his hometown around it.",
+      "source": "https://en.wikipedia.org/wiki/I_Want_to_See_Pulaski_at_Night"
+    },
+    "the linda lindas|burning out": {
+      "fact": "\"Burning Out\" was The Linda Lindas' first single after signing to Reprise/Warner Records, written just weeks after guitarist-singer Lucia de la Garza graduated high school. The still-teenage band turned that strange, in-between feeling — watching the world move on while you figure out what's next — into an anthem that rides the line between feeling lost and feeling free.",
+      "source": "https://consequence.net/2026/06/the-linda-lindas-burning-out-warner-label/"
+    },
+    "woods|bend beyond": {
+      "fact": "\"Bend Beyond\" is both the title track and opening song of Woods' seventh studio album, released in September 2012. It kicks off a brisk 12-song, 32-minute record from the Brooklyn band, known for releasing music on their own label, Woodsist.",
+      "source": "https://en.wikipedia.org/wiki/Bend_Beyond"
+    },
+    "konk|baby dee": {
+      "fact": "Konk were a New York new-wave/disco outfit formed by avant-garde jazz musician Dana Vlcek, active in the city's vibrant early-'80s downtown dance-punk scene alongside acts like ESG, Liquid Liquid, and Bush Tetras. \"Baby Dee,\" co-written by Vlcek and the band, later resurfaced on the compilation The Definitive Collection.",
+      "source": "https://en.wikipedia.org/wiki/Konk_(band)"
+    },
+    "destroyer|dream lover": {
+      "fact": "\"Dream Lover\" was the lead single from Destroyer's 2015 album Poison Season. Dan Bejar built the track as a deliberate homage to Bruce Springsteen's \"Born to Run\" era, complete with a saxophone line that echoes Clarence Clemons, before the song eventually dissolves into a squall of noise.",
+      "source": "https://www.rollingstone.com/music/music-news/destroyer-prep-new-album-with-springsteen-inspired-song-dream-lover-43600/"
+    },
+    "the clash|career opportunities": {
+      "fact": "On The Clash's 1977 debut, \"Career Opportunities\" got its title the same way the band got its name — pulled from a headline guitarist Mick Jones and bassist Paul Simonon spotted in a London newspaper. Jones also wrote one line straight from his own resume: before joining the band, he'd had a government job opening mail to check that letters weren't rigged with bombs.",
+      "source": "https://www.songfacts.com/facts/the-clash/career-opportunities"
+    },
+    "the national|lit up": {
+      "fact": "\"Lit Up\" appears on The National's 2005 album Alligator, but it had already been a staple of the band's live shows for a while before they recorded it. The album itself was tracked almost entirely in band members' home studios around Brooklyn, with composer Padma Newsome of the group Clogs guesting on piano, violin, and viola throughout.",
+      "source": "https://www.npr.org/2005/05/24/4664403/the-national-alligator"
+    },
+    "florence road|7563": {
+      "fact": "Irish band Florence Road — Lily Aron, Emma Brandon, Ailbhe Barry, and Hannah Kelly — had been playing \"7563\" live across Australia, Europe, and America for roughly two years before finally releasing it as a single in August 2026. The anthemic track captures the disorienting feeling of not being sure who you are.",
+      "source": "https://www.nme.com/news/music/florence-road-tackle-feeling-out-of-place-lost-and-confused-on-soaring-new-single-7563-3961745"
+    },
+    "japanese breakfast|12 steps": {
+      "fact": "The title of Japanese Breakfast's \"12 Steps\" sounds like it's about recovery, but it's actually named after 12 Steps Down, a real bar in South Philadelphia where Michelle Zauner first met the man who became her husband. The 2017 song, from Soft Sounds from Another Planet, is her tongue-in-cheek apology for the timing.",
+      "source": "https://www.npr.org/sections/allsongs/2017/07/14/536439859/japanese-breakfast-soft-sounds-from-another-planet"
+    },
+    "au pairs|it's obvious": {
+      "fact": "\"It's Obvious\" was the second single by English post-punk band Au Pairs, later included on their 1981 debut Playing with a Different Sex. The song imagines a fantasy world where gender roles simply stop mattering, built around the repeated refrain \"you're equal but different.\"",
+      "source": "https://en.wikipedia.org/wiki/Playing_with_a_Different_Sex"
+    },
+    "waxahatchee|hell": {
+      "fact": "For \"Hell,\" off 2020's Saint Cloud, Katie Crutchfield said she leaned into the melodramatic intensity of Dolly Parton's songwriting — especially \"Jolene\" — aiming to write something \"a little bit psycho,\" since, as she put it, everybody feels that way sometimes.",
+      "source": "https://daily.bandcamp.com/features/waxahatchee-saint-cloud-katie-crutchfield-interview"
+    },
+    "jawbox|savory": {
+      "fact": "\"Savory\" was Jawbox's first single off their 1994 major-label debut, For Your Own Special Sweetheart, and it picked up airplay on MTV's 120 Minutes even though it never charted. A few years later, members of the band Far teamed up with Deftones' Chino Moreno to record their own cover of it for Far's 1997 EP Soon.",
+      "source": "https://en.wikipedia.org/wiki/Savory_(song)"
+    },
+    "frankie cosmos|jesse": {
+      "fact": "\"Jesse\" was the first single from Frankie Cosmos' 2018 album Vessel, their debut for Sub Pop. Songwriter Greta Kline has described the song as coming out of turning dreams and half-conscious realizations into lyrics, working through sudden personal epiphanies as they happened.",
+      "source": "https://www.vice.com/en/article/frankie-cosmos-returns-with-jesse-and-announces-third-lp-vessel/"
+    },
+    "amber arcades|it changes": {
+      "fact": "\"It Changes\" followed Amber Arcades' 2016 debut, Fading Lines. The project is the work of Dutch multi-instrumentalist Annelotte de Graaf, who said the Stones-inspired song is about how you never really know how something new is going to turn out, no matter how sure you feel when you start it.",
+      "source": "https://www.thelineofbestfit.com/new-music/song-of-the-day/amber-arcades-it-changes"
+    },
+    "brad sucks|learning to lie": {
+      "fact": "Brad Sucks is the one-man project of Ottawa musician Brad Turcotte, an early champion of giving music away for free online — his 2003 album I Don't Know What I'm Doing became a cult favorite of the Creative Commons era. \"Learning to Lie,\" a 2025 single, arrived with an official music video built around a sci-fi pickleball match.",
+      "source": "https://www.bradsucks.net/news/2025/1/7/learning-to-lie-official-video"
+    },
+    "gang of four|we live as we dream, alone": {
+      "fact": "\"We Live as We Dream, Alone\" comes from Gang of Four's 1982 album Songs of the Free, on which the famously angular post-punk band traded their jagged attack for a straighter, funkier dance groove built on clacking percussion and soulful backing vocals. It was written by guitarist Andy Gill and singer Jon King.",
+      "source": "https://www.allmusic.com/song/we-live-as-we-dream-alone-mt0010337719"
+    },
+    "bria salmena|stretch the struggle": {
+      "fact": "\"Stretch the Struggle\" is the debut solo single from Bria Salmena — frontwoman of Canadian post-punk band FRIGS and a vocalist in Orville Peck's live band — released ahead of her 2025 solo album Big Dog. Co-produced with Duncan Hay Jennings, U.S. Girls' Meg Remy, and Graham Walsh, the track blends krautrock, shoegaze, and darkwave into one unexpected solo introduction.",
+      "source": "https://loudwomen.org/2025/01/22/bria-salmena-announces-debut-album-big-dog-and-shares-new-single-video-stretch-the-struggle/"
+    },
+    "freak slug|miss june": {
+      "fact": "\"Miss June\" is by English musician Xenya Genovese, who performs as Freak Slug — a self-taught, Manchester-born visual artist turned indie rocker who cites Ride, Mazzy Star, and Pavement as touchstones. The song appears on her 2025 EP \"Loose Tooth and a Short Skirt\" and was co-written with John DeBold.",
+      "source": "https://www.clashmusic.com/features/going-for-it-freak-slug-interviewed/"
+    },
+    "wilco|you satellite": {
+      "fact": "\"You Satellite\" comes from Wilco's 2015 album \"Star Wars,\" which the band released as a complete surprise free download with no advance announcement. The song was co-written by Jeff Tweedy, drummer Glenn Kotche, and guitarist Nels Cline, and was recorded at the band's own Chicago studio, the Loft.",
+      "source": "https://wilcoworld.net/music/star-wars/"
+    },
+    "jordan patterson|just my friend": {
+      "fact": "\"Just My Friend\" is the lead single from Jordan Patterson's 2026 EP \"Songs From A Valley Girl,\" her debut release for Secretly Canadian. Patterson, a North Carolina-born, L.A.-raised singer-songwriter, built the upbeat piano track around the direct question that gives it its hook: \"Do you wanna be just my friend?\"",
+      "source": "https://stereogum.com/2499700/jordan-patterson-announces-new-ep-songs-from-a-valley-girl-hear-just-my-friend/music"
+    },
+    "the strokes|eternal summer": {
+      "fact": "\"Eternal Summer\" is a sprawling, six-minute-plus track from The Strokes' 2020 album \"The New Abnormal,\" the band's first album in seven years. Julian Casablancas stretches his voice over a wash of psychedelic synths and guitars, building to a dramatic crescendo before the song loops back into a circular closing coda.",
+      "source": "https://readdork.com/track/the-strokes-eternal-summer"
+    },
+    "mac demarco|rock and roll night club": {
+      "fact": "\"Rock and Roll Night Club\" is the title track of Mac DeMarco's debut EP, released in March 2012 through Captured Tracks. On it, DeMarco adopted an exaggerated, deep-crooning glam-rock voice as a kind of character performance, a slowed-down vocal style unlike his later, more familiar sound. The EP's reception convinced Captured Tracks to fund his first full-length album, \"2,\" later that year.",
+      "source": "https://en.wikipedia.org/wiki/Rock_and_Roll_Night_Club"
+    },
+    "the cure|disintegration": {
+      "fact": "\"Disintegration,\" the eight-minute title track of The Cure's 1989 album, was recorded at Hookend Recording Studios with longtime co-producer David M. Allen. Robert Smith has said his emotions were so raw during the vocal sessions that he broke down at times while recording; he wrote much of the album while dreading turning 30, worried he'd aged out of making his best work.",
+      "source": "https://www.radiox.co.uk/artists/the-cure/disintegration-album-songs-meaning-story/"
+    },
+    "aldous harding|venus in the zinnia feat. h. hawkline": {
+      "fact": "\"Venus in the Zinnia\" is a duet between Aldous Harding and fellow songwriter H. Hawkline, who also plays bass and guitar on the track. Released in 2026 as the second single from Harding's album \"Train on the Island,\" the song floats her voice over Wurlitzer piano and percussion, with surreal, dreamlike lyrical imagery.",
+      "source": "https://stereogum.com/2495282/aldous-harding-venus-in-the-zinnia-feat-h-hawkline/music"
+    },
+    "caroline|tell me i never knew that (ft. caroline polachek)": {
+      "fact": "\"Tell me I never knew that\" pairs the eight-piece London band caroline with singer Caroline Polachek, who contributed production and songwriting to the track. The band has said they nicknamed the song \"Backstreet Boys\" during writing sessions because its catchy opening melody, built around a riff from bandmate Casper, reminded them of the boy band's sound.",
+      "source": "https://beatsperminute.com/caroline-team-with-polachek-for-tell-me-i-never-knew-that-announce-new-album/"
+    },
+    "geese|long island city here i come": {
+      "fact": "\"Long Island City Here I Come\" closes out Geese's 2025 album \"Getting Killed\" as its final track, a piano-driven high point where frontman Cameron Winter's voice builds into a fevered, repeated delivery of the title line before the record ends.",
+      "source": "https://www.thefader.com/2025/10/01/songs-you-need-in-your-life-october-1-2025"
+    },
+    "saintseneca|sleeper hold": {
+      "fact": "\"Sleeper Hold\" was the first single from Saintseneca's third album, \"Such Things\" (2015), and remains one of the Ohio band's most straightforwardly hooky songs. Co-founder Zac Little has said the track grew out of questions about \"the physics of consciousness,\" while musically it leans into maximalist, harmony-laden pop choruses, with Little and bandmate Maryn Jones trading vocals.",
+      "source": "http://www.stereogum.com/1824460/saintseneca-sleeper-hold/mp3s/"
+    },
+    "tom waits|shore leave": {
+      "fact": "\"Shore Leave,\" the second track on Tom Waits' 1983 landmark \"Swordfishtrombones,\" follows a sailor wandering through a rainy Hong Kong night. Waits built the song's unusual percussive atmosphere from unconventional sources — a bass marimba, metal aungklung, and rice shaken over a bass drum — to conjure traffic, wind, and waves.",
+      "source": "https://www.pastemagazine.com/music/tom-waits/swordfishtrombones-tom-waits-40-anniversary"
+    },
+    "fiona apple|every single night": {
+      "fact": "\"Every Single Night\" was the only single released from Fiona Apple's 2012 album \"The Idler Wheel...,\" built around a music-box toy piano and Apple's own layered vocal textures. Its opening line, \"I just want to feel everything,\" became something of a thesis statement for the record.",
+      "source": "https://en.wikipedia.org/wiki/Every_Single_Night"
+    },
+    "the smile|wall of eyes": {
+      "fact": "\"Wall of Eyes\" opens and titles the second album by The Smile, the trio of Thom Yorke, Jonny Greenwood, and drummer Tom Skinner. The track builds slowly from a single strummed acoustic guitar and muted floor-tom hits into a fuller arrangement, produced by Sam Petts-Davies, who has also worked on several of Yorke's solo projects.",
+      "source": "https://en.wikipedia.org/wiki/Wall_of_Eyes"
+    },
+    "slow pulp|better man": {
+      "fact": "\"Better Man\" is the lead single from Slow Pulp's 2026 album \"Melodie,\" the Chicago band's first record made with producer Elliot Kozel. Singer Emily Massey's understated vocal anchors the hooky indie-rock track, which arrived with a Ben Turok-directed video full of strobes and sparklers.",
+      "source": "https://stereogum.com/2501838/slow-pulp-announce-new-album-melodie-hear-better-man/music"
+    },
+    "wednesday|elderberry wine": {
+      "fact": "\"Elderberry Wine\" was Wednesday's first new song after their acclaimed 2023 album \"Rat Saw God,\" co-led as always by singer-guitarists Karly Hartzman and MJ Lenderman and rooted in the band's Asheville, North Carolina home base. Its video, directed by Spencer Kelly, was filmed at a longtime Greensboro bar using real regulars as extras, including Hartzman's own father.",
+      "source": "https://www.rollingstone.com/music/music-news/wednesday-elderberry-wine-video-1235337436/"
+    },
+    "tiberius|sag": {
+      "fact": "Boston band Tiberius, originally the solo project of songwriter Brendan Wright, released \"Sag\" in early 2025 before it was picked up and re-released by the label Audio Antihero ahead of their debut album, \"Troubadour.\" The song is about what locals call the \"Allston to Bushwick pipeline,\" the well-worn path of Boston musicians moving to New York to chase their careers.",
+      "source": "https://vanyaland.com/2025/07/25/tiberius-sag-under-the-weight-of-comparison-on-new-single/"
+    },
+    "king gizzard and the lizard wizard|level 5": {
+      "fact": "\"Level 5\" was the surprise lead single announcing King Gizzard & the Lizard Wizard's 2026 album \"Alien Metal,\" a sharp turn into techno and electronic production for the notoriously genre-hopping Australian band. Built on a breakbeat engine and vocoded vocals, the track has been compared to the Prodigy while still sounding distinctly like King Gizzard.",
+      "source": "https://www.brooklynvegan.com/king-gizzard-the-lizard-wizard-go-rave-on-new-album-alien-metal-share-level-5/"
+    },
+    "spiritualized|on the sunshine": {
+      "fact": "\"On The Sunshine\" opens Spiritualized's 2018 album And Nothing Hurt, a record notable because Jason Pierce (J. Spaceman) made almost all of it alone in an upstairs room of his London home rather than a studio. Short on a label budget, he built the album's lush, orchestral sound himself on a laptop, sampling and strumming along to classical records note by note before bringing in session players to physically perform the parts. He only left home to track instruments too bulky to fake, like timpani.",
+      "source": "https://floodmagazine.com/54927/at-home-with-spiritualized-an-orchestra-of-one/"
+    },
+    "kiwi jr|painting after painting": {
+      "fact": "\"Painting After Painting\" was the last song Kiwi Jr. wrote for their 2026 album Blowin' Up, coming together only a week or two before they entered the studio. It started as a jam over a single bass riff with no chorus at all, in a Velvet Underground-inspired style, until the band's manager pushed them to write one more song with a proper big hook. The result became one of the record's most upbeat tracks, about being happy for other people's success rather than feeling left behind.",
+      "source": "https://magnetmagazine.com/2026/08/25/magnet-exclusive-kiwi-jr-goes-track-by-track-on-blowin-up/"
+    },
+    "iron and wine|grace for saints and ramblers": {
+      "fact": "\"Grace for Saints and Ramblers\" appears on Iron & Wine's 2013 album Ghost on Ghost, and it's more than just a track on the record — the album's title itself is lifted straight from this song's lyrics. Written and sung by Sam Beam, the track leans on organ, horns, and strings with a quick, tumbling vocal delivery that's a bit different from Iron & Wine's earlier, quieter folk sound.",
+      "source": "https://en.wikipedia.org/wiki/Ghost_on_Ghost"
+    },
+    "alabama shakes|american dream": {
+      "fact": "\"American Dream\" marked Alabama Shakes' return in 2026 with their first new music in roughly a decade, following the massive success of 2015's Sound & Color. That earlier album topped the Billboard 200 and won four Grammy Awards, including Best Alternative Music Album, cementing the Athens, Alabama band led by Brittany Howard as one of the era's biggest rock breakouts before their long hiatus.",
+      "source": "https://www.rollingstone.com/music/music-news/alabama-shakes-new-song-american-dream-1235545402/"
+    },
+    "beach house|become": {
+      "fact": "\"Become\" is the title track and closer of Beach House's 2023 EP of the same name, a five-song collection pulled from the sessions for their 2022 album Once Twice Melody. The dream-pop duo said the songs didn't feel like they fit into Once Twice Melody's world, so rather than leave them as leftovers, they gave the tracks a home of their own on a standalone release.",
+      "source": "https://en.wikipedia.org/wiki/Become_(EP)"
+    },
+    "st. vincent|big time nothing": {
+      "fact": "\"Big Time Nothing\" comes from St. Vincent's 2024 album All Born Screaming, which was a milestone for Annie Clark as the first St. Vincent record she produced entirely on her own, following 2021's Daddy's Home. Critics described the track's mix of spoken-word verses giving way to a squelchy funk chorus as sounding like a mashup of U2 and INXS.",
+      "source": "https://www.rollingstone.com/music/music-news/st-vincent-big-time-nothing-single-1235009363/"
+    },
+    "real estate|stained glass": {
+      "fact": "\"Stained Glass\" is a track from Real Estate's 2017 album In Mind, written collectively by band members Alex Bleeker, Jackson Pollis, Julian Lynch, Martin Courtney, and Matt Kallman and produced by Cole M.G.N. When it was released, the band paired it with a tutorial video teaching fans how to play the song's guitar tabs and keyboard parts themselves.",
+      "source": "https://www.dominomusic.com/news/us/real-estate-release-new-song-stained-glass-with-play-along-with-tutorial-video"
+    },
+    "big thief|two hands": {
+      "fact": "\"Two Hands\" is the title track of Big Thief's fourth album, released in October 2019 just five months after its companion record U.F.O.F. — the band called Two Hands the \"earth twin\" to that more ethereal album. It was recorded live off the floor at Sonic Ranch studio in Tornillo, Texas, with producer Andrew Sarlo, giving it a rawer, more stripped-down sound than its predecessor.",
+      "source": "https://en.wikipedia.org/wiki/Two_Hands_(Big_Thief_album)"
+    },
+    "cocteau twins|heaven or las vegas": {
+      "fact": "Cocteau Twins were famous for eccentric, invented-sounding song titles, and \"Heaven or Las Vegas\" was no exception — its working title in the studio was the nonsense phrase \"Crispy Fiver Blue.\" The eventual title track ended up lending its name to the band's acclaimed 1990 album, after musician Lawrence of the band Denim/Felt suggested the phrase from the lyrics as the record's title.",
+      "source": "https://en.wikipedia.org/wiki/Heaven_or_Las_Vegas_(song)"
+    },
+    "wild pink|box store": {
+      "fact": "\"Box Store\" is the harmonica-laced opening track from Wild Pink's 2026 album Still Coming Down, and it's built around an unusually specific pair of subjects: a window-unit air conditioner and character actor William Fichtner. Frontman John Ross said the loping, wistful song reminded him of Warren Zevon, so he leaned into that direction while writing it.",
+      "source": "https://stereogum.com/2502992/wild-pink-box-store/music"
+    },
+    "frankie rose|anything": {
+      "fact": "\"Anything\" was Frankie Rose's first new single in six years when it arrived in 2023, previewing her album Love As Projection. Rose described the bright, synth-pop track as feeling \"like a prom scene in a John Hughes movie\" — a hopeful song about letting go of fear even when the world feels chaotic, built around comparisons to '80s acts like Strawberry Switchblade and Altered Images.",
+      "source": "https://post-punk.com/frankie-rose-returns-with-effervescent-synth-pop-anthem-anything/"
+    },
+    "provoker|valley ghoul": {
+      "fact": "\"Valley Ghoul\" is a single from the Los Angeles post-punk band Provoker's sophomore album Demon Compass, released in 2023. The album was made with production help from Zach Fogarty, known for his work with Girlpool and Jean Dawson, and Daniel Fagerstrom of Viagra Boys, giving Provoker's moody, hook-driven post-punk sound an extra layer of polish.",
+      "source": "https://northerntransmissions.com/provoker-drop-new-single-video-valley-ghoul/"
+    },
+    "the jam|in the city": {
+      "fact": "\"In the City\" was The Jam's debut single, released in April 1977 when songwriter Paul Weller was just 18 years old. Weller called it the sound of \"young Woking, if not London,\" a song about trying to break out of the suburbs, and it became the band's first UK Top 40 hit, kicking off a run of 18 consecutive Top 40 singles for the group.",
+      "source": "https://faroutmagazine.co.uk/the-story-behind-the-jam-song-in-the-city/"
+    },
+    "franz ferdinand|take me out": {
+      "fact": "Alex Kapranos got the idea for \"Take Me Out\" the night after watching the WWII film Enemy at the Gates, where a tense standoff between two snipers stuck with him as a metaphor for romantic tension. He wrote the song with bandmate Nick McCarthy while the two were roommates, and the song's signature guitar hook was inspired by the way blues legend Howlin' Wolf used to sing along to his own guitar playing. It became the second single from Franz Ferdinand's self-titled 2004 debut album.",
+      "source": "https://faroutmagazine.co.uk/story-behind-franz-ferdinand-song-take-me-out/"
+    },
+    "iggy pop|real wild child (wild one)": {
+      "fact": "Iggy Pop's \"Real Wild Child (Wild One)\" is a cover with a long history: it started as Australian rocker Johnny O'Keefe's 1958 song \"Wild One\" before Jet Harris of The Shadows retitled and reworked it as \"Real Wild Child\" in 1962. Iggy Pop's 1986 version, from his album Blah-Blah-Blah, became a UK Top 10 hit and later turned up in movies like Crocodile Dundee II and Adventures in Babysitting; in 2008 he even re-recorded it with the band Jet as a tribute to O'Keefe.",
+      "source": "https://www.songfacts.com/facts/iggy-pop/real-wild-child-wild-one"
+    },
+    "stereolab|french disko": {
+      "fact": "\"French Disko\" started life as \"French Disco,\" the closing track on Stereolab's 1993 EP Jenny Ondioline, before the band re-recorded and re-spelled it for a standalone double 7-inch single. Unexpected UK radio airplay pushed it to a co-billed chart entry at No. 75, the band's first-ever UK chart appearance, and it later placed No. 5 in John Peel's 1993 Festive Fifty listener poll.",
+      "source": "https://en.wikipedia.org/wiki/French_Disko"
+    },
+    "toro y moi|ordinary pleasure": {
+      "fact": "\"Ordinary Pleasure\" was released in December 2018 as the second single from Toro y Moi's sixth album, Outer Peace. As is typical for the project, mastermind Chaz Bundick wrote, produced, engineered, mixed, and performed every instrument on the track himself, blending synth-pop and disco with tribal drum patterns.",
+      "source": "https://en.wikipedia.org/wiki/Ordinary_Pleasure"
+    },
+    "new order|bizarre love triangle": {
+      "fact": "Released in November 1986 from the album Brotherhood, \"Bizarre Love Triangle\" surprisingly never cracked the UK or US Top 40, peaking at just No. 56 in Britain, though it hit No. 4 on the US Dance/Disco club chart. Written and produced by all four band members, it's since been ranked among Rolling Stone's 500 Greatest Songs of All Time.",
+      "source": "https://en.wikipedia.org/wiki/Bizarre_Love_Triangle"
+    },
+    "fontaines d.c.|a hero's death": {
+      "fact": "The title track and lead single from Fontaines D.C.'s second album takes its name from Brendan Behan's 1958 play \"The Hostage,\" which contains the line \"You're all in the running for a hero's death.\" Released in May 2020, it became the Dublin band's first song ever to chart in the UK and Scotland.",
+      "source": "https://en.wikipedia.org/wiki/A_Hero%27s_Death_(song)"
+    },
+    "public image ltd|memories": {
+      "fact": "The version of \"Memories\" on PiL's 1979 album Metal Box is actually two different studio takes edited together, noticeable in how bassist Jah Wobble's playing shifts in volume partway through the track. The single version released that October used only one of those takes and has never been officially reissued on CD.",
+      "source": "https://rock.fandom.com/wiki/Memories_(Public_Image_Ltd_song)"
+    },
+    "wild nothing|shallow water": {
+      "fact": "Jack Tatum wrote \"Shallow Water,\" from Wild Nothing's 2018 album Indigo, as a love song for his wife, calling it a track about \"finally arriving in the place you were meant to be.\" Musically it leans into 1980s new wave, pairing a post-punk bassline with Cocteau Twins-style synth textures.",
+      "source": "https://kexp.org/read/2018/8/7/wild-nothing-shares-new-love-song-shallow-water/"
+    },
+    "tame impala|elephant": {
+      "fact": "\"Elephant\" was one of the oldest songs Kevin Parker had sitting around unused, and the band only decided to put it on 2012's Lonerism after rediscovering it during a soundcheck. The album went on to sweep Best Album, Best Rock Album, and Best Group at the 2013 ARIA Awards.",
+      "source": "https://en.wikipedia.org/wiki/Elephant_(Tame_Impala_song)"
+    },
+    "soccer mommy|m": {
+      "fact": "\"M,\" the second single from Soccer Mommy's 2024 album Evergreen, marks a stripped-back turn in her production compared to the more experimental sound of her prior record. The song builds from acoustic guitar into a lush string arrangement that closes out in an expansive, flute-led outro.",
+      "source": "https://en.wikipedia.org/wiki/M_(Soccer_Mommy_song)"
+    },
+    "stephen malkmus and the jicks|gardenia": {
+      "fact": "\"Gardenia\" comes from Stephen Malkmus and the Jicks' 2008 album Real Emotional Trash on Matador Records, built around Malkmus's typically leftfield, jangly guitar-pop songwriting. It was also issued on its own as a 7-inch single.",
+      "source": "https://en.wikipedia.org/wiki/Real_Emotional_Trash"
+    },
+    "thom yorke|knife edge": {
+      "fact": "\"Knife Edge\" comes from Thom Yorke's score for the 2024 Italian film Confidenza, only his second movie soundtrack after 2018's Suspiria. The stark, piano-led track accompanies a re-cut scene from the film, and its music video was built from footage arranged by the film's own editor.",
+      "source": "https://www.rollingstone.com/music/music-news/thom-yorke-confidenza-soundtrack-knife-edge-prize-giving-1235008267/"
+    },
+    "sault|fearless": {
+      "fact": "\"Fearless\" is the second track on Untitled (Rise), a 2020 album by the mysterious and largely anonymous UK collective SAULT, made available for only a limited run before being pulled from streaming. Riding '80s synths and a driving bassline, it pairs a laid-back R&B groove with an insistently upbeat refrain: \"Be yourself at all times... be fearless.\"",
+      "source": "https://en.wikipedia.org/wiki/Untitled_(Rise)"
+    },
+    "arlo parks|hope": {
+      "fact": "\"Hope\" was released as the final single before Arlo Parks's debut album, Collapsed in Sunbeams, arrived in January 2021 — an album that went on to win that year's Mercury Prize. The song's video was Parks's third collaboration with director Molly Burdett, following \"Black Dog\" and \"Hurt.\"",
+      "source": "https://en.wikipedia.org/wiki/Collapsed_in_Sunbeams"
+    },
+    "jungle|happy man": {
+      "fact": "\"Happy Man\" was released in May 2018 as a double single with \"House in L.A.\" ahead of Jungle's second album, For Ever. The track later found a second life well beyond the album, turning up in an O2 phone commercial, Netflix's \"Elite,\" and as the opening theme for Apple TV+'s \"WeCrashed.\"",
+      "source": "https://en.wikipedia.org/wiki/Happy_Man_(Jungle_song)"
+    },
+    "radiohead|paranoid android": {
+      "fact": "\"Paranoid Android\" was stitched together from three separate song fragments, each originally written by a different band member, in a process inspired by the multi-part structure of the Beatles' \"Happiness Is a Warm Gun.\" Recorded at St Catherine's Court, a 15th-century mansion near Bath, the first edit ran over 14 minutes — including a long Jonny Greenwood organ interlude — before being trimmed to six and a half minutes for OK Computer.",
+      "source": "https://en.wikipedia.org/wiki/Paranoid_Android"
+    },
+    "hovvdy and runo plum|shooting star": {
+      "fact": "Released in February 2025, \"Shooting Star\" marked Hovvdy's first new song since their self-titled LP and paired the duo with Minnesota indie-folk artist runo plum, who had been opening dates on their tour. The result is an even softer, more lullaby-like track than typical Hovvdy fare.",
+      "source": "https://www.stereogum.com/2298556/hovvdy-runo-plum-shooting-star/music/"
+    },
+    "nilufer yanya|in your head": {
+      "fact": "Released in January 2019 as the second single from her debut album Miss Universe, \"In Your Head\" was described by Nilufer Yanya as being about \"the illusion of freedom\" and how the mind can trap you in its own perceptions. Its video was filmed out in the desert near Las Vegas.",
+      "source": "https://www.thelineofbestfit.com/news/latest-news/niluefer-yanya-announces-debut-album-with-new-single-in-your-head"
+    },
+    "pixies|debaser": {
+      "fact": "Frank Black wrote \"Debaser\" after watching the 1929 surrealist short film Un Chien Andalou in a college film studies class, and coined the song's title himself — a \"debaser,\" he explained, is \"one who debases,\" and he wanted to introduce the word into the language. The chorus deliberately mixes languages, with Black singing the intentionally garbled phrase \"un chien andalusia\" simply because, in his words, \"it sounds good.\"",
+      "source": "https://en.wikipedia.org/wiki/Debaser"
+    },
+    "jay som|the bus song": {
+      "fact": "Jay Som is the solo recording project of Melina Duterte, who wrote, recorded, and produced her 2017 debut album Everybody Works largely on her own. \"The Bus Song,\" from that album, has been described as a glistening \"mass-transit reverie\" carrying echoes of sunshine pop.",
+      "source": "https://en.wikipedia.org/wiki/Everybody_Works"
+    },
+    "the war on drugs|best night": {
+      "fact": "\"Best Night\" appears on The War on Drugs' 2011 album Slave Ambient and was later issued as its own single in 2012. Adam Granduciel wrote and co-produced the track with Jeff Zeigler, with onetime member Kurt Vile — who'd left the band a few years earlier to focus on his solo career — guesting on guitar.",
+      "source": "https://en.wikipedia.org/wiki/Slave_Ambient"
+    },
+    "spirit of the beehive|1/500": {
+      "fact": "\"1/500\" is a track from Spirit of the Beehive's 2024 album You'll Have to Lose Something, released on the Saddle Creek label. It was written by band members Zack Schwartz and Rivka Ravede, with additional performance from Corey Wichlin.",
+      "source": "https://spiritofthebeehive.bandcamp.com/track/1-500"
+    },
+    "beck|cyanide breath mint": {
+      "fact": "\"Cyanide Breath Mint\" appears on Beck's stripped-down, lo-fi 1994 album One Foot in the Grave, recorded at Dub Narcotic Studio. Beck liked the phrase enough that he later named his own music publishing company, Cyanide Breathmint Music, after the song.",
+      "source": "https://whiskeyclone.net/ghost/songinfo.php?songID=62"
+    },
+    "the last dinner party|sinner": {
+      "fact": "\"Sinner\" was the second single from The Last Dinner Party's debut album Prelude to Ecstasy, written by guitarist Lizzie Mayland and produced by James Ford. The album went on to debut at Number One on the UK Albums Chart, the biggest first-week showing for a debut band album in nine years.",
+      "source": "https://en.wikipedia.org/wiki/Sinner_(The_Last_Dinner_Party_song)"
+    },
+    "wilco|random name generator": {
+      "fact": "\"Random Name Generator\" appears on Wilco's 2015 album Star Wars, which the band surprised fans by releasing as a free download with no advance notice. Critics noted the song's fuzzed-out riff and stomping drums channel the glam-rock swagger of T. Rex.",
+      "source": "https://wilcoworld.net/song/random-name-generator/"
+    },
+    "the national|alphabet city": {
+      "fact": "\"Alphabet City\" was released in August 2023 as one of two surprise new singles alongside \"Space Invader,\" both arriving with visualizer videos directed by Pauline de Lassus (who records under the name Mina Tindle). \"Space Invader\" later resurfaced on the band's surprise second album that year, Laugh Track.",
+      "source": "https://www.nme.com/news/music/the-national-share-two-new-singles-space-invader-and-alphabet-city-3484275"
+    },
+    "sufjan stevens|my rajneesh": {
+      "fact": "\"My Rajneesh\" was released in July 2020 as the B-side to a limited double-sided 12-inch vinyl single alongside \"America,\" pressed to just 1,500 copies worldwide. Both tracks came from the same writing sessions that fed into Stevens's next album, The Ascension.",
+      "source": "https://en.wikipedia.org/wiki/America_(Sufjan_Stevens_song)"
+    },
+    "pure carrire|abracabruti": {
+      "fact": "\"Abracabruti\" comes from Pure Carriere's 2025 album Visions de l'enfer. The Quebec City act is a duo formed in 2017 by Jean-Michel Letendre-Veilleux and Laurence Gauthier-Brown, who also play in other local projects like Beat Sexu and Victime.",
+      "source": "https://lecanalauditif.ca/artistes/pure-carriere/"
+    },
+    "gelli haha|bounce house": {
+      "fact": "\"Bounce House\" was Gelli Haha's debut single, released in March 2025 and later included on her album Switcheroo. The track was produced by Sean Guerin, and its music video was filmed inside a colorful indoor playground.",
+      "source": "https://loudwomen.org/2025/03/26/gelli-haha-makes-her-playful-debut-with-bounce-house/"
+    },
+    "savages|husbands": {
+      "fact": "\"Husbands,\" from Savages' 2013 debut album Silence Yourself, borrows its title from a 1970 John Cassavetes film about three friends navigating a midlife crisis. Frontwoman Jehnny Beth said the song grew from a feeling that people today have become disconnected, \"like smoke.\"",
+      "source": "https://www.songfacts.com/facts/savages/husbands"
+    },
+    "pavement|zurich is stained": {
+      "fact": "\"Zurich Is Stained\" comes from Pavement's 1992 debut album Slanted and Enchanted, recorded on a shoestring budget at drummer Gary Young's home studio over about ten days. It remains the only Pavement album to feature Young behind the kit.",
+      "source": "https://en.wikipedia.org/wiki/Slanted_and_Enchanted"
+    },
+    "local natives|past lives": {
+      "fact": "\"Past Lives\" was Local Natives' first new song in three years, arriving in 2016 as the lead single from their album Sunlit Youth following 2013's Hummingbird. Guitarist Taylor Rice said of the track, \"The world is not static, it's made new over and over again.\"",
+      "source": "https://www.rollingstone.com/music/music-news/local-natives-debut-yearning-single-past-lives-68957/"
+    },
+    "sprints|rage": {
+      "fact": "\"Rage\" appears on All That Is Over, the 2025 sophomore album from Dublin band SPRINTS. Formed in 2019, the group is made up of Karla Chubb, Sam McCann, Jack Callan and Zac Stephenson, and the record was produced by Daniel Fox as a follow-up to their 2024 debut, Letter to Self.",
+      "source": "https://en.wikipedia.org/wiki/Sprints_(band)"
+    },
+    "yeah yeah yeahs|gold lion": {
+      "fact": "\"Gold Lion,\" the lead single from Yeah Yeah Yeahs' 2006 album Show Your Bones, got its title from the two Gold Lion trophies won at the Cannes Lions advertising festival by an Adidas commercial that Karen O had sung on, composed by Sam \"Squeak E. Clean\" Spiegel and directed by Spike Jonze.",
+      "source": "https://en.wikipedia.org/wiki/Gold_Lion"
+    },
+    "courting|pause at you (c u around)": {
+      "fact": "\"Pause At You\" was released as the lead single from Courting's third album, Lust for Life, Or: How To Thread The Needle And Come Out The Other Side To Tell The Story, announced in late 2024 ahead of a March 2025 release.",
+      "source": "https://stereogum.com/2288139/courting-pause-at-you/music"
+    },
+    "weyes blood|children of the empire": {
+      "fact": "\"Children of the Empire\" is from Weyes Blood's 2022 album And in the Darkness, Hearts Aglow, the second chapter in a trilogy that began with 2019's Titanic Rising. Natasha Mering said she realized she had \"a few songs left over\" from that earlier album, which grew into this one; she co-produced the track with Jonathan Rado.",
+      "source": "https://en.wikipedia.org/wiki/Children_of_the_Empire"
+    },
+    "bat for lashes|oh yeah": {
+      "fact": "\"Oh Yeah\" appears on Bat for Lashes' 2012 album The Haunted Man, written by Natasha Khan and produced by a team including Dan Carey, David Kosten, and Rob Ellis.",
+      "source": "https://en.wikipedia.org/wiki/The_Haunted_Man_(album)"
+    },
+    "grizzly bear|three rings": {
+      "fact": "\"Three Rings\" was released as a single in May 2017 ahead of Grizzly Bear's album Painted Ruins. The track builds through layered vocal harmonies and woodwinds over a dusty electronic drum loop before a burst of guitar closes it out.",
+      "source": "https://en.wikipedia.org/wiki/Painted_Ruins"
+    },
+    "the fall|eat y'self fitter": {
+      "fact": "\"Eat Y'self Fitter\" opens The Fall's 1983 album Perverted by Language. Mark E. Smith built the song's chant-like chorus around ad slogans lifted from a Kellogg's All-Bran cereal campaign, and DJ John Peel later named it among his all-time favorite tracks.",
+      "source": "https://thequietus.com/opinion-and-essays/anniversary/the-fall-perverted-by-language-review/"
+    },
+    "the dandy warhols|i'd like to help you with your problem (feat slash)": {
+      "fact": "This 2024 single comes from The Dandy Warhols' album Rockmaker and features a guitar solo from Slash. Frontman Courtney Taylor-Taylor described the track's sound as \"real Vietnam-era acid rock,\" and the band has said they \"just stared at each other with our mouths open\" the first time they heard Slash's contributions played back in the studio.",
+      "source": "https://www.guitarworld.com/news/dandy-warhols-ft-slash"
+    },
+    "hurray for the riff raff|pyramid scheme": {
+      "fact": "\"Pyramid Scheme\" was released February 20, 2025 as a standalone single, the band's first new music after their acclaimed 2024 album The Past Is Still Alive. The song channels contempt for the dark side of the internet and how it alienates and undermines artists and outsiders.",
+      "source": "https://stereogum.com/2297657/hurray-for-the-riff-raff-pyramid-scheme/music"
+    },
+    "angelo de augustine|27": {
+      "fact": "\"27\" was released as a double single with \"Hologram\" in November 2022, Angelo De Augustine's first new music after his 2021 collaborative album with Sufjan Stevens, A Beginner's Mind. Stevens returned the favor here, contributing synthesizer, drum machine, electric guitar, bass, Fender Rhodes, and background vocals to the track.",
+      "source": "https://www.thelineofbestfit.com/news/angelo-de-augustine-returns-with-new-double-single-27-hologram"
+    },
+    "st. vincent|marrow": {
+      "fact": "\"Marrow\" appears on St. Vincent's 2009 album Actor. Annie Clark has said the song grew out of her love of The Wizard of Oz, wanting to write about a character wishing \"they had a spine made of iron,\" and aiming for a sound that was as visual and Technicolor as it was musical, built from distorted guitars, horns, and fluttering woodwinds.",
+      "source": "https://stereogum.com/2041494/st-vincent-actor-turns-10/reviews/the-anniversary"
+    },
+    "mac demarco|gualala": {
+      "fact": "\"Gualala\" opens Mac DeMarco's 2023 all-instrumental album Five Easy Hot Dogs, a record where each track is named for a town he passed through on an actual road trip up the California and Canadian coast, with songs recorded and mixed at each stop. The album's only vocal moment anywhere is DeMarco's spoken count-in at the very start of this opening track.",
+      "source": "https://consequence.net/2023/01/mac-demarco-five-easy-hot-dogs/"
+    },
+    "darkside|s.n.c.": {
+      "fact": "\"S.N.C.\" comes from Darkside's 2025 album Nothing, the group's first LP since drummer Tlacael Esparza joined Nicolas Jaar and Dave Harrington as a full-time third member. The album was recorded across studios in Provence, Los Angeles, and Paris.",
+      "source": "https://en.wikipedia.org/wiki/Nothing_(Darkside_album)"
+    },
+    "husker du|chartered trips": {
+      "fact": "\"Chartered Trips\" is track four on Husker Du's 1984 double album Zen Arcade, written and sung by Bob Mould with piano parts from both Mould and Grant Hart. It's frequently singled out as one of the album's more melodic, pop-oriented songs, one that pointed the way toward the band's next record, New Day Rising.",
+      "source": "https://www.allmusic.com/album/zen-arcade-mw0000197795"
+    },
+    "vacations|midwest": {
+      "fact": "\"Midwest\" appears on Australian band Vacations' 2023 album No Place Like Home. Singer Campbell Burns has said it was the first breakup song he'd ever written directly, inspired by the strain of leaving someone behind while out on tour, and he co-produced the track with John Velasquez.",
+      "source": "https://northerntransmissions.com/midwest-by-vacations/"
+    },
+    "belle and sebastian|unnecessary drama": {
+      "fact": "\"Unnecessary Drama\" was the lead single from Belle and Sebastian's 2022 album A Bit of Previous, the Scottish band's first full studio album since 2015. It was recorded in their hometown of Glasgow after the pandemic derailed original plans to record in Los Angeles, and its video shows the band comically working out their tensions with a therapist and team-building exercises.",
+      "source": "https://www.nme.com/news/music/belle-and-sebastian-talk-new-album-a-bit-of-previous-and-share-lead-single-unnecessary-drama-3171509"
+    },
+    "alex g|southern sky": {
+      "fact": "\"Southern Sky\" appears on Alex G's 2019 album House of Sugar and features guest vocals from Emily Yacina. It arrived with an animated, black-and-white video from his longtime collaborator Elliott Bech, built around plunking keys, a running bassline, and impressionistic violin.",
+      "source": "https://www.rollingstone.com/music/music-news/sandy-alex-g-new-song-southern-sky-871352/"
+    },
+    "black midi|speedway": {
+      "fact": "\"Speedway\" was first released in January 2019 as a tour-only 12-inch before landing as track two on black midi's debut album Schlagenheim later that year. It marked one of bassist Cameron Picton's first lead-vocal turns for the band, giving the song a quieter, more subdued feel next to the record's noisier tracks.",
+      "source": "https://en.wikipedia.org/wiki/Schlagenheim"
+    },
+    "julia holter|evening mood": {
+      "fact": "\"Evening Mood,\" from Julia Holter's 2024 album Something in the Room She Moves, was partly inspired by her daughter's favorite film, Miyazaki's Ponyo. Holter wove an actual recording of her own pregnancy ultrasound heartbeat, run through a phaser, into the track alongside Dev Hoff's fretless bass and Chris Speed's clarinet.",
+      "source": "https://www.undertheradarmag.com/news/julia_holter_shares_video_for_new_song_evening_mood/"
+    },
+    "destroyer|hydroplaning off the edge of the world": {
+      "fact": "\"Hydroplaning Off the Edge of the World\" was the second single from Destroyer's 2025 album Dan's Boogie, the band's fourteenth studio record, produced by longtime collaborator John Collins. Across the album's nine songs, frontman Dan Bejar plays with characters like a lounge singer and a hustler.",
+      "source": "https://en.wikipedia.org/wiki/Dan%27s_Boogie"
+    },
+    "youbet|carsick": {
+      "fact": "Youbet is a Brooklyn-based indie rock band fronted by Nick Llobet. \"Carsick\" was the first song they shared after signing to Hardly Art in late 2023, and it later appeared on the band's debut full-length, Way To Be.",
+      "source": "https://www.hardlyart.com/blogs/news/hardly-art-signs-youbet-shares-official-video-for-new-single-carsick"
+    },
+    "alvvays|archie, marry me": {
+      "fact": "\"Archie, Marry Me\" is from Alvvays' self-titled 2014 debut album. Songwriter Molly Rankin has said she chose the name \"Archie\" because it was uncommon but felt right, writing the song from the perspective of poking fun at being in your twenties and surrounded by engaged friends.",
+      "source": "https://www.cbc.ca/music/alvvays-archie-marry-me-gold-certified-1.7412763"
+    },
+    "fleet foxes|blue ridge mountains": {
+      "fact": "\"Blue Ridge Mountains,\" written by frontman Robin Pecknold, appears on Fleet Foxes' self-titled 2008 debut album. It's a narrative song built around a missed connecting flight to the mountains near Asheville, North Carolina, layered over the band's harmony-heavy folk arrangements.",
+      "source": "https://readdork.com/lyrics/fleet-foxes-blue-ridge-mountains-2008"
+    },
+    "huron john|just me & friends": {
+      "fact": "\"Just Me & Friends\" was released as a 2023 single and later included on Huron John's third album, Indigo Jack & the New World Border (2024). Co-produced by Matt Neighbor, it blends neo-psychedelia with alt-pop and has been called \"a love letter to honesty and pure connection.\"",
+      "source": "https://www.onestowatch.com/en/blog/huron-john-ends-hiatus-drops-just-me-friends-album-announcement"
     }
   }
 }
