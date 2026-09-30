@@ -10,7 +10,7 @@
     // DISPLAY_VERSION on every edit — it forces one redirect to a URL the CDN
     // has never cached, guaranteeing the fresh copy loads. (Mirrors the same
     // pattern homestead_media's script.js uses for APP_VERSION.)
-    const DISPLAY_VERSION = '20260930a';
+    const DISPLAY_VERSION = '20260930b';
     (function() {
       try {
         const k = 'display_version';
@@ -667,31 +667,34 @@
       hmDb = firebase.firestore();
       return hmDb;
     }
-    // Homestead HS is in Fort Wayne, IN (Eastern Time). We compute "today"/"yesterday"
+    // Homestead HS is in Fort Wayne, IN (Eastern Time). We compute "today"/"tomorrow"
     // in that fixed zone rather than the viewing device's local clock/timezone, so a
-    // TV whose OS timezone is misconfigured (e.g. set to UTC) can't shift the date
-    // by a day and show "today + tomorrow" instead of "yesterday + today".
+    // TV whose OS timezone is misconfigured (e.g. set to UTC) can't shift the window
+    // by a day.
     const HM_TIMEZONE = 'America/New_York';
     function hmYmdInZone(d, timeZone) {
       // en-CA formats as YYYY-MM-DD
       return new Intl.DateTimeFormat('en-CA', { timeZone, year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
     }
-    // hmGames holds whatever's found for today/yesterday; renderHomesteadLive()
-    // draws it into both stations' (hidden-until-flipped) live faces; flipBottomFace()
-    // alternates a given station's face with Recently Played so neither gets crowded out.
+    // A broadcast should surface starting the day before it airs (so crew/viewers see
+    // it coming) and stay up through the day it airs. From "today"'s point of view that
+    // means: a game dated today ("the day of") or dated tomorrow ("the day before").
+    // hmGames holds whatever's found in that window; renderHomesteadLive() draws it into
+    // both stations' (hidden-until-flipped) live faces; flipBottomFace() alternates a
+    // given station's face with Recently Played so neither gets crowded out.
     let hmGames = [];
     async function fetchHomesteadLive() {
       const db = getHmDb();
       if (!db) { hmGames = []; renderHomesteadLive(); return; }
       try {
         const now = new Date();
-        const todayStr = hmYmdInZone(now, HM_TIMEZONE);
-        const yestStr  = hmYmdInZone(new Date(now.getTime() - 24 * 60 * 60 * 1000), HM_TIMEZONE);
-        const snap = await db.collection('hm_broadcasts').where('date', 'in', [todayStr, yestStr]).get();
+        const todayStr    = hmYmdInZone(now, HM_TIMEZONE);
+        const tomorrowStr = hmYmdInZone(new Date(now.getTime() + 24 * 60 * 60 * 1000), HM_TIMEZONE);
+        const snap = await db.collection('hm_broadcasts').where('date', 'in', [todayStr, tomorrowStr]).get();
         const games = [];
         snap.forEach(doc => games.push({ id: doc.id, ...doc.data() }));
-        games.sort((a, b) => (a.date < b.date ? 1 : -1)); // today first
-        hmGames = games.map(g => ({ ...g, when: g.date === todayStr ? 'Today' : 'Yesterday' }));
+        games.sort((a, b) => (a.date < b.date ? -1 : 1)); // today first, then tomorrow
+        hmGames = games.map(g => ({ ...g, when: g.date === todayStr ? 'Today' : 'Tomorrow' }));
       } catch {
         hmGames = [];
       }
