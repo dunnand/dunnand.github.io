@@ -4303,6 +4303,486 @@
     "huron john|just me & friends": {
       "fact": "\"Just Me & Friends\" was released as a 2023 single and later included on Huron John's third album, Indigo Jack & the New World Border (2024). Co-produced by Matt Neighbor, it blends neo-psychedelia with alt-pop and has been called \"a love letter to honesty and pure connection.\"",
       "source": "https://www.onestowatch.com/en/blog/huron-john-ends-hiatus-drops-just-me-friends-album-announcement"
+    },
+    "bon iver|calgary": {
+      "fact": "\"Calgary\" was the first single from Bon Iver's self-titled second album (2011). Like much of the record, the song is named after a real place chosen mostly for its emotional resonance rather than literal geography — Justin Vernon has said he wrote about the Canadian city despite never having been there.",
+      "source": "https://www.songfacts.com/facts/bon-iver/calgary"
+    },
+    "lucy dacus|hot and heavy": {
+      "fact": "\"Hot & Heavy\" opens Lucy Dacus's 2021 album Home Video and was its lead single. Dacus said she thought she was writing about an old friend but realized it was about outgrowing past versions of herself; the self-directed video was shot at Richmond's historic Byrd Theatre using home-video footage her dad took of her as a kid.",
+      "source": "https://en.wikipedia.org/wiki/Hot_%26_Heavy_(Lucy_Dacus_song)"
+    },
+    "radiohead|bodysnatchers": {
+      "fact": "\"Bodysnatchers,\" from 2007's In Rainbows, was recorded live with the full band playing together in one take — the only track on the album done that way. It was tracked at Tottenham House, a crumbling country mansion in Wiltshire where the band lived in caravans during sessions with producer Nigel Godrich.",
+      "source": "https://en.wikipedia.org/wiki/Bodysnatchers_(song)"
+    },
+    "the strokes|brooklyn bridge to chorus": {
+      "fact": "\"Brooklyn Bridge to Chorus\" was released April 6, 2020 as the third single from The Strokes' The New Abnormal, the band's first album produced by Rick Rubin. Its synth-driven, new-wave sound drew comparisons to Julian Casablancas's solo work with The Voidz.",
+      "source": "https://www.nme.com/news/music/the-strokes-brooklyn-bridge-to-chorus-2641825"
+    },
+    "beabadoobee|memories": {
+      "fact": "\"Memories\" comes from beabadoobee's 2026 album Pylon, released via Dirty Hit/Interscope. She co-wrote the acoustic-driven track with Shane Moran and Gianluca Buccellati and called it one of the happiest-sounding songs on the record, even though its lyrics dwell on the bittersweet pull of nostalgia.",
+      "source": "https://www.udiscovermusic.com/news/beabadoobee-memories/"
+    },
+    "the english beat|ranking full stop": {
+      "fact": "\"Ranking Full Stop\" was the lead single from The English Beat's 1980 debut I Just Can't Stop It. Its title borrows from Jamaican sound-system slang — \"ranking\" was a boastful term of respect used by toasting MCs, fitting since the band's own toaster performed under the stage name Ranking Roger.",
+      "source": "https://www.musicianwages.com/the-meaning-behind-the-song-ranking-full-stop-by-the-english-beat/"
+    },
+    "julia jacklin|if i had the hand of god": {
+      "fact": "\"If I Had the Hand of God\" is a single from Julia Jacklin's 2026 album The Gem on 4AD. Jacklin wrote the country-rock track as a meditation on life as a touring musician, partly inspired by a recent trip to Nashville.",
+      "source": "https://stereogum.com/2512221/julia-jacklin-if-i-had-the-hand-of-god/music"
+    },
+    "fontaines d.c.|cello song": {
+      "fact": "Fontaines D.C.'s cover of Nick Drake's 1969 \"'Cello Song\" (from Drake's Five Leaves Left) served as the lead single for the 2023 tribute album The Endless Coloured Ways – The Songs of Nick Drake. The band swapped Drake's cello-led acoustic arrangement for a driving backbeat and layered guitars, part of a 32-artist project that asked contributors to reinvent the songs rather than replicate them.",
+      "source": "https://www.rollingstone.com/music/music-news/fontaines-dc-nick-drake-cello-song-the-endless-coloured-ways-1234689116/"
+    },
+    "spoon|i summon you": {
+      "fact": "\"I Summon You,\" from Spoon's 2005 album Gimme Fiction, was performed for the Black Cab Sessions series, whose motto is \"one song, one take, one cab\" — filming artists playing a single song while riding in the back of a moving London taxi. The band stripped the song down to just guitar and vocals for that version, versus the added bass and drums on the album cut.",
+      "source": "https://en.wikipedia.org/wiki/Black_Cab_Sessions"
+    },
+    "gang of four|at home he's a tourist": {
+      "fact": "\"At Home He's a Tourist,\" from Gang of Four's 1979 debut Entertainment!, peaked at No. 58 on the UK singles chart — still the highest chart position any Gang of Four single has reached. According to singer Jon King, guitarist Andy Gill recorded the song's jagged, scraping guitar part in a single take.",
+      "source": "https://www.songfacts.com/facts/gang-of-four/at-home-hes-a-tourist"
+    },
+    "wild pink|cloud or mountain": {
+      "fact": "\"Cloud or Mountain\" appears on Wild Pink's 2024 album Dulling the Horns. The track shifts between a country-tinged feel and heavier, sludgier passages, and features pedal steel guitar from Mike \"Slo-Mo\" Brenner.",
+      "source": "https://www.treblezine.com/wild-pink-dulling-the-horns-review/"
+    },
+    "the mountain goats|get famous": {
+      "fact": "\"Get Famous\" is the horn-backed second track on The Mountain Goats' 2020 album Getting into Knives, recorded in a single week at Sam Phillips Recording in Memphis with producer Matt Ross-Spang and a crew of local session musicians. Its 2020 music video portrays the band members as bobblehead dolls.",
+      "source": "https://www.rollingstone.com/music/music-news/mountain-goats-bobbleheads-get-famous-video-1069144/"
+    },
+    "modest mouse|interstate 8": {
+      "fact": "\"Interstate 8\" is the title track of Modest Mouse's second EP, released on Up Records in 1996. It was produced by Steve Wold and recorded at Moon Music in Olympia, Washington, bridging the gap between the band's debut album and 1997's The Lonesome Crowded West.",
+      "source": "https://en.wikipedia.org/wiki/Interstate_8_(EP)"
+    },
+    "vampire weekend|don't lie": {
+      "fact": "\"Don't Lie\" appears on Vampire Weekend's 2013 album Modern Vampires of the City. Frontman Ezra Koenig has described it as a kind of sequel to the band's earlier songs \"M79\" and \"White Sky,\" built around a simpler, more direct arrangement than listeners might expect from the band.",
+      "source": "https://www.songfacts.com/facts/vampire-weekend/dont-lie"
+    },
+    "sigur ros|starálfur": {
+      "fact": "\"Starálfur,\" meaning \"staring elf,\" appears on Sigur Rós's 1999 album Ágætis byrjun. Sung in Icelandic by Jónsi, the lyrics describe going to bed after a long day in blue pajamas and suddenly noticing the mythical staring elf gazing back from the room.",
+      "source": "https://songtell.com/sigur-r-s/star-lfur"
+    },
+    "bully|i remember": {
+      "fact": "\"I Remember\" was the first single from Bully's 2015 debut album Feels Like. The sub-two-minute punk track was written and sung by frontwoman Alicia Bognanno, who also produced and mixed the recording herself.",
+      "source": "https://www.thefader.com/2015/03/11/bullys-i-remember-is-the-most-energizing-punk-song-youll-hear-all-day"
+    },
+    "massive attack|unfinished sympathy": {
+      "fact": "For \"Unfinished Sympathy,\" from 1991's Blue Lines, producer Johnny Dollar brought in arranger Wil Malone to record a 40-piece orchestra at Abbey Road Studios. The orchestral session cost so much that Massive Attack had to sell one of their vehicles, a Mitsubishi Shogun, to help cover the bill.",
+      "source": "https://www.musicradar.com/artists/the-title-came-up-as-a-joke-at-first-but-it-fitted-the-song-so-perfectly-we-just-had-to-use-it-how-massive-attack-created-the-groundbreaking-90s-hit-that-propelled-bristols-unique-music-scene-into-the-global-spotlight"
+    },
+    "adrianne lenker|cradle": {
+      "fact": "\"cradle\" was the first single from Adrianne Lenker's 2018 solo album abysskiss. She recorded the album with Luke Temple of Here We Go Magic at Panoramic House in West Marin, California, shortly after two weeks spent traveling through the American South.",
+      "source": "https://xpn.org/2018/08/07/listen-to-cradle-the-new-track-from-big-thiefs-adrianne-lenker/"
+    },
+    "car seat headrest|nervous young inhumans": {
+      "fact": "\"Nervous Young Inhumans\" appears on Car Seat Headrest's Twin Fantasy (Face to Face). Songwriter Will Toledo has said the title nods to \"galvanism,\" the long-obsolete scientific theory — made famous through Mary Shelley's Frankenstein — that electricity flowing through the bloodstream powers life. He used that idea as a lens for writing about creating and inhabiting characters in his songs.",
+      "source": "https://songtell.com/car-seat-headrest/nervous-young-inhumans"
+    },
+    "wilco|box full of letters": {
+      "fact": "\"Box Full of Letters\" was Wilco's debut single, released from their first album A.M. in 1995. It's often read as addressing the breakup of Jeff Tweedy's previous band, Uncle Tupelo, with its multilayered guitars giving the track a gritty, lived-in texture.",
+      "source": "https://www.pastemagazine.com/music/wilco/wilcos-a-m-at-30-the-imperfect-genesis-of-a-signature-sound"
+    },
+    "yo la tengo|wasn't born to follow": {
+      "fact": "Yo La Tengo's version of \"Wasn't Born to Follow\" is a cover of the Byrds' 1968 track, originally written by Gerry Goffin and Carole King, released on the band's Sleepless Night EP via Matador. Longtime collaborator Dave Schramm plays lead guitar on the cover, which stays close to the folk-rock feel of the original.",
+      "source": "https://www.rollingstone.com/music/music-news/yo-la-tengo-byrds-wasnt-born-to-follow-1050052/"
+    },
+    "spacemen 3|losing touch with my mind": {
+      "fact": "\"Losing Touch With My Mind\" opens Spacemen 3's 1986 debut album Sound of Confusion. It's built from a cycling wave of guitar feedback that gradually gets wrestled back into driving, classic garage-rock rhythm, setting the tone for the band's recorded career.",
+      "source": "https://www.popmatters.com/spacemen-3-sound-of-confusion"
+    },
+    "andrew bird|imitosis": {
+      "fact": "\"Imitosis\" started life as a slower, sparser song called \"I\" (performed live as \"Capital I\") on Andrew Bird's 2003 album Weather Systems. He reworked it into the more upbeat \"Imitosis\" for his 2007 album Armchair Apocrypha.",
+      "source": "https://en.wikipedia.org/wiki/Armchair_Apocrypha"
+    },
+    "destroyer|bologna (feat. fiver)": {
+      "fact": "\"Bologna\" features Simone Schmidt of the band Fiver on co-lead vocals, and Dan Bejar has said it's the first Destroyer song where he cast himself as a supporting character while Schmidt's part drives the narrative. It's the lead single from Destroyer's 2025 album Dan's Boogie, with a video directed by David Galloway starring Bejar and Schmidt.",
+      "source": "https://www.thefader.com/2025/01/08/destroyer-dans-boogie-release-date-bologna"
+    },
+    "big thief|masterpiece": {
+      "fact": "\"Masterpiece\" is the title track of Big Thief's debut studio album, released May 27, 2016 on Saddle Creek Records. NPR's Bob Boilen singled it out as one of the best songs he'd heard that year.",
+      "source": "https://en.wikipedia.org/wiki/Masterpiece_(Big_Thief_album)"
+    },
+    "siouxsie and the banshees|she's a carnival": {
+      "fact": "\"She's a Carnival\" is track four on Siouxsie and the Banshees' 1982 album A Kiss in the Dreamhouse, with Steven Severin on bass, John McGeoch on guitar, and Budgie on drums. Critics have described it as a gutsy, organ-driven rocker that lives up to its title.",
+      "source": "https://www.discogs.com/release/9285468-Siouxsie-And-The-Banshees-A-Kiss-In-The-Dreamhouse"
+    },
+    "woods|little black flowers": {
+      "fact": "\"Little Black Flowers\" was released August 30, 2023 as a double single with \"Day Moving On\" ahead of Woods' album Perennial. It was recorded with longtime producer Jarvis Taveniere at Panoramic House in Stinson Beach, California, with additional sessions in Los Angeles and Stone Ridge, New York.",
+      "source": "https://exclaim.ca/music/article/woods_announce_new_album_perennial_share_double_single"
+    },
+    "handsome furs|legal tender": {
+      "fact": "\"Legal Tender\" is the opening track on Handsome Furs' 2009 album Face Control, written by the duo of Dan Boeckner and Alexei Perry. It was recorded and mixed by Arlen Thompson at Mount Zoomer studio and mastered by Harris Newman at Hotel2Tango.",
+      "source": "https://en.wikipedia.org/wiki/Face_Control"
+    },
+    "waxahatchee|oxbow": {
+      "fact": "\"Oxbow\" is the opening track on Waxahatchee's 2020 album Saint Cloud, which marked a turn toward a warmer, more rootsy Americana sound for songwriter Katie Crutchfield compared to her earlier, more lo-fi records.",
+      "source": "https://en.wikipedia.org/wiki/Saint_Cloud_(album)"
+    },
+    "japanese breakfast|orlando in love": {
+      "fact": "\"Orlando in Love\" was released January 7, 2025 as the lead single announcing Japanese Breakfast's album For Melancholy Brunettes (& Sad Women), written by Michelle Zauner and produced by Blake Mills. The title nods to Orlando Innamorato, the unfinished Renaissance-era epic poem by Matteo Maria Boiardo.",
+      "source": "https://www.nme.com/news/music/japanese-breakfast-shares-orlando-in-love-to-announce-new-album-for-melancholy-brunettes-sad-women-and-2025-north-american-and-european-tour-3826791"
+    },
+    "the smiths|barbarism begins at home": {
+      "fact": "On \"Barbarism Begins at Home,\" from 1985's Meat Is Murder, drummer Mike Joyce cued his part off Andy Rourke's repetitive, funk-inspired bass line rather than Johnny Marr's guitar — a rare arrangement choice in the Smiths' catalog. Marr later praised Rourke's bass work on the track as a highlight of the record.",
+      "source": "https://en.wikipedia.org/wiki/Barbarism_Begins_at_Home"
+    },
+    "xtc|senses working overtime": {
+      "fact": "\"Senses Working Overtime,\" the lead single from XTC's 1982 album English Settlement, became the band's highest-charting UK single at number 10, while the album itself reached number 5 — the commercial peak of XTC's career.",
+      "source": "https://en.wikipedia.org/wiki/Senses_Working_Overtime"
+    },
+    "beach house|myth": {
+      "fact": "\"Myth\" is the opening track and lead single from Beach House's 2012 album Bloom, released via Sub Pop. Critics called its organ-and-synth-driven intro a \"monumental kick-off\" to the record.",
+      "source": "https://en.wikipedia.org/wiki/Myth_(song)"
+    },
+    "sparks|falling in love with myself again": {
+      "fact": "\"Falling in Love with Myself Again\" appears on Sparks' 1974 breakthrough album Kimono My House, written by Ron Mael and produced by Muff Winwood — former bassist of the Spencer Davis Group turned in-house producer for Island Records.",
+      "source": "https://en.wikipedia.org/wiki/Kimono_My_House"
+    },
+    "talking heads|slippery people": {
+      "fact": "\"Slippery People,\" from Talking Heads' 1983 album Speaking in Tongues, blends gospel, funk and reggae, with lyrics nodding to the Book of Ezekiel's \"four living creatures\" and \"wheel in the middle of a wheel.\" Gospel singer Mavis Staples was drawn to the song and has kept it in her live repertoire ever since.",
+      "source": "https://www.ethanhein.com/wp/2022/slippery-people/"
+    },
+    "weyes blood|it's not just me, it's everybody": {
+      "fact": "\"It's Not Just Me, It's Everybody\" is the lead single from Weyes Blood's 2022 album And in the Darkness, Hearts Aglow, co-written with Ben Babbitt and Jonathan Rado and featuring harpist Mary Lattimore. Weyes Blood has called it a \"Buddhist anthem\" about the shared, universal nature of personal pain.",
+      "source": "https://en.wikipedia.org/wiki/It%27s_Not_Just_Me,_It%27s_Everybody"
+    },
+    "frankie cosmos|on the lips": {
+      "fact": "\"On the Lips\" originally appeared on Greta Kline's 2013 self-released collection im sorry im hi lets go. She rerecorded it and issued it as a single in March 2016 ahead of her second studio album, Next Thing.",
+      "source": "https://en.wikipedia.org/wiki/Next_Thing"
+    },
+    "iron and wine|lovesong of the buzzard": {
+      "fact": "\"Lovesong of the Buzzard\" is track three on Iron & Wine's 2007 album The Shepherd's Dog, Sam Beam's first album recorded with a full backing band rather than largely solo at home.",
+      "source": "https://en.wikipedia.org/wiki/The_Shepherd%27s_Dog"
+    },
+    "amber arcades|fading lines": {
+      "fact": "\"Fading Lines\" is the title track and second single from Amber Arcades' 2016 debut album. Songwriter Annelotte de Graaf has said it was loosely inspired by her grandfather's death and the way memories blur together over time; its music video features a parachutist falling in reverse.",
+      "source": "https://stereogum.com/1871186/amber-arcades-fading-lines/mp3s"
+    },
+    "the national|day i die": {
+      "fact": "\"Day I Die\" was released August 29, 2017 as the fourth single from The National's seventh album, Sleep Well Beast, following \"The System Only Dreams in Total Darkness,\" \"Guilty Party,\" and \"Carin at the Liquor Store.\"",
+      "source": "https://en.wikipedia.org/wiki/Sleep_Well_Beast"
+    },
+    "sleater-kinney|all hands on the bad one": {
+      "fact": "\"All Hands on the Bad One\" is the title track (and third song) from Sleater-Kinney's fifth album, released May 2, 2000 on Kill Rock Stars. The record was produced by John Goodmanson at Jackpot! Studio and later earned a GLAAD Media Award nomination for Outstanding Music Album.",
+      "source": "https://en.wikipedia.org/wiki/All_Hands_on_the_Bad_One"
+    },
+    "mitski|my body's made of crushed little stars": {
+      "fact": "\"My Body's Made of Crushed Little Stars\" is track seven on Mitski's 2016 album Puberty 2, written and recorded with longtime producer Patrick Hyland at Acme Studios in New York. At under two minutes, the folk-punk track has remained a staple of her live setlists, including her Be the Cowboy tour.",
+      "source": "https://en.wikipedia.org/wiki/My_Body%27s_Made_of_Crushed_Little_Stars"
+    },
+    "neko case|fox confessor brings the flood": {
+      "fact": "\"Fox Confessor Brings the Flood\" is the sixth track and title song of Neko Case's fourth solo album, released March 7, 2006 on ANTI- Records. The album is known for its fable-like, myth-infused imagery and remains one of her most acclaimed releases.",
+      "source": "https://en.wikipedia.org/wiki/Fox_Confessor_Brings_the_Flood"
+    },
+    "@|punish my mind": {
+      "fact": "\"Punish My Mind\" comes from @ (the art-rock duo also rendered \"At\")'s 4AD debut album Autosmile. The band has said it's one of the oldest recordings they made for the record, built around a horn arrangement and layered vocal harmonies. The finished mix even weaves in the sampled screech of a monkey.",
+      "source": "https://www.thelineofbestfit.com/news/at-unveil-new-song-punish-my-mind"
+    },
+    "fiona apple|werewolf": {
+      "fact": "\"Werewolf\" appears on Fiona Apple's 2012 album The Idler Wheel Is Wiser Than the Driver of the Screw and Whipping Cords Will Serve You More Than Ropes Will Ever Do. Apple has described it as a song about realizing you can still choose to stay friends with someone from a past relationship even after things didn't work out. The arrangement starts out spare before growing more complex, and the track closes with the sound of children playing.",
+      "source": "https://en.wikipedia.org/wiki/The_Idler_Wheel..."
+    },
+    "stiff little fingers|suspect device": {
+      "fact": "\"Suspect Device\" was Stiff Little Fingers' debut single, recorded on 4 February 1978 in a Downtown Radio studio in Newtownards normally used for recording jingles. Belfast journalist Gordon Ogilvie wrote the lyrics and handed them to singer Jake Burns after the band's fourth-ever gig. The band released it themselves on their own Rigid Digits label, and after a copy reached John Peel, who played it repeatedly on air, Rough Trade signed on to distribute it, helping it sell over 30,000 copies.",
+      "source": "https://en.wikipedia.org/wiki/Suspect_Device_(song)"
+    },
+    "wednesday|quarry": {
+      "fact": "\"Quarry\" appears on Wednesday's 2023 album Rat Saw God, which the Asheville, North Carolina band recorded in just a week at the local Drop of Sun studio. Several reviewers noted that the song's opening verse echoes the chord changes and mood of The Kinks' \"Waterloo Sunset\" before the chorus breaks into a wall of distorted, shoegaze-indebted guitar.",
+      "source": "https://readdork.com/track/wednesday-quarry"
+    },
+    "sufjan stevens|flint (for the unemployed and underpaid)": {
+      "fact": "\"Flint (For the Unemployed and Underpaid)\" opens Sufjan Stevens' 2003 album Michigan, the first entry in his planned \"50 states\" project. The track begins with a spare, minimal piano line that carries most of the song, and an electric guitar only enters as a surprise about three minutes in to close things out. Stevens wrote, performed, and recorded nearly the entire album himself while working a day job in New York.",
+      "source": "https://en.wikipedia.org/wiki/Michigan_(album)"
+    },
+    "bauhaus|kick in the eye": {
+      "fact": "\"Kick in the Eye\" was released as a single in March 1981 ahead of Bauhaus's second album, Mask, which expanded the band's sound with saxophone, keyboards, and funk-inflected rhythms. The song's title was drawn from a line in Jack Kerouac's novel Satori in Paris. It became one of two singles from Mask to crack the UK Top 60 that year.",
+      "source": "https://en.wikipedia.org/wiki/Kick_in_the_Eye"
+    },
+    "the white stripes|ball and biscuit": {
+      "fact": "At 7:17, \"Ball and Biscuit\" is the longest studio track The White Stripes ever recorded, and Jack White wrote it on the spot while making 2003's Elephant. It was recorded live to an 8-track reel-to-reel machine at Toe Rag Studios in London, a strictly analog session where the band famously used no computers at any stage of recording, mixing, or mastering. The song's heavily distorted guitar solos, run through an octave pedal, were improvised.",
+      "source": "https://en.wikipedia.org/wiki/Ball_and_Biscuit"
+    },
+    "king gizzard and the lizard wizard|big fig wasp": {
+      "fact": "\"Big Fig Wasp\" is the second track on King Gizzard & the Lizard Wizard's 2016 album Nonagon Infinity, a record built so its songs flow in an endless loop. While most of the album was tracked at Daptone Records in Brooklyn, \"Big Fig Wasp\" was recorded separately at a different studio back home in Melbourne, with Paul Maybury engineering and Michael Badger handling vocals.",
+      "source": "https://kglw.net/song/big-fig-wasp/about?artist_id=1"
+    },
+    "aphex twin|ageispolis": {
+      "fact": "\"Ageispolis\" is the fourth track on Aphex Twin's 1992 debut Selected Ambient Works 85-92, clocking in at 5:23. The album compiles ambient and techno pieces Richard D. James made on cassette dating back to when he was just 13 or 14 years old. Released on Apollo, a subsidiary of Belgian label R&S Records, it's now regarded as a defining, genre-expanding work of ambient electronic music.",
+      "source": "https://en.wikipedia.org/wiki/Selected_Ambient_Works_85%E2%80%9392"
+    },
+    "elliott smith|coming up roses": {
+      "fact": "\"Coming Up Roses\" is the sixth track on Elliott Smith's self-titled 1995 album, running 3:10. It got its own music video that year, directed by Ross Harris. The self-titled record built on Smith's debut Roman Candles and cemented his reputation for stark, intimate songwriting.",
+      "source": "https://en.wikipedia.org/wiki/Coming_Up_Roses"
+    },
+    "father john misty|funny girl": {
+      "fact": "\"Funny Girl\" was the lead single off Father John Misty's 2022 album Chloë and the Next 20th Century, released in January of that year with a music video directed by Nicholas Ashe Bateman. Musically it's a string-laden, swing-era throwback that tells the story of a rising Hollywood starlet. The album was recorded at Jonathan Wilson's Five Star Studios with additional strings, brass, and woodwinds tracked at United Recordings.",
+      "source": "https://exclaim.ca/music/article/father_john_misty_details_chlo_and_the_next_20th_century_shares_funny_girl"
+    },
+    "toro y moi|sidelines": {
+      "fact": "\"Sidelines\" is the second track on Toro y Moi's surprise 2023 EP Sandhills, a tribute to Chaz Bear's hometown of Columbia, South Carolina. The song opens with the narrator recalling being a third-string player on a Friday night football team, using that memory as a jumping-off point for a broader look back at growing up. The EP runs just 13 minutes across five songs.",
+      "source": "https://consequence.net/2023/08/toro-y-moi-sandhills-ep-stream/"
+    },
+    "wild nothing|life of pause": {
+      "fact": "\"Life of Pause\" is the title track of Wild Nothing's 2016 album, released on Captured Tracks and Bella Union and produced by Thom Monahan. The song's shimmering synths and driving drums have drawn comparisons to early-1980s David Bowie, and critics singled it out as one of the record's most purely pop moments.",
+      "source": "https://www.thelineofbestfit.com/reviews/albums/wild-nothing-life-of-pause"
+    },
+    "wipers|youth of america": {
+      "fact": "The title track of Wipers' 1981 album Youth of America stretches to roughly ten minutes, a deliberate response from frontman Greg Sage against the era's trend of short, fast punk songs. The sprawling, motorik track went on to influence Sonic Youth and the broader noise-rock scene, and it's been covered by both the Melvins and Mission of Burma. Kurt Cobain later named the Youth of America album among his fifty favorite albums of all time.",
+      "source": "https://en.wikipedia.org/wiki/Youth_of_America"
+    },
+    "radiohead|i might be wrong": {
+      "fact": "The version of \"I Might Be Wrong\" many fans know best is actually a live recording, released on Radiohead's 2001 live album I Might Be Wrong: Live Recordings. Captured during the band's Kid A and Amnesiac-era tour, the live arrangement leans harder into the rhythm section than the more atmospheric studio version from Amnesiac, giving it a rawer, more rock-driven feel.",
+      "source": "https://en.wikipedia.org/wiki/I_Might_Be_Wrong:_Live_Recordings"
+    },
+    "alabama shakes|gimme all your love": {
+      "fact": "\"Gimme All Your Love,\" written by Brittany Howard for Alabama Shakes' 2015 album Sound & Color, builds its drama around a midsong tempo shift and vocal effects on Howard's voice. After debuting it on Saturday Night Live, the band later played the song live at Prince's Paisley Park studio in Minneapolis in June 2015, with Prince himself joining them onstage for an extended guitar solo.",
+      "source": "https://www.songfacts.com/facts/alabama-shakes/gimme-all-your-love"
+    },
+    "animal collective|grass": {
+      "fact": "\"Grass\" was released as a single off Animal Collective's 2005 album Feels. For the whole record, the band tuned their guitars to match a friend's piano, which happened to already be out of tune, giving the album -- and \"Grass\" in particular -- its distinctively warped, chiming guitar tone.",
+      "source": "https://en.wikipedia.org/wiki/Feels_(Animal_Collective_album)"
+    },
+    "wolf parade|dinner bells": {
+      "fact": "\"Dinner Bells,\" written by Spencer Krug, closes out Wolf Parade's 2005 debut album Apologies to the Queen Mary at over seven minutes long. An earlier, shorter version of the song had already appeared on the band's self-released 2003 EP before this fuller studio take. Modest Mouse's Isaac Brock produced most of the album, which was recorded between Portland, Oregon, and Montreal.",
+      "source": "https://en.wikipedia.org/wiki/Apologies_to_the_Queen_Mary"
+    },
+    "tame impala|yes i'm changing": {
+      "fact": "\"Yes I'm Changing\" is the third track on Tame Impala's 2015 album Currents, a record built entirely around the theme of personal transformation. As with nearly everything on Currents, Kevin Parker wrote, played, produced, and engineered the song by himself. Parker later said the songwriting came together so quickly it felt like someone else had written it.",
+      "source": "https://readdork.com/track/tame-impala-yes-i-m-changing"
+    },
+    "new order|the perfect kiss": {
+      "fact": "The music video for New Order's \"The Perfect Kiss\" was directed by filmmaker Jonathan Demme and simply shows the band performing the entire nearly 11-minute song live in their practice room. The band played live rather than miming, recording straight to 24-track tape, and the shoot was filmed by cinematographer Henri Alekan, who decades earlier had shot Jean Cocteau's Beauty and the Beast.",
+      "source": "https://faroutmagazine.co.uk/the-new-order-music-video-directed-by-jonathan-demme/"
+    },
+    "hatchie|sure": {
+      "fact": "\"Sure\" is the second single from Hatchie's debut EP Sugar & Spice (2018), the breakthrough release that introduced Australian dream-pop songwriter Harriette Pilbeam to a wider audience. In February 2018 the track was remixed by Robin Guthrie, guitarist of dream-pop pioneers Cocteau Twins, a fitting nod given the genre's influence on Hatchie's sound. The EP was released through Double Double Whammy, Ivy League, and Heavenly Recordings.",
+      "source": "https://en.wikipedia.org/wiki/Sugar_%26_Spice_(EP)"
+    },
+    "black belt eagle scout|indians never die": {
+      "fact": "\"Indians Never Die\" is a track from Mother of My Children, the debut album by Black Belt Eagle Scout, the project of musician Katherine Paul, who grew up on the Swinomish Reservation in Washington state and is Swinomish and Inupiaq. The album was first self-released in August 2017 through Good Cheer Records before being reissued by Saddle Creek Records in September 2018, introducing Paul's music to a much wider national audience.",
+      "source": "https://en.wikipedia.org/wiki/Mother_of_My_Children"
+    },
+    "wire|too late": {
+      "fact": "\"Too Late\" appears on Wire's second album, Chairs Missing, released in September 1978. Produced by Mike Thorne, the record pushed the English post-punk band toward more atmospheric, synth-tinged textures than their stripped-down 1977 debut, Pink Flag, and the track was written by guitarist Bruce Gilbert.",
+      "source": "https://en.wikipedia.org/wiki/Chairs_Missing"
+    },
+    "jungle|heavy, california": {
+      "fact": "\"Heavy, California\" is actually from Jungle's second album, For Ever, released in September 2018 on XL Recordings, rather than the band's self-titled 2014 debut, which had been shortlisted for the Mercury Prize. The track was shared as a single in July 2018, one of the first tastes of the follow-up record.",
+      "source": "https://en.wikipedia.org/wiki/For_Ever_(album)"
+    },
+    "sault|why why why why why": {
+      "fact": "\"Why Why Why Why Why\" is track four on 5, the 2019 album by the anonymous UK collective SAULT, released through Forever Living Originals. SAULT built its reputation by releasing music with almost no promotional interviews or photos, letting records like 5 speak for themselves.",
+      "source": "https://www.albumoftheyear.org/song/38688-why-why-why-why-why/"
+    },
+    "wilco|casino queen": {
+      "fact": "\"Casino Queen\" is a highlight from Wilco's 1995 debut album, A.M., named after a real riverboat casino. Jeff Tweedy has said he wrote the song at his father's suggestion that the boat would make good song material, and former Uncle Tupelo touring guitarist Brian Henneman guests on the track's raucous slide guitar.",
+      "source": "https://www.songfacts.com/facts/wilco/casino-queen"
+    },
+    "arlo parks|softly": {
+      "fact": "\"Softly,\" released in February 2022, was Arlo Parks' first new single following her acclaimed 2021 debut album, Collapsed in Sunbeams. She co-wrote the track with veteran producer Paul Epworth, pairing its bright, upbeat-sounding production with lyrics about the fragile, bittersweet final days of a relationship.",
+      "source": "https://en.wikipedia.org/wiki/Softly_(Arlo_Parks_song)"
+    },
+    "the cure|boys don't cry": {
+      "fact": "\"Boys Don't Cry\" was first released as a standalone UK single in June 1979 and, despite later becoming one of The Cure's most beloved songs, failed to crack the UK top 75 at the time. It became the title track of the American compilation album Boys Don't Cry, issued in February 1980, and was written by founding members Michael Dempsey, Robert Smith, and Lol Tolhurst.",
+      "source": "https://en.wikipedia.org/wiki/Boys_Don%27t_Cry_(The_Cure_song)"
+    },
+    "dinosaur jr.|watch the corners": {
+      "fact": "\"Watch the Corners\" was released as the lead single from Dinosaur Jr.'s tenth studio album, I Bet on Sky, which came out in September 2012. The band gave the track away as a free download alongside its music video to introduce fans to the record ahead of release.",
+      "source": "https://www.rollingstone.com/music/music-news/song-premiere-dinosaur-jr-watch-the-corners-252471/"
+    },
+    "soccer mommy|abigail": {
+      "fact": "\"Abigail,\" a single from Soccer Mommy's 2024 album Evergreen, is a sincere serenade to Abigail, a non-playable villager character from the farming video game Stardew Valley. Sophie Allison originally wrote it as a casual songwriting exercise but liked the result enough to include it on the finished record.",
+      "source": "https://en.wikipedia.org/wiki/Abigail_(song)"
+    },
+    "andrew bird|roma fade": {
+      "fact": "\"Roma Fade\" was released as a single in March 2016 ahead of Andrew Bird's album Are You Serious, where it appears as the second track. The song opens with one of Bird's signature whistled melodies before building into full-band instrumentation, and the album overall features guest contributions from Fiona Apple and Blake Mills.",
+      "source": "https://www.pastemagazine.com/music/andrew-bird/check-out-andrew-birds-bright-new-single-roma-fade"
+    },
+    "siouxsie and the banshees|kiss them for me": {
+      "fact": "\"Kiss Them for Me\" became Siouxsie and the Banshees' biggest American hit, reaching number 23 on the Billboard Hot 100 after its 1991 release from the album Superstition. Its title borrows from the 1957 film Kiss Them for Me, which starred Jayne Mansfield and Cary Grant, and the lyrics work in Mansfield's real-life catchphrase \"divoon.\"",
+      "source": "https://www.songfacts.com/facts/siouxsie-and-the-banshees/kiss-them-for-me"
+    },
+    "destroyer|kaputt": {
+      "fact": "The title track of Destroyer's 2011 breakout album Kaputt, written by Dan Bejar, name-checks a run of real British music magazines in its lyrics -- \"Sounds, Smash Hits, Melody Maker, NME\" -- as part of its hazy, sophisti-pop meditation on the music press. The Merge Records album became the project's most critically celebrated release to date.",
+      "source": "https://beatroutemedia.com/destroyer-kaputt/"
+    },
+    "pixies|wave of mutilation": {
+      "fact": "Beyond the familiar version on 1989's Doolittle, the Pixies recorded an entirely different, slower arrangement of \"Wave of Mutilation\" known as the \"UK Surf\" version, originally released as a B-side to the \"Here Comes Your Man\" single. The song's title was later reused for Wave of Mutilation: Best of Pixies, a 2004 career-spanning compilation.",
+      "source": "https://en.wikipedia.org/wiki/Wave_of_Mutilation"
+    },
+    "black midi|sugar/tzu": {
+      "fact": "\"Sugar/Tzu\" is a single from black midi's second album, Hellfire (2022), telling a speculative story of two 600-pound boxers fighting in a fictional \"Leadweight\" division in the year 2163. Its music video, directed by Noel Paul, won Best Cinematography in a Video at the 2022 UK Music Video Awards.",
+      "source": "https://uproxx.com/indie/black-midi-sugar-tzu/"
+    },
+    "khruangbin|camo me quieres": {
+      "fact": "The song, properly titled \"Como Me Quieres,\" comes from Khruangbin's 2018 album Con Todo el Mundo. Bassist Laura Lee based it on a running exchange with her grandfather, who would ask her \"Como me quieres?\" (\"How do you love me?\") and only accept one answer -- \"Con todo el mundo\" (\"With all the world\") -- which also became the album's title.",
+      "source": "https://www.thefader.com/2018/05/30/khruangbin-como-me-quieres-video"
+    },
+    "band of horses|the general specific": {
+      "fact": "\"The General Specific\" actually comes from Band of Horses' second album, Cease to Begin, released on Sub Pop in October 2007, rather than the band's later album Infinite Arms. It sits as track five on that record, a lo-fi, foot-stomping pop tune that showcases frontman Ben Bridwell's gentler melodic side.",
+      "source": "https://www.allmusic.com/album/cease-to-begin-mw0000749877"
+    },
+    "westside cowboy|don't throw rocks": {
+      "fact": "\"Don't Throw Rocks\" is the lead single from Westside Cowboy's second EP, So Much Country 'Till We Get There, released in January 2026 by the Manchester four-piece, winners of the 2025 Glastonbury Emerging Talent Competition. The song grew out of a lo-fi drum-machine demo made in a bandmate's bedroom and reflects on the passing of time.",
+      "source": "https://www.nme.com/news/music/westside-cowboy-announce-second-ep-so-much-country-till-we-get-there-and-share-single-dont-throw-rocks-3898764"
+    },
+    "bat for lashes|glass": {
+      "fact": "\"Glass\" is actually the opening track of Bat for Lashes' second album, Two Suns, released in April 2009, rather than her 2006 debut Fur and Gold. The sweeping opener sets the tone for a record built around Natasha Khan's self-created alter ego, Pearl, a device she used to explore themes of duality throughout the album.",
+      "source": "https://en.wikipedia.org/wiki/Two_Suns"
+    },
+    "anna burch|2 cool 2 care": {
+      "fact": "\"2 Cool 2 Care\" opens Anna Burch's debut solo album, Quit the Curse, released in February 2018. The record grew out of Burch's scrappy phone demos, which Chicago musician Paul Cherry helped flesh out into full band arrangements.",
+      "source": "https://en.wikipedia.org/wiki/Quit_the_Curse"
+    },
+    "beach house|10 mile stereo": {
+      "fact": "\"10 Mile Stereo\" was recorded in July 2009 at Dreamland Studio in Hurley, New York, for Beach House's breakthrough third album, Teen Dream (2010). The shoegaze-leaning track built a devoted following of its own, selling over 40,000 digital downloads by 2012, the biggest-selling individual track from the album at that point.",
+      "source": "https://en.wikipedia.org/wiki/10_Mile_Stereo"
+    },
+    "eels|i like birds": {
+      "fact": "\"I Like Birds\" appears on Eels' 2001 album Souljacker, released on DreamWorks Records. The track pairs close-harmony backing vocals and a chirpy whistled hook with grumbling lyrics about \"mean little people,\" a wry contrast that makes it one of the record's most purely buoyant, playful moments despite frontman E's often downbeat songwriting reputation.",
+      "source": "http://www.furious.com/perfect/eels.html"
+    },
+    "julien baker and torres|sugar in the tank": {
+      "fact": "\"Sugar in the Tank\" is the debut single from the duo Julien Baker & TORRES, released on Matador Records and premiered live on The Tonight Show Starring Jimmy Fallon. It later opened the pair's debut album together, Send a Prayer My Way (April 18, 2025), a record built around their shared love of classic country songwriting and imagery.",
+      "source": "https://matadorrecords.com/blogs/news/julien-baker-torres-sugar-in-the-tank"
+    },
+    "the war on drugs|red eyes": {
+      "fact": "\"Red Eyes\" was released as the lead single from The War on Drugs' Lost in the Dream on December 4, 2013, roughly three months ahead of the full album. Frontman Adam Granduciel spent about 15 months writing, demoing, and recording the record across five different studios in several states, an unusually drawn-out process for the band.",
+      "source": "https://en.wikipedia.org/wiki/Lost_in_the_Dream"
+    },
+    "iron and wine|such great heights": {
+      "fact": "Iron & Wine's hushed acoustic cover of The Postal Service's electronic track \"Such Great Heights\" strips the song down to just Sam Beam's fingerpicked guitar and whispery vocal. The cover reached a huge audience after being featured in the 2004 film Garden State and its soundtrack, and later turned up in ad campaigns for M&M's and Ask.com.",
+      "source": "https://en.wikipedia.org/wiki/Such_Great_Heights"
+    },
+    "weyes blood|wild time": {
+      "fact": "\"Wild Time,\" from Weyes Blood's 2019 album Titanic Rising, builds from Natalie Mering's piano and acoustic guitar into a lush orchestral arrangement featuring strings, trumpet, and a full-throated French horn solo. The dense, cinematic orchestration — with contributions from players like Daphne Chen and Eric Gorfain — reflects the album's broader 1970s-FM-radio-inspired production style.",
+      "source": "https://www.avclub.com/weyes-blood-ascends-to-new-musical-heights-on-the-lush-1833816081"
+    },
+    "beck|hotwax": {
+      "fact": "\"Hotwax\" is track two on Beck's 1996 album Odelay, co-produced with the Dust Brothers (credited on the song as E.Z. Mike and King Gizmo alongside Beck). The track layers Beck's own harmonica playing and turntable scratching over a loose breakbeat, a grab-bag collage approach typical of the album's dense, sample-heavy sound.",
+      "source": "https://whiskeyclone.net/ghost/songinfo.php?songID=135"
+    },
+    "boygenius|souvenir": {
+      "fact": "\"Souvenir\" closes out boygenius's self-titled 2018 EP on Matador Records, the trio's first release together. Julien Baker, Phoebe Bridgers, and Lucy Dacus each take their own verse on the hushed, acoustic track, and a lyric from the song — \"twenty dollars and a souvenir\" — resurfaces years later in \"$20,\" a track on the group's 2023 full-length, the record.",
+      "source": "https://en.wikipedia.org/wiki/Boygenius_(EP)"
+    },
+    "beirut|nantes": {
+      "fact": "\"Nantes,\" from Beirut's 2006 debut Gulag Orkestar, was partly inspired by Jamaican dub producer King Tubby's reggae records; Zach Condon has joked about the connection, and the band reportedly plays the song as a straight reggae tune at soundchecks, just never during an actual show. Condon recorded the whole album as a teenager in his bedroom in Albuquerque, New Mexico.",
+      "source": "https://www.thelineofbestfit.com/features/lists/beirut-zach-condo-nine-favourite-songs"
+    },
+    "alex g|mis": {
+      "fact": "\"Mis\" is track six on Alex G's self-released 2012 album Rules, which he recorded and produced entirely on his own and put out independently via Bandcamp — the cover art was even painted by his mother. The lo-fi record predates Alex G's wider breakthrough and was later remastered and reissued on vinyl and CD by Lucky Number in 2015.",
+      "source": "https://en.wikipedia.org/wiki/Rules_(Alex_G_album)"
+    },
+    "vampire weekend|bambina": {
+      "fact": "\"Bambina,\" from Vampire Weekend's 2024 album Only God Was Above Us, riffs on François Couperin's 1717 harpsichord piece \"Les Barricades Mystérieuses\" — an unusual reference for a rock band, but one that fits the Baroque influences that have run through Vampire Weekend's music since their earliest records.",
+      "source": "https://www.billboard.com/lists/vampire-weekend-only-god-was-above-us-songs-ranked/"
+    },
+    "the apples in stereo|tidal wave": {
+      "fact": "\"Tidal Wave\" was the title track of the band's debut 7\" EP, self-released in June 1993 under the name the Apples (before they became the Apples in Stereo) — notably, it was also the very first official release on the influential Elephant 6 Recording Co. label. Leader Robert Schneider co-wrote the song with Chris Parfitt and produced the whole EP on a four-track recorder.",
+      "source": "https://en.wikipedia.org/wiki/Tidal_Wave_(EP)"
+    },
+    "angel olsen|acrobat": {
+      "fact": "\"Acrobat\" opens Angel Olsen's 2012 debut full-length, Half Way Home, released on the small label Bathetic Records. The track is built around gentle acoustic guitar layered with a droning pump organ, a spare, lo-fi arrangement characteristic of Olsen's early era before her later, more fully produced band records.",
+      "source": "https://angelolsen.bandcamp.com/track/acrobat"
+    },
+    "frankie rose|best of times": {
+      "fact": "\"Best of Times\" is the eighth track on Frankie Rose's 2026 album Hila, her sixth solo record and first in three years, made after she toured with The Jesus and Mary Chain in 2024. The song's flowing saxophone part, played by Jeff Tobias, gives it an '80s, cinematic feel that reviewers compared to a Michael Mann film score.",
+      "source": "https://jammerzine.com/frankie-rose-best-of-times/"
+    },
+    "mission of burma|forget": {
+      "fact": "\"Forget\" appears as a bonus track on CD reissues of Mission of Burma's 1982 debut album, Vs. The band later reused the title for Forget, a 1988 compilation on Taang! Records gathering demos and outtakes the group recorded between 1979 and 1982, offering an early look at the band's pre-Vs. sound.",
+      "source": "https://en.wikipedia.org/wiki/Vs._(Mission_of_Burma_album)"
+    },
+    "this is lorelei|holo boy": {
+      "fact": "\"Holo Boy\" is the closing title track of This Is Lorelei's December 2025 album, which collects re-recorded versions of songs Nate Amos originally released across nine different Bandcamp projects between 2014 and 2021. Amos says the roughly 90-second lo-fi track was written in Chicago around 2014-2015, making it the oldest song on the record and one of his personal favorites.",
+      "source": "https://uproxx.com/indie/this-is-lorelei-holo-boy-song/"
+    },
+    "king gizzard and the lizard wizard|ataraxia": {
+      "fact": "\"Ataraxia,\" from King Gizzard & the Lizard Wizard's 2021 microtonal album L.W., is the only song on the record with a sole songwriting credit, as guitarist Joey Walker wrote, sang, and mixed it himself. To keep the parts from clashing, the track pairs guitar in the A Subminor Phrygian scale with vocals kept in the standard 12-equal A Mixolydian scale, while bandmate Stu Mackenzie adds sitar and pungi.",
+      "source": "https://kglw.net/song/ataraxia/about"
+    },
+    "the clash|should i stay or should i go": {
+      "fact": "Mick Jones wrote \"Should I Stay or Should I Go\" (from 1982's Combat Rock) about his on-and-off relationship with singer Ellen Foley, though he later said the song \"wasn't about anything specific\" and was really just the band's attempt at writing a classic rock song. The Clash had famously racked up hit singles without ever cracking the UK Top Ten — until the song soundtracked a 1991 Levi's commercial and was rereleased, finally giving the band their only UK number-one single.",
+      "source": "https://www.songfacts.com/facts/the-clash/should-i-stay-or-should-i-go"
+    },
+    "the beths|out of sight": {
+      "fact": "\"Out of Sight\" is the third single from The Beths' 2020 album Jump Rope Gazers, with a music video that shows the band going bird watching, shot on Super 8 film and mixed with archival bird footage. Singer Elizabeth Stokes said the band deliberately played the song \"more fragile\" than they usually allow themselves to be, highlighting bassist Benjamin Sinclair's melodic playing.",
+      "source": "https://www.nme.com/news/music/the-beths-share-video-for-new-single-out-of-sight-2688838"
+    },
+    "elliott smith|pictures of me": {
+      "fact": "\"Pictures of Me\" is track five on Elliott Smith's 1997 album Either/Or. Like his earlier records, it was recorded in various apartments around his adopted hometown of Portland, Oregon, with Smith playing every instrument himself, and the album was produced by Smith along with Tom Rothrock and Rob Schnapf. An unreleased live recording of the song from a July 1997 YoYo A Go Go festival performance later appeared on the album's 20th-anniversary expanded edition in 2017.",
+      "source": "https://en.wikipedia.org/wiki/Either/Or_(album)"
+    },
+    "future islands|cave": {
+      "fact": "\"Cave\" is a track from Future Islands' fifth studio album, The Far Field, released on April 7, 2017 — not from their earlier breakthrough record Singles, as is sometimes assumed. The band supported the album with a notable touring run following their star-making 2014 Letterman performance of a different song, \"Seasons (Waiting on You).\"",
+      "source": "https://en.wikipedia.org/wiki/The_Far_Field_(album)"
+    },
+    "unknown mortal orchestra|how can you luv me": {
+      "fact": "\"How Can You Luv Me\" appears on Unknown Mortal Orchestra's self-titled debut album, released June 21, 2011. The track was produced by frontman Ruban Nielson and incorporates a sample of \"151 Rome Proof\" by Lee Taylor & Soul Twisters Ltd. The debut album went on to win the 2012 Taite Music Prize in the band's native New Zealand.",
+      "source": "https://www.whosampled.com/Unknown-Mortal-Orchestra/How-Can-You-Luv-Me/"
+    },
+    "spoon|you got yr. cherry bomb": {
+      "fact": "\"You Got Yr. Cherry Bomb\" is the third track on Spoon's sixth studio album, Ga Ga Ga Ga Ga, released July 10, 2007 on Merge Records and Anti- (it's sometimes mixed up with the earlier Kill the Moonlight, but it's a different record). The album clocks in at just over 36 minutes across ten tracks.",
+      "source": "https://en.wikipedia.org/wiki/Ga_Ga_Ga_Ga_Ga"
+    },
+    "bon iver|imi": {
+      "fact": "\"iMi\" began as an idea Justin Vernon worked on with engineer Josh Berg at his April Base studio in Wisconsin. Minnesota musician Bobby Raps and producer Wheezy (known for his work with Young Thug and Future) contributed drum programming before Vernon finished the track at Sonic Ranch studio in Texas. It appears on Bon Iver's 2019 album i,i.",
+      "source": "https://www.songfacts.com/facts/bon-iver/imi"
+    },
+    "stef chura|the concrete": {
+      "fact": "\"The Concrete\" is the title track of Stef Chura's 2026 album Dancing Alone on the Concrete, her first LP in seven years. It was recorded at Chase Park Transduction studio in Athens, Georgia, produced by Robert Schneider of the Apples in Stereo, and features guest contributions from R.E.M.'s Peter Buck and Mike Mills alongside Sugar's David Barbe.",
+      "source": "https://www.thelineofbestfit.com/news/peter-buck-and-mike-mills-feature-on-new-stef-chura-album-dancing-alone-on-the-concrete"
+    },
+    "big thief|real love": {
+      "fact": "\"Real Love\" appears on Big Thief's debut album, Masterpiece, released May 27, 2016 on Saddle Creek Records (not on the later Capacity, as is sometimes assumed). It was released as a single on March 17, 2016, making it one of the first songs the band ever put out.",
+      "source": "https://en.wikipedia.org/wiki/Masterpiece_(Big_Thief_album)"
+    },
+    "freak slug|muse": {
+      "fact": "\"Muse\" closes out Amulet, the second album by Freak Slug — the project of Manchester, UK singer-songwriter and visual artist Xenya Genovese — released September 18, 2026. It follows her 2024 debut album I Blow Out Big Candles and marks a sonic evolution for the project, which draws comparisons to Elliott Smith's intimate, double-tracked vocal style.",
+      "source": "https://freakslug.bandcamp.com/album/amulet"
+    },
+    "radiohead|identikit": {
+      "fact": "Radiohead debuted \"Identikit\" live at the American Airlines Arena in Miami on February 27, 2012, years before it had an official studio release. The band later tracked a version at Jack White's Third Man Records studio during a tour stop, though those recordings were ultimately scrapped; the song finally surfaced in finished form on 2016's A Moon Shaped Pool.",
+      "source": "https://www.songfacts.com/facts/radiohead/identikit"
+    },
+    "sonic youth|100%": {
+      "fact": "The music video for Sonic Youth's \"100%,\" the lead single from 1992's Dirty, was directed by Tamra Davis and Spike Jonze and shot around Los Angeles, with Jonze filming much of it from a skateboard. It features then-skateboarder (later actor) Jason Lee, and bassist Kim Gordon plays a yellow Fender bass borrowed from actor Keanu Reeves. The song became Sonic Youth's highest-charting single to that point, reaching No. 4 on Billboard's Alternative Airplay chart.",
+      "source": "https://en.wikipedia.org/wiki/100%25_(Sonic_Youth_song)"
+    },
+    "phoebe bridgers|on video": {
+      "fact": "\"On Video\" was written by Phoebe Bridgers for the end credits of the 2026 A24 thriller Primetime, starring Robert Pattinson. She co-wrote it with Jack Antonoff and Christian Lee Hutson, with production handled by Antonoff, Ethan Gruska, and Marshall Vore, and has since added it to her live setlist on tour.",
+      "source": "https://www.nme.com/news/music/phoebe-bridgers-on-video-robert-pattinson-film-primetime-3970713"
+    },
+    "ween|gabrielle": {
+      "fact": "\"Gabrielle\" was originally recorded by Ween in 1994 during the sessions for their album Chocolate and Cheese but was left off that record. It finally saw official release more than a decade later on the 2005 outtakes compilation Shinola, Vol. 1.",
+      "source": "https://en.wikipedia.org/wiki/Shinola,_Vol._1"
+    },
+    "young jesus|brenda and diane": {
+      "fact": "\"Brenda & Diane\" is a single from Young Jesus's album The Fool on Saddle Creek Records. Songwriter John Rossiter based the Springsteen-indebted rocker on a real encounter with two older women who humbled the narrator out of his own sense of superiority and judgment by showing him the fuller, more complex life they were actually living.",
+      "source": "https://stereogum.com/2252490/young-jesus-brenda-diane-hollywood-ending/music"
+    },
+    "@|bird": {
+      "fact": "\"Bird\" is a single by the Philadelphia art-folk duo @ (Victoria Rose and Stone Filipczak), taken from their debut album Autosmile on 4AD. The duo says the song was inspired by dead birds that kept turning up on their deck and was written during a bike ride through Druid Hill Park in Baltimore; the lyrics lean on puns to lighten the subject matter.",
+      "source": "https://readdork.com/news/at-share-new-single-bird-c4a7c24524"
+    },
+    "strand of oaks|heal": {
+      "fact": "\"Heal\" is the title track of Strand of Oaks' 2014 album, which marked a dramatic stylistic turn for songwriter Timothy Showalter — away from his earlier folk-rooted Americana sound and into a heavier, '70s/'80s/'90s-inspired hard-rock style. The record was produced by John Congleton with engineer/synth player Ben Vehorn and drummer Steve Clements, and it was widely named among the best albums of 2014.",
+      "source": "https://www.allmusic.com/album/heal-mw0002654306"
+    },
+    "cocteau twins|sugar hiccup": {
+      "fact": "\"Sugar Hiccup\" appeared on both Cocteau Twins' 1983 album Head over Heels and the companion EP Sunburst and Snowblind, released that same year on 4AD. It's notable within the band's catalog for having actual discernible English lyrics, unlike much of their famously abstract vocal style, and it ranked 14th on John Peel's 1983 Festive Fifty countdown.",
+      "source": "https://en.wikipedia.org/wiki/Sunburst_and_Snowblind"
+    },
+    "r.e.m.|imitation of life": {
+      "fact": "\"Imitation of Life\" was the lead single from R.E.M.'s 2001 album Reveal, written by Peter Buck, Mike Mills, and Michael Stipe and produced by the band with Pat McCarthy. Its title is borrowed from Douglas Sirk's 1959 film of the same name, used as a metaphor for the push and pull between adolescence and adulthood, and the song topped charts across the UK and mainland Europe while reaching the US Top 10 on rock radio.",
+      "source": "https://en.wikipedia.org/wiki/Imitation_of_Life_(song)"
+    },
+    "tom waits|16 shells from a thirty-ought-six": {
+      "fact": "\"16 Shells From a Thirty-Ought-Six\" is the second track on Tom Waits' 1983 album Swordfishtrombones, his first self-produced record and a major stylistic turn toward clattering, junkyard-orchestra arrangements. Waits said he wanted the track to have a chain-gang, work-song feel, built from metallic clangs and crashes meant to evoke the sound of a moving train.",
+      "source": "https://en.wikipedia.org/wiki/16_Shells_From_a_Thirty-Ought-Six"
     }
   }
 }
