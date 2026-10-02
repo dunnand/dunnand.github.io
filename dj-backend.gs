@@ -336,7 +336,7 @@ function saveTeamPhotoToDrive(imageData, memberName) {
   const blob = Utilities.newBlob(Utilities.base64Decode(m[3]), m[1], memberName + '.' + ext);
   const file = getTeamPhotoFolder().createFile(blob);
   file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
-  return 'https://lh3.googleusercontent.com/d/' + file.getId();
+  return driveImageUrl(file.getId());
 }
 
 // ── Drive storage for uploaded logos ───────────────────────────────────
@@ -354,13 +354,31 @@ function saveLogoToDrive(imageData, showName) {
   const blob = Utilities.newBlob(Utilities.base64Decode(m[3]), m[1], showName + '.' + ext);
   const file = getLogoFolder().createFile(blob);
   file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
-  return 'https://lh3.googleusercontent.com/d/' + file.getId();
+  return driveImageUrl(file.getId());
 }
 
-// Only trashes files this script created (lh3.googleusercontent.com URLs);
-// repo-hosted images (wcyt.org/images/...) are left alone.
+// Public URL for an uploaded Drive image. Uses the drive.google.com domain
+// (not lh3.googleusercontent.com) because many school content filters block
+// *.googleusercontent.com outright — it's the same subdomain Google Cache /
+// Translate proxying uses, so filters commonly flag it — while drive.google.com
+// itself is almost always allowlisted at a Google Workspace for Education
+// school. This is what made brand-new show logos fail to load (while the
+// old repo-hosted wcyt.org/images/... ones kept working fine) even after a
+// refresh: the request to lh3.googleusercontent.com was never reaching Google
+// at all on a filtered network, so nothing short of changing domains fixes it.
+function driveImageUrl(fileId) {
+  return 'https://drive.google.com/thumbnail?id=' + fileId + '&sz=w1000';
+}
+
+// Only trashes files this script created (Drive-hosted logo/photo URLs);
+// repo-hosted images (wcyt.org/images/...) are left alone. Matches both the
+// current drive.google.com/thumbnail URLs and the older lh3.googleusercontent.com
+// ones from before the domain switch above, so deleting an older show/member
+// still cleans up its Drive file.
 function trashDriveLogo(url) {
-  const m = String(url || '').match(/^https:\/\/lh3\.googleusercontent\.com\/d\/([-\w]+)/);
+  const s = String(url || '');
+  const m = s.match(/^https:\/\/drive\.google\.com\/thumbnail\?id=([-\w]+)/) ||
+            s.match(/^https:\/\/lh3\.googleusercontent\.com\/d\/([-\w]+)/);
   if (!m) return;
   try { DriveApp.getFileById(m[1]).setTrashed(true); } catch (e) {}
 }

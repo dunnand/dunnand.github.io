@@ -16,6 +16,27 @@
   const MAX_HISTORY   = 50;
   const FALLBACK_ART  = '/images/squarespace/WCYT-removebg-preview.png';
   const FALLBACK_ART_2 = '/images/shows/2.0 Logo.png';
+
+  // DJ show logos are Drive-hosted (see dj-backend.gs) and can take a little
+  // while to become fetchable right after upload. Retry a few times with
+  // backoff and a cache-busting param before giving up and falling back —
+  // exposed on window since inline onerror= attributes run in global scope.
+  window.wcytHandleArtError = function (img, fallbackSrc) {
+    const tries = (img._artRetries || 0) + 1;
+    img._artRetries = tries;
+    const base = img._artBase || img.src.split('?')[0];
+    img._artBase = base;
+    const isDriveUrl = /\/\/(drive\.google\.com|lh3\.googleusercontent\.com)\//.test(base);
+    if (isDriveUrl && tries <= 6) {
+      const delay = Math.min(1000 * 2 ** (tries - 1), 15000); // 1s,2s,4s,8s,15s,15s
+      setTimeout(() => {
+        img.src = base + (base.includes('?') ? '&' : '?') + '_r=' + Date.now();
+      }, delay);
+    } else {
+      img.src = fallbackSrc;
+      img.classList.add('wcyt-art-fallback');
+    }
+  };
   const SHOW_URL      = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRvbq5nlJGzIblU91RLbcNBwChU9jE28xlwM537tunzMWb3hWyHmnuojMZAjKqNdSP8mmoDXdzp4U0a/pub?output=csv';
   const SHOW_TTL_MS   = 45 * 60 * 1000; // auto-clear after 45 minutes
 
@@ -763,7 +784,7 @@
       width="${size}" height="${size}"
       alt="Album art"
       loading="lazy"
-      onerror="this.src='${FALLBACK_ART}';this.classList.add('wcyt-art-fallback')"
+      onerror="wcytHandleArtError(this, '${FALLBACK_ART}')"
     >`;
   }
 
