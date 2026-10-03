@@ -10,7 +10,7 @@
     // DISPLAY_VERSION on every edit — it forces one redirect to a URL the CDN
     // has never cached, guaranteeing the fresh copy loads. (Mirrors the same
     // pattern homestead_media's script.js uses for APP_VERSION.)
-    const DISPLAY_VERSION = '20260930b';
+    const DISPLAY_VERSION = '20261002a';
     (function() {
       try {
         const k = 'display_version';
@@ -478,7 +478,7 @@
       <div class="top">
         <div class="art-wrap">
           <img id="point-art" class="album-art" alt=""
-               onerror="this.src='/images/91fm.png';this.style.objectFit='contain';this.style.padding='32px';this.onerror=null;">
+               onerror="handleArtError(this, '/images/91fm.png')">
           <img class="channel-bug" src="/images/91fm.png" alt="" onerror="this.style.display='none'">
         </div>
         <div class="info" id="point-info">
@@ -525,7 +525,7 @@
       <div class="top">
         <div class="art-wrap">
           <img id="wcyt-art" class="album-art" alt=""
-               onerror="this.src='/images/shows/2.0%20Logo.png';this.style.objectFit='contain';this.style.padding='32px';this.onerror=null;">
+               onerror="handleArtError(this, '/images/shows/2.0%20Logo.png')">
           <img class="channel-bug" src="/images/shows/2.0%20Logo.png" alt="" onerror="this.style.display='none'">
         </div>
         <div class="info" id="wcyt-info">
@@ -579,6 +579,29 @@
     const DJPANEL_URL    = 'https://script.google.com/macros/s/AKfycbwV99T1Owt69gFQYtdOmqGUJjtMME1y0bUBjJ9XHN1CjzPXMhfPeI8xNFZOUUI6hsB7/exec';
     const FALLBACK_POINT = '/images/91fm.png';
     const FALLBACK_2     = '/images/shows/2.0%20Logo.png';
+
+    // DJ show logos are Drive-hosted (see dj-backend.gs) and can take a little
+    // while to become fetchable right after upload. Rather than giving up on
+    // the first failure (which used to stick broken until the next poll
+    // happened to retry the exact same URL), retry a few times with backoff
+    // and a cache-busting param, then fall back to the station logo.
+    function handleArtError(img, fallbackSrc) {
+      const tries = (img._artRetries || 0) + 1;
+      img._artRetries = tries;
+      const base = img._artBase || img.src.split('?')[0];
+      img._artBase = base;
+      const isDriveUrl = /\/\/(drive\.google\.com|lh3\.googleusercontent\.com)\//.test(base);
+      if (isDriveUrl && tries <= 6) {
+        const delay = Math.min(1000 * 2 ** (tries - 1), 15000); // 1s,2s,4s,8s,15s,15s
+        setTimeout(() => {
+          img.src = base + (base.includes('?') ? '&' : '?') + '_r=' + Date.now();
+        }, delay);
+      } else {
+        img.src = fallbackSrc;
+        img.style.objectFit = 'contain';
+        img.style.padding = '32px';
+      }
+    }
     const BLOCKED_TERMS  = ['liner','legal id','btyb','sponsor'];
     const RAW_BASE = 'https://raw.githubusercontent.com/dunnand/WCYT-NowPlaying/main';
 
@@ -1040,9 +1063,12 @@
       // (self-corrects on the next poll once BSI's status file updates)
       if (bsi.album) set(key + '-album', bsi.album);
       fitInfoBlock();
-      // Reset any inline styles onerror may have set, then swap art
+      // Reset any inline styles onerror may have set, then swap art. Also reset
+      // the retry bookkeeping whenever the art URL actually changes, so a fresh
+      // image gets its own full retry budget instead of inheriting a stale one.
       artEl.style.objectFit = '';
       artEl.style.padding = '';
+      if (artEl._artBase !== art.split('?')[0]) { artEl._artRetries = 0; artEl._artBase = null; }
       artEl.src = art;
       artEl.classList.remove('fading');
     }

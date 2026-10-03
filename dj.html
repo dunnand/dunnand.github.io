@@ -397,6 +397,25 @@
   const TEACHER_PASSWORD_HASH = '5313e5bf17148de844ff74be3663d47c6e361ca469b30a36337701233c89a15e';
   // ─────────────────────────────────────────────────────────────────
 
+  // Show logos / team photos are Drive-hosted (see dj-backend.gs) and can take
+  // a little while to become fetchable right after upload. Retry a few times
+  // with backoff and a cache-busting param before giving up on the image.
+  function handleArtError(img) {
+    const tries = (img._artRetries || 0) + 1;
+    img._artRetries = tries;
+    const base = img._artBase || img.src.split('?')[0];
+    img._artBase = base;
+    const isDriveUrl = /\/\/(drive\.google\.com|lh3\.googleusercontent\.com)\//.test(base);
+    if (isDriveUrl && tries <= 6) {
+      const delay = Math.min(1000 * 2 ** (tries - 1), 15000); // 1s,2s,4s,8s,15s,15s
+      setTimeout(() => {
+        img.src = base + (base.includes('?') ? '&' : '?') + '_r=' + Date.now();
+      }, delay);
+    } else {
+      img.style.visibility = 'hidden';
+    }
+  }
+
   let activeStation = 'wcyt';
   let panelPassword = '';   // held in memory after login; sent with each write
   let teacherPassword = '';    // held in memory once unlocked; sent with edit/delete member calls
@@ -539,6 +558,7 @@
       row.className = 'show-row';
       const img = document.createElement('img');
       img.src = show.url; img.alt = '';
+      img.onerror = () => handleArtError(img);
       const name = document.createElement('div');
       name.className = 'show-row-name'; name.textContent = show.name;
       row.append(img, name,
@@ -672,7 +692,7 @@
       const img = document.createElement('img');
       img.src = member.url || '';
       img.alt = '';
-      img.onerror = () => { img.style.visibility = 'hidden'; };
+      img.onerror = () => handleArtError(img);
       const info = document.createElement('div');
       info.className = 'show-row-name';
       const badge = member.section === 'Management' ? '👑' : '🎙';
