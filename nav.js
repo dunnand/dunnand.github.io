@@ -194,10 +194,11 @@
     {
       label: 'Listen', href: '/',
       children: [
-        { label: 'Live Radio',  href: '/' },
-        { label: 'Podcasts',    href: '/podcasts' },
-        { label: 'Live Stream', href: 'https://www.youtube.com/@HomesteadHighSchoolMedia', external: true },
-        { label: 'Sports',      href: '/sports' },
+        { label: 'Live Radio',     href: '/' },
+        { label: 'Music Library',  href: '/music' },
+        { label: 'Podcasts',       href: '/podcasts' },
+        { label: 'Live Stream',    href: 'https://www.youtube.com/@HomesteadHighSchoolMedia', external: true },
+        { label: 'Sports',         href: '/sports' },
       ]
     },
     { label: 'Contact', href: '/contact' },
