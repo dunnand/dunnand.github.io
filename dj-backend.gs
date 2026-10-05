@@ -73,7 +73,7 @@ function doGet() {
 // Actions:
 //   (none)         { station, patch, historyEntry } — merge on-air state (original behavior)
 //   'addShow'      { name, imageData? }             — imageData is a data: URL; omitted = default logo
-//   'updateShow'   { id, name?, imageData? }
+//   'updateShow'   { id, name?, imageData?, archived? } — archived hides it from the DJ dropdown
 //   'deleteShow'   { id }
 //   'addMember'    { name, show?, time?, section, imageData? } — team roster (team.html)
 //   'updateMember' { id, name?, show?, time?, section?, imageData? }
@@ -180,6 +180,7 @@ function updateShow(body) {
   const show = shows.find(s => s.id === body.id);
   if (!show) return { ok: false, error: 'show not found' };
   if (body.name && String(body.name).trim()) show.name = String(body.name).trim();
+  if (typeof body.archived === 'boolean') show.archived = body.archived;
   if (body.imageData) {
     trashDriveLogo(show.url);
     show.url = saveLogoToDrive(body.imageData, show.name);
