@@ -374,6 +374,7 @@
     </div>
 
   </main>
+  <div id="archive-strip" aria-hidden="true" style="display:none;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;padding:28px 16px 36px;opacity:.35;filter:grayscale(1)"></div>
 </div>
 
 <script>
@@ -510,14 +511,22 @@
   function renderShowSelect() {
     const sel = document.getElementById('show-select');
     sel.innerHTML = '<option value="">— Pick your show —</option>';
-    SHOWS.forEach(show => {
+    // Archived shows never appear in the dropdown (they decorate the page footer).
+    const visible = SHOWS.filter(s => !s.archived);
+    // Same-name shows are all kept; number them so they can be told apart.
+    const total = {}, seen = {};
+    visible.forEach(s => { const k = s.name.trim().toLowerCase(); total[k] = (total[k] || 0) + 1; });
+    visible.forEach(show => {
+      const k = show.name.trim().toLowerCase();
+      seen[k] = (seen[k] || 0) + 1;
       const opt = document.createElement('option');
       opt.value = show.id;
-      opt.textContent = show.name;
+      opt.textContent = show.name + (total[k] > 1 ? ' (' + seen[k] + ')' : '') ;
       sel.appendChild(opt);
     });
-    const match = SHOWS.find(s => s.url === currentImageUrl);
+    const match = visible.find(s => s.url === currentImageUrl);
     sel.value = match ? match.id : '';
+    renderArchiveStrip();
     previewImage();
   }
 
@@ -553,9 +562,20 @@
   function renderShowList() {
     const list = document.getElementById('show-list');
     list.innerHTML = '';
-    SHOWS.forEach(show => {
+    const ordered = SHOWS.filter(s => !s.archived).concat(SHOWS.filter(s => s.archived));
+    let archivedHeaderDone = false;
+    ordered.forEach(show => {
+      if (show.archived && !archivedHeaderDone) {
+        archivedHeaderDone = true;
+        const h = document.createElement('div');
+        h.className = 'show-row-name';
+        h.style.cssText = 'margin:12px 0 4px;opacity:.7;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em';
+        h.textContent = 'Archived (hidden from the dropdown)';
+        list.appendChild(h);
+      }
       const row = document.createElement('div');
       row.className = 'show-row';
+      if (show.archived) row.style.opacity = '0.6';
       const img = document.createElement('img');
       img.src = show.url; img.alt = '';
       img.onerror = () => handleArtError(img);
@@ -564,6 +584,9 @@
       row.append(img, name,
         mkBtn('✏️', 'Rename', () => renameShow(show.id)),
         mkBtn('🖼', 'Change logo', () => replaceLogo(show.id)),
+        show.archived
+          ? mkBtn('♻️', 'Restore to dropdown', () => archiveShow(show.id, false))
+          : mkBtn('📦', 'Archive (hide from dropdown)', () => archiveShow(show.id, true)),
         mkBtn('🗑', 'Delete', () => removeShow(show.id), true));
       list.appendChild(row);
     });
@@ -623,6 +646,29 @@
     } finally {
       btn.disabled = false; btn.textContent = '＋ Add Show';
     }
+  }
+
+  // Decorative strip of archived show logos at the bottom of the page.
+  function renderArchiveStrip() {
+    const strip = document.getElementById('archive-strip');
+    if (!strip) return;
+    const old = SHOWS.filter(s => s.archived);
+    strip.innerHTML = '';
+    strip.style.display = old.length ? 'flex' : 'none';
+    old.forEach(show => {
+      const img = document.createElement('img');
+      img.src = show.url; img.alt = show.name; img.title = show.name;
+      img.style.cssText = 'height:56px;width:auto;max-width:120px;object-fit:contain';
+      img.onerror = () => { img.style.display = 'none'; };
+      strip.appendChild(img);
+    });
+  }
+
+  async function archiveShow(id, archived) {
+    try {
+      await libraryCall({ action: 'updateShow', id, archived });
+      showMsg(archived ? 'Archived — hidden from the dropdown.' : 'Restored.', 'ok');
+    } catch (e) { showMsg((archived ? 'Archive' : 'Restore') + ' failed: ' + e.message, 'error'); }
   }
 
   async function renameShow(id) {
@@ -791,9 +837,18 @@
   async function loadCurrentState() {
     if (!SCRIPT_URL) return;
     try {
+      // Apps Script can take several seconds to answer, so paint the last-seen
+      // show library right away and let the fresh copy replace it.
+      if (!SHOWS.length) {
+        try {
+          const cached = JSON.parse(localStorage.getItem('wcyt-dj-library') || 'null');
+          if (cached && cached.shows) { SHOWS = cached.shows; renderShowSelect(); }
+        } catch (_) {}
+      }
       const res = await fetch(SCRIPT_URL, { cache: 'no-store' });
       const data = await res.json();
       SHOWS = data.shows || [];
+      try { localStorage.setItem('wcyt-dj-library', JSON.stringify({ shows: SHOWS })); } catch (_) {}
       TEAM  = data.team  || [];
       if (document.getElementById('manage-team').style.display !== 'none') renderTeamList();
       const rec = data.record || {};
