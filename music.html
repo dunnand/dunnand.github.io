@@ -218,7 +218,7 @@
 
     filtered = SONGS.filter(s => {
       if (activeCat === '__facts') { if (!s.fact) return false; }
-      else if (activeCat && s.station !== activeCat) return false;
+      else if (activeCat && s.station !== activeCat && s.station !== 'Both') return false;
       if (dec && (!s.year || Math.floor(s.year / 10) * 10 !== +dec)) return false;
       if (words.length) {
         const hay = (s.artist + ' ' + s.title + ' ' + s.album).toLowerCase();
