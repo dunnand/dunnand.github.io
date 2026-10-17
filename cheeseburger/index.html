@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Cheeseburger From Deep — League Info</title>
+  <link rel="icon" type="image/x-icon" href="/images/squarespace/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black:#0d0d0d; --dark:#111111; --card:#161616; --border:#2a2a2a;
+      --muted:#888888; --accent:#c8102e; --gold:#f2b134; --white:#ffffff;
+      --good:#4caf7a; --bad:#e0605e;
+      --font:'Space Grotesk', sans-serif;
+    }
+    html { font-family: var(--font); background: var(--black); color: var(--white); scroll-behavior: smooth; }
+    body { min-height: 100vh; }
+    header { background: var(--dark); border-bottom: 3px solid var(--accent); padding: 22px 20px; text-align: center; }
+    .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
+    h1 { font-size: 30px; font-weight: 700; margin: 4px 0; }
+    .sub { color: var(--muted); font-size: 14px; }
+    #countdown { margin-top: 12px; font-size: 15px; color: var(--gold); font-weight: 600; }
+    nav { position: sticky; top: 0; z-index: 5; background: var(--dark); border-bottom: 1px solid var(--border);
+      display: flex; gap: 6px; padding: 8px 12px; overflow-x: auto; justify-content: center; }
+    nav a { color: var(--muted); text-decoration: none; font-size: 13px; font-weight: 600; padding: 6px 12px;
+      border-radius: 999px; white-space: nowrap; }
+    nav a:hover { color: var(--white); background: var(--card); }
+    main { max-width: 900px; margin: 0 auto; padding: 8px 16px 70px; }
+    section { margin-top: 34px; scroll-margin-top: 56px; }
+    h2 { font-size: 20px; border-left: 4px solid var(--accent); padding-left: 10px; margin-bottom: 14px; }
+    h3 { font-size: 14px; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); margin: 18px 0 8px; }
+    p, li { font-size: 15px; line-height: 1.55; }
+    ul { padding-left: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+    .card .k { font-size: 11px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
+    .card .v { font-size: 17px; font-weight: 600; margin-top: 2px; }
+    table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; overflow: hidden; }
+    th { text-align: left; font-size: 10.5px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted);
+      padding: 9px 12px; border-bottom: 1px solid var(--border); }
+    td { padding: 9px 12px; border-bottom: 1px solid var(--border); font-size: 14.5px; vertical-align: top; }
+    tr:last-child td { border-bottom: 0; }
+    .pos { color: var(--good); font-weight: 700; } .neg { color: var(--bad); font-weight: 700; }
+    .big { color: var(--gold); font-weight: 700; }
+    .tag { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+    .tag.ok { background: rgba(76,175,122,.18); color: var(--good); }
+    .tag.tbc { background: rgba(242,177,52,.18); color: var(--gold); }
+    .note { color: var(--muted); font-size: 13px; margin-top: 8px; }
+    .callout { background: rgba(200,16,46,.1); border: 1px solid var(--accent); border-radius: 12px; padding: 12px 16px; margin-top: 12px; }
+    .scroll { overflow-x: auto; }
+    footer { text-align: center; color: var(--muted); font-size: 12px; padding: 30px 16px; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">ESPN Fantasy Basketball · 2026–27</div>
+  <h1>🍔 Cheeseburger From Deep</h1>
+  <div class="sub">12 teams · Head-to-Head Points · Snake draft with keepers</div>
+  <div id="countdown"></div>
+</header>
+<nav>
+  <a href="#key">Key Dates</a>
+  <a href="#scoring">Scoring</a>
+  <a href="#roster">Roster</a>
+  <a href="#keepers">Keepers</a>
+  <a href="#rules">Rules</a>
+  <a href="#playoffs">Playoffs</a>
+  <a href="#teams">Teams</a>
+  <a href="#watch">Watch Parties</a>
+</nav>
+<main>
+
+<section id="key">
+  <h2>Key Dates</h2>
+  <div class="scroll"><table>
+    <tr><th>Date</th><th>What</th></tr>
+    <tr><td>Sat Oct 17, 6:00 PM ET</td><td><b>Keepers lock</b> (1 hour before the draft)</td></tr>
+    <tr><td>Sat Oct 17, 7:00 PM ET</td><td><b>Draft</b> — snake, 90 sec/pick, 13 rounds (156 picks, up to ~4 hrs)</td></tr>
+    <tr><td>Tue Oct 20</td><td>NBA opening night</td></tr>
+    <tr><td>Fri Feb 26, noon ET</td><td><b>Trade deadline</b></td></tr>
+    <tr><td>Feb 19–21</td><td>NBA All-Star Weekend (Phoenix) — thin, lopsided matchup week</td></tr>
+    <tr><td>~Mar 1–7</td><td>Final regular-season week (week 20)</td></tr>
+    <tr><td>~Mar 8–28</td><td>Playoffs: quarterfinals, semifinals, championship</td></tr>
+    <tr><td>Apr 11</td><td>NBA regular season ends</td></tr>
+  </table></div>
+  <p class="note">Fantasy week dates assume week 1 starts Mon Oct 19; ESPN may shift them slightly.</p>
+</section>
+
+<section id="scoring">
+  <h2>Scoring</h2>
+  <div class="grid">
+    <div class="card"><div class="k">Steals</div><div class="v big">+4</div></div>
+    <div class="card"><div class="k">Blocks</div><div class="v big">+4</div></div>
+    <div class="card"><div class="k">Field goals made</div><div class="v pos">+2</div></div>
+    <div class="card"><div class="k">Off. rebounds</div><div class="v pos">+2</div></div>
+    <div class="card"><div class="k">Assists</div><div class="v pos">+2</div></div>
+    <div class="card"><div class="k">Def. rebounds</div><div class="v pos">+1</div></div>
+    <div class="card"><div class="k">Points</div><div class="v pos">+1</div></div>
+    <div class="card"><div class="k">3-pointers made</div><div class="v pos">+1</div></div>
+    <div class="card"><div class="k">Free throws made</div><div class="v pos">+1</div></div>
+    <div class="card"><div class="k">Triple / quad doubles</div><div class="v pos">+1 each</div></div>
+    <div class="card"><div class="k">Turnovers</div><div class="v neg">−2</div></div>
+    <div class="card"><div class="k">FG attempted</div><div class="v neg">−1</div></div>
+    <div class="card"><div class="k">FT attempted</div><div class="v neg">−1</div></div>
+    <div class="card"><div class="k">Ejections</div><div class="v neg">−1</div></div>
+  </div>
+  <h3>What it means</h3>
+  <ul>
+    <li>A made 2-pointer is worth <b>+3</b> net (2 FGM + 2 pts − 1 FGA); a miss is <b>−1</b>. A made 3 is <b>+4</b> net.</li>
+    <li>A made free throw nets <b>+1</b> (1 + 1 pt − 1 FTA); a missed one is <b>−1</b>.</li>
+    <li>Steals and blocks are the premium stats. Rebounds and assists pay well. Inefficient, turnover-prone volume scorers lose value.</li>
+  </ul>
+</section>
+
+<section id="roster">
+  <h2>Roster</h2>
+  <div class="grid">
+    <div class="card"><div class="k">Roster size</div><div class="v">13</div></div>
+    <div class="card"><div class="k">Starters</div><div class="v">10</div></div>
+    <div class="card"><div class="k">Bench</div><div class="v">3</div></div>
+    <div class="card"><div class="k">Injured reserve</div><div class="v">2</div></div>
+  </div>
+  <h3>Starting lineup</h3>
+  <p>PG · SG · SF · PF · C · G · F · UTIL · UTIL · UTIL</p>
+  <p class="note">Max 4 centers on a roster. No games-played limits. Lineups are daily and lock individually at each player's game time. Lineup protection is off.</p>
+</section>
+
+<section id="keepers">
+  <h2>Keepers</h2>
+  <ul>
+    <li><b>1 keeper per team</b> for 2027, and 1 per team for 2028.</li>
+    <li>Keepers lock <b>one hour before the draft</b> (Oct 17, 6:00 PM ET).</li>
+    <li>Keeper round: <b>Beginning of Draft</b> — a kept player does not cost a draft pick.</li>
+  </ul>
+</section>
+
+<section id="rules">
+  <h2>League Rules</h2>
+  <div class="grid">
+    <div class="card"><div class="k">Draft order</div><div class="v">Set by commissioner</div></div>
+    <div class="card"><div class="k">Pick trading</div><div class="v">Allowed</div></div>
+    <div class="card"><div class="k">Acquisitions</div><div class="v">Waivers, 2-day period</div></div>
+    <div class="card"><div class="k">Waiver order</div><div class="v">Resets weekly, inverse standings</div></div>
+    <div class="card"><div class="k">Moves per matchup</div><div class="v">2 max</div></div>
+    <div class="card"><div class="k">Trade limit</div><div class="v">None</div></div>
+    <div class="card"><div class="k">Trade review</div><div class="v">2 days</div></div>
+    <div class="card"><div class="k">Veto</div><div class="v">3 votes to veto</div></div>
+  </div>
+  <p class="note">ESPN's Undroppable Players list is in effect. Player universe: NBA.</p>
+</section>
+
+<section id="playoffs">
+  <h2>Season &amp; Playoffs</h2>
+  <ul>
+    <li><b>20</b> regular-season matchups, one week each. No tiebreaker for tied matchups; no home-field advantage; no bonus wins.</li>
+    <li><b>Top 8</b> of 12 make the playoffs: quarterfinals, semifinals, and championship, one week each.</li>
+    <li>Seeding tiebreaker: head-to-head record. Bracket is <b>not</b> reseeded between rounds.</li>
+    <li>A consolation ladder runs for the teams that miss out. Teams out of the running for 7th place are locked from transactions.</li>
+  </ul>
+</section>
+
+<section id="teams">
+  <h2>Teams</h2>
+  <ul>
+    <li>Cream of the Crop</li>
+    <li>Reggie and the Millers</li>
+    <li>Roundball Rockers</li>
+    <li>Ante Up</li>
+    <li>Doak's Dunksters</li>
+    <li>Tragic Johnson</li>
+    <li>Team Honkomp</li>
+    <li>Gosport Globe Trotters</li>
+    <li>The Joker's Wild</li>
+    <li>Baller Brand</li>
+    <li>Comic Sans New York</li>
+    <li>Bimbo Coles' Cinna Rolls</li>
+  </ul>
+</section>
+
+<section id="watch">
+  <h2>Watch Parties</h2>
+  <div class="scroll"><table>
+    <tr><th>Date</th><th>Game</th><th>Time</th><th>Verified</th></tr>
+    <tr><td>Tue Nov 10</td><td>Boston vs Philadelphia</td><td>8:00 PM</td><td><span class="tag ok">Confirmed</span></td></tr>
+    <tr><td>Sat Dec 12</td><td>New York vs Miami</td><td>8:30 PM</td><td><span class="tag tbc">TBC</span></td></tr>
+    <tr><td>Mon Jan 4</td><td>Chicago vs Indiana</td><td>7:00 PM</td><td><span class="tag tbc">TBC</span></td></tr>
+    <tr><td>Sat Feb 6</td><td>L.A. Lakers vs San Antonio</td><td>8:30 PM</td><td><span class="tag tbc">TBC</span></td></tr>
+    <tr><td>Sun Feb 28</td><td>Denver vs San Antonio</td><td>1:00 PM</td><td><span class="tag tbc">TBC</span></td></tr>
+    <tr><td>Tue Mar 16</td><td>Detroit vs Indiana</td><td>8:00 PM</td><td><span class="tag tbc">TBC</span></td></tr>
+  </table></div>
+  <p class="note">Home/away order is not listed for most games. "TBC" means not yet verified against the NBA schedule.</p>
+  <div class="callout">Mar 16 falls in the fantasy semifinals week (if week 1 starts Oct 19). Feb 28 is two days after the trade deadline.</div>
+</section>
+
+</main>
+<footer>Cheeseburger From Deep · unlisted league page</footer>
+<script>
+  (function () {
+    var el = document.getElementById('countdown');
+    var draft = new Date('2026-10-17T19:00:00-04:00');
+    function tick() {
+      var ms = draft - new Date();
+      if (ms <= 0) { el.textContent = 'Draft day is here — good luck!'; return; }
+      var d = Math.floor(ms / 864e5), h = Math.floor(ms % 864e5 / 36e5), m = Math.floor(ms % 36e5 / 6e4);
+      el.textContent = 'Draft in ' + (d ? d + 'd ' : '') + h + 'h ' + m + 'm';
+    }
+    tick(); setInterval(tick, 30000);
+  })();
+</script>
+</body>
+</html>
