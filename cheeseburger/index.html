@@ -53,6 +53,10 @@
     .note { color: var(--muted); font-size: 13px; margin-top: 8px; }
     .callout { background: rgba(200,16,46,.1); border: 1px solid var(--accent); border-radius: 12px; padding: 12px 16px; margin-top: 12px; }
     .scroll { overflow-x: auto; }
+    .btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+    .btn { font: inherit; font-size: 14px; font-weight: 600; color: #fff; background: var(--accent); border: 0;
+      border-radius: 999px; padding: 9px 18px; cursor: pointer; }
+    .btn.alt { background: var(--card); border: 1px solid var(--border); }
     footer { text-align: center; color: var(--muted); font-size: 12px; padding: 30px 16px; }
   </style>
 </head>
@@ -77,6 +81,10 @@
     <tr><td>Tue Mar 16</td><td>Detroit vs Indiana</td><td>8:00 PM</td><td><span class="tag tbc">TBC</span></td></tr>
   </table></div>
   <p class="note">Home/away order is not listed for most games. "TBC" means not yet verified against the NBA schedule.</p>
+  <div class="btns">
+    <button class="btn" onclick="dl('watch')">Add watch parties to calendar</button>
+    <button class="btn alt" onclick="dl('league')">Add draft &amp; trade deadline</button>
+  </div>
   <div class="callout">Mar 16 falls in the fantasy semifinals week (if week 1 starts Oct 19). Feb 28 is two days after the trade deadline.</div>
 </section>
 
@@ -167,6 +175,40 @@
 </main>
 <footer>Cheeseburger From Deep · unlisted league page</footer>
 <script>
+
+  var EVENTS = {
+    watch: [
+      ['Watch Party: Boston vs Philadelphia', '20261111T010000Z', 180],
+      ['Watch Party: New York vs Miami (unconfirmed)', '20261213T013000Z', 180],
+      ['Watch Party: Chicago vs Indiana (unconfirmed)', '20270105T000000Z', 180],
+      ['Watch Party: L.A. Lakers vs San Antonio (unconfirmed)', '20270207T013000Z', 180],
+      ['Watch Party: Denver vs San Antonio (unconfirmed)', '20270228T180000Z', 180],
+      ['Watch Party: Detroit vs Indiana (unconfirmed)', '20270317T000000Z', 180]
+    ],
+    league: [
+      ['Cheeseburger From Deep: Draft (keepers lock 6 PM ET)', '20261017T230000Z', 240],
+      ['Cheeseburger From Deep: Trade deadline', '20270226T170000Z', 30]
+    ]
+  };
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function addMin(z, min) {
+    var d = new Date(Date.UTC(+z.slice(0,4), +z.slice(4,6) - 1, +z.slice(6,8), +z.slice(9,11), +z.slice(11,13)) + min * 6e4);
+    return d.getUTCFullYear() + pad(d.getUTCMonth() + 1) + pad(d.getUTCDate()) + 'T' + pad(d.getUTCHours()) + pad(d.getUTCMinutes()) + '00Z';
+  }
+  function dl(kind) {
+    var lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//WCYT//Cheeseburger From Deep//EN', 'CALSCALE:GREGORIAN'];
+    EVENTS[kind].forEach(function (e, i) {
+      lines.push('BEGIN:VEVENT', 'UID:cfd-' + kind + '-' + i + '@wcyt.org', 'DTSTAMP:20261016T000000Z',
+        'DTSTART:' + e[1], 'DTEND:' + addMin(e[1], e[2]), 'SUMMARY:' + e[0],
+        'BEGIN:VALARM', 'ACTION:DISPLAY', 'DESCRIPTION:' + e[0], 'TRIGGER:-PT1H', 'END:VALARM', 'END:VEVENT');
+    });
+    lines.push('END:VCALENDAR');
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([lines.join('
+')], { type: 'text/calendar' }));
+    a.download = 'cheeseburger-' + kind + '.ics';
+    document.body.appendChild(a); a.click(); a.remove();
+  }
   (function () {
     var el = document.getElementById('countdown');
     var draft = new Date('2026-10-17T19:00:00-04:00');
