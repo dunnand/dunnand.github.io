@@ -47,10 +47,7 @@
     tr:last-child td { border-bottom: 0; }
     .pos { color: var(--good); font-weight: 700; } .neg { color: var(--bad); font-weight: 700; }
     .big { color: var(--gold); font-weight: 700; }
-    .tag { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
-    .tag.ok { background: rgba(76,175,122,.18); color: var(--good); }
-    .tag.tbc { background: rgba(242,177,52,.18); color: var(--gold); }
-    .note { color: var(--muted); font-size: 13px; margin-top: 8px; }
+                .note { color: var(--muted); font-size: 13px; margin-top: 8px; }
     .callout { background: rgba(200,16,46,.1); border: 1px solid var(--accent); border-radius: 12px; padding: 12px 16px; margin-top: 12px; }
     .scroll { overflow-x: auto; }
     .btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
@@ -72,15 +69,14 @@
 <section id="watch">
   <h2>Watch Parties</h2>
   <div class="scroll"><table>
-    <tr><th>Date</th><th>Game</th><th>Time</th><th>Verified</th></tr>
-    <tr><td>Tue Nov 10</td><td>Boston vs Philadelphia</td><td>8:00 PM</td><td><span class="tag ok">Confirmed</span></td></tr>
-    <tr><td>Sat Dec 12</td><td>New York vs Miami</td><td>8:30 PM</td><td><span class="tag tbc">TBC</span></td></tr>
-    <tr><td>Mon Jan 4</td><td>Chicago vs Indiana</td><td>7:00 PM</td><td><span class="tag tbc">TBC</span></td></tr>
-    <tr><td>Sat Feb 6</td><td>L.A. Lakers vs San Antonio</td><td>8:30 PM</td><td><span class="tag tbc">TBC</span></td></tr>
-    <tr><td>Sun Feb 28</td><td>Denver vs San Antonio</td><td>1:00 PM</td><td><span class="tag tbc">TBC</span></td></tr>
-    <tr><td>Tue Mar 16</td><td>Detroit vs Indiana</td><td>8:00 PM</td><td><span class="tag tbc">TBC</span></td></tr>
+    <tr><th>Date</th><th>Game</th><th>Time</th></tr>
+    <tr><td>Tue Nov 10</td><td>Boston at Philadelphia</td><td>8:00 PM</td></tr>
+    <tr><td>Sat Dec 12</td><td>New York at Miami</td><td>8:30 PM</td></tr>
+    <tr><td>Mon Jan 4</td><td>Chicago at Indiana</td><td>7:00 PM</td></tr>
+    <tr><td>Sat Feb 6</td><td>L.A. Lakers at San Antonio</td><td>8:30 PM</td></tr>
+    <tr><td>Sun Feb 28</td><td>Denver at San Antonio</td><td>1:00 PM</td></tr>
+    <tr><td>Tue Mar 16</td><td>Detroit at Indiana</td><td>8:00 PM</td></tr>
   </table></div>
-  <p class="note">Home/away order is not listed for most games. "TBC" means not yet verified against the NBA schedule.</p>
   <div class="btns">
     <button class="btn" onclick="dl('watch')">Add watch parties to calendar</button>
     <button class="btn alt" onclick="dl('league')">Add draft &amp; trade deadline</button>
@@ -159,12 +155,12 @@
 
   var EVENTS = {
     watch: [
-      ['Watch Party: Boston vs Philadelphia', '20261111T010000Z', 180],
-      ['Watch Party: New York vs Miami (unconfirmed)', '20261213T013000Z', 180],
-      ['Watch Party: Chicago vs Indiana (unconfirmed)', '20270105T000000Z', 180],
-      ['Watch Party: L.A. Lakers vs San Antonio (unconfirmed)', '20270207T013000Z', 180],
-      ['Watch Party: Denver vs San Antonio (unconfirmed)', '20270228T180000Z', 180],
-      ['Watch Party: Detroit vs Indiana (unconfirmed)', '20270317T000000Z', 180]
+      ['Watch Party: Boston at Philadelphia', '20261111T010000Z', 180],
+      ['Watch Party: New York at Miami', '20261213T013000Z', 180],
+      ['Watch Party: Chicago at Indiana', '20270105T000000Z', 180],
+      ['Watch Party: L.A. Lakers at San Antonio', '20270207T013000Z', 180],
+      ['Watch Party: Denver at San Antonio', '20270228T180000Z', 180],
+      ['Watch Party: Detroit at Indiana', '20270317T000000Z', 180]
     ],
     league: [
       ['Cheeseburger From Deep: Draft (keepers lock 6 PM ET)', '20261017T230000Z', 240],
