@@ -189,8 +189,7 @@
     });
     lines.push('END:VCALENDAR');
     var a = document.createElement('a');
-    a.href = URL.createObjectURL(new Blob([lines.join('
-')], { type: 'text/calendar' }));
+    a.href = URL.createObjectURL(new Blob([lines.join('\r\n')], { type: 'text/calendar' }));
     a.download = 'cheeseburger-' + kind + '.ics';
     document.body.appendChild(a); a.click(); a.remove();
   }
