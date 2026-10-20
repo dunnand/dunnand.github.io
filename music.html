@@ -67,6 +67,7 @@
     .t-artist { color: #d8d8d8; }
     .t-album { color: var(--muted); font-size: 13px; }
     .t-year { color: var(--muted); font-size: 13px; white-space: nowrap; }
+    .t-file { color: var(--muted); font-size: 12px; font-family: ui-monospace, Menlo, Consolas, monospace; white-space: nowrap; }
     .cat-badge {
       display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: .06em;
       padding: 2px 8px; border-radius: 4px; border: 1px solid var(--border); color: var(--muted);
@@ -144,6 +145,7 @@
       <th data-sort="artist">Artist</th>
       <th class="hide-sm">Album</th>
       <th data-sort="newest">Year</th>
+      <th class="hide-sm">File</th>
       <th>Station</th>
       <th></th>
     </tr></thead>
@@ -221,7 +223,7 @@
       else if (activeCat && s.station !== activeCat && s.station !== 'Both') return false;
       if (dec && (!s.year || Math.floor(s.year / 10) * 10 !== +dec)) return false;
       if (words.length) {
-        const hay = (s.artist + ' ' + s.title + ' ' + s.album).toLowerCase();
+        const hay = (s.artist + ' ' + s.title + ' ' + s.album + ' ' + (s.files || []).join(' ')).toLowerCase();
         if (!words.every(w => hay.includes(w))) return false;
       }
       return true;
@@ -255,6 +257,7 @@
         <td class="t-artist">${esc(s.artist)}</td>
         <td class="t-album hide-sm">${esc(s.album)}</td>
         <td class="t-year">${s.year || ''}</td>
+        <td class="t-file hide-sm">${esc((s.files || []).join(', '))}</td>
         <td>${s.station ? `<span class="cat-badge cat-${esc(s.station)}">${CAT_SHORT[s.station] || esc(s.station)}</span>` : ''}</td>
         <td>${s.fact ? `<button class="fact-btn" data-idx="${idx}">Fact</button>` : ''}</td>
       </tr>`;
@@ -274,7 +277,7 @@
     const s = filtered[+btn.dataset.idx];
     btn.textContent = 'Hide';
     tr.insertAdjacentHTML('afterend', `
-      <tr class="fact-row"><td colspan="6">
+      <tr class="fact-row"><td colspan="7">
         <div class="fact-box">${esc(s.fact)}${s.source ? ` <a href="${esc(s.source)}" target="_blank" rel="noopener">source</a>` : ''}</div>
       </td></tr>`);
   });

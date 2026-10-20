@@ -66,12 +66,14 @@ def load_songs():
         if not artist or not title:
             continue
         station = station_for(path)
+        filename = Path(path).stem
         key = (norm_artist(artist), norm(title))
         rec = songs.get(key)
         if rec is None:
             songs[key] = {
                 'artist': artist, 'title': title, 'album': album, 'year': year,
                 'stations': {station} if station else set(),
+                'files': {filename},
             }
         else:
             if not rec['album'] and album:
@@ -80,6 +82,7 @@ def load_songs():
                 rec['year'] = year
             if station:
                 rec['stations'].add(station)
+            rec['files'].add(filename)
     return songs
 
 
@@ -110,6 +113,7 @@ def main():
             'album': rec['album'],
             'year': int(rec['year']) if rec['year'].isdigit() else None,
             'station': station,
+            'files': sorted(rec['files']),
             'fact': fact.get('fact') if fact else None,
             'source': fact.get('source') if fact else None,
         })
