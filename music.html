@@ -131,6 +131,7 @@
       <option value="title">Sort: Title A–Z</option>
       <option value="newest">Sort: Year (newest)</option>
       <option value="oldest">Sort: Year (oldest)</option>
+      <option value="file">Sort: File A–Z</option>
     </select>
   </div>
 
@@ -145,7 +146,7 @@
       <th data-sort="artist">Artist</th>
       <th class="hide-sm">Album</th>
       <th data-sort="newest">Year</th>
-      <th class="hide-sm">File</th>
+      <th class="hide-sm" data-sort="file">File</th>
       <th>Station</th>
       <th></th>
     </tr></thead>
@@ -234,6 +235,7 @@
     if (sortMode === 'title')   filtered.sort((a, b) => coll.compare(a.title, b.title));
     if (sortMode === 'newest')  filtered.sort((a, b) => (b.year || 0) - (a.year || 0) || coll.compare(a.artist, b.artist));
     if (sortMode === 'oldest')  filtered.sort((a, b) => (a.year || 9999) - (b.year || 9999) || coll.compare(a.artist, b.artist));
+    if (sortMode === 'file')   filtered.sort((a, b) => coll.compare((a.files || [])[0] || '', (b.files || [])[0] || ''));
 
     shown = 0;
     document.getElementById('rows').innerHTML = '';
