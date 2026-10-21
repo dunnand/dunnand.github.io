@@ -160,7 +160,7 @@
 "title": "These Are Days",
 "album": "Our Time in Eden",
 "year": 1992,
-"station": "WCYT",
+"station": "Both",
 "files": [
 "10000Maniacs-00"
 ],
@@ -43074,6 +43074,18 @@
 },
 {
 "artist": "Dummy",
+"title": "Full Spectrum Dominance",
+"album": "",
+"year": null,
+"station": "WCYT",
+"files": [
+"Dummy-01"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Dummy",
 "title": "Mono Retriever",
 "album": "Single (2022)",
 "year": 2022,
@@ -77554,6 +77566,18 @@
 "files": [
 "LanaDelRey- (1)",
 "LanaDelRey-04"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Land of Talk",
+"title": "Dogs",
+"album": "",
+"year": null,
+"station": "WCYT",
+"files": [
+"LandOfTalk-00"
 ],
 "fact": null,
 "source": null
