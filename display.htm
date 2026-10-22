@@ -10,7 +10,7 @@
     // DISPLAY_VERSION on every edit — it forces one redirect to a URL the CDN
     // has never cached, guaranteeing the fresh copy loads. (Mirrors the same
     // pattern homestead_media's script.js uses for APP_VERSION.)
-    const DISPLAY_VERSION = '20261002a';
+    const DISPLAY_VERSION = '20261021b';
     (function() {
       try {
         const k = 'display_version';
@@ -183,7 +183,7 @@
     }
 
     .artist {
-      font-size: 2.4em;
+      font-size: 2em;
       font-weight: bold;
       line-height: 1.15;
       margin-bottom: 6px;
@@ -195,7 +195,7 @@
     .wcyt .artist { color: #000; }
 
     .song-title {
-      font-size: 1.7em;
+      font-size: 1.4em;
       color: #ccc;
       font-weight: normal;
       margin-bottom: 8px;
@@ -219,11 +219,11 @@
       height: min(70vw, 42vh);
     }
     .station-mode .artist {
-      font-size: 2.8em;
+      font-size: 2.3em;
       -webkit-line-clamp: 3;
     }
     .station-mode .song-title {
-      font-size: 2em;
+      font-size: 1.6em;
       -webkit-line-clamp: 3;
     }
     .station-mode .album-line {
@@ -1099,7 +1099,7 @@
       'https://securestreams2.autopo.st:1069/WCYT.mp3',   // 0 — The Point
       'https://securestreams2.autopo.st:1069/wcythd2.mp3' // 1 — 2.0
     ];
-    let audio        = new Audio();
+    let audio        = null;
     let playing      = false;
     let activeStream = 0;
 
@@ -1115,45 +1115,76 @@
       document.getElementById('btn-wcyt').classList.toggle('active',  activeStream === 1);
     }
 
-    function loadStream(idx) {
-      audio.pause();
-      audio = new Audio(STREAMS[idx]);
-      audio.volume = 1;
-      if (playing) audio.play().catch(() => {});
+    // The icon used to flip to "pause" as soon as .play() was CALLED, not once
+    // playback actually started — so a slow/flaky live-stream connect (common
+    // on Icecast) left the button showing "pause" while nothing was playing,
+    // and the next click just paused a stream that was never going. Instead,
+    // drive `playing`/the icon off the audio element's real events, and retry
+    // once automatically on a transient connect failure.
+    function createAudio(idx) {
+      const a = new Audio(STREAMS[idx]);
+      a.volume = 1;
+      a._retried = false;
+      a.addEventListener('playing', () => { playing = true;  updatePlayBtn(); });
+      a.addEventListener('pause',   () => { playing = false; updatePlayBtn(); });
+      a.addEventListener('error',   () => {
+        playing = false;
+        updatePlayBtn();
+        if (!a._retried && a === audio) {
+          a._retried = true;
+          setTimeout(() => { if (a === audio) startPlay(a); }, 1500);
+        }
+      });
+      return a;
     }
+
+    function startPlay(a) {
+      a.play().catch(() => { if (a === audio) { playing = false; updatePlayBtn(); } });
+    }
+
+    function loadStream(idx, autoplay) {
+      if (audio) audio.pause();
+      audio = createAudio(idx);
+      lastProgress = { time: 0, ts: Date.now() };
+      if (autoplay) startPlay(audio);
+    }
+
+    // Icecast connections can go silently quiet — no `error` event, audio
+    // just stops advancing — which the single error-triggered retry above
+    // doesn't catch. Poll currentTime; if it hasn't moved in 20s while we
+    // think we're playing, force a full reconnect.
+    let lastProgress = { time: 0, ts: Date.now() };
+    function checkStall() {
+      if (!playing || !audio) return;
+      if (audio.currentTime > lastProgress.time + 0.25) {
+        lastProgress = { time: audio.currentTime, ts: Date.now() };
+        return;
+      }
+      if (Date.now() - lastProgress.ts > 20000) {
+        loadStream(activeStream, true);
+      }
+    }
+    setInterval(checkStall, 5000);
 
     function switchStream(idx) {
       if (idx === activeStream && playing) return; // already on and playing
       activeStream = idx;
       updateStreamBtns();
-      loadStream(idx);
-      if (!playing) { playing = true; updatePlayBtn(); }
+      loadStream(idx, true);
     }
 
     function togglePlay() {
       if (playing) {
-        audio.pause();
-        playing = false;
+        audio.pause(); // 'pause' event updates the icon
+      } else if (audio && audio.src) {
+        startPlay(audio);
       } else {
-        if (!audio.src) loadStream(activeStream);
-        audio.play().catch(() => {});
-        playing = true;
+        loadStream(activeStream, true);
       }
-      updatePlayBtn();
     }
 
     // Autoplay The Point on load
-    (function autoplay() {
-      audio.src = STREAMS[0];
-      audio.play().then(() => {
-        playing = true;
-        updatePlayBtn();
-      }).catch(() => {
-        // Autoplay blocked — user must press play
-        playing = false;
-        updatePlayBtn();
-      });
-    })();
+    loadStream(0, true);
 
     // ── Wake Lock — keep screen on ────────────────────────────────────────────
     async function keepAwake() {
