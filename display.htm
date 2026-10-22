@@ -10,7 +10,7 @@
     // DISPLAY_VERSION on every edit — it forces one redirect to a URL the CDN
     // has never cached, guaranteeing the fresh copy loads. (Mirrors the same
     // pattern homestead_media's script.js uses for APP_VERSION.)
-    const DISPLAY_VERSION = '20261021b';
+    const DISPLAY_VERSION = '20261022a';
     (function() {
       try {
         const k = 'display_version';
@@ -330,7 +330,7 @@
       background: #030303;
       border-top: 1px solid #0f0f0f;
       padding: 0 20px;
-      height: 56px;
+      height: 46px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -348,19 +348,19 @@
     .wcyt .loading { color: #ccc; }
 
     /* ── Player controls ── */
-    .player-controls { display: flex; align-items: center; gap: 10px; }
+    .player-controls { display: flex; align-items: center; gap: 8px; }
     .player-play-btn {
-      width: 42px; height: 42px; border-radius: 50%;
+      width: 30px; height: 30px; border-radius: 50%;
       border: none; background: #c8102e; color: #fff;
-      font-size: 16px; cursor: pointer;
+      font-size: 12px; cursor: pointer;
       display: flex; align-items: center; justify-content: center;
       transition: background .2s; flex-shrink: 0;
     }
     .player-play-btn:hover { background: #a00; }
     .player-stn-btn {
       background: transparent; border: 1px solid #222; color: #333;
-      font-size: 0.7em; font-weight: 700; letter-spacing: 2px;
-      padding: 6px 14px; border-radius: 4px; cursor: pointer;
+      font-size: 0.55em; font-weight: 700; letter-spacing: 1.5px;
+      padding: 4px 10px; border-radius: 4px; cursor: pointer;
       font-family: inherit; transition: all .2s; white-space: nowrap;
     }
     /* When playing: active station lights up white, inactive is dimmer */
