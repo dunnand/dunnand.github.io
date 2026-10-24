@@ -11667,6 +11667,402 @@
     "yo la tengo|aselestine": {
       "fact": "\"Aselestine\" is the fourth track on Yo La Tengo's 2023 album This Stupid World, released as its second single on January 11, 2023. The album was recorded at the band's own studio space in Hoboken, New Jersey and produced by the band, with C. J. Camerieri playing French horn on the track.",
       "source": "https://en.wikipedia.org/wiki/This_Stupid_World"
+    },
+    "green day|nice guys finish last": {
+      "fact": "Nice Guys Finish Last opens Green Day's 1997 album Nimrod and was its fourth and final single. It was used in the 1999 football movie Varsity Blues, and its video shows the band as a mock football team parodying the Green Bay Packers, with a voice-over imitating NFL Films narrator John Facenda.",
+      "source": "https://en.wikipedia.org/wiki/Nice_Guys_Finish_Last"
+    },
+    "enrique iglesias|i like it": {
+      "fact": "I Like It, from Enrique Iglesias's 2010 album Euphoria, features Pitbull and was produced by RedOne, who co-wrote it with both artists. It interpolates Lionel Richie's 1983 hit All Night Long, reached the top ten in the US, and hit No. 4 in the UK.",
+      "source": "https://en.wikipedia.org/wiki/I_Like_It_(Enrique_Iglesias_song)"
+    },
+    "the breeders|cannonball": {
+      "fact": "Cannonball was the lead single from The Breeders' 1993 album Last Splash. Kim Deal wrote it and co-produced it with Mark Freegard, and it reached No. 44 on the Billboard Hot 100 and No. 2 on the Alternative Songs chart. The video was directed by Spike Jonze and Kim Gordon.",
+      "source": "https://en.wikipedia.org/wiki/Cannonball_(The_Breeders_song)"
+    },
+    "a tribe called quest|check the rhime": {
+      "fact": "Check the Rhime was the first single from A Tribe Called Quest's 1991 second album, The Low End Theory. Written by Q-Tip, Phife Dawg and Ali Shaheed Muhammad, it hit No. 1 on Billboard's Hot Rap Songs chart and was certified Gold by the RIAA.",
+      "source": "https://en.wikipedia.org/wiki/Check_the_Rhime"
+    },
+    "kenny rogers & sheena easton|we've got tonight": {
+      "fact": "We've Got Tonight was written by Bob Seger, whose own version from the 1978 album Stranger in Town peaked at No. 13 on the Hot 100. Kenny Rogers and Sheena Easton recorded it as a duet in 1983 at the suggestion of their label chairman, and it topped the country chart.",
+      "source": "https://en.wikipedia.org/wiki/We%27ve_Got_Tonite"
+    },
+    "james brown|living in america": {
+      "fact": "Living in America was written by Dan Hartman and Charlie Midnight and released in December 1985 for the film Rocky IV, where James Brown performs it during Apollo Creed's ring entrance. It reached No. 4 on the Billboard Hot 100 and won Brown a Grammy for Best Male R&B Vocal Performance.",
+      "source": "https://en.wikipedia.org/wiki/Living_in_America_(James_Brown_song)"
+    },
+    "abba|thank you for the music": {
+      "fact": "Thank You for the Music is on ABBA's 1977 album ABBA: The Album, and was one of three songs from the mini-musical The Girl with the Golden Hair, performed on their 1977 tour. It was not a UK single until November 1983, when it became a minor top-forty hit.",
+      "source": "https://en.wikipedia.org/wiki/Thank_You_for_the_Music"
+    },
+    "jefferson airplane|somebody to love": {
+      "fact": "Somebody to Love was written by Darby Slick and first recorded in 1966 by the Great Society, with his sister-in-law Grace Slick singing. When she joined Jefferson Airplane she brought the song along, and it became a top-ten hit from their 1967 album Surrealistic Pillow.",
+      "source": "https://en.wikipedia.org/wiki/Somebody_to_Love_(Jefferson_Airplane_song)"
+    },
+    "america|a horse with no name": {
+      "fact": "A Horse with No Name was written by Dewey Bunnell and released in late 1971 in Europe and early 1972 in the US. Many listeners thought it was Neil Young because of the vocal resemblance, and it knocked Young's Heart of Gold out of the No. 1 spot on the Billboard Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/A_Horse_with_No_Name"
+    },
+    "herman's hermits|there's a kind of hush (all over the world)": {
+      "fact": "There's a Kind of Hush was written by Les Reed and Geoff Stephens, whose group the New Vaudeville Band recorded it first in 1967. Herman's Hermits' version, produced by Mickie Most, reached No. 4 in the US, and the Carpenters took it back into the charts in 1976.",
+      "source": "https://en.wikipedia.org/wiki/There%27s_a_Kind_of_Hush"
+    },
+    "beck|nobody's fault but my own": {
+      "fact": "Nobody's Fault but My Own is from Beck's 1998 album Mutations, which he produced with Nigel Godrich. Critics have described it as a psychedelic raga built on open-tuned guitar and sitar, and it was released as a single in Japan in 1999.",
+      "source": "https://en.wikipedia.org/wiki/Nobody%27s_Fault_but_My_Own"
+    },
+    "bjork|it's oh so quiet": {
+      "fact": "Bjork's It's Oh So Quiet, from her 1995 album Post, is a cover of a 1951 Betty Hutton song, which itself was an English-language version of the German song Und jetzt ist es still, recorded by Horst Winter in 1948. Spike Jonze directed the video, and the single reached No. 4 in the UK.",
+      "source": "https://en.wikipedia.org/wiki/It%27s_Oh_So_Quiet"
+    },
+    "superchunk|hello hawk": {
+      "fact": "Hello Hawk was the first single from Superchunk's 1999 album Come Pick Me Up, which was produced by Jim O'Rourke. The album's title comes from a line in the song, and the arrangement adds strings and horns to the band's usual guitar sound.",
+      "source": "https://en.wikipedia.org/wiki/Come_Pick_Me_Up"
+    },
+    "de la soul|me myself and i": {
+      "fact": "Me Myself and I, released in 1989 from De La Soul's debut album 3 Feet High and Rising, is built on a sample of Funkadelic's (Not Just) Knee Deep, an idea from Prince Paul and Maseo. It was the group's only No. 1 on the Billboard R&B chart.",
+      "source": "https://en.wikipedia.org/wiki/Me_Myself_and_I_(De_La_Soul_song)"
+    },
+    "haim|summer girl": {
+      "fact": "Summer Girl, released by Haim in July 2019, was co-produced by Ariel Rechtshaid and Rostam Batmanglij. The band has said its gentle groove was inspired by Lou Reed's Walk on the Wild Side, and its music video was directed by Paul Thomas Anderson.",
+      "source": "https://www.pastemagazine.com/music/haim/haim-summer-girl/"
+    },
+    "barry white|can't get enough of your love, babe": {
+      "fact": "Can't Get Enough of Your Love, Babe was released in June 1974 as the first single from Barry White's third album, Can't Get Enough. It topped both the Billboard Hot 100 and R&B charts, replacing Eric Clapton's I Shot the Sheriff at No. 1.",
+      "source": "https://en.wikipedia.org/wiki/Can%27t_Get_Enough_of_Your_Love,_Babe"
+    },
+    "gary lewis & the playboys|green grass": {
+      "fact": "Green Grass was written by the British songwriting duo Roger Cook and Roger Greenaway and released by Gary Lewis & the Playboys in 1966 on Liberty Records. It reached No. 8 on the Billboard Hot 100 and No. 1 in Canada.",
+      "source": "https://en.wikipedia.org/wiki/Green_Grass_(song)"
+    },
+    "desmond dekker and the aces|(poor mi) israelites": {
+      "fact": "Israelites, written by Desmond Dekker and producer Leslie Kong, reached No. 1 on the UK Singles Chart in spring 1969, widely described as the first reggae song to do so. It also climbed to No. 9 on the US Billboard Hot 100 that June.",
+      "source": "https://en.wikipedia.org/wiki/Israelites_(song)"
+    },
+    "boston|don't look back": {
+      "fact": "Don't Look Back is the title track of Boston's 1978 second album, and it reached No. 4 on the Hot 100. Tom Scholz has said he made no demo and worked the song out directly on the master tape. It is the only track on the album without drums, with Brad Delp singing all the vocals.",
+      "source": "https://en.wikipedia.org/wiki/Don%27t_Look_Back_(Boston_song)"
+    },
+    "u2|mysterious ways": {
+      "fact": "Mysterious Ways, from U2's 1991 album Achtung Baby, began as a jam called Sick Puppy, and the band at first liked only Adam Clayton's bass part. The Edge's funky, wah-flavored guitar came from a sound he found on his gear, and the song spent a then-record nine weeks atop Billboard's Modern Rock Tracks chart.",
+      "source": "https://en.wikipedia.org/wiki/Mysterious_Ways_(song)"
+    },
+    "the everly brothers|wake up little susie": {
+      "fact": "Wake Up Little Susie was written by the husband-and-wife team Felice and Boudleaux Bryant and released by the Everly Brothers on Cadence Records in September 1957. It went to No. 1 on the Billboard pop chart and spent seven weeks at the top of the country chart. The Bryants wrote 29 songs for the duo.",
+      "source": "https://en.wikipedia.org/wiki/Wake_Up_Little_Susie"
+    },
+    "the white stripes|there's no home for you here": {
+      "fact": "There's No Home for You Here opens the White Stripes' 2003 album Elephant, which Jack White produced. It was recorded at Toe Rag Studios in London on an eight-track recorder, and Jack White has said they pushed that equipment as far as it could go with heavy overdubbing.",
+      "source": "https://en.wikipedia.org/wiki/There%27s_No_Home_for_You_Here"
+    },
+    "drifters|up on the roof": {
+      "fact": "Up on the Roof was written by Gerry Goffin and Carole King and recorded by the Drifters in 1962 with Rudy Lewis on lead vocal. Produced by Leiber and Stoller, it reached No. 5 on the US pop chart in early 1963. Carole King, James Taylor and Laura Nyro have all recorded it too.",
+      "source": "https://en.wikipedia.org/wiki/Up_on_the_Roof_(song)"
+    },
+    "billie eilish|bad guy": {
+      "fact": "bad guy, from Billie Eilish's 2019 debut album When We All Fall Asleep, Where Do We Go?, was written with and produced by her brother Finneas O'Connell. It hit No. 1 on the Billboard Hot 100 in August 2019, ending the 19-week run of Old Town Road, and it won both Record of the Year and Song of the Year at the 2020 Grammys.",
+      "source": "https://en.wikipedia.org/wiki/Bad_Guy_(Billie_Eilish_song)"
+    },
+    "foo fighters|up in arms": {
+      "fact": "Up in Arms is on Foo Fighters' 1997 album The Colour and the Shape. It is one of only two songs on the record that still features original drummer William Goldsmith, because Dave Grohl re-recorded most of the other drum parts himself.",
+      "source": "https://en.wikipedia.org/wiki/The_Colour_and_the_Shape"
+    },
+    "genesis|land of confusion": {
+      "fact": "Land of Confusion, from Genesis's 1986 album Invisible Touch, reached No. 4 on the Billboard Hot 100. Its music video used caricature puppets from the British TV show Spitting Image and won the Grammy for Best Concept Music Video.",
+      "source": "https://en.wikipedia.org/wiki/Land_of_Confusion"
+    },
+    "john parr|st. elmo's fire (man in motion)": {
+      "fact": "St. Elmo's Fire (Man in Motion) was written by John Parr and David Foster for the 1985 film St. Elmo's Fire, and Foster produced it. It reached No. 1 on the Billboard Hot 100 in September 1985 and earned Parr a Grammy nomination.",
+      "source": "https://en.wikipedia.org/wiki/St._Elmo%27s_Fire_(Man_in_Motion)"
+    },
+    "the dandy warhols|we used to be friends": {
+      "fact": "We Used to Be Friends was the lead single from The Dandy Warhols' 2003 album Welcome to the Monkey House. It became the theme song of the TV series Veronica Mars and reached No. 18 on the UK Singles chart.",
+      "source": "https://en.wikipedia.org/wiki/We_Used_to_Be_Friends"
+    },
+    "bruce springsteen|born to run": {
+      "fact": "Born to Run, the title track of Bruce Springsteen's 1975 album, took months of sessions in 1974 at 914 Sound Studios in New York, with as many as eleven guitar tracks layered on it. It is his most-performed live song, and it was part of the Super Bowl XLIII halftime show in 2009.",
+      "source": "https://en.wikipedia.org/wiki/Born_to_Run_(song)"
+    },
+    "u2|all because of you": {
+      "fact": "All Because of You is the sixth track on U2's 2004 album How to Dismantle an Atomic Bomb and was released as a single in 2005. It was produced by Steve Lillywhite, mixed by Flood, and reached No. 6 on the US Modern Rock chart. The video shows the band playing on a flatbed truck driving from Manhattan to Brooklyn.",
+      "source": "https://en.wikipedia.org/wiki/All_Because_of_You_(U2_song)"
+    },
+    "big time rush|music sounds better with u feat. mann": {
+      "fact": "Music Sounds Better with U, from Big Time Rush's 2011 album Elevate, features rapper Mann and was produced by Ryan Tedder. Its credits include Thomas Bangalter and Alain Quême of the French duo Stardust, whose 1998 hit Music Sounds Better with You inspired it.",
+      "source": "https://en.wikipedia.org/wiki/Music_Sounds_Better_with_U"
+    },
+    "carly simon|nobody does it better": {
+      "fact": "Nobody Does It Better was the theme to the 1977 James Bond film The Spy Who Loved Me, with music by Marvin Hamlisch and lyrics by Carole Bayer Sager. It was the first Bond theme since Dr. No (1962) with a title different from the film's. It peaked at No. 2 on the Billboard Hot 100 and was nominated for an Oscar for Best Original Song.",
+      "source": "https://en.wikipedia.org/wiki/Nobody_Does_It_Better"
+    },
+    "alanis morissette|hand in my pocket": {
+      "fact": "Hand in My Pocket, from Alanis Morissette's 1995 album Jagged Little Pill, was written by Morissette and producer Glen Ballard. It was her first No. 1 in Canada and topped the US Alternative Airplay chart. It was once considered as the theme for the Dawson's Creek pilot.",
+      "source": "https://en.wikipedia.org/wiki/Hand_in_My_Pocket"
+    },
+    "foals|my number": {
+      "fact": "My Number, from Foals' 2013 album Holy Fire, was produced by Flood and Alan Moulder. It reached No. 23 on the UK Singles chart, the band's highest-charting single at that point, and was certified double platinum in the UK.",
+      "source": "https://en.wikipedia.org/wiki/My_Number_(Foals_song)"
+    },
+    "the roots|don't feel right": {
+      "fact": "Don't Feel Right was the lead single from The Roots' 2006 album Game Theory. It first circulated online as a free download in May 2006, and features a hook sung by Maimouna Youssef with ?uestlove on drums.",
+      "source": "https://www.iowapublicradio.org/2006-09-28/breaking-ground-on-a-modern-message-song"
+    },
+    "chromatics|shadow": {
+      "fact": "Shadow by Chromatics was released in September 2015 through Adult Swim's singles series. It was written for their planned album Dear Tommy, which never came out, and it later gained wider attention when it was featured in Twin Peaks: The Return.",
+      "source": "https://factmag.com/2015/09/08/chromatics-single-shadow-johnny-jewel-update-dear-tommy"
+    },
+    "dave matthews band|stay (wasting time)": {
+      "fact": "Stay (Wasting Time) is the second single from Dave Matthews Band's 1998 album Before These Crowded Streets, produced by Steve Lillywhite. It spent seven weeks at No. 1 on the Billboard Adult Alternative chart and peaked at No. 8 on the Modern Rock chart.",
+      "source": "https://en.wikipedia.org/wiki/Stay_(Wasting_Time)"
+    },
+    "lionel richie|hello": {
+      "fact": "Hello, from Lionel Richie's 1983 album Can't Slow Down, was released as a single in February 1984. It hit No. 1 on the Billboard Hot 100 and spent six weeks at No. 1 in the UK. Its music video, directed by Bob Giraldi, features a character who sculpts a clay head of Richie.",
+      "source": "https://en.wikipedia.org/wiki/Hello_(Lionel_Richie_song)"
+    },
+    "charlie rich|behind closed doors": {
+      "fact": "Behind Closed Doors, written by Kenny O'Dell and produced by Billy Sherrill, was released in 1973 and spent 20 weeks at No. 1 on the country chart. It won Grammys for Best Country Song and Best Country Vocal Performance, Male, plus Song of the Year and Single of the Year from both the CMA and the ACM.",
+      "source": "https://en.wikipedia.org/wiki/Behind_Closed_Doors_(Charlie_Rich_song)"
+    },
+    "drifters|this magic moment": {
+      "fact": "This Magic Moment was written by Doc Pomus and Mort Shuman and recorded by The Drifters in December 1959, with Ben E. King on lead vocals. It was released in January 1960 and reached No. 16 on the Hot 100. Jay and the Americans' 1968 cover went higher, reaching No. 6.",
+      "source": "https://en.wikipedia.org/wiki/This_Magic_Moment"
+    },
+    "cheap trick|i want you to want me": {
+      "fact": "Cheap Trick first recorded I Want You to Want Me for their 1977 album In Color, but it did not chart in the US. A faster live version from their April 1978 Budokan concerts was released in 1979, reaching No. 7 on the Billboard Hot 100 and No. 1 in Japan, and it became their signature song.",
+      "source": "https://en.wikipedia.org/wiki/I_Want_You_to_Want_Me"
+    },
+    "gerry & the pacemakers|you'll never walk alone": {
+      "fact": "You'll Never Walk Alone was written for the 1945 Rodgers and Hammerstein musical Carousel. Gerry & The Pacemakers recorded it in July 1963 with producer George Martin, and it spent four weeks at No. 1 in the UK. Liverpool fans then began singing it at Anfield, and it became the club's anthem.",
+      "source": "https://en.wikipedia.org/wiki/You%27ll_Never_Walk_Alone"
+    },
+    "spoon|lines in the suit": {
+      "fact": "Lines in the Suit is a track from Spoon's 2001 album Girls Can Tell. For the album's 20th anniversary, the band shared a 1999 home demo called Lines in the Suit - 30 Minutes Old, which Britt Daniel recorded when the song was only half an hour old.",
+      "source": "https://stereogum.com/2117439/spoon-share-lines-in-the-suit-demo-for-girls-can-tell-20th-anniversary/music"
+    },
+    "bill callahan|riding for the feeling": {
+      "fact": "Riding for the Feeling is the fifth track on Bill Callahan's 2011 album Apocalypse, released on Drag City. Its Wurlitzer and electric piano parts were played by Jonathan Meiburg, and its music video is an animation of a ski jumper hovering over a looping mountain range.",
+      "source": "https://obscuresound.com/2011/08/bill-callahan-apocalypse-2011/"
+    },
+    "janet jackson|together again": {
+      "fact": "Together Again, from Janet Jackson's 1997 album The Velvet Rope, was written and produced by Jackson with Jimmy Jam and Terry Lewis. It hit No. 1 on the Billboard Hot 100 in January 1998 and became her best-selling single in the UK. Jackson donated part of its worldwide sales to the American Foundation for AIDS Research.",
+      "source": "https://en.wikipedia.org/wiki/Together_Again_(Janet_Jackson_song)"
+    },
+    "christopher cross|sailing": {
+      "fact": "Sailing, from Christopher Cross's 1979 self-titled debut album, reached No. 1 on the Billboard Hot 100 in August 1980. It won Record of the Year, Song of the Year, and Arrangement of the Year at the Grammys, and Cross also took Best New Artist. Cross has said it wasn't originally meant to be a single.",
+      "source": "https://en.wikipedia.org/wiki/Sailing_(Christopher_Cross_song)"
+    },
+    "dave clark five|over and over": {
+      "fact": "The Dave Clark Five's Over and Over, released in October 1965, reached No. 1 on the Billboard Hot 100 that December. It was the band's only American No. 1. The song was written by Robert James Byrd, who recorded it as Bobby Day in 1958.",
+      "source": "https://en.wikipedia.org/wiki/Over_and_Over_(Bobby_Day_song)"
+    },
+    "b.j. thomas|hooked on a feeling": {
+      "fact": "Hooked on a Feeling was written by Mark James, and B.J. Thomas released the first recording in 1968, with Reggie Young playing electric sitar. It reached No. 5 on the Billboard Hot 100. Swedish group Blue Swede later took a 1973 cover to No. 1 in 1974.",
+      "source": "https://en.wikipedia.org/wiki/Hooked_on_a_Feeling_(song)"
+    },
+    "dionne warwick|i'll never fall in love again": {
+      "fact": "I'll Never Fall in Love Again was written by Burt Bacharach and Hal David for the 1968 Broadway musical Promises, Promises. Dionne Warwick's version, released in late 1969, reached No. 6 on the Billboard Hot 100 in early 1970. It also topped the Easy Listening chart.",
+      "source": "https://en.wikipedia.org/wiki/I%27ll_Never_Fall_in_Love_Again"
+    },
+    "sheryl crow|if it makes you happy": {
+      "fact": "If It Makes You Happy was the lead single from Sheryl Crow's 1996 self-titled album. It reached No. 10 on the Billboard Hot 100 and No. 9 in the UK. Crow co-wrote it with Jeff Trott and produced it, and it won the 1997 Grammy for Best Female Rock Vocal Performance.",
+      "source": "https://en.wikipedia.org/wiki/If_It_Makes_You_Happy"
+    },
+    "platters|(you've got) the magic touch": {
+      "fact": "The Platters released (You've Got) The Magic Touch in 1956, and it reached No. 4 on the Billboard Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/The_Platters"
+    },
+    "jackie wilson|(your love keeps lifting me) higher & higher": {
+      "fact": "Jackie Wilson's Higher & Higher was recorded in Chicago in July 1967 and produced by Carl Davis. Wilson first sang it like a ballad until Davis told him to jump on the percussion. It hit No. 1 on the R&B chart and No. 6 on the Hot 100, and was inducted into the Grammy Hall of Fame in 1999.",
+      "source": "https://en.wikipedia.org/wiki/(Your_Love_Keeps_Lifting_Me)_Higher_and_Higher"
+    },
+    "arcade fire|sprawl ii (mountians beyond mountians)": {
+      "fact": "Sprawl II (Mountains Beyond Mountains), from Arcade Fire's 2010 album The Suburbs, is sung by Régine Chassagne. Its title comes from Tracy Kidder's 2003 book Mountains Beyond Mountains. It was released as the album's sixth single in 2012, and Pitchfork named it Best New Track.",
+      "source": "https://en.wikipedia.org/wiki/Sprawl_II_(Mountains_Beyond_Mountains)"
+    },
+    "mariah carey|all i want for christmas is you": {
+      "fact": "All I Want for Christmas Is You, from Mariah Carey's 1994 album Merry Christmas, was co-written and co-produced with Walter Afanasieff and recorded at The Hit Factory in New York. It first hit No. 1 on the Billboard Hot 100 in December 2019, 25 years after release, a record gap. It is certified Diamond by the RIAA.",
+      "source": "https://en.wikipedia.org/wiki/All_I_Want_for_Christmas_Is_You"
+    },
+    "whitney houston|how will i know": {
+      "fact": "How Will I Know, from Whitney Houston's 1985 debut album, was written by George Merrill and Shannon Rubicam and produced by Narada Michael Walden. The demo was first written with Janet Jackson in mind, but her management passed on it. Houston's version hit No. 1 on the Hot 100 in February 1986.",
+      "source": "https://en.wikipedia.org/wiki/How_Will_I_Know"
+    },
+    "dire straits|sultans of swing": {
+      "fact": "Sultans of Swing was inspired by a Dixieland jazz band playing to a nearly empty pub in south London. Mark Knopfler said the song came alive when he bought his first Fender Stratocaster in 1977. After BBC Radio London DJ Charlie Gillett played the demo, it reached No. 4 in the US from the 1978 debut album Dire Straits.",
+      "source": "https://en.wikipedia.org/wiki/Sultans_of_Swing"
+    },
+    "chantay's|pipeline": {
+      "fact": "The Chantays' Pipeline was released in late 1962 and reached No. 4 on the Billboard Hot 100. The tune was first titled Liberty's Whip, after the film The Man Who Shot Liberty Valance. The band renamed it after seeing a surfing movie showing the Banzai Pipeline in Hawaii.",
+      "source": "https://en.wikipedia.org/wiki/Pipeline_(instrumental)"
+    },
+    "donna fargo|you can't be a beacon if your light don't shine": {
+      "fact": "You Can't Be a Beacon (If Your Light Don't Shine) was released by Donna Fargo in 1974 as the lead single from her album Miss Donna Fargo. It went to No. 1 on the Billboard country chart, her fifth country chart-topper. It was written by Marty Cooper rather than Fargo herself.",
+      "source": "https://en.wikipedia.org/wiki/You_Can%27t_Be_a_Beacon_If_Your_Light_Don%27t_Shine"
+    },
+    "the guess who|these eyes": {
+      "fact": "These Eyes, written by Randy Bachman and Burton Cummings, was released by The Guess Who in Canada in December 1968. It appeared on the 1969 album Wheatfield Soul and reached No. 6 on the Billboard Pop chart, the group's first US top-ten hit. It was later certified gold.",
+      "source": "https://en.wikipedia.org/wiki/These_Eyes"
+    },
+    "drake|hotline bling": {
+      "fact": "Hotline Bling was released in 2015 and later included on Drake's album Views as a bonus track. Its instrumental samples Timmy Thomas's 1972 song Why Can't We Live Together. It peaked at No. 2 on the Billboard Hot 100 and won two Grammys in 2017, including Best Rap Song.",
+      "source": "https://en.wikipedia.org/wiki/Hotline_Bling"
+    },
+    "ride|leave them all behind": {
+      "fact": "Leave Them All Behind, the opening track on Ride's 1992 album Going Blank Again, runs 8:17, yet Creation Records founder Alan McGee insisted on releasing it as a single. Produced by Alan Moulder, it entered the UK chart at No. 9, the first Creation single to reach the UK top ten.",
+      "source": "https://en.wikipedia.org/wiki/Leave_Them_All_Behind"
+    },
+    "peabo bryson|if ever you're in my arms again": {
+      "fact": "If Ever You're in My Arms Again, from Peabo Bryson's album Straight from the Heart, was released in 1984. It was written by Cynthia Weil, Michael Masser, and Tom Snow, with Masser producing. It reached No. 10 on the Hot 100, his first top ten there, and spent four weeks at No. 1 on the Adult Contemporary chart.",
+      "source": "https://en.wikipedia.org/wiki/If_Ever_You%27re_in_My_Arms_Again"
+    },
+    "haim|gasoline": {
+      "fact": "Gasoline is from Haim's 2020 album Women in Music Pt. III, written by the three Haim sisters and Rostam Batmanglij. It was produced by Ariel Rechtshaid, Danielle Haim, and Rostam. A remix featuring Taylor Swift came out as a single in February 2021, and Swift has called it her favorite song on the album.",
+      "source": "https://en.wikipedia.org/wiki/Gasoline_(Haim_song)"
+    },
+    "earth, wind & fire|boogie wonderland feat. the emotions": {
+      "fact": "Boogie Wonderland, released in 1979 as the lead single from Earth, Wind & Fire's album I Am, features vocal group The Emotions. Written by Allee Willis and Jon Lind and produced by Maurice White and Al McKay, it reached No. 6 on the Billboard Hot 100 and No. 4 in the UK. It won the Grammy for Best R&B Instrumental Performance.",
+      "source": "https://en.wikipedia.org/wiki/Boogie_Wonderland"
+    },
+    "talib kweli|get by": {
+      "fact": "Get By, from Talib Kweli's 2002 album Quality, was produced by Kanye West and built on a sample of Nina Simone's version of Sinnerman. Released as the album's third single in 2003, it peaked at No. 77 on the Billboard Hot 100 and is considered Kweli's most successful solo hit.",
+      "source": "https://en.wikipedia.org/wiki/Get_By_(song)"
+    },
+    "diana ross & the supremes|stop! in the name of love": {
+      "fact": "Stop! In the Name of Love was written and produced by the Motown team of Holland-Dozier-Holland and recorded in January 1965 at Hitsville U.S.A. with the Funk Brothers on instruments. It reached No. 1 on the Billboard Hot 100 and appeared on the album More Hits by The Supremes. The group's hand-gesture choreography for the song debuted on the TV show Shindig!",
+      "source": "https://en.wikipedia.org/wiki/Stop!_In_the_Name_of_Love"
+    },
+    "gerry rafferty|baker street": {
+      "fact": "Baker Street, from Gerry Rafferty's 1978 album City to City, is known for its saxophone riff played by session musician Raphael Ravenscroft, who was reportedly paid about 27 pounds. The single reached No. 2 on the Billboard Hot 100, held out of the top spot by Andy Gibb's Shadow Dancing, and No. 3 in the UK.",
+      "source": "https://en.wikipedia.org/wiki/Baker_Street_(song)"
+    },
+    "gene chandler|duke of earl": {
+      "fact": "Duke of Earl grew out of vocal warm-up exercises by the Dukays, the group Gene Chandler belonged to. Released on Vee-Jay Records in late 1961, it hit No. 1 on the Billboard pop and R&B charts in 1962. Chandler took his stage name from the actor Jeff Chandler.",
+      "source": "https://en.wikipedia.org/wiki/Duke_of_Earl"
+    },
+    "air|la femme d'argent": {
+      "fact": "La Femme d'argent opens Air's 1998 debut album Moon Safari, running just over seven minutes. The French duo of Nicolas Godin and Jean-Benoit Dunckel recorded the album in 1997 in Paris and produced it themselves, using vintage keyboards like the Rhodes, Moog and Korg MS-20.",
+      "source": "https://en.wikipedia.org/wiki/Moon_Safari"
+    },
+    "waylon jennings, willie nelson, johnny cash, kris|highwayman": {
+      "fact": "Highwayman was written by Jimmy Webb, who recorded it first in 1977; Glen Campbell cut it next. The 1985 version by The Highwaymen (Waylon Jennings, Willie Nelson, Johnny Cash and Kris Kristofferson) has each of the four verses sung by a different member. It hit No. 1 on the Billboard country chart, and Webb won the Grammy for Best Country Song.",
+      "source": "https://en.wikipedia.org/wiki/Highwayman_(song)"
+    },
+    "glen campbell|southern nights": {
+      "fact": "Southern Nights was written and first recorded by Allen Toussaint in 1975. Glen Campbell's 1977 version reached No. 1 on the Billboard Hot 100 and the country and adult contemporary charts. Its distinctive guitar lick came from his friend Jerry Reed.",
+      "source": "https://en.wikipedia.org/wiki/Southern_Nights_(song)"
+    },
+    "gordon lightfoot|rainy day people": {
+      "fact": "Rainy Day People, from Gordon Lightfoot's 1975 album Cold on the Shoulder, was produced by Lenny Waronker. It spent a week at No. 1 on the Billboard Easy Listening chart in May 1975 and peaked at No. 26 on the Hot 100. Jim Gordon played drums and Nick DeCaro arranged the strings.",
+      "source": "https://en.wikipedia.org/wiki/Rainy_Day_People"
+    },
+    "the shins|fighting in a sack": {
+      "fact": "Fighting in a Sack is track 6 on The Shins' 2003 album Chutes Too Narrow, released on Sub Pop and issued as a single in 2004. The album was recorded in James Mercer's basement in Portland, Oregon.",
+      "source": "https://en.wikipedia.org/wiki/Chutes_Too_Narrow"
+    },
+    "harold melvin & the blue notes|if you donâ€™t know me by now": {
+      "fact": "If You Don't Know Me by Now was written by Kenny Gamble and Leon Huff and released in 1972, with Teddy Pendergrass singing lead. It reached No. 3 on the Billboard Hot 100. Simply Red's 1989 cover went to No. 1 in the US and won a Grammy for Best R&B Song.",
+      "source": "https://en.wikipedia.org/wiki/If_You_Don%27t_Know_Me_by_Now"
+    },
+    "hall & oates|she's gone": {
+      "fact": "She's Gone first appeared on Hall & Oates' 1973 album Abandoned Luncheonette and peaked at only No. 60. After the duo moved to RCA, Atlantic reissued it in 1976 and it climbed to No. 7. Tavares' cover became their first R&B No. 1 in 1974.",
+      "source": "https://en.wikipedia.org/wiki/She%27s_Gone_(Hall_%26_Oates_song)"
+    },
+    "all-4-one|i swear": {
+      "fact": "I Swear was first recorded by John Michael Montgomery in 1993 and written by Gary Baker and Frank J. Myers. All-4-One's 1994 cover spent 11 consecutive weeks at No. 1 on the Billboard Hot 100 and won a Grammy. It was the No. 2 song of 1994 on the Billboard year-end chart.",
+      "source": "https://en.wikipedia.org/wiki/I_Swear_(John_Michael_Montgomery_song)"
+    },
+    "the roots|the seed (2.0)": {
+      "fact": "The Seed (2.0), from The Roots' 2002 album Phrenology, features Cody ChesnuTT on guitar and vocals. It is an uptempo retooling of his own song The Seed from his album The Headphone Masterpiece. Released as a single in 2003, it reached No. 33 on the UK chart.",
+      "source": "https://en.wikipedia.org/wiki/The_Seed_(2.0)"
+    },
+    "alvvays|in undertow": {
+      "fact": "In Undertow, released in June 2017, is the lead single and opening track of Alvvays' second album Antisocialites. Norman Blake of Teenage Fanclub sang backing vocals and played additional guitar, and John Congleton co-produced. The video shows singer Molly Rankin in an astronaut helmet.",
+      "source": "https://en.wikipedia.org/wiki/In_Undertow"
+    },
+    "kenny rogers & dolly parton|islands in the stream": {
+      "fact": "Islands in the Stream was written by the Bee Gees' Barry, Robin and Maurice Gibb, and was originally meant for Diana Ross. Reworked as a duet for Kenny Rogers and Dolly Parton, it was released in 1983 on Eyes That See in the Dark. It knocked Total Eclipse of the Heart from No. 1 on the Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/Islands_in_the_Stream_(song)"
+    },
+    "men without hats|the safety dance": {
+      "fact": "The Safety Dance, written by singer Ivan Doroschuk, came out in Canada in 1982 from the album Rhythm of Youth. It peaked at No. 3 on the Billboard Hot 100 in 1983. Its video, filmed in an English village with Morris dancers and a maypole, was directed by Tim Pope.",
+      "source": "https://en.wikipedia.org/wiki/The_Safety_Dance"
+    },
+    "harry chapin|cat's in the cradle": {
+      "fact": "Cat's in the Cradle, from Harry Chapin's 1974 album Verities & Balderdash, began as a poem by his wife Sandra. It became Chapin's only No. 1 on the Billboard Hot 100 and entered the Grammy Hall of Fame in 2011. It is often wrongly credited to Cat Stevens.",
+      "source": "https://en.wikipedia.org/wiki/Cat%27s_in_the_Cradle"
+    },
+    "simon & garfunkel|america": {
+      "fact": "America was recorded in February 1968 at Columbia Studio A in New York and appeared on Simon & Garfunkel's album Bookends. Paul Simon based it on a 1964 road trip. Yes recorded a prog rock version that reached No. 46 on the US Hot 100 in 1972.",
+      "source": "https://en.wikipedia.org/wiki/America_(Simon_%26_Garfunkel_song)"
+    },
+    "glen campbell|wichita lineman": {
+      "fact": "Wichita Lineman was written by Jimmy Webb and released by Glen Campbell in late 1968, produced by Al De Lory. Session bassist Carol Kaye of the Wrecking Crew played its descending intro, and the single reached #3 on the US pop chart and #1 on the country chart. The recording was later added to the Library of Congress's National Recording Registry.",
+      "source": "https://en.wikipedia.org/wiki/Wichita_Lineman"
+    },
+    "backstreet boys|everybody (backstreet's back)": {
+      "fact": "Everybody (Backstreet's Back) was written and produced by Swedish hitmakers Denniz Pop and Max Martin and was the lead single from the Backstreet Boys' international album Backstreet's Back in 1997. It reached #4 on the US Billboard Hot 100 and #3 in the UK. Although it was released in the summer, its spooky video made it a Halloween favorite.",
+      "source": "https://en.wikipedia.org/wiki/Everybody_(Backstreet%27s_Back)"
+    },
+    "ray charles|lonely avenue": {
+      "fact": "Lonely Avenue was written by Doc Pomus and recorded by Ray Charles for Atlantic Records in 1956. It reached #6 on the R&B chart and is considered Pomus's first major hit as a songwriter. Charles later included it on his 1958 album Yes Indeed!",
+      "source": "https://en.wikipedia.org/wiki/Lonely_Avenue"
+    },
+    "creedence clearwater revival|bad moon rising": {
+      "fact": "Bad Moon Rising was the lead single from Creedence Clearwater Revival's 1969 album Green River. It reached #2 on the US Hot 100 and became the band's only #1 in the UK, spending three weeks on top in September 1969.",
+      "source": "https://en.wikipedia.org/wiki/Bad_Moon_Rising"
+    },
+    "modern english|i melt with you": {
+      "fact": "I Melt With You was the second single from Modern English's 1982 album After the Snow and reached #78 on the Billboard Hot 100 in 1983. The band re-recorded it for their 1990 album Pillow Lips, and that version climbed to #76 on the Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/I_Melt_with_You"
+    },
+    "lisa lisa & the cult jam|head to toe": {
+      "fact": "Head to Toe, from Lisa Lisa & Cult Jam's 1987 debut album Spanish Fly, was produced by the group Full Force. It hit #1 on the Billboard Hot 100 in June 1987, and the album's follow-up single Lost in Emotion also reached #1 that year.",
+      "source": "https://en.wikipedia.org/wiki/Head_to_Toe_(Lisa_Lisa_and_Cult_Jam_song)"
+    },
+    "magdalena bay|image": {
+      "fact": "Image is a 2024 single from Magdalena Bay's second album, Imaginal Disk, released on Mom + Pop Music. It was written and produced by the duo, Matthew Lewin and Mica Tenenbaum. Its music video, directed by Amanda Kramer, shows Tenenbaum getting an 'imaginal disk' upgrade in a waiting room, and a remix called Image (Grimes Special) followed.",
+      "source": "https://en.wikipedia.org/wiki/Image_(song)"
+    },
+    "jackson browne|running on empty": {
+      "fact": "Jackson Browne's 1977 album Running on Empty was recorded almost entirely while he was on tour, with tracks captured on stage, backstage, in hotel rooms, and on the tour bus. The album peaked at #3 on the Billboard 200, and the title track reached #11 on the Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/Running_on_Empty_(album)"
+    },
+    "beyonce|countdown": {
+      "fact": "Countdown, from Beyonce's 2011 album 4, samples the spoken countdown from Boyz II Men's 1991 song Uhh Ahh. Boyz II Men members Michael Bivins, Nathan Morris and Wanya Morris are credited as writers because of it. Wanya Morris noted that Destiny's Child had opened for the group on an early tour.",
+      "source": "https://www.songfacts.com/facts/beyonce/countdown"
+    },
+    "james taylor|shower the people": {
+      "fact": "Shower the People is from James Taylor's 1976 album In the Pocket. It reached #22 on the Billboard Hot 100 and topped the Easy Listening chart, giving Taylor his third song to do so.",
+      "source": "https://en.wikipedia.org/wiki/Shower_the_People"
+    },
+    "vampire weekend|a-punk": {
+      "fact": "A-Punk was released in February 2008 as the second single from Vampire Weekend's self-titled debut album, produced by bandmate Rostam Batmanglij. It reached #25 on Billboard's Modern Rock chart and was certified Gold by the RIAA in 2013, the band's first gold single. The song opens the 2008 film Step Brothers.",
+      "source": "https://en.wikipedia.org/wiki/A-Punk"
+    },
+    "adele|rumour has it": {
+      "fact": "Rumour Has It, from Adele's 2011 album 21, was written by Adele with Ryan Tedder, who also produced it, even though Rick Rubin had been set to produce the whole album. Tedder said they wrote it on the first day and Adele sang it in one pass on the second.",
+      "source": "https://en.wikipedia.org/wiki/Rumour_Has_It_(Adele_song)"
+    },
+    "bruce springsteen|human touch": {
+      "fact": "Human Touch is the title track of Bruce Springsteen's 1992 album, which debuted at #2 on the Billboard 200. Released as a double A-side single with Better Days, it reached #16 on the Hot 100 and #1 on the Mainstream Rock chart.",
+      "source": "https://en.wikipedia.org/wiki/Human_Touch_(Bruce_Springsteen_song)"
+    },
+    "celine dion|if you asked me to": {
+      "fact": "If You Asked Me To was written by Diane Warren and first recorded by Patti LaBelle in 1989 for the James Bond film Licence to Kill, reaching #79 on the Hot 100. Celine Dion covered it in 1992 for her self-titled English-language album, and her version hit #4 on the Hot 100 and #1 in Canada.",
+      "source": "https://en.wikipedia.org/wiki/If_You_Asked_Me_To"
+    },
+    "creedence clearwater revival|born on the bayou": {
+      "fact": "Born on the Bayou opens Creedence Clearwater Revival's 1969 album Bayou Country. John Fogerty, from California, wrote it about an imagined Louisiana childhood and said he had never lived in the swamp setting he described.",
+      "source": "https://en.wikipedia.org/wiki/Born_on_the_Bayou"
+    },
+    "joe cocker|you are so beautiful": {
+      "fact": "You Are So Beautiful was written by Billy Preston and Bruce Fisher, and Preston first released it in 1974 on his album The Kids & Me. Joe Cocker's slower version, on his 1974 album I Can Stand a Little Rain, was produced by Jim Price and peaked at #5 on the Billboard Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/You_Are_So_Beautiful"
+    },
+    "joe jackson|is she really going out with him?": {
+      "fact": "Is She Really Going Out with Him? was Joe Jackson's first US chart hit, from his 1979 debut album Look Sharp! Released on A&M, it initially failed to chart when issued in late 1978, but it later reached #21 on the Billboard Hot 100 in August 1979 and spent 15 weeks on the chart.",
+      "source": "https://en.wikipedia.org/wiki/Is_She_Really_Going_Out_with_Him%3F"
     }
   }
 }
