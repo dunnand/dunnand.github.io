@@ -13183,6 +13183,482 @@
     "rogue wave|10:1": {
       "fact": "\"10:1\" was released as an EP on Sub Pop on August 23, 2005, and reached No. 14 on Billboard's Hot Single Sales chart. The title track also appears on Rogue Wave's second Sub Pop album, Descended Like Vultures, which was recorded in about ten days at Supernatural Sound in Oregon City, Oregon. A 20th anniversary reissue of the album arrived in 2026.",
       "source": "https://en.wikipedia.org/wiki/10:1"
+    },
+    "slowdive|catch the breeze": {
+      "fact": "\"Catch the Breeze\" was the lead track on Slowdive's Holding Our Breath EP, released in June 1991 with a 7-inch single version. It was then included on their debut album Just for a Day, released on Creation Records on 2 September 1991, which reached No. 32 on the UK Albums Chart.",
+      "source": "https://en.wikipedia.org/wiki/Just_for_a_Day"
+    },
+    "perez prado|patricia": {
+      "fact": "Perez Prado's \"Patricia\" (1958) was the last record to reach No. 1 on Billboard's Jockeys and Top 100 charts before they were replaced by the new Hot 100. On the Hot 100's first week, it debuted at No. 2, behind Ricky Nelson's \"Poor Little Fool.\" Billboard ranked it the No. 5 song of 1958, and Fellini later used it in his film La Dolce Vita.",
+      "source": "https://en.wikipedia.org/wiki/Patricia_(Perez_Prado_song)"
+    },
+    "the foundations|build me up buttercup": {
+      "fact": "\"Build Me Up Buttercup\" was written by Mike d'Abo and producer Tony Macaulay, and was the first Foundations hit with Colin Young on lead vocals, after he replaced original singer Clem Curtis. It reached No. 2 in the UK and No. 3 on the Billboard Hot 100 in early 1969, and was certified gold by the RIAA.",
+      "source": "https://en.wikipedia.org/wiki/Build_Me_Up_Buttercup"
+    },
+    "def leppard|have you ever needed someone so bad": {
+      "fact": "\"Have You Ever Needed Someone So Bad\" was the third single from Def Leppard's 1992 album Adrenalize, following \"Make Love Like a Man.\" It reached No. 12 on the Billboard Hot 100 and No. 7 on the Album Rock Tracks chart, and logged 20 weeks on the Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/Have_You_Ever_Needed_Someone_So_Bad"
+    },
+    "donna lewis|i love you always forever": {
+      "fact": "Donna Lewis's \"I Love You Always Forever\" was the lead single from her 1996 album Now in a Minute. It spent nine weeks at No. 2 on the Billboard Hot 100, held back by \"Macarena,\" and became the first single to pass one million radio plays in the US, making it one of the most-played songs of the 1990s.",
+      "source": "https://en.wikipedia.org/wiki/I_Love_You_Always_Forever"
+    },
+    "spandau ballet|true": {
+      "fact": "Gary Kemp wrote \"True\" for Spandau Ballet as a tribute to Altered Images singer Clare Grogan. The title track of the band's 1983 album was recorded at Compass Point Studios in Nassau, Bahamas, and reached No. 1 on the UK singles chart in April 1983.",
+      "source": "https://en.wikipedia.org/wiki/True_(Spandau_Ballet_song)"
+    },
+    "cut copy|hearts on fire": {
+      "fact": "Cut Copy began in Melbourne in 2001 as a solo project of DJ and graphic designer Dan Whitford. \"Hearts on Fire\" first came out as a single in 2007, and a re-recorded version appeared on their second album, In Ghost Colours (Modular Recordings, March 2008), which debuted at No. 1 on Australia's ARIA albums chart.",
+      "source": "https://en.wikipedia.org/wiki/In_Ghost_Colours"
+    },
+    "harry styles|sign of the times": {
+      "fact": "\"Sign of the Times,\" released 7 April 2017, was Harry Styles's debut solo single and went to No. 1 on the UK Singles Chart. It opens his self-titled debut album and was produced by Jeff Bhasker, with additional production by Alex Salibian and Tyler Johnson.",
+      "source": "https://en.wikipedia.org/wiki/Sign_of_the_Times_(Harry_Styles_song)"
+    },
+    "little willie john|fever": {
+      "fact": "Little Willie John recorded \"Fever\" at King Records' Cincinnati studio on 1 April 1956, and it topped Billboard's R&B chart and reached No. 24 on the pop chart. Co-writer Otis Blackwell was under contract elsewhere and was credited as \"John Davenport.\" Peggy Lee's 1958 version, with its added lyrics and stripped-down snaps-and-bass arrangement, became the best-known take.",
+      "source": "https://en.wikipedia.org/wiki/Fever_(Little_Willie_John_song)"
+    },
+    "jessie j|domino": {
+      "fact": "Jessie J's \"Domino,\" produced by Dr. Luke, reached No. 6 on the Billboard Hot 100 and spent 24 weeks on the chart, making it her first US top-ten single. It also became her second UK No. 1 when released there in January 2012 as the sixth single from her debut album Who You Are.",
+      "source": "https://en.wikipedia.org/wiki/Who_You_Are_(Jessie_J_album)"
+    },
+    "dionne farris|i know": {
+      "fact": "Dionne Farris first became known as a guest vocalist on Arrested Development's 1992 hit \"Tennessee.\" Her solo debut single \"I Know,\" from the album Wild Seed - Wild Flower, peaked at No. 4 on the Billboard Hot 100, spent 10 weeks at No. 1 on the Top 40/Mainstream chart, and earned a 1996 Grammy nomination for Best Female Pop Vocal Performance.",
+      "source": "https://en.wikipedia.org/wiki/I_Know_(Dionne_Farris_song)"
+    },
+    "squeeze|tempted": {
+      "fact": "On Squeeze's 1981 single \"Tempted,\" written by Glenn Tilbrook and Chris Difford, the lead vocal was sung by keyboardist Paul Carrack, a choice suggested by producer Elvis Costello. It came from the album East Side Story, co-produced by Costello and Roger Bechirian, and became the band's first charting US single.",
+      "source": "https://en.wikipedia.org/wiki/Tempted_(Squeeze_song)"
+    },
+    "starship|we built this city": {
+      "fact": "\"We Built This City\" was written by Bernie Taupin and Martin Page, with producers Peter Wolf and Dennis Lambert reshaping it and adding a bigger chorus. The lead single from Starship's 1985 album Knee Deep in the Hoopla, it hit No. 1 on the Billboard Hot 100 and was the first chart-topper for any incarnation of Jefferson Airplane/Starship.",
+      "source": "https://en.wikipedia.org/wiki/We_Built_This_City"
+    },
+    "grimes|you'll miss me when i'm not around": {
+      "fact": "This track is from Grimes's 2020 album Miss_Anthropocene. For its video, she posted the raw video files and audio stems online so fans could make their own music videos, including a green-screen clip of herself swaying with a sword.",
+      "source": "https://www.rollingstone.com/music/music-news/grimes-youll-miss-me-when-im-not-around-976677/"
+    },
+    "elton john|daniel": {
+      "fact": "\"Daniel,\" with lyrics by Bernie Taupin, was recorded on 10 June 1972 at the Chateau d'Herouville in France. It opens the album Don't Shoot Me I'm Only the Piano Player, which was Elton John's second straight US No. 1 album, and the single reached No. 2 on the Billboard Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/Daniel_(Elton_John_song)"
+    },
+    "the pointer sisters|yes we can can": {
+      "fact": "\"Yes We Can Can\" was written by Allen Toussaint and first recorded by Lee Dorsey in 1970. Producer David Rubinson suggested the Pointer Sisters cover it, and their 1973 version, one of the first tracks cut for their debut album, reached the top 15 on the Billboard Hot 100 and became their first gold record.",
+      "source": "https://en.wikipedia.org/wiki/Yes_We_Can_Can"
+    },
+    "arcade fire|wake up": {
+      "fact": "Arcade Fire formed in Montreal in 2003, and \"Wake Up\" from their 2004 debut Funeral (recorded largely at the band's own Hotel2Tango studio) became a crowd favorite and encore staple. U2 later used it as their walk-on music during the 2005-06 Vertigo tour.",
+      "source": "https://en.wikipedia.org/wiki/Funeral_(Arcade_Fire_album)"
+    },
+    "the everly brothers|walk right back": {
+      "fact": "Sonny Curtis wrote \"Walk Right Back\" while in Army basic training and mailed a second verse to the Everly Brothers, but they had already recorded it with the first verse repeated. That single-verse version reached No. 7 on the US Hot 100 and spent four weeks at No. 1 in the UK in 1961.",
+      "source": "https://en.wikipedia.org/wiki/Walk_Right_Back"
+    },
+    "stampeders|sweet city woman": {
+      "fact": "\"Sweet City Woman,\" written by Stampeders member Rich Dodson and produced by Mel Shaw, spent four weeks at No. 1 in Canada in 1971 and was RPM's No. 2 single of the year. In the US it reached No. 8 on the Billboard Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/Sweet_City_Woman"
+    },
+    "r.e.m.|the great beyond": {
+      "fact": "R.E.M. wrote \"The Great Beyond\" for the 1999 Andy Kaufman biopic Man on the Moon. It reached No. 3 on the UK Singles Chart in January 2000, the band's highest UK chart position ever, and earned a Grammy nomination for Best Song Written for a Motion Picture, Television or Other Visual Media.",
+      "source": "https://en.wikipedia.org/wiki/The_Great_Beyond"
+    },
+    "elvis presley|wear my ring around your neck": {
+      "fact": "Elvis Presley recorded \"Wear My Ring Around Your Neck,\" written by Bert Carroll and Russell Moody, on 1 February 1958 at Radio Recorders in Hollywood, with Scotty Moore, Bill Black and D. J. Fontana. It topped the Billboard R&B chart and reached No. 3 in the UK.",
+      "source": "https://en.wikipedia.org/wiki/Wear_My_Ring_Around_Your_Neck"
+    },
+    "arctic monkeys|fluorescent adolescent": {
+      "fact": "\"Fluorescent Adolescent\" was the second single from Arctic Monkeys' 2007 album Favourite Worst Nightmare, released 9 July 2007, and peaked at No. 5 on the UK Singles Chart. Its music video was loosely based on John Cooper Clarke's poem \"Out of Control Circus.\"",
+      "source": "https://en.wikipedia.org/wiki/Fluorescent_Adolescent"
+    },
+    "diana ross & the supremes|love child": {
+      "fact": "\"Love Child\" reached No. 1 on the Billboard Hot 100 in the week of 30 November 1968, ending the nine-week run of The Beatles' \"Hey Jude\" at the top. Its writing team of R. Dean Taylor, Frank Wilson, Pam Sawyer and Deke Richards worked as Motown's \"The Clan.\"",
+      "source": "https://en.wikipedia.org/wiki/Love_Child_(song)"
+    },
+    "lcd soundsystem|call the police": {
+      "fact": "\"Call the Police\" was released at midnight in May 2017 as a double A-side with \"American Dream,\" announced as LCD Soundsystem's comeback single. The band performed both songs on Saturday Night Live that month, their first appearance on the show, and the parent album American Dream (September 2017) reached No. 1 on the Top Rock Albums chart.",
+      "source": "https://en.wikipedia.org/wiki/American_Dream_(LCD_Soundsystem_album)"
+    },
+    "blind melon|no rain": {
+      "fact": "Bassist Brad Smith wrote most of \"No Rain,\" which reached No. 20 on the Billboard Hot 100 and No. 1 on both the Album Rock and Modern Rock charts. Its Samuel Bayer-directed video made a star of the \"Bee Girl,\" and the band's debut album cover shows a 1975 photo of drummer Glenn Graham's sister in a bee costume.",
+      "source": "https://en.wikipedia.org/wiki/No_Rain"
+    },
+    "qt|hey qt": {
+      "fact": "\"Hey QT\" was released on 26 August 2014 via XL Recordings, written by A. G. Cook and SOPHIE of the PC Music collective. QT was a conceptual pop-star project: Hayden Dunham played the character on screen, while the vocals were sung by Harriet Pittard, who also records as Zoee.",
+      "source": "https://en.wikipedia.org/wiki/Hey_QT"
+    },
+    "steve perry|oh sherrie": {
+      "fact": "\"Oh Sherrie\" was the debut solo single from Journey frontman Steve Perry, released in 1984 from his album Street Talk. It reached #3 on the Billboard Hot 100 and topped the rock chart, becoming his biggest solo hit. Perry wrote it with Randy Goodrum, Craig Krampf and Bill Cuomo.",
+      "source": "https://en.wikipedia.org/wiki/Oh_Sherrie"
+    },
+    "styx|mr. roboto": {
+      "fact": "\"Mr. Roboto\" was the lead single from Styx's 1983 concept album Kilroy Was Here. Dennis DeYoung wrote it after hearing the Japanese word for robot on a tour of Japan. It climbed to #3 on the Billboard Hot 100 and hit #1 in Canada.",
+      "source": "https://en.wikipedia.org/wiki/Mr._Roboto"
+    },
+    "stealers wheel|stuck in the middle with you": {
+      "fact": "Gerry Rafferty and Joe Egan of Stealers Wheel wrote \"Stuck in the Middle with You\" as a playful send-up of Bob Dylan's style, and plenty of listeners still mistake it for a Dylan song. The band's debut was produced by the famed songwriting team Jerry Leiber & Mike Stoller. The 1973 single got a second life in Quentin Tarantino's 1992 film Reservoir Dogs.",
+      "source": "https://americansongwriter.com/believe-it-or-not-stuck-in-the-middle-with-you-belongs-to-stealers-wheel-not-bob-dylan/"
+    },
+    "pure prairie league|amie": {
+      "fact": "Craig Fuller's \"Amie\" first appeared on Pure Prairie League's 1972 album Bustin' Out and originally failed to chart. Radio airplay in 1975 revived it, and RCA re-released it as a single, reissued the album, and re-signed the band. It peaked around #27 on the Billboard Hot 100, and Fuller had already left the group by then.",
+      "source": "https://en.wikipedia.org/wiki/Amie_(song)"
+    },
+    "bob dylan|when the ship comes in": {
+      "fact": "Bob Dylan wrote \"When the Ship Comes In\" in August 1963, reportedly after a hotel clerk balked at giving the scruffy young singer a room until Joan Baez vouched for him. Dylan and Baez performed it together at the March on Washington that August. It was released on the 1964 album The Times They Are a-Changin'.",
+      "source": "https://en.wikipedia.org/wiki/When_the_Ship_Comes_In"
+    },
+    "rod stewart|(i know) i'm losing you": {
+      "fact": "Rod Stewart's version of the Temptations' 1966 hit appeared on his 1971 album Every Picture Tells a Story, as the follow-up single to \"Maggie May.\" Credited to Rod Stewart with Faces, it reached #24 on the Billboard Hot 100. Stewart had performed the song earlier with the Jeff Beck Group, including a 1967 BBC radio session.",
+      "source": "https://en.wikipedia.org/wiki/(I_Know)_I%27m_Losing_You"
+    },
+    "green day|when i come around": {
+      "fact": "\"When I Come Around\" from Green Day's 1994 album Dookie spent a then-record seven weeks at #1 on Billboard's Modern Rock Tracks chart in early 1995. It was never issued as a commercial U.S. single, yet it reached #6 on the Hot 100 Airplay chart. It also hit #2 on the Mainstream Rock chart.",
+      "source": "https://en.wikipedia.org/wiki/When_I_Come_Around"
+    },
+    "ricky nelson|lonesome town": {
+      "fact": "Baker Knight wrote both sides of Ricky Nelson's 1958 single: \"Lonesome Town\" and its flip side \"I Got a Feeling.\" The A-side reached #7 on the Billboard Hot 100 and the B-side reached #10, so both were Top 10 hits.",
+      "source": "https://en.wikipedia.org/wiki/Lonesome_Town"
+    },
+    "bobby \"blue\" bland|i'll take care of you": {
+      "fact": "Brook Benton wrote \"I'll Take Care of You,\" and Bobby \"Blue\" Bland recorded it for Duke Records around 1959. Bland's version was a major R&B hit, and Teddy Reynolds' eerie organ line is a signature of the arrangement. The song has been widely covered and its original recording has been sampled in hip-hop.",
+      "source": "https://en.wikipedia.org/wiki/I%27ll_Take_Care_of_You_(song)"
+    },
+    "john prine|summer's end": {
+      "fact": "\"Summer's End\" was the first single from John Prine's 2018 album The Tree of Forgiveness, his first collection of new songs in 13 years. Prine co-wrote it with Pat McLaughlin. The album, produced by Dave Cobb, was recorded at Nashville's historic RCA Studio A and released on Prine's own Oh Boy Records.",
+      "source": "https://www.pastemagazine.com/articles/2018/02/listen-to-john-prines-new-song-summers-end.html"
+    },
+    "the jam|when you're young": {
+      "fact": "The Jam's \"When You're Young\" was released as a stand-alone single on 17 August 1979 and reached #17 on the UK Singles Chart. It was not on any of the band's albums at the time. Its B-side, \"Smithers-Jones,\" was re-recorded in a different arrangement for the album Setting Sons.",
+      "source": "https://en.wikipedia.org/wiki/When_You%27re_Young_(The_Jam_song)"
+    },
+    "tom petty & the heartbreakers|refugee": {
+      "fact": "\"Refugee\" was the second single from Tom Petty & the Heartbreakers' 1979 album Damn the Torpedoes, and it reached #15 on the Billboard Hot 100. The band reportedly cut it in a huge number of takes, with accounts ranging from about 50 to 100 or more, as co-producer Jimmy Iovine and the band chased the sound they wanted.",
+      "source": "https://en.wikipedia.org/wiki/Refugee_(Tom_Petty_and_the_Heartbreakers_song)"
+    },
+    "rolling stones|beast of burden": {
+      "fact": "\"Beast of Burden\" was the second single from the Rolling Stones' 1978 album Some Girls, following \"Miss You,\" and reached #8 on the Billboard Hot 100. The album was recorded at the Pathe Marconi studios in Paris, and it was the first Stones album with Ronnie Wood fully involved. The band used no outside musicians in order to capture its live sound.",
+      "source": "https://en.wikipedia.org/wiki/Beast_of_Burden_(song)"
+    },
+    "stevie wonder|superstition": {
+      "fact": "Stevie Wonder originally wrote \"Superstition\" for guitarist Jeff Beck, who had played on the Talking Book sessions, but Motown boss Berry Gordy urged Wonder to release it himself. Wonder's 1972 version went to #1 in the U.S. and is often credited as an early mainstream showcase for the clavinet. Beck's own take came out the following year with Beck, Bogert & Appice.",
+      "source": "https://americansongwriter.com/behind-stevie-wonders-classic-superstition-was-meant-for-jeff-beck/"
+    },
+    "foo fighters|all my life": {
+      "fact": "\"All My Life\" was recorded in May 2002 for Foo Fighters' album One by One, made at Dave Grohl's 606 studio in Alexandria, Virginia. Grohl has said it began as an instrumental before he decided how to sing it. It won the Grammy for Best Hard Rock Performance at the 2003 ceremony.",
+      "source": "https://en.wikipedia.org/wiki/All_My_Life_(Foo_Fighters_song)"
+    },
+    "t. rex|bang a gong (get it on)": {
+      "fact": "In the U.K. this T. Rex hit is simply \"Get It On\" and spent four weeks at #1 in 1971. In North America it was retitled \"Bang a Gong (Get It On)\" to avoid confusion with a song of the same name by the band Chase. It was produced by Tony Visconti for the album Electric Warrior, and it was T. Rex's only big American hit.",
+      "source": "https://en.wikipedia.org/wiki/Get_It_On_(T._Rex_song)"
+    },
+    "4 non blondes|what's up": {
+      "fact": "\"What's Up?\" was the second single from 4 Non Blondes' 1992 album Bigger, Better, Faster, More!, and it reached the Top 20 in the U.S. while hitting #1 in several European countries. Linda Perry's song has been covered widely, including by Dolly Parton with Perry herself in 2023. Many fans misremember its title as \"What's Going On.\"",
+      "source": "https://en.wikipedia.org/wiki/What%27s_Up%3F_(4_Non_Blondes_song)"
+    },
+    "portugal the man|feel it still": {
+      "fact": "\"Feel It Still\" from Portugal. The Man's 2017 album Woodstock took about eight months to climb to #4 on the Billboard Hot 100. Its melody is drawn from the Marvelettes' 1961 hit \"Please Mr. Postman.\" It won the Grammy for Best Pop Duo/Group Performance in January 2018.",
+      "source": "https://en.wikipedia.org/wiki/Feel_It_Still"
+    },
+    "beyonce|irreplaceable": {
+      "fact": "\"Irreplaceable\" was the third U.S. single from Beyonce's 2006 album B'Day. It was co-written by Ne-Yo and produced by Stargate with Beyonce, and it spent ten consecutive weeks at #1 on the Billboard Hot 100 from December 2006 into early 2007. It was her fourth U.S. #1.",
+      "source": "https://en.wikipedia.org/wiki/Irreplaceable"
+    },
+    "lady gaga|born this way": {
+      "fact": "\"Born This Way\" debuted at #1 on the Billboard Hot 100 in February 2011 and was the 1,000th song to top the chart in its history. Its first-week sales of 448,000 downloads were the best for a female artist at that time.",
+      "source": "https://www.songfacts.com/facts/lady-gaga/born-this-way"
+    },
+    "bette midler|from a distance": {
+      "fact": "Julie Gold wrote \"From a Distance\" in 1985, and Nanci Griffith recorded it first, on her 1987 album Lone Star State of Mind. Bette Midler's 1990 version reached #2 on the Billboard charts, and the song won the Grammy for Song of the Year in 1991.",
+      "source": "https://en.wikipedia.org/wiki/From_a_Distance"
+    },
+    "dj jazzy jeff & the fresh prince|summertime": {
+      "fact": "\"Summertime\" was the lead single from DJ Jazzy Jeff & the Fresh Prince's 1991 album Homebase. It samples Kool & the Gang's 1974 instrumental \"Summer Madness.\" The single reached #1 on the Billboard Hot 100 and won the Grammy for Best Rap Performance by a Duo or Group.",
+      "source": "https://en.wikipedia.org/wiki/Summertime_(DJ_Jazzy_Jeff_%26_the_Fresh_Prince_song)"
+    },
+    "tracy chapman|fast car": {
+      "fact": "Tracy Chapman's 1988 \"Fast Car\" reached #6 on the Billboard Hot 100, and she won a Grammy for Best Female Pop Vocal Performance for it. In 2023 Luke Combs's country cover sent it back up the country charts, and the song won CMA Song of the Year, with Chapman as songwriter.",
+      "source": "https://www.fox35orlando.com/news/fast-car-tracy-chapman-cma-luke-combs-song-of-the-year-win-2023"
+    },
+    "wang chung|everybody have fun tonight": {
+      "fact": "\"Everybody Have Fun Tonight\" reached #2 on the Billboard Hot 100 over the 1986 holidays and topped the Canadian chart in January 1987. It is from the album Mosaic. The band's name, Wang Chung, is Chinese for \"yellow bell,\" the first note of the Chinese classical scale, and they first recorded as Huang Chung.",
+      "source": "https://en.wikipedia.org/wiki/Everybody_Have_Fun_Tonight"
+    },
+    "weezer|all my favorite songs": {
+      "fact": "\"All My Favorite Songs\" was the lead single from Weezer's 14th album, OK Human, released in January 2021. The album was produced by longtime collaborator Jake Sinclair and recorded with a 38-piece orchestra.",
+      "source": "https://en.wikipedia.org/wiki/All_My_Favorite_Songs"
+    },
+    "sugarloaf|green-eyed lady": {
+      "fact": "Sugarloaf's \"Green-Eyed Lady\" was the Denver band's first single, and it peaked at No. 3 on the Billboard Hot 100 in 1970. The album version runs nearly 7 minutes, so Liberty issued edited single versions, including a radio edit under 3 minutes.",
+      "source": "https://en.wikipedia.org/wiki/Green-Eyed_Lady"
+    },
+    "the everly brothers|cathy's clown": {
+      "fact": "\"Cathy's Clown\" was the Everly Brothers' first single for Warner Bros. after three years on Cadence Records. It spent five weeks at No. 1 in the US and seven weeks at No. 1 in the UK in 1960, and was added to the National Recording Registry in 2013.",
+      "source": "https://en.wikipedia.org/wiki/Cathy%27s_Clown"
+    },
+    "robert palmer|bad case of loving you": {
+      "fact": "Robert Palmer's \"Bad Case of Loving You\" was written by Moon Martin, who first recorded it in 1978 on his album Shots From a Cold Nightmare. Palmer heard it, added it to his live set, then recorded it for his 1979 album Secrets, and his version reached No. 14 on the Billboard Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/Bad_Case_of_Loving_You_(Doctor,_Doctor)"
+    },
+    "brenton wood|the oogum boogum song": {
+      "fact": "Brenton Wood wrote \"The Oogum Boogum Song\" under his birth name, Alfred Smith. Released on Double Shot Records in April 1967, it reached No. 34 on the Billboard Hot 100, and the follow-up \"Gimme Little Sign\" became his biggest hit at No. 9.",
+      "source": "https://en.wikipedia.org/wiki/The_Oogum_Boogum_Song"
+    },
+    "tower of power|what is hip?": {
+      "fact": "\"What Is Hip?\" is on Tower of Power's 1973 self-titled album and is credited to Emilio Castillo, Stephen Kupka and drummer David Garibaldi. Garibaldi, known for his polyrhythmic style, was fooling around with a new groove while Kupka was working on lyrics. The album reached No. 15 on the Billboard album chart and went gold.",
+      "source": "https://www.mixonline.com/?p=91588"
+    },
+    "pavement|carrot rope": {
+      "fact": "\"Carrot Rope\" closes Pavement's 1999 album Terror Twilight, produced by Nigel Godrich. It was released as a single only in the UK, in May 1999. The \"...and\" in the album's track listing marks it as the album's last song and is not part of the title.",
+      "source": "https://en.wikipedia.org/wiki/Carrot_Rope"
+    },
+    "arcade fire|neighborhood #1 (tunnels)": {
+      "fact": "\"Neighborhood #1 (Tunnels)\" opens Arcade Fire's 2004 debut album Funeral. It was recorded in Montreal at the band's Hotel2Tango studio, with the album done in analogue and produced by the band.",
+      "source": "https://en.wikipedia.org/wiki/Funeral_(Arcade_Fire_album)"
+    },
+    "black sheep|the choice is yours (revisited)": {
+      "fact": "\"The Choice Is Yours\" was the 1991 single from Black Sheep's debut album A Wolf in Sheep's Clothing, produced by Dres and Mista Lawnge. It samples Johnny Hammond Smith's \"Big Sur Suite\", and VH1 later ranked it No. 74 on its list of the 100 greatest hip-hop songs.",
+      "source": "https://en.wikipedia.org/wiki/The_Choice_Is_Yours_(Revisited)"
+    },
+    "aaron neville|everybody plays the fool": {
+      "fact": "\"Everybody Plays the Fool\" was first a No. 3 hit for The Main Ingredient in 1972. Aaron Neville's 1991 remake, from his album Warm Your Heart, reached No. 8 on the Hot 100 and No. 1 on the adult contemporary chart.",
+      "source": "https://en.wikipedia.org/wiki/Everybody_Plays_the_Fool"
+    },
+    "whitesnake|is this love": {
+      "fact": "David Coverdale has said \"Is This Love\" was first written with Tina Turner in mind. Co-written with guitarist John Sykes, it was the second single from Whitesnake's 1987 self-titled album and peaked at No. 2 on the Billboard Hot 100, behind George Michael's \"Faith\".",
+      "source": "https://en.wikipedia.org/wiki/Is_This_Love_(Whitesnake_song)"
+    },
+    "willie nelson|always on my mind": {
+      "fact": "Willie Nelson's 1982 \"Always on My Mind\" was far from the first recording of the song. Gwen McCrae, Brenda Lee and Elvis Presley all recorded it in 1972. Nelson's version hit No. 1 on the country chart and won Song of the Year at the 1983 Grammys for its writers, plus a Grammy for Nelson's vocal performance.",
+      "source": "https://en.wikipedia.org/wiki/Always_on_My_Mind"
+    },
+    "eagles|desperado": {
+      "fact": "\"Desperado\" was never released as an Eagles single, yet it became one of the band's best-loved songs. It is often cited as one of the first songs Don Henley and Glenn Frey fully wrote together, and Linda Ronstadt, whose backing band they had played in, covered it in 1973.",
+      "source": "https://en.wikipedia.org/wiki/Desperado_(Eagles_song)"
+    },
+    "bobby vinton|roses are red (my love)": {
+      "fact": "Bobby Vinton's \"Roses Are Red (My Love)\" was written by Paul Evans and Al Byron and recorded in New York in February 1962. It reached No. 1 on the Billboard Hot 100 for four weeks that July and is credited with launching Vinton's career at Epic Records.",
+      "source": "https://en.wikipedia.org/wiki/Roses_Are_Red_(My_Love)"
+    },
+    "billy joel|just the way you are": {
+      "fact": "The alto sax solo on Billy Joel's \"Just the Way You Are\" was played by jazz saxophonist Phil Woods. The song, from the 1977 album The Stranger and produced by Phil Ramone, won both Record of the Year and Song of the Year at the 1979 Grammys.",
+      "source": "https://en.wikipedia.org/wiki/Just_the_Way_You_Are_(Billy_Joel_song)"
+    },
+    "del shannon|runaway": {
+      "fact": "Del Shannon's 1961 No. 1 \"Runaway\" was co-written with keyboardist Max Crook, who played the instrumental break on a self-built keyboard called the Musitron. It was recorded at Bell Sound in New York in early 1961 and was later ranked No. 472 on Rolling Stone's 500 Greatest Songs list.",
+      "source": "https://en.wikipedia.org/wiki/Runaway_(Del_Shannon_song)"
+    },
+    "bob seger & the silver bullet band|still the same": {
+      "fact": "\"Still the Same\" was the lead single from Bob Seger's 1978 album Stranger in Town and peaked at No. 4 on the Billboard Hot 100. Although much of the album was cut with the Muscle Shoals Rhythm Section in Alabama, this song was one of four recorded with Seger's own Silver Bullet Band.",
+      "source": "https://en.wikipedia.org/wiki/Still_the_Same_(Bob_Seger_song)"
+    },
+    "madonna|beautiful stranger": {
+      "fact": "Madonna co-wrote and co-produced \"Beautiful Stranger\" with William Orbit for the 1999 film Austin Powers: The Spy Who Shagged Me. It won the Grammy for Best Song Written for Visual Media and reached No. 2 on the UK singles chart.",
+      "source": "https://en.wikipedia.org/wiki/Beautiful_Stranger"
+    },
+    "miley cyrus|wrecking ball": {
+      "fact": "\"Wrecking Ball\" gave Miley Cyrus her first No. 1 on the Billboard Hot 100 in 2013. Billboard had just begun counting YouTube views in its formula, and the song's music video helped it climb. It sold 477,000 downloads in its top week.",
+      "source": "https://en.wikipedia.org/wiki/Wrecking_Ball_(Miley_Cyrus_song)"
+    },
+    "electric six|danger! high voltage": {
+      "fact": "\"Danger! High Voltage\" was Electric Six's debut single and the lead single from their first album, Fire (2003). It reached No. 2 on the UK Singles Chart and went on to earn a UK Silver certification.",
+      "source": "https://en.wikipedia.org/wiki/Danger!_High_Voltage"
+    },
+    "boards of canada|music is math": {
+      "fact": "\"Music Is Math\" is the second track on Boards of Canada's 2002 album Geogaddi, released on Warp Records. Marcus Eoin and Michael Sandison recorded the album between 1999 and 2001 at their Hexagon Sun studio in Scotland's Pentland Hills.",
+      "source": "https://en.wikipedia.org/wiki/Geogaddi"
+    },
+    "psy|gangnam style": {
+      "fact": "In December 2012, Psy's \"Gangnam Style\" became the first YouTube video to reach one billion views, just 159 days after it was uploaded. Two years later YouTube had to upgrade its view counter from a 32-bit to a 64-bit integer because the video exceeded 2,147,483,647 views.",
+      "source": "https://www.guinnessworldrecords.com/news/2012/12/psys-gangnam-style-becomes-first-video-to-be-viewed-1-billion-times-on-youtube-46462/"
+    },
+    "aerosmith|crazy": {
+      "fact": "The 1994 video for Aerosmith's \"Crazy\" was directed by Marty Callner and starred Alicia Silverstone alongside Liv Tyler, Steven Tyler's daughter. Silverstone appeared in three Aerosmith videos in a row, which helped lead to her starring role in the 1995 film Clueless. The song peaked at No. 17 on the Billboard Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/Crazy_(Aerosmith_song)"
+    },
+    "zz top|legs": {
+      "fact": "\"Legs\" from ZZ Top's 1983 album Eliminator peaked at No. 8 on the Billboard Hot 100, giving the band its first top 10 hit. Its video completed a loose trilogy with \"Gimme All Your Lovin'\" and \"Sharp Dressed Man\", and won an MTV Award for Best Group Video in 1984.",
+      "source": "https://en.wikipedia.org/wiki/Sharp_Dressed_Man"
+    },
+    "the carpenters|yesterday once more": {
+      "fact": "\"Yesterday Once More\" was written by Richard Carpenter and John Bettis and released in May 1973 from the album Now & Then. It peaked at No. 2 on the Billboard Hot 100, held out of the top spot by Jim Croce's \"Bad, Bad Leroy Brown\", and was No. 1 on the easy listening chart. It leads into an oldies medley on the album.",
+      "source": "https://en.wikipedia.org/wiki/Yesterday_Once_More_(song)"
+    },
+    "b.j. thomas|raindrops keep fallin' on my head": {
+      "fact": "Burt Bacharach and Hal David wrote \"Raindrops Keep Fallin' on My Head\" for the film Butch Cassidy and the Sundance Kid, where it won the Oscar for Best Original Song. B.J. Thomas was recovering from laryngitis when he recorded the film version, so his vocal is raspier than on the version released separately. The song hit No. 1 on January 3, 1970.",
+      "source": "https://wtop.com/music/2021/05/b-j-thomas-celebrates-50-years-of-raindrops-keep-fallin-on-my-head/"
+    },
+    "paul mccartney and wings|silly love songs": {
+      "fact": "\"Silly Love Songs\" spent five non-consecutive weeks at No. 1 on the Billboard Hot 100 in 1976 and was Billboard's top song of the year. That made Paul McCartney the first person to have a year-end No. 1 with two different acts, after the Beatles' \"I Want to Hold Your Hand\" and \"Hey Jude\".",
+      "source": "https://en.wikipedia.org/wiki/Silly_Love_Songs"
+    },
+    "blood, sweat & tears|spinning wheel": {
+      "fact": "David Clayton-Thomas wrote \"Spinning Wheel\" in 1967 while performing around Toronto's Yorkville club scene. It peaked at No. 2 on the Billboard Hot 100 for three weeks and topped Canada's RPM singles chart. The band's self-titled album went on to win the Grammy for Album of the Year, famously beating the Beatles' Abbey Road.",
+      "source": "https://en.wikipedia.org/wiki/Spinning_Wheel_(song)"
+    },
+    "howlin' wolf|smokestack lightnin'": {
+      "fact": "Howlin' Wolf cut \"Smokestack Lightnin'\" in Chicago for Chess Records in January 1956, with Hubert Sumlin's guitar line and Willie Dixon on bass. It reached the Top Ten of Billboard's R&B chart. A 1964 British reissue put it at No. 42 on the UK pop chart, when young British bands were eager to play Wolf's music.",
+      "source": "https://en.wikipedia.org/wiki/Smokestack_Lightning"
+    },
+    "ike and tina turner|river deep - mountain high": {
+      "fact": "Phil Spector's \"River Deep - Mountain High\" used his Wall of Sound approach, with around 21 session musicians and 21 backing vocalists, and cost a then-huge $22,000. It reached No. 3 in the UK but stalled in the US. Spector reportedly stepped away from the studio for years afterward.",
+      "source": "https://en.wikipedia.org/wiki/River_Deep_%E2%80%93_Mountain_High"
+    },
+    "pitbull|feel this moment": {
+      "fact": "\"Feel This Moment\" features Christina Aguilera and interpolates a-ha's 1985 hit \"Take On Me.\" It's from Pitbull's 2012 album Global Warming, peaked at No. 8 on the Billboard Hot 100, and was certified quadruple platinum.",
+      "source": "https://www.songfacts.com/facts/pitbull/feel-this-moment"
+    },
+    "herbie hancock|rockit": {
+      "fact": "\"Rockit\" was co-written by Herbie Hancock with Bill Laswell and Michael Beinhorn, with turntablist Grand Mixer DXT's scratching as the driving lead sound. It reached No. 1 on the US dance club chart and No. 8 in the UK, won a Grammy, and its robot-filled video took home five MTV Video Music Awards.",
+      "source": "https://en.wikipedia.org/wiki/Future_Shock_(Herbie_Hancock_album)"
+    },
+    "love and rockets|so alive": {
+      "fact": "\"So Alive\" was Love and Rockets' biggest US hit, climbing to No. 3 on the Billboard Hot 100 in the summer of 1989. It also spent five weeks at No. 1 on the Modern Rock Tracks chart and topped Canada's RPM singles chart for two weeks.",
+      "source": "https://en.wikipedia.org/wiki/So_Alive_(Love_and_Rockets_song)"
+    },
+    "taylor swift|mastermind": {
+      "fact": "\"Mastermind\" is the 13th and final track on the standard edition of Midnights (2022), co-written and co-produced by Taylor Swift and Jack Antonoff. It was the first track title Swift revealed from the album, drawn from a lottery cage on her TikTok series.",
+      "source": "https://en.wikipedia.org/wiki/Mastermind_(song)"
+    },
+    "steve miller band|take the money and run": {
+      "fact": "\"Take the Money and Run\" was a single from the Steve Miller Band's 1976 album Fly Like an Eagle, released in the spring of 1976. It peaked at No. 11 on the Billboard Hot 100, while the album climbed to No. 3 and went multi-platinum.",
+      "source": "https://en.wikipedia.org/wiki/Fly_Like_an_Eagle_(album)"
+    },
+    "black sabbath|n.i.b.": {
+      "fact": "\"N.I.B.\" is the fourth track on Black Sabbath's 1970 debut album. Bassist Geezer Butler has said the title refers to drummer Bill Ward's beard, which the band thought looked like a pen nib. The working title was just \"Nib,\" and the periods were added later for effect.",
+      "source": "https://en.wikipedia.org/wiki/N.I.B."
+    },
+    "beck|the golden age": {
+      "fact": "\"The Golden Age\" opens Beck's 2002 album Sea Change, which was produced by Nigel Godrich (also known for his work with Radiohead) and recorded in Los Angeles over about two months. Beck's father, David Campbell, arranged the strings for the album.",
+      "source": "https://en.wikipedia.org/wiki/Sea_Change_(album)"
+    },
+    "bruce channel|hey! baby": {
+      "fact": "Delbert McClinton's harmonica riff made \"Hey! Baby\" a US No. 1 hit for three weeks. Bruce Channel and McClinton toured Britain in 1962 on a bill with the Beatles, and John Lennon's harmonica playing on \"Love Me Do\" is often said to have been influenced by the riff.",
+      "source": "https://en.wikipedia.org/wiki/Hey!_Baby"
+    },
+    "carly simon|you belong to me": {
+      "fact": "\"You Belong to Me\" was co-written by Carly Simon and Michael McDonald, who first recorded it with the Doobie Brothers on Livin' on the Fault Line (1977). Simon's version, the lead single from her 1978 album Boys in the Trees, reached No. 6 on the Billboard pop chart and earned a Grammy nomination.",
+      "source": "https://en.wikipedia.org/wiki/You_Belong_to_Me_(The_Doobie_Brothers_song)"
+    },
+    "hootie & the blowfish|only wanna be with you": {
+      "fact": "Hootie & the Blowfish formed in 1986 at the University of South Carolina in Columbia, with Darius Rucker, Mark Bryan, Dean Felber and Jim \"Soni\" Sonefeld. \"Only Wanna Be with You\" was a single from their 1994 debut Cracked Rear View, which won the band a Grammy for Best New Group.",
+      "source": "https://en.wikipedia.org/wiki/Hootie_%26_the_Blowfish"
+    },
+    "ok go|i wont let you down": {
+      "fact": "OK Go's video for \"I Won't Let You Down\" was shot in Japan as a single take captured by drone, with the band riding Honda UNI-CUB personal mobility devices. It featured choreography by air:man and thousands of dancers and volunteers, and was reportedly filmed in more than 50 takes.",
+      "source": "https://en.wikipedia.org/wiki/I_Won%27t_Let_You_Down_(OK_Go_song)"
+    },
+    "phil collins|do you remember?": {
+      "fact": "\"Do You Remember?\" was the fourth single from Phil Collins' 1989 album ...But Seriously, co-produced with Hugh Padgham, with Stephen Bishop on backing vocals. It reached No. 4 on the Billboard Hot 100 and No. 1 on the US Adult Contemporary chart.",
+      "source": "https://en.wikipedia.org/wiki/Do_You_Remember%3F_(Phil_Collins_song)"
+    },
+    "rod stewart|have i told you lately": {
+      "fact": "Van Morrison wrote and first recorded \"Have I Told You Lately\" for his 1989 album Avalon Sunset. Rod Stewart recorded it on Vagabond Heart (1991), and his live version from Unplugged...and Seated became a 1993 hit, reaching No. 5 in both the US and UK.",
+      "source": "https://americansongwriter.com/remember-when-rod-stewart-covered-a-van-morrison-classic-in-1993/"
+    },
+    "minnie riperton|loving you": {
+      "fact": "Minnie Riperton's signature song, written with her husband Richard Rudolph, is known for her high whistle-register passage and the chirping songbirds heard throughout. Stevie Wonder co-produced the Perfect Angel album, and the single reached No. 1 on the Billboard Hot 100 in 1975, reportedly without any percussion instrument.",
+      "source": "https://en.wikipedia.org/wiki/Lovin%27_You"
+    },
+    "paul mccartney|no more lonely nights": {
+      "fact": "Pink Floyd's David Gilmour played the guitar solo on \"No More Lonely Nights,\" reportedly laying it down in one take. The ballad was the main song of the 1984 film Give My Regards to Broad Street, and became a Top 10 hit in the US and a No. 2 hit in the UK.",
+      "source": "https://beatlesbible.com/people/paul-mccartney/songs/no-more-lonely-nights"
+    },
+    "crystals|then he kissed me": {
+      "fact": "\"Then He Kissed Me\" was written by Phil Spector, Ellie Greenwich and Jeff Barry, with Dolores \"LaLa\" Brooks singing lead for the Crystals. It reached No. 6 in the US and No. 2 in the UK. The Beach Boys covered it on their 1965 album Summer Days (And Summer Nights!!), and their version hit No. 4 in the UK as a 1967 single.",
+      "source": "https://en.wikipedia.org/wiki/Then_He_Kissed_Me"
+    },
+    "herman's hermits|i'm henry the viii, i am": {
+      "fact": "Herman's Hermits took \"I'm Henry VIII, I Am\" to No. 1 on the Billboard Hot 100 in 1965, even though it was never released as a single in the UK. It's a remake of a 1910 music hall song, and Peter Noone's spoken \"Second verse, same as the first!\" is part of the recording.",
+      "source": "https://en.wikipedia.org/wiki/I%27m_Henery_the_Eighth,_I_Am"
+    },
+    "kool & the gang|funky stuff": {
+      "fact": "Kool & the Gang formed in Jersey City, New Jersey in 1964, going through names like the Jazziacs and Kool & the Flames. \"Funky Stuff\" came from their 1973 breakthrough album Wild and Peaceful, which also included \"Jungle Boogie\" and \"Hollywood Swinging,\" all of which reached the R&B top 10.",
+      "source": "https://www.britannica.com/print/article/321982"
+    },
+    "extreme|more than words": {
+      "fact": "\"More Than Words\" is an acoustic ballad built on Nuno Bettencourt's guitar and Gary Cherone's lead vocal, from Extreme's 1990 album Pornograffitti. It hit No. 1 on the Billboard Hot 100 in 1991, as well as No. 1 in Canada, Belgium, the Netherlands and New Zealand.",
+      "source": "https://en.wikipedia.org/wiki/More_Than_Words"
+    },
+    "chromatics|in the city": {
+      "fact": "\"In the City\" is a nearly nine-minute centerpiece of Chromatics' 2012 album Kill for Love. The band, led by Johnny Jewel, is also known for \"Tick of the Clock,\" which was edited down to about five minutes for the 2011 film Drive.",
+      "source": "https://www.popmatters.com/157166-chromatics-kill-for-love-2495863491.html"
+    },
+    "bobby vinton|blue velvet": {
+      "fact": "Bobby Vinton's \"Blue Velvet\" hit No. 1 on the Billboard Hot 100 in the fall of 1963. It was a cover of a 1951 Tony Bennett recording, which had been only a modest hit, peaking around No. 18 on Billboard's best-selling singles chart.",
+      "source": "https://en.wikipedia.org/wiki/Blue_Velvet_(song)"
+    },
+    "the flaming lips|this here giraffe": {
+      "fact": "\"This Here Giraffe\" is from the Flaming Lips' seventh album, Clouds Taste Metallic (1995, Warner Bros.). It was issued as a UK-only single in February 1996, and its video was directed by Sofia Coppola.",
+      "source": "https://en.wikipedia.org/wiki/This_Here_Giraffe"
+    },
+    "patty smyth|the warrior": {
+      "fact": "\"The Warrior\" was credited to Scandal featuring Patty Smyth and written by Holly Knight and Nick Gilder, with Mike Chapman producing. It reached No. 7 on the Billboard Hot 100 in 1984 and hit No. 1 on the Mainstream Rock chart.",
+      "source": "https://en.wikipedia.org/wiki/The_Warrior_(song)"
+    },
+    "patrice rushen|forget me nots": {
+      "fact": "Patrice Rushen's 1982 hit \"Forget Me Nots\" was famously sampled for Will Smith's 1997 single \"Men in Black.\" Freddie Washington's bass line is central to the original, and the song earned a Grammy nomination.",
+      "source": "https://guitarworld.com/features/freddie-washington-on-forget-me-nots"
+    },
+    "bleachers|i wanna get better": {
+      "fact": "\"I Wanna Get Better\" was Bleachers' debut single, released in February 2014 and written and produced by Jack Antonoff with John Hill. It appears on the 2014 album Strange Desire, and Rolling Stone ranked it 18th among its 50 best songs of 2014.",
+      "source": "https://en.wikipedia.org/wiki/I_Wanna_Get_Better"
+    },
+    "feist|1234": {
+      "fact": "Feist's \"1234\" got a huge boost in 2007 when it was featured in an Apple iPod nano commercial. It went on to peak at No. 8 on the Billboard Hot 100, her biggest US hit.",
+      "source": "https://en.wikipedia.org/wiki/1234_(Feist_song)"
+    },
+    "elvis presley|suspicious minds": {
+      "fact": "Elvis recorded \"Suspicious Minds\" at American Sound Studio in Memphis in early 1969. Written by Mark James, whose own version had flopped, it became Presley's final No. 1 on the Billboard Hot 100 in November 1969.",
+      "source": "https://en.wikipedia.org/wiki/Suspicious_Minds"
+    },
+    "the folk implosion|natural one": {
+      "fact": "\"Natural One\" was written by Lou Barlow and John Davis of The Folk Implosion with producer Wally Gagel. It opens the Kids soundtrack and reached No. 29 on the Billboard Hot 100 and No. 4 on the Modern Rock chart in 1995-96.",
+      "source": "https://en.wikipedia.org/wiki/Natural_One"
+    },
+    "nicki minaj|super bass": {
+      "fact": "\"Super Bass\" peaked at No. 3 on the Billboard Hot 100 and was produced by Kane Beatz and JMIKE, with Ester Dean among the writers. It was a hit from the deluxe edition of Nicki Minaj's debut album Pink Friday.",
+      "source": "https://en.wikipedia.org/wiki/Super_Bass"
+    },
+    "bon iver|flume": {
+      "fact": "\"Flume\" is from Bon Iver's debut, For Emma, Forever Ago, which Justin Vernon recorded during a winter at his family's remote cabin in northern Wisconsin. Jagjaguwar reissued the album in February 2008, and 4AD released it in the UK and Europe that May.",
+      "source": "https://en.wikipedia.org/wiki/Bon_Iver"
+    },
+    "karmin|broken hearted": {
+      "fact": "Karmin's \"Brokenhearted\" was the lead single from their 2012 EP Hello and peaked at No. 16 on the Billboard Hot 100. Amy Heidemann and Nick Noonan met at Berklee College of Music and first gained attention with covers posted on YouTube.",
+      "source": "https://en.wikipedia.org/wiki/Brokenhearted_(Karmin_song)"
+    },
+    "a tribe called quest|buggin' out": {
+      "fact": "\"Buggin' Out\" from The Low End Theory (1991) was the album's first showcase of Phife Dawg and Q-Tip trading verses. Phife's opening verse is widely regarded as a career highlight.",
+      "source": "https://consequence.net/2016/11/a-tribe-called-quests-top-10-songs/2"
+    },
+    "madonna|cherish": {
+      "fact": "\"Cherish\" was the third single from Madonna's 1989 album Like a Prayer, written and produced with Patrick Leonard. It reached No. 2 on the Billboard Hot 100, and its black-and-white video was directed by Herb Ritts at Paradise Cove in Malibu.",
+      "source": "https://en.wikipedia.org/wiki/Cherish_(Madonna_song)"
+    },
+    "pete townshend|let my love open the door": {
+      "fact": "\"Let My Love Open the Door\" came out in June 1980 from Pete Townshend's solo album Empty Glass. It reached No. 9 on the Billboard Hot 100, his only solo top 10 hit there.",
+      "source": "https://en.wikipedia.org/wiki/Let_My_Love_Open_the_Door"
+    },
+    "willie nelson|blue eyes crying in the rain": {
+      "fact": "Fred Rose's song was recorded by Roy Acuff in 1947 before Willie Nelson's version, from the concept album Red Headed Stranger, gave him his first country No. 1 in 1975. It won a Grammy in 1976 and was added to the National Recording Registry in 2010.",
+      "source": "https://en.wikipedia.org/wiki/Blue_Eyes_Crying_in_the_Rain"
+    },
+    "diana ross & the supremes|where did our love go": {
+      "fact": "\"Where Did Our Love Go\" was the Supremes' first Billboard Hot 100 No. 1, in August 1964, and began a run of five straight chart-toppers. Written by Holland-Dozier-Holland, it was reportedly turned down by the Marvelettes first.",
+      "source": "https://en.wikipedia.org/wiki/Where_Did_Our_Love_Go"
+    },
+    "ringo starr|it don't come easy": {
+      "fact": "\"It Don't Come Easy\" was produced by George Harrison, who also helped with the song, and features Stephen Stills on piano. Released in April 1971, it reached No. 4 on both the US and UK charts.",
+      "source": "https://en.wikipedia.org/wiki/It_Don%27t_Come_Easy"
+    },
+    "archie bell and the drells|tighten up": {
+      "fact": "\"Tighten Up,\" written by Archie Bell and Billy Butler, was a Houston hit before Atlantic Records picked it up for distribution in April 1968. By summer it topped both the Billboard R&B and pop charts.",
+      "source": "https://en.wikipedia.org/wiki/Archie_Bell_%26_the_Drells"
+    },
+    "the roches|hammond song": {
+      "fact": "\"Hammond Song\" was written by Maggie Roche and appears on The Roches' 1979 self-titled debut album. The album was produced by Robert Fripp of King Crimson, who also played electric guitar on it.",
+      "source": "https://en.wikipedia.org/wiki/The_Roches_(album)"
     }
   }
 }
