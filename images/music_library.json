@@ -7833,6 +7833,18 @@
 },
 {
 "artist": "Atlas Sound",
+"title": "Octoberland",
+"album": "",
+"year": 2026,
+"station": "WCYT",
+"files": [
+"AtlasSound-01"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Atlas Sound",
 "title": "Parallax",
 "album": "Parallax",
 "year": 2011,
@@ -11591,8 +11603,8 @@
 "BeatHappening-02",
 "BeatHappening-05"
 ],
-"fact": null,
-"source": null
+"fact": "\"Cast a Shadow\" appears on Beat Happening's 1989 album Black Candy, released on K Records, the label run by band member Calvin Johnson. The song was later included on the band's 2015 career-spanning anthology Look Around.",
+"source": "https://en.wikipedia.org/wiki/Black_Candy"
 },
 {
 "artist": "Beat Happening",
@@ -12728,6 +12740,18 @@
 ],
 "fact": "\"Godzilla Rises\" comes from Austin art-punk trio Being Dead's 2024 album EELS, produced by John Congleton. Despite the title, it's actually a tender love song addressed to the giant movie monster himself. The band's members -- Falcon Bitch, Shmoofy, and Nicole Roman-Johnston -- are known for swapping instruments and trading lead vocals throughout their live sets.",
 "source": "https://www.popmatters.com/being-dead-eels-review"
+},
+{
+"artist": "Being Dead",
+"title": "Man or Myth",
+"album": "",
+"year": null,
+"station": "WCYT",
+"files": [
+"BeingDead-02"
+],
+"fact": null,
+"source": null
 },
 {
 "artist": "Being Dead",
@@ -27561,6 +27585,30 @@
 "source": null
 },
 {
+"artist": "Chappell Roan",
+"title": "The Giver",
+"album": "",
+"year": null,
+"station": "WCYT",
+"files": [
+"ChappellRoan-05"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Chappell Roan",
+"title": "The Subway (Clean)",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"ChappellRoan-04"
+],
+"fact": null,
+"source": null
+},
+{
 "artist": "Chapterhouse",
 "title": "Pearl",
 "album": "Whirlpool",
@@ -36698,6 +36746,18 @@
 },
 {
 "artist": "Dead Man's Bones",
+"title": "Lost In The Night",
+"album": "",
+"year": null,
+"station": "WCYT",
+"files": [
+"DeadMansBones-01"
+],
+"fact": "\"Lost in the Night\" was released around Halloween as the first new music from Dead Man's Bones since their 2009 self-titled debut. The duo is actor Ryan Gosling and Zach Shields, and the new single came out through ANTI- Records.",
+"source": "https://www.fangoria.com/?p=122292"
+},
+{
+"artist": "Dead Man's Bones",
 "title": "My Body's a Zombie for You",
 "album": "Dead Man's Bones",
 "year": 2009,
@@ -44928,8 +44988,8 @@
 "ELLIOTTS-10",
 "ElliottSmith-10"
 ],
-"fact": null,
-"source": null
+"fact": "\"Alameda\" is the second track on Elliott Smith's 1997 album Either/Or. Smith played all of the instruments on it himself and also mixed the song. An alternate version from the Either/Or sessions with some different lyrics was later released by Kill Rock Stars.",
+"source": "https://en.wikipedia.org/wiki/Either/Or_(album)"
 },
 {
 "artist": "Elliott Smith",
@@ -52334,8 +52394,8 @@
 "files": [
 "FRANKIEC-10"
 ],
-"fact": null,
-"source": null
+"fact": "\"Duet\" appears on Frankie Cosmos's 2018 album Vessel, but it is a revisit of an earlier song from Greta Kline's 2014 release donutes. The new four-piece band version added fuller percussion and bass, and critics called it a standout of the album.",
+"source": "https://readdork.com/track/frankie-cosmos-duet"
 },
 {
 "artist": "Frankie Cosmos",
@@ -59925,8 +59985,8 @@
 "files": [
 "HATCHIE-02"
 ],
-"fact": null,
-"source": null
+"fact": "\"Sleep\" was released in April 2018 as a preview of Hatchie's debut EP Sugar & Spice, which followed in May on Double Double Whammy. Hatchie is the project of Australian singer-songwriter Harriette Pilbeam, whose first full album, Keepsake, arrived in 2019.",
+"source": "https://thelineofbestfit.com/news/latest-news/hatchie-sleep"
 },
 {
 "artist": "Hatchie",
@@ -86094,8 +86154,8 @@
 "MeatPuppets-02",
 "MeatPuppets-05"
 ],
-"fact": null,
-"source": null
+"fact": "\"Lake of Fire\" was written by Curt Kirkwood and appeared on the Meat Puppets' second album, Meat Puppets II, released in 1984 on SST Records. Nirvana covered it on their MTV Unplugged set in November 1993, with the Kirkwood brothers joining them on stage.",
+"source": "https://en.wikipedia.org/wiki/Lake_of_Fire_(song)"
 },
 {
 "artist": "Meat Puppets",
@@ -95893,8 +95953,8 @@
 "files": [
 "OKCowgirl-00"
 ],
-"fact": null,
-"source": null
+"fact": "\"Cruise the Town\" was released as a single in July 2026, ahead of Ok Cowgirl's album Rhinestone Cowgirl on Easy Does It Records. Ok Cowgirl is a Brooklyn five-piece fronted by songwriter Leah Lavigne, who co-wrote the music with her bandmates.",
+"source": "https://loudwomen.org/2026/07/14/premiere-ok-cowgirl-share-cruise-the-town/"
 },
 {
 "artist": "OK Go",
@@ -101960,8 +102020,8 @@
 "files": [
 "PHOSPHORESCENT-05"
 ],
-"fact": null,
-"source": null
+"fact": "This song is on Aw Come Aw Wry, the second full-length album by Phosphorescent, the stage name of singer-songwriter Matthew Houck. The 2005 record was released on Misra Records, and the song also came out as a limited UK 7-inch single.",
+"source": "https://en.wikipedia.org/wiki/Phosphorescent_(musician)"
 },
 {
 "artist": "Phosphorescent",
@@ -106126,8 +106186,8 @@
 "REM-14",
 "REM-39"
 ],
-"fact": null,
-"source": null
+"fact": "\"Drive\" opens R.E.M.'s 1992 album Automatic for the People and was its lead single. It was the first song Michael Stipe wrote on a computer, and Peter Buck played bouzouki on it.",
+"source": "https://en.wikipedia.org/wiki/Drive_(R.E.M._song)"
 },
 {
 "artist": "R.E.M.",
@@ -106558,8 +106618,8 @@
 "files": [
 "REM-45"
 ],
-"fact": null,
-"source": null
+"fact": "\"Wendell Gee\" was the third and final single from R.E.M.'s 1985 album Fables of the Reconstruction. Its B-side was a cover of \"Crazy\" by Pylon, a fellow band from the Athens, Georgia scene.",
+"source": "https://en.wikipedia.org/wiki/Wendell_Gee"
 },
 {
 "artist": "R.E.M.",
@@ -114643,8 +114703,8 @@
 "files": [
 "SEBADOH-02"
 ],
-"fact": null,
-"source": null
+"fact": "\"Rebound\" was the first single from Sebadoh's 1994 album Bakesale, which is widely seen as the band's most polished and accessible record. An acoustic version of the song appeared as a B-side and was later included on the 2011 deluxe reissue.",
+"source": "https://en.wikipedia.org/wiki/Rebound_(Sebadoh_song)"
 },
 {
 "artist": "Sebadoh",
@@ -116364,8 +116424,8 @@
 "files": [
 "SilverJews-00"
 ],
-"fact": null,
-"source": null
+"fact": "\"The Wild Kindness\" closes Silver Jews' 2005 album Tanglewood Numbers. That record marked the return of Pavement members Stephen Malkmus and Bob Nastanovich to the Silver Jews lineup.",
+"source": "https://en.wikipedia.org/wiki/Tanglewood_Numbers"
 },
 {
 "artist": "Silver Jews",
@@ -122813,8 +122873,8 @@
 "files": [
 "STVI-20"
 ],
-"fact": null,
-"source": null
+"fact": "\"Save Me From What I Want\" is the second track on St. Vincent's 2009 album Actor, her second album and her first for the 4AD label. Annie Clark co-produced the record with John Congleton.",
+"source": "https://en.wikipedia.org/wiki/Actor_(album)"
 },
 {
 "artist": "St. Vincent",
@@ -122971,6 +123031,18 @@
 ],
 "fact": "The Standells were a Los Angeles garage-rock band, and \"Dirty Water\" was written by their producer Ed Cobb after a visit to Boston. The band recorded it in late 1965, and it became a No. 11 hit in 1966. Today it is played after Boston Red Sox and Bruins home wins.",
 "source": "https://en.wikipedia.org/wiki/The_Standells"
+},
+{
+"artist": "Star Moles",
+"title": "Born Again",
+"album": "",
+"year": null,
+"station": "WCYT",
+"files": [
+"StarMoles-00"
+],
+"fact": null,
+"source": null
 },
 {
 "artist": "Starcrawler",
@@ -123438,8 +123510,8 @@
 "files": [
 "STEPHENM-12"
 ],
-"fact": null,
-"source": null
+"fact": "\"Hopscotch Willie\" is the second track on Real Emotional Trash, the fourth album Stephen Malkmus made with the Jicks, released on Matador in March 2008. At nearly seven minutes it is one of the longer tracks on the record, and reviewers singled out its guitar-heavy build and the drumming of Janet Weiss.",
+"source": "https://popmatters.com/review/stephen-malkmus-and-jicks-real-emotional-trash"
 },
 {
 "artist": "Stephen Malkmus and the Jicks",
@@ -127754,8 +127826,8 @@
 "files": [
 "SYLVANE-10"
 ],
-"fact": null,
-"source": null
+"fact": "\"Just Dancing\" is on Sylvan Esso's 2017 album What Now. The duo formed after Amelia Meath asked Nick Sanborn to remix \"Play It Right,\" a song by her other group Mountain Man, and they realized their styles clicked.",
+"source": "https://en.wikipedia.org/wiki/Amelia_Meath"
 },
 {
 "artist": "Sylvan Esso",
@@ -128448,8 +128520,8 @@
 "TalkTalk-00",
 "TalkTalk-02"
 ],
-"fact": null,
-"source": null
+"fact": "\"After the Flood\" is the nearly ten-minute centerpiece of Talk Talk's 1991 album Laughing Stock, their fifth and final studio album. The album, along with its predecessor Spirit of Eden, is often credited as an early influence on post-rock.",
+"source": "https://en.wikipedia.org/wiki/Laughing_Stock"
 },
 {
 "artist": "Talk Talk",
@@ -128546,8 +128618,8 @@
 "TalkTalk-01",
 "TalkTalk-07"
 ],
-"fact": null,
-"source": null
+"fact": "\"Such a Shame\" comes from Talk Talk's 1984 album It's My Life and was written by singer Mark Hollis. It only reached number 49 in the UK, but it made the top 10 on the pan-European airplay chart.",
+"source": "https://en.wikipedia.org/wiki/Such_a_Shame"
 },
 {
 "artist": "Talk Talk",
@@ -128634,8 +128706,8 @@
 "files": [
 "TalkingHeads-04"
 ],
-"fact": null,
-"source": null
+"fact": "\"Burning Down the House\" was the lead single from Talking Heads' 1983 album Speaking in Tongues. It reached No. 9 on the Billboard Hot 100, making it the band's only US top-ten hit.",
+"source": "https://en.wikipedia.org/wiki/Burning_Down_the_House"
 },
 {
 "artist": "Talking Heads",
@@ -130192,8 +130264,8 @@
 "Television-00",
 "Television-01"
 ],
-"fact": null,
-"source": null
+"fact": "Television recorded the title track of Marquee Moon almost live in the studio, with very few takes. Drummer Billy Ficca assumed one take was just a rehearsal, and when engineer and co-producer Andy Johns suggested trying another, Tom Verlaine declined. The single came out on Elektra in April 1977 and runs nearly ten minutes.",
+"source": "https://en.wikipedia.org/wiki/Marquee_Moon_(song)"
 },
 {
 "artist": "Television",
@@ -135203,8 +135275,8 @@
 "files": [
 "BETHS-02"
 ],
-"fact": null,
-"source": null
+"fact": "\"Happy Unhappy\" was the second single from Future Me Hates Me, the 2018 debut album from New Zealand's The Beths, released on Carpark Records. The album earned very positive reviews and later won Album of the Year at New Zealand's Aotearoa Music Awards.",
+"source": "https://stereogum.com/1999724/the-beths-happy-unhappy-video/music"
 },
 {
 "artist": "The Beths",
@@ -149759,8 +149831,8 @@
 "files": [
 "TheUndertones-00"
 ],
-"fact": null,
-"source": null
+"fact": "The Undertones' \"Teenage Kicks\" was the all-time favorite record of BBC DJ John Peel, who named it his number one on his \"My Top Ten\" program in 1984. Helped along by Peel's airplay, the 1978 single peaked at number 31 on the UK singles chart.",
+"source": "https://www.soundonsound.com/techniques/classic-tracks-undertones-teenage-kicks"
 },
 {
 "artist": "The Unicorns",
@@ -150973,8 +151045,8 @@
 "files": [
 "WHITES-09"
 ],
-"fact": null,
-"source": null
+"fact": "\"Effect and Cause\" is the quiet, acoustic closing track on Icky Thump, the sixth and final studio album by The White Stripes. The 2007 album was released through Warner Bros. and Jack White's Third Man Records.",
+"source": "https://www.pastemagazine.com/music/the-white-stripes/the-white-stripes-icky-thump"
 },
 {
 "artist": "The White Stripes",
@@ -165602,8 +165674,8 @@
 "XTC-00",
 "XTC-03"
 ],
-"fact": null,
-"source": null
+"fact": "\"Making Plans for Nigel\" was the lead single from XTC's 1979 album Drums and Wires and reached number 17 on the UK singles chart. Its distinctive drum pattern reportedly came from a miscommunication between Andy Partridge and drummer Terry Chambers, and producer Steve Lillywhite and engineer Hugh Padgham helped create the big gated drum sound.",
+"source": "https://en.wikipedia.org/wiki/Making_Plans_for_Nigel"
 },
 {
 "artist": "XTC",
@@ -166615,8 +166687,8 @@
 "files": [
 "YoLaTengo-27"
 ],
-"fact": null,
-"source": null
+"fact": "Yo La Tengo's \"Automatic Doom\" is a cover of a song by Special Pillow, an early band of Yo La Tengo's own James McNew. It was one of the first two songs shared from their 2015 covers album Stuff Like That There, which Stereogum called a spiritual successor to their 1990 album Fakebook.",
+"source": "https://www.stereogum.com/1805535/yo-la-tengo-announce-new-album-stuff-like-that-there-share-two-songs/mp3s/"
 },
 {
 "artist": "Yo La Tengo",
