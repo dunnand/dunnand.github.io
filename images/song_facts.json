@@ -16859,6 +16859,454 @@
     "beat happening|cast a shadow": {
       "fact": "\"Cast a Shadow\" appears on Beat Happening's 1989 album Black Candy, released on K Records, the label run by band member Calvin Johnson. The song was later included on the band's 2015 career-spanning anthology Look Around.",
       "source": "https://en.wikipedia.org/wiki/Black_Candy"
+    },
+    "Radiohead|The Bends": {
+      "fact": "One of Radiohead's earliest songs, \"The Bends\" was written before their debut album Pablo Honey and was played live many times before it was finally recorded for the 1995 album of the same name. The band credits it to all five members, though Thom Yorke wrote most of it.",
+      "source": "https://en.wikipedia.org/wiki/The_Bends_(song)"
+    },
+    "Radiohead|The Tourist": {
+      "fact": "Jonny Greenwood wrote \"The Tourist\", the closing track of OK Computer. Thom Yorke has described the idea as coming from Greenwood watching tourists get rushed around a French square to see everything in ten minutes, and the band reportedly finished it just as they were about to leave St Catherine's Court, where most of the album was recorded.",
+      "source": "https://www.songfacts.com/facts/radiohead/the-tourist"
+    },
+    "Joni Mitchell|River": {
+      "fact": "\"River\" is just Joni Mitchell and a piano, from her 1971 album Blue. It was never released as a single, but it has become one of her most-covered songs, with hundreds of recorded versions and a place as an unofficial Christmas standard.",
+      "source": "https://en.wikipedia.org/wiki/River_(Joni_Mitchell_song)"
+    },
+    "KISS|Black Diamond": {
+      "fact": "\"Black Diamond\" closes KISS's 1974 self-titled debut album and was often the final number in their early concerts. Paul Stanley has called it one of the first songs he wrote for the band, and The Replacements covered it on their 1984 album Let It Be.",
+      "source": "https://en.wikipedia.org/wiki/Black_Diamond_(Kiss_song)"
+    },
+    "Gary U.S. Bonds|Quarter To Three": {
+      "fact": "\"Quarter to Three\" grew out of a Church Street Five instrumental called \"A Night with Daddy G\", which featured sax by Gene Barge. Producer Frank Guida added lyrics and shortened Gary Anderson's name to Gary U.S. Bonds, and the song hit No. 1 in June 1961.",
+      "source": "https://en.wikipedia.org/wiki/Quarter_to_Three"
+    },
+    "KISS|Deuce": {
+      "fact": "Gene Simmons wrote \"Deuce\" for KISS's 1974 debut album, and it was the first song Ace Frehley played with the band at his audition. Frehley has called it his favorite KISS song, and KISS played it at their final Madison Square Garden show on December 2, 2023.",
+      "source": "https://en.wikipedia.org/wiki/Deuce_(song)"
+    },
+    "David Guetta|Without You feat. Usher": {
+      "fact": "\"Without You\" was originally written and recorded by Taio Cruz before David Guetta and Usher turned it into a dance-pop single from Nothing but the Beat. It reached No. 1 on the US Top 40 Airplay chart and sold over 2.6 million US copies by late 2013.",
+      "source": "https://en.wikipedia.org/wiki/Without_You_(David_Guetta_song)"
+    },
+    "The Cure|The Lovecats": {
+      "fact": "\"The Lovecats\" was released in 1983 as a stand-alone single, not on a regular studio album, and became The Cure's first UK top 10 hit, peaking at No. 7. It later appeared on the compilation Japanese Whispers.",
+      "source": "https://en.wikipedia.org/wiki/The_Love_Cats_(song)"
+    },
+    "KISS|Strutter": {
+      "fact": "Gene Simmons has said \"Strutter\" was the first song he wrote for KISS, thrown together in about half an hour, with the opening lick borrowed from the Rolling Stones' \"Bitch\". It opens the band's 1974 debut, and a disco-flavored remake, \"Strutter '78\", followed four years later.",
+      "source": "https://en.wikipedia.org/wiki/Strutter"
+    },
+    "Drake|Find Your Love": {
+      "fact": "\"Find Your Love\" was co-written and co-produced by Kanye West with Jeff Bhasker and No I.D., and it was reportedly first written with Rihanna in mind. It peaked at No. 5 on the Billboard Hot 100 and was named one of Time's best songs of 2010.",
+      "source": "https://en.wikipedia.org/wiki/Find_Your_Love"
+    },
+    "Kraftwerk|Europe Endless": {
+      "fact": "\"Europe Endless\" was the working title for the whole album Kraftwerk were building in 1976, which became Trans-Europe Express. The opening track's main theme returns at the very end of the album in \"Endless Endless\", and its sequenced synthesizer lines showed off Kraftwerk's newer sequencing gear.",
+      "source": "https://en.wikipedia.org/wiki/Trans-Europe_Express_(album)"
+    },
+    "Neil Young & Crazy Horse|Cinnamon Girl": {
+      "fact": "\"Cinnamon Girl\" was written in double drop D tuning and appeared on 1969's Everybody Knows This Is Nowhere, Neil Young's first album with Crazy Horse. Young recruited Danny Whitten, Billy Talbot and Ralph Molina from a band called The Rockets and renamed them Crazy Horse. The single reached No. 55 on the Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/Cinnamon_Girl"
+    },
+    "Regina Spektor|Don't Leave Me (Ne me quitte pas)": {
+      "fact": "Despite the title, this is not a cover of Jacques Brel's famous \"Ne me quitte pas\"; Regina Spektor's song has different music and lyrics. She first recorded it on her 2002 album Songs, then re-recorded it with producer Mike Elizondo for 2012's What We Saw from the Cheap Seats.",
+      "source": "https://en.wikipedia.org/wiki/Don%27t_Leave_Me_(Ne_Me_Quitte_Pas)"
+    },
+    "Regina Spektor|Us": {
+      "fact": "\"Us\" from Regina Spektor's Soviet Kitsch adds a string quartet to her usual piano and vocals. It was the first Spektor song to get a music video, which was made with stop-motion animation.",
+      "source": "https://en.wikipedia.org/wiki/Us_(Regina_Spektor_song)"
+    },
+    "Bruno Mars|Grenade": {
+      "fact": "\"Grenade\" has six credited writers, including Bruno Mars, Philip Lawrence, Ari Levine and Claude Kelly. It was released as an iTunes promotional single a week before the album Doo-Wops & Hooligans, went to No. 1 on the Hot 100, and earned Grammy nominations for Record and Song of the Year.",
+      "source": "https://en.wikipedia.org/wiki/Grenade_(song)"
+    },
+    "Yola|Shady Grove": {
+      "fact": "\"Shady Grove\" is track two on Yola's 2019 debut Walk Through Fire, produced by Dan Auerbach of The Black Keys for his Easy Eye Sound label. Auerbach first noticed Yola when a friend sent him a video of her performing in Nashville.",
+      "source": "https://en.wikipedia.org/wiki/Walk_Through_Fire_(Yola_album)"
+    },
+    "Led Zeppelin|Dancing Days": {
+      "fact": "\"Dancing Days\" was reportedly inspired by an Indian tune Jimmy Page and Robert Plant heard while in Bombay. It was the first Houses of the Holy song pressed for radio play, even though it was officially the B-side of \"Over the Hills and Far Away\".",
+      "source": "https://en.wikipedia.org/wiki/Dancing_Days"
+    },
+    "The Smashing Pumpkins|Bullet With Butterfly Wings": {
+      "fact": "\"Bullet with Butterfly Wings\" was the lead single from the Smashing Pumpkins' 1995 double album Mellon Collie and the Infinite Sadness. It won the 1997 Grammy for Best Hard Rock Performance and was their first US top 40 hit.",
+      "source": "https://en.wikipedia.org/wiki/Bullet_with_Butterfly_Wings"
+    },
+    "Run The Jewels|JU$T (feat. Pharrell Williams & Zack de la Rocha)": {
+      "fact": "\"JU$T\" brings together Pharrell Williams and Zack de la Rocha of Rage Against the Machine on Run the Jewels' 2020 album RTJ4, which gave the duo their first top 10 album on the Billboard 200. El-P and Killer Mike broke the song down on the Song Exploder podcast.",
+      "source": "https://en.wikipedia.org/wiki/RTJ4"
+    },
+    "Run The Jewels|ooh la la (feat. Greg Nice & DJ Premier)": {
+      "fact": "\"Ooh La La\" is built on Greg Nice's verse from Gang Starr's 1992 classic \"DWYCK\", and its title comes from his line \"Ooohh la la, ah oui oui\". DJ Premier himself adds the scratching, and the duo said RTJ4 was the first time they had the budget to properly clear samples.",
+      "source": "https://en.wikipedia.org/wiki/RTJ4"
+    },
+    "Led Zeppelin|Immigrant Song": {
+      "fact": "\"Immigrant Song\" came out of Led Zeppelin's summer 1970 trip that included a concert in Reykjavik, Iceland, arranged as a cultural exchange. Robert Plant joked afterward that Iceland made you think of Vikings and big ships. It opens Led Zeppelin III and found new fans in the Thor: Ragnarok trailer.",
+      "source": "https://en.wikipedia.org/wiki/Immigrant_Song"
+    },
+    "The Smashing Pumpkins|Zero": {
+      "fact": "\"Zero\" was the first song recorded for Mellon Collie and the Infinite Sadness, and its wall of guitars includes six rhythm guitar parts. It was released in the US as an EP that also charted on the Billboard 200, and it reached No. 9 on the Modern Rock chart.",
+      "source": "https://en.wikipedia.org/wiki/Zero_(The_Smashing_Pumpkins_song)"
+    },
+    "The Smashing Pumpkins|1979": {
+      "fact": "\"1979\" is the Smashing Pumpkins' highest-charting single, reaching No. 12 on the Billboard Hot 100. The nostalgic music video was directed by Jonathan Dayton and Valerie Faris, who had also directed the band's \"Rocket\" video.",
+      "source": "https://en.wikipedia.org/wiki/1979_(song)"
+    },
+    "Chuck Berry|Johnny B. Goode": {
+      "fact": "Chuck Berry first recorded \"Johnny B. Goode\" at Chess Records in Chicago on January 6, 1958. Released that March with \"Around and Around\" on the flip side, it reached number 2 on the R&B chart and number 8 on the pop chart. Berry said the song was partly autobiographical.",
+      "source": "https://en.wikipedia.org/wiki/Johnny_B._Goode"
+    },
+    "Joni Mitchell|Free Man in Paris": {
+      "fact": "Joni Mitchell wrote \"Free Man in Paris\" after a trip to Paris with her friend and label boss David Geffen, plus Robbie Robertson and his wife Dominique. David Crosby and Graham Nash sing backing vocals on the track from Court and Spark (1974), which reached number 22 on the Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/Free_Man_in_Paris"
+    },
+    "Rancid|Time Bomb": {
+      "fact": "\"Time Bomb\" was the second single from Rancid's third album, ...And Out Come the Wolves, and reached number 8 on Billboard's Modern Rock chart. Its ska-punk sound echoes Operation Ivy, the earlier band of Tim Armstrong and Matt Freeman, and the first verse reuses words from Rancid's own \"Motorcycle Ride.\"",
+      "source": "https://en.wikipedia.org/wiki/Time_Bomb_(Rancid_song)"
+    },
+    "Radiohead|We Suck Young Blood. (Your Time Is Up.)": {
+      "fact": "Before Hail to the Thief came out in 2003, Radiohead put up posters around Los Angeles with the line \"We want young blood\" and a phone number, 1-800-YOUNG-BLOOD, as part of the album's promotion. At live shows the audience supplies the handclaps for this song.",
+      "source": "https://www.songfacts.com/facts/radiohead/we-suck-young-blood"
+    },
+    "Radiohead|Weird Fishes/Arpeggi": {
+      "fact": "\"Weird Fishes/Arpeggi\" was played live years before In Rainbows (2007). It premiered at the Ether Festival in London on March 27, 2005, under the working title \"Arpeggi.\" The song has no traditional chorus and is built on three interlocking finger-picked guitar patterns.",
+      "source": "https://www.songfacts.com/facts/radiohead/weird-fishes-arpeggi"
+    },
+    "The Cure|The Walk": {
+      "fact": "\"The Walk\" was a stand-alone single released in June 1983. It reached number 12 in the UK and gave The Cure their first UK top 20 hit. It was built around synthesizers and a drum machine, including an Oberheim OB-8 and a DMX.",
+      "source": "https://en.wikipedia.org/wiki/The_Walk_(The_Cure_song)"
+    },
+    "Red Hot Chili Peppers|By the Way": {
+      "fact": "\"By the Way\" is the title track of the Chili Peppers' 2002 album, produced by Rick Rubin. It reached number 2 in the UK, tying the band's highest UK chart peak, and has been played live more than 600 times. Rolling Stone ranked it number 8 on its 2022 list of the band's best songs.",
+      "source": "https://en.wikipedia.org/wiki/By_the_Way_(Red_Hot_Chili_Peppers_song)"
+    },
+    "KISS|Rock and Roll All Nite": {
+      "fact": "The studio version of \"Rock and Roll All Nite\" only reached number 68 in 1975. The live recording from the album Alive! was released as a single that October and climbed to number 12. It has closed nearly every KISS concert since 1976.",
+      "source": "https://en.wikipedia.org/wiki/Rock_and_Roll_All_Nite"
+    },
+    "BADBADNOTGOOD|In Your Eyes (feat. Charlotte Day Wilson)": {
+      "fact": "\"In Your Eyes\" is from the Toronto jazz group BADBADNOTGOOD's fourth album, IV, and features vocals by Charlotte Day Wilson. The band performed it with her on NPR's Tiny Desk concert series, and Nosaj Thing later released a remix of it.",
+      "source": "https://exclaim.ca/music/article/badbadnotgood-in_your_eyes_ft_charlotte_day_wilson"
+    },
+    "Kraftwerk|The Model": {
+      "fact": "\"The Model\" first appeared on Kraftwerk's 1978 album The Man-Machine. It was reissued in 1981 as a double A-side with \"Computer Love\" and hit number 1 in the UK in February 1982. The song was reportedly inspired by models who worked at the Bagel nightclub in Cologne.",
+      "source": "https://en.wikipedia.org/wiki/Das_Model"
+    },
+    "Drake|Take care feat. Rihanna": {
+      "fact": "\"Take Care\" is built on Jamie xx's remix of Gil Scott-Heron's version of \"I'll Take Care of You,\" a song written by Brook Benton. Jamie xx co-produced it with Noah \"40\" Shebib, and Rihanna sings the hook on this title track of Drake's 2011 album.",
+      "source": "https://en.wikipedia.org/wiki/Take_Care_(song)"
+    },
+    "Led Zeppelin|Achilles Last Stand": {
+      "fact": "Led Zeppelin made Presence at Musicland Studios in Munich in late 1975, reportedly having only about 18 days because the Rolling Stones had the studio booked next. \"Achilles Last Stand\" was one of the first songs they tackled. The album went to number 1 in both the US and UK.",
+      "source": "https://en.wikipedia.org/wiki/Achilles_Last_Stand"
+    },
+    "R.E.M.|Bad Day": {
+      "fact": "\"Bad Day\" began as a 1986 outtake called \"PSA\" from the Lifes Rich Pageant sessions. R.E.M. reworked it into a new song and released it in 2003 as one of two new tracks on the compilation In Time: The Best of R.E.M. 1988-2003. The earlier version later appeared on the 2006 I.R.S. Years collection.",
+      "source": "https://en.wikipedia.org/wiki/Bad_Day_(R.E.M._song)"
+    },
+    "Led Zeppelin|Black Dog": {
+      "fact": "The title \"Black Dog\" reportedly came from a black Labrador that wandered around Headley Grange, where Led Zeppelin IV was recorded. The name has nothing to do with the lyrics. The tricky main riff is generally credited to bassist John Paul Jones.",
+      "source": "https://www.songfacts.com/facts/led-zeppelin/black-dog"
+    },
+    "The Smashing Pumpkins|Ava Adore": {
+      "fact": "\"Ava Adore\" was the lead single from the 1998 album Adore, recorded at Sound City in Van Nuys, where Nirvana made Nevermind. With no regular drummer, the band returned to the drum machines of its earliest days for much of the record. The video was the band's biggest budget up to that point.",
+      "source": "https://en.wikipedia.org/wiki/Adore_(album)"
+    },
+    "Nilsson|One": {
+      "fact": "Harry Nilsson reportedly got the idea for \"One\" after dialing a phone number and hearing a busy signal. The song is on his 1968 album Aerial Ballet, named for his grandparents' high-wire circus act. Three Dog Night's cover reached number 5 on the Hot 100 in 1969.",
+      "source": "https://en.wikipedia.org/wiki/One_(Harry_Nilsson_song)"
+    },
+    "Arctic Monkeys|R U Mine?": {
+      "fact": "\"R U Mine?\" was released as a single in February 2012 and later became part of the album AM. Alex Turner has said the album grew out of this song, and the band reportedly tried a dozen versions of it. It was produced by Ross Orton.",
+      "source": "https://en.wikipedia.org/wiki/R_U_Mine%3F"
+    },
+    "Nina Simone|Ain't Got No - I Got Life": {
+      "fact": "Nina Simone combined \"Ain't Got No\" and \"I Got Life\" from the musical Hair into one song for her 1968 album 'Nuff Said! It reached number 2 on the UK singles chart, her first UK chart success. A Groovefinder remix was a UK top 30 hit in 2006.",
+      "source": "https://en.wikipedia.org/wiki/Ain%27t_Got_No,_I_Got_Life"
+    },
+    "Chuck Berry|Maybelene": {
+      "fact": "\"Maybellene\" adapted parts of the western swing tune \"Ida Red,\" which Bob Wills recorded in 1938. Chess Records' Leonard Chess wanted a new title, and one popular story says he took the name from a mascara box on the studio floor. The 1955 record reached number 1 on the R&B chart and number 10 on the pop chart.",
+      "source": "https://en.wikipedia.org/wiki/Maybellene"
+    },
+    "Stand Down Margaret / The English Beat|Whine & Grine": {
+      "fact": "\"Whine and Grine\" is a Prince Buster song that The Beat (known in the US as The English Beat) paired with their single \"Stand Down Margaret.\" Prince Buster's original was recorded with his All Stars. The Beat's version was on their 1980 debut album, I Just Can't Stop It.",
+      "source": "https://en.wikipedia.org/wiki/Stand_Down_Margaret"
+    },
+    "Nina Simone|I Put a Spell on You": {
+      "fact": "Nina Simone recorded her version of \"I Put a Spell on You\" in New York in January 1965 for an album of the same name. The song was written and first recorded by Screamin' Jay Hawkins in 1956. Her string-and-horn arrangement turned it into a smoldering love song and reached number 23 on the R&B chart.",
+      "source": "https://en.wikipedia.org/wiki/I_Put_a_Spell_on_You"
+    },
+    "Radiohead|The National Anthem": {
+      "fact": "Thom Yorke reportedly wrote the song's bassline when he was a teenager, and Radiohead first recorded drums and bass for it in 1997 around the OK Computer era. For Kid A, Jonny Greenwood added the wild ondes Martenot parts, an early electronic instrument, and Yorke's vocals were run through a ring modulator.",
+      "source": "https://en.wikipedia.org/wiki/The_National_Anthem_(Radiohead_song)"
+    },
+    "Joni Mitchell|Help Me": {
+      "fact": "\"Help Me\" reached No. 7 on the Billboard Hot 100 in 1974, making it Joni Mitchell's only Top 10 single in the US. It comes from her album Court and Spark and also hit No. 1 on the Adult Contemporary chart.",
+      "source": "https://en.wikipedia.org/wiki/Help_Me_(Joni_Mitchell_song)"
+    },
+    "Little Richard|Good Golly Miss Molly": {
+      "fact": "The song was credited to John Marascalco and producer Robert \"Bumps\" Blackwell and was released on Specialty Records in early 1958. The Swinging Blue Jeans took their own version to the UK charts in 1964, and it ranks on Rolling Stone's list of the 500 greatest songs.",
+      "source": "https://en.wikipedia.org/wiki/Good_Golly,_Miss_Molly"
+    },
+    "Red Hot Chili Peppers|Californication": {
+      "fact": "Californication was the first Chili Peppers album since 1991 to feature guitarist John Frusciante, who returned to replace Dave Navarro. It was produced by Rick Rubin and recorded at Cello Studios in Los Angeles, then released in June 1999.",
+      "source": "https://en.wikipedia.org/wiki/Californication_(album)"
+    },
+    "Marvin Gaye|Ain't Nothin' Like the Real Thing": {
+      "fact": "Songwriting duo Nickolas Ashford and Valerie Simpson wrote and produced this Marvin Gaye and Tammi Terrell duet, recorded at Motown's Hitsville USA studio with the Funk Brothers. Released in 1968, it climbed to No. 8 on the US pop chart and was a No. 1 R&B hit.",
+      "source": "https://en.wikipedia.org/wiki/Ain%27t_Nothing_Like_the_Real_Thing"
+    },
+    "Marvin Gaye|I Heard It Through The Grapevine": {
+      "fact": "Gaye's hit was not the first version recorded: Smokey Robinson & the Miracles cut it first in 1966, and Gladys Knight & the Pips released it first as a single in 1967. Gaye's version, released in October 1968, outsold them all. The song was written by Norman Whitfield and Barrett Strong.",
+      "source": "https://en.wikipedia.org/wiki/I_Heard_It_Through_the_Grapevine"
+    },
+    "The Cure|Lovesong": {
+      "fact": "Robert Smith wrote \"Lovesong\" as a wedding present for his longtime partner Mary Poole. It reached No. 2 on the US Billboard Hot 100 and No. 5 in the UK, and was later covered by artists including 311 and Adele, whose version appears on her album 21.",
+      "source": "https://en.wikipedia.org/wiki/Lovesong_(The_Cure_song)"
+    },
+    "Drake|Headlines": {
+      "fact": "\"Headlines\" was the second single from Drake's Take Care and was produced by Boi-1da and Noah \"40\" Shebib. Shebib, Drake's longtime collaborator, was the album's primary producer and won a Best Rap Album Grammy for Take Care.",
+      "source": "https://en.wikipedia.org/wiki/Headlines_(Drake_song)"
+    },
+    "Red Hot Chili Peppers|Can't Stop": {
+      "fact": "\"Can't Stop\" was the third single from the Chili Peppers' 2002 album By the Way, released in February 2003. It is credited to all four band members, Flea, John Frusciante, Anthony Kiedis and Chad Smith, and was produced by Rick Rubin.",
+      "source": "https://en.wikipedia.org/wiki/Can%27t_Stop_(Red_Hot_Chili_Peppers_song)"
+    },
+    "Nancy Sinatra|Bang, Bang": {
+      "fact": "Sonny Bono wrote this song for Cher, who took it to No. 2 in 1966. Nancy Sinatra's slower version on her album How Does That Grab You? became the better known one decades later, after it opened Quentin Tarantino's Kill Bill and was used by the BBC for Wimbledon coverage.",
+      "source": "https://en.wikipedia.org/wiki/Bang_Bang_(My_Baby_Shot_Me_Down)"
+    },
+    "Kraftwerk|Radioactivity": {
+      "fact": "The Radio-Activity album was recorded at Kraftwerk's Kling Klang Studio in Dusseldorf and was their first fully electronic album. The title is a pun, since the songs deal with both radioactivity and activity on the radio. The title track even spells out its name in Morse code.",
+      "source": "https://en.wikipedia.org/wiki/Radio-Activity"
+    },
+    "R.E.M.|Nightswimming": {
+      "fact": "The song features just Michael Stipe's vocal and Mike Mills on piano, with strings arranged by former Led Zeppelin bassist John Paul Jones, who also arranged strings on other Automatic for the People tracks like \"Everybody Hurts.\" A demo from the Out of Time mixing sessions was used for the album.",
+      "source": "https://en.wikipedia.org/wiki/Nightswimming"
+    },
+    "Regina Spektor|Fidelity": {
+      "fact": "Regina Spektor has said she wrote \"Fidelity\" while watching the film High Fidelity. The song helped lift her album Begin to Hope, released in 2006, from a debut at No. 70 up to No. 20 on the Billboard 200, and it remains her highest-charting single.",
+      "source": "https://en.wikipedia.org/wiki/Begin_to_Hope"
+    },
+    "The Cure|The Hanging Garden": {
+      "fact": "The Cure's Pornography was recorded at RAK Studios in London in early 1982, with Phil Thornalley producing in place of Mike Hedges. \"The Hanging Garden\" was seen by label head Chris Parry as the album's only potential single and reached No. 34 in the UK.",
+      "source": "https://en.wikipedia.org/wiki/The_Hanging_Garden_(song)"
+    },
+    "Neil Young & Crazy Horse|Everybody Knows This Is Nowhere": {
+      "fact": "The title track was written by Neil Young and had been considered for his 1968 solo debut before it was recorded with Crazy Horse. The 1969 album of the same name, released on Reprise in May of that year, was his first with Crazy Horse.",
+      "source": "https://en.wikipedia.org/wiki/Everybody_Knows_This_Is_Nowhere_(song)"
+    },
+    "Arctic Monkeys|Don't Sit Down 'cause I've Moved Your Chair": {
+      "fact": "Arctic Monkeys released this single in April 2011 as the first taste of their album Suck It and See, with a Record Store Day 7-inch featuring the B-side \"Brick by Brick.\" It reached No. 28 on the UK chart on downloads alone, and critics heard the influence of Queens of the Stone Age's Josh Homme.",
+      "source": "https://en.wikipedia.org/wiki/Don%27t_Sit_Down_%27Cause_I%27ve_Moved_Your_Chair"
+    },
+    "Nick Drake|River Man": {
+      "fact": "\"River Man\" is mostly in an unusual 5/4 time signature. Drake's usual string arranger Robert Kirby passed on it, reportedly unsure about writing in 5/4, so producer Joe Boyd and engineer John Wood brought in Harry Robinson, who wrote the string arrangement for Five Leaves Left.",
+      "source": "https://en.wikipedia.org/wiki/Five_Leaves_Left"
+    },
+    "R.E.M.|Supernatural Superserious": {
+      "fact": "This was the first single from R.E.M.'s 2008 album Accelerate, produced by Jacknife Lee and the band. It was released as an MP3 in February 2008 and hit No. 1 on the AAA radio chart, while the album debuted at No. 2 on the Billboard 200.",
+      "source": "https://en.wikipedia.org/wiki/Supernatural_Superserious"
+    },
+    "The Cure|A Forest": {
+      "fact": "\"A Forest\" was The Cure's first UK Singles Chart entry, peaking at No. 31 in 1980. It was co-produced by Robert Smith and Mike Hedges, in what was Hedges' first production credit, on the album Seventeen Seconds.",
+      "source": "https://en.wikipedia.org/wiki/A_Forest"
+    },
+    "Led Zeppelin|Houses of the Holy": {
+      "fact": "Despite giving the 1973 album its name, \"Houses of the Holy\" was left off it because Jimmy Page felt it did not fit with the other songs. It finally appeared on 1975's double album Physical Graffiti.",
+      "source": "https://en.wikipedia.org/wiki/Houses_of_the_Holy"
+    },
+    "The Smashing Pumpkins|Tonight, Tonight": {
+      "fact": "The music video, directed by Jonathan Dayton and Valerie Faris, is a tribute to Georges Melies' 1902 silent film A Trip to the Moon. It was made in the style of a turn-of-the-century film with theater-style backdrops and primitive effects, and is often called one of the greatest music videos of all time.",
+      "source": "https://en.wikipedia.org/wiki/Tonight,_Tonight_(The_Smashing_Pumpkins_song)"
+    },
+    "Led Zeppelin|Kashmir": {
+      "fact": "Robert Plant was inspired to write the lyrics while driving through a desolate desert area of southern Morocco. The song was recorded in 1974 at Headley Grange and Olympic Studios, and it appeared on Physical Graffiti in 1975.",
+      "source": "https://en.wikipedia.org/wiki/Kashmir_(song)"
+    },
+    "Led Zeppelin|Since I've Been Loving You": {
+      "fact": "This blues from Led Zeppelin III was recorded essentially live in the studio with very little overdubbing. John Paul Jones played Hammond organ and bass pedals at the same time during the performance.",
+      "source": "https://en.wikipedia.org/wiki/Since_I%27ve_Been_Loving_You"
+    },
+    "Leonard Cohen|Suzanne": {
+      "fact": "\"Suzanne\" began as a poem, \"Suzanne Takes You Down,\" printed in Cohen's 1966 book Parasites of Heaven. Folk singer Judy Collins recorded it in 1966 on her album In My Life, before Cohen put it on his own 1967 debut, Songs of Leonard Cohen.",
+      "source": "https://en.wikipedia.org/wiki/Suzanne_(Leonard_Cohen_song)"
+    },
+    "Radiohead|There There. (The Boney King of Nowhere.)": {
+      "fact": "On \"There There,\" Ed O'Brien and Jonny Greenwood both played auxiliary drums alongside Phil Selway. Colin Greenwood said it came from Thom Yorke's long-held wish for two drum kits and two drummers in the studio at once. The song was recorded for 2003's Hail to the Thief.",
+      "source": "https://nzherald.co.nz/lifestyle/iradioheadi-hail-to-the-thief/ZTRQ43ZVZXEGWBC6EWVWLUI2R4"
+    },
+    "Radiohead|Videotape": {
+      "fact": "\"Videotape\" closes Radiohead's 2007 album In Rainbows as a piano-and-voice piece. It was recorded in December 2006 at Halswell House in Taunton and at producer Nigel Godrich's Hospital studio in London. Its piano chords were reused as the base of the bonus-disc track \"MK 1.\"",
+      "source": "https://en.wikipedia.org/wiki/In_Rainbows"
+    },
+    "Taylor Swift|august": {
+      "fact": "\"august\" is from Taylor Swift's surprise 2020 album folklore, which was made remotely during lockdown with Swift recording vocals at a home studio in Los Angeles. Jack Antonoff co-wrote and produced the track with her, and it became a fan favorite.",
+      "source": "https://en.wikipedia.org/wiki/August_(song)"
+    },
+    "KISS|Detroit Rock City": {
+      "fact": "The flamenco-flavored guitar solo on \"Detroit Rock City\" was an idea from producer Bob Ezrin, who has said he wrote it. When Ezrin remixed Destroyer for the 2012 \"Resurrected\" edition, he also fixed a lyric, changing \"down 95\" to \"doin' 95.\"",
+      "source": "https://en.wikipedia.org/wiki/Detroit_Rock_City"
+    },
+    "Clairo|Bags": {
+      "fact": "\"Bags\" was the first single from Clairo's 2019 debut album Immunity. It was co-produced by Rostam Batmanglij, a former Vampire Weekend member, and features drums by Danielle Haim of HAIM.",
+      "source": "https://en.wikipedia.org/wiki/Bags_(song)"
+    },
+    "KISS|I Was Made for Lovin' You": {
+      "fact": "Paul Stanley has said KISS wrote \"I Was Made for Lovin' You\" as a deliberate effort to prove how easily a disco hit could be written. Co-written with Desmond Child and produced by Vini Poncia, it led off the 1979 album Dynasty, reached No. 11 in the US and No. 2 in Australia, and was an early hit for Child.",
+      "source": "https://en.wikipedia.org/wiki/I_Was_Made_for_Lovin%27_You"
+    },
+    "BADBADNOTGOOD|Speaking Gently": {
+      "fact": "\"Speaking Gently\" is the second track on BADBADNOTGOOD's 2016 album IV. It was the Toronto jazz group's first album with guest vocalists, including Future Islands' Sam Herring on a different track, plus Kaytranada, Colin Stetson and Charlotte Day Wilson as guests.",
+      "source": "https://en.wikipedia.org/wiki/IV_(BadBadNotGood_album)"
+    },
+    "KISS|Shout It Out Loud": {
+      "fact": "\"Shout It Out Loud\" was released as a single in March 1976 from Destroyer and reached No. 1 in Canada that May. It was credited to Paul Stanley, Gene Simmons and producer Bob Ezrin, and grew out of an earlier idea the band had worked on in their Wicked Lester days.",
+      "source": "https://en.wikipedia.org/wiki/Shout_It_Out_Loud_(Kiss_song)"
+    },
+    "Kraftwerk|Autobahn": {
+      "fact": "Kraftwerk's \"Autobahn\" filled most of side one of the 1974 album at about 22 minutes, and was edited down to 3:27 for the US single. The single reached No. 25 on the Billboard Hot 100 and the album climbed to No. 5 on the Billboard 200. It was recorded at Conny Plank's studio in Cologne.",
+      "source": "https://en.wikipedia.org/wiki/Autobahn_(song)"
+    },
+    "Ricky Nelson|Poor Little Fool": {
+      "fact": "\"Poor Little Fool\" became the first No. 1 song on Billboard's brand-new Hot 100 chart in August 1958. It was written by Sharon Sheeley, who was a teenager and is often cited as the youngest woman to write an American No. 1 hit.",
+      "source": "https://en.wikipedia.org/wiki/Poor_Little_Fool"
+    },
+    "The Cure|Plainsong": {
+      "fact": "\"Plainsong\" opens The Cure's 1989 album Disintegration with quiet wind chimes, then a drum crash and a wall of synthesizers. It is known for that long, dramatic intro and set the mood for the whole album.",
+      "source": "https://en.wikipedia.org/wiki/Plainsong_(song)"
+    },
+    "Carly Rae Jepsen|Call Me Maybe": {
+      "fact": "\"Call Me Maybe\" started out as a folk song that Carly Rae Jepsen wrote with Tavish Crowe while on tour. Producer Josh Ramsay of Marianas Trench was brought in to give it its pop sound.",
+      "source": "https://en.wikipedia.org/wiki/Call_Me_Maybe"
+    },
+    "The Cure|All Cats Are Grey": {
+      "fact": "\"All Cats Are Grey\" closes side one of The Cure's 1981 album Faith, a moody keyboard-driven track with no guitar. It was reportedly inspired by Mervyn Peake's Gormenghast novels.",
+      "source": "https://en.wikipedia.org/wiki/Faith_(The_Cure_album)"
+    },
+    "Led Zeppelin|D'yer Mak'er": {
+      "fact": "The title \"D'yer Mak'er\" is a pun on an old joke, \"Jamaica?\" \"No, she wanted to go,\" because \"Did you make her?\" sounds like \"Jamaica\" in an English accent. John Paul Jones explained the origin, and the reggae-flavored song from Houses of the Holy (1973) reached No. 20 as a single.",
+      "source": "https://en.wikipedia.org/wiki/D%27yer_Mak%27er"
+    },
+    "Slowdive|Shine": {
+      "fact": "Slowdive formed in Reading, England, in October 1989 around Neil Halstead and Rachel Goswell, who had known each other since childhood. The band has said the name came from a dream, and Goswell suggested \"Slowdive.\"",
+      "source": "https://en.wikipedia.org/wiki/Slowdive"
+    },
+    "Nilsson|Everybody's Talkin'": {
+      "fact": "Fred Neil wrote and first recorded \"Everybody's Talkin'\" in 1966, two years before Harry Nilsson's version appeared in the film Midnight Cowboy. Director John Schlesinger chose Nilsson's cover, and it won him a Grammy and entered the Grammy Hall of Fame in 1999.",
+      "source": "https://en.wikipedia.org/wiki/Everybody%27s_Talkin%27"
+    },
+    "Led Zeppelin|Fool in the Rain": {
+      "fact": "The samba section of \"Fool in the Rain\" was inspired by Latin rhythms Robert Plant and John Paul Jones heard during the 1978 World Cup in Argentina. It was the last single released by Led Zeppelin, from In Through the Out Door (1979).",
+      "source": "https://en.wikipedia.org/wiki/Fool_in_the_Rain"
+    },
+    "The Smashing Pumpkins|Thirty-Three": {
+      "fact": "\"Thirty-Three\" was the fifth and final single from Mellon Collie and the Infinite Sadness, released in late 1996. Its video, co-directed by Billy Corgan and Yelena Yemchuk, is a stop-motion piece that ends by re-creating the album cover. The album was produced by Corgan with Flood and Alan Moulder.",
+      "source": "https://en.wikipedia.org/wiki/Thirty-Three_(song)"
+    },
+    "Nina Simone|Feeling Good": {
+      "fact": "\"Feeling Good\" was written by Anthony Newley and Leslie Bricusse for the 1964 stage musical The Roar of the Greasepaint - The Smell of the Crowd. Nina Simone recorded her version in New York in January 1965 for the album I Put a Spell on You, with arrangement by Hal Mooney, and it was not released as a single at the time.",
+      "source": "https://en.wikipedia.org/wiki/Feeling_Good"
+    },
+    "Led Zeppelin|No Quarter": {
+      "fact": "\"No Quarter\" was first tracked at Headley Grange during the 1971 Led Zeppelin IV sessions, then re-recorded at Island Studios in 1972 for Houses of the Holy (1973). John Paul Jones's keyboards, including piano and electric piano, drive the song, and in concerts from 1975 he often stretched it past twenty minutes with a piano solo.",
+      "source": "https://en.wikipedia.org/wiki/No_Quarter_(song)"
+    },
+    "Calvin Harris|Feel So Close": {
+      "fact": "\"Feel So Close\" was the second single from Calvin Harris's 2012 album 18 Months, released in August 2011. It reached No. 2 on the UK Singles Chart, and its video was directed by Vincent Haycock.",
+      "source": "https://en.wikipedia.org/wiki/Feel_So_Close"
+    },
+    "Love|7 and 7 Is": {
+      "fact": "\"7 and 7 Is\" was written by Love frontman Arthur Lee and recorded at Sunset Sound in Hollywood in June 1966. It appeared on the album Da Capo and became the band's only Top 40 hit, peaking at No. 33.",
+      "source": "https://en.wikipedia.org/wiki/Love_(band)"
+    },
+    "Love|Alone Again Or": {
+      "fact": "Bryan MacLean's \"Alone Again Or\" opens Love's Forever Changes, and its mariachi-style horns came through engineer Bruce Botnick's connection to Herb Alpert and the Tijuana Brass. The album was later added to the Grammy Hall of Fame and the National Recording Registry.",
+      "source": "https://en.wikipedia.org/wiki/Forever_Changes"
+    },
+    "Joni Mitchell|Woodstock": {
+      "fact": "Joni Mitchell wrote \"Woodstock\" without attending the festival, based on what her boyfriend Graham Nash told her about it. Matthews Southern Comfort's cover reached No. 1 on the UK chart in 1970.",
+      "source": "https://en.wikipedia.org/wiki/Woodstock_(song)"
+    },
+    "Red Hot Chili Peppers|My Friends": {
+      "fact": "\"My Friends\" came from One Hot Minute (1995), the only Chili Peppers album with guitarist Dave Navarro of Jane's Addiction. It spent four weeks at No. 1 on the Modern Rock Tracks chart.",
+      "source": "https://en.wikipedia.org/wiki/My_Friends_(Red_Hot_Chili_Peppers_song)"
+    },
+    "Radiohead|Where I End and You Begin. (The Sky Is Falling In.)": {
+      "fact": "The sixth track on Radiohead's 2003 album Hail to the Thief carries the alternate title \"The Sky Is Falling In.\" It went unplayed live for years, then returned in Kansas City in April 2017 for the first time since 2008.",
+      "source": "https://en.wikipedia.org/wiki/Hail_to_the_Thief"
+    },
+    "Red Hot Chili Peppers|Parallel Universe": {
+      "fact": "\"Parallel Universe\" was a Californication track produced by Rick Rubin, credited to all four band members, and issued as a single in 2001. It has been played live more than 330 times.",
+      "source": "https://en.wikipedia.org/wiki/Parallel_Universe_(song)"
+    },
+    "Red Hot Chili Peppers|Scar Tissue": {
+      "fact": "\"Scar Tissue\" was the lead single from Californication (1999) and won the Grammy for Best Rock Song in 2000. It is known for its slide guitar parts.",
+      "source": "https://en.wikipedia.org/wiki/Scar_Tissue"
+    },
+    "Nancy Sinatra|These Boots Are Made for Walkin'": {
+      "fact": "Lee Hazlewood wrote and produced \"These Boots Are Made for Walkin',\" recorded with the Wrecking Crew in 1965. It hit No. 1 in the US and UK in 1966 and was inducted into the Grammy Hall of Fame in 2020.",
+      "source": "https://en.wikipedia.org/wiki/These_Boots_Are_Made_for_Walkin%27"
+    },
+    "Red Hot Chili Peppers|Snow ((Hey Oh))": {
+      "fact": "\"Snow (Hey Oh)\" became the Chili Peppers' record 11th No. 1 on the Modern Rock chart in January 2007. It was also one of the official themes of WrestleMania XXIV.",
+      "source": "https://en.wikipedia.org/wiki/Snow_(Hey_Oh)"
+    },
+    "Nancy Sinatra|You Only Live Twice": {
+      "fact": "Nancy Sinatra sang the theme to the 1967 Bond film, with music by John Barry and lyrics by Leslie Bricusse. Robbie Williams sampled it for his 1998 hit \"Millennium.\"",
+      "source": "https://en.wikipedia.org/wiki/You_Only_Live_Twice_(song)"
+    },
+    "Red Hot Chili Peppers|The Zephyr Song": {
+      "fact": "\"The Zephyr Song\" was the second single from By the Way (2002), produced by Rick Rubin, with lyrics by Anthony Kiedis and much of the music from John Frusciante. A zephyr is a light, gentle breeze.",
+      "source": "https://en.wikipedia.org/wiki/The_Zephyr_Song"
+    },
+    "The Cure|Pictures of You": {
+      "fact": "\"Pictures of You\" was the fourth and final single from The Cure's Disintegration, released in March 1990 with a shorter single edit. It peaked at No. 24 in the UK.",
+      "source": "https://en.wikipedia.org/wiki/Pictures_of_You_(The_Cure_song)"
+    },
+    "Kraftwerk|The Robots": {
+      "fact": "\"The Robots\" (\"Die Roboter\") was released as a single in May 1978 from Kraftwerk's album The Man-Machine, with \"Spacelab\" on the B-side. The single edit runs about 4:20 versus roughly 6:10 on the album.",
+      "source": "https://en.wikipedia.org/wiki/The_Robots"
+    },
+    "Kraftwerk|Trans-Europe Express": {
+      "fact": "Kraftwerk's \"Trans-Europe Express\" melody was reworked, with the rhythm of \"Numbers,\" in Afrika Bambaataa's 1982 hip-hop landmark \"Planet Rock.\" The track has been sampled in dozens of songs since.",
+      "source": "https://en.wikipedia.org/wiki/Trans-Europe_Express_(song)"
+    },
+    "Slint|Nosferatu Man": {
+      "fact": "Slint debuted \"Nosferatu Man\" live in Louisville in July 1990, a month before recording Spiderland in four days in Chicago with engineer Brian Paulson. The song was inspired by the 1922 silent film Nosferatu.",
+      "source": "https://en.wikipedia.org/wiki/Spiderland"
+    },
+    "The Cure|Play for Today": {
+      "fact": "\"Play for Today\" was one of the earliest songs written for The Cure's Seventeen Seconds (1980). Its title seems to come from the long-running BBC drama anthology series of the same name.",
+      "source": "https://en.wikipedia.org/wiki/Seventeen_Seconds"
+    },
+    "Nick Drake|Time Has Told Me": {
+      "fact": "\"Time Has Told Me\" opens Nick Drake's 1969 debut Five Leaves Left, produced by Joe Boyd. Richard Thompson of Fairport Convention played electric guitar on it.",
+      "source": "https://en.wikipedia.org/wiki/Five_Leaves_Left"
+    },
+    "David Guetta|Titanium feat. Sia": {
+      "fact": "Sia recorded a guide vocal over David Guetta's track, and it was so good that he kept it for the final version. Katy Perry reportedly passed on the song first, and Sia has said she wrote the lyric in about 40 minutes.",
+      "source": "https://en.wikipedia.org/wiki/Titanium_(David_Guetta_song)"
+    },
+    "Led Zeppelin|Going to California": {
+      "fact": "On \"Going to California,\" John Paul Jones played mandolin while Jimmy Page played acoustic guitars. The song is widely reported to be a nod to Joni Mitchell.",
+      "source": "https://en.wikipedia.org/wiki/Going_to_California"
+    },
+    "AWOLNATION|Sail": {
+      "fact": "AWOLNATION's \"Sail\" spent 79 weeks on the Billboard Hot 100, one of the longest runs ever. It came out on Red Bull Records and peaked at No. 17 after more than a year on the chart.",
+      "source": "https://en.wikipedia.org/wiki/Sail_(song)"
+    },
+    "The English Beat|Save It For Later": {
+      "fact": "Pete Townshend once phoned Dave Wakeling because he and David Gilmour couldn't work out the tuning for \"Save It for Later.\" Townshend called it one of his favorite songs and performed it for years.",
+      "source": "https://en.wikipedia.org/wiki/Save_It_for_Later"
+    },
+    "Led Zeppelin|Misty Mountain Hop": {
+      "fact": "\"Misty Mountain Hop\" was recorded at Headley Grange in Hampshire for Led Zeppelin IV, and its title is usually linked to the Misty Mountains in Tolkien's The Hobbit. In the US it was the B-side of \"Black Dog.\"",
+      "source": "https://en.wikipedia.org/wiki/Misty_Mountain_Hop"
+    },
+    "Led Zeppelin|Over The Hills and Far Away": {
+      "fact": "\"Over the Hills and Far Away\" on Houses of the Holy was originally titled \"Many Many Times.\" It was released as a US single with \"Dancing Days\" on the B-side.",
+      "source": "https://en.wikipedia.org/wiki/Houses_of_the_Holy"
     }
   }
 }
