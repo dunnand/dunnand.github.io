@@ -29251,6 +29251,18 @@
 "source": null
 },
 {
+"artist": "Christine and the Queens",
+"title": "Rendez-vous in your arms",
+"album": "",
+"year": 2026,
+"station": "WCYT",
+"files": [
+"ChristineandtheQueens-00"
+],
+"fact": null,
+"source": null
+},
+{
 "artist": "Christopher Cross",
 "title": "Ride Like The Wind",
 "album": "Christopher Cross",
@@ -43263,6 +43275,18 @@
 ],
 "fact": "\"Mono Retriever\" is a 2022 single the L.A. band Dummy recorded for Sub Pop's Singles Club 7-inch series, paired on the B-side with another new track, \"Pepsi Vacuum.\" The band has described the two songs as mirrors of each other, built around droning organ and cycling, hypnotic rhythms in the style of their noise-pop and early-electronic-psychedelia influences.",
 "source": "https://northerntransmissions.com/dummy-drop-mono-retriever-for-sub-pop-singles-club"
+},
+{
+"artist": "Dummy",
+"title": "Touch the Perfect Speed",
+"album": "do you love the color of the sky?",
+"year": 2026,
+"station": "WCYT",
+"files": [
+"Dummy-02"
+],
+"fact": null,
+"source": null
 },
 {
 "artist": "Duncan Sheik",
@@ -79683,12 +79707,84 @@
 },
 {
 "artist": "Linkin Park",
+"title": "A Place for My Head",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"LinkinPark-06"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Linkin Park",
+"title": "Crawling",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"LinkinPark-05"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Linkin Park",
+"title": "Forgotten",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"LinkinPark-07"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Linkin Park",
 "title": "In The End",
 "album": "Hybrid Theory",
 "year": 2001,
 "station": "2.0",
 "files": [
 "LinkinPark-00"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Linkin Park",
+"title": "Papercut",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"LinkinPark-01"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Linkin Park",
+"title": "Points of Authority",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"LinkinPark-04"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Linkin Park",
+"title": "With You",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"LinkinPark-03"
 ],
 "fact": null,
 "source": null
@@ -84819,12 +84915,36 @@
 },
 {
 "artist": "Mariah Carey",
+"title": "Can't Let Go",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"MariahCarey-14"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Mariah Carey",
 "title": "Dreamlover",
 "album": "Music Box",
 "year": 1993,
 "station": "Both",
 "files": [
 "MariahCarey-09"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Mariah Carey",
+"title": "Emotions",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"MariahCarey-13"
 ],
 "fact": null,
 "source": null
@@ -84852,6 +84972,18 @@
 ],
 "fact": "Mariah Carey and Walter Afanasieff wrote \"Hero\" for a 1992 film soundtrack, with Gloria Estefan in mind to sing it, but Carey kept it for herself. It became the second single from her 1993 album Music Box and spent four weeks at No. 1 on the Hot 100.",
 "source": "https://en.wikipedia.org/wiki/Hero_(Mariah_Carey_song)"
+},
+{
+"artist": "Mariah Carey",
+"title": "Make It Happen",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"MariahCarey-15"
+],
+"fact": null,
+"source": null
 },
 {
 "artist": "Mariah Carey",
@@ -106030,6 +106162,18 @@
 },
 {
 "artist": "Quivers",
+"title": "Bottle The Nervous",
+"album": "Oyster Cuts",
+"year": 2026,
+"station": "WCYT",
+"files": [
+"Quivers-02"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Quivers",
 "title": "Never Be Lonely",
 "album": "Oyster Cuts",
 "year": 2024,
@@ -112980,6 +113124,78 @@
 },
 {
 "artist": "Sade",
+"title": "Bullet Proof Soul",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"Sade-10"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Sade",
+"title": "Feel No Pain",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"Sade-09"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Sade",
+"title": "Is It A Crime",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"Sade-05"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Sade",
+"title": "Kiss Of Life",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"Sade-08"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Sade",
+"title": "Never As Good As The First Time",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"Sade-06"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Sade",
+"title": "No Ordinary Love",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"Sade-07"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Sade",
 "title": "Smooth Operator",
 "album": "Diamond Life",
 "year": 1984,
@@ -112998,6 +113214,18 @@
 "station": "2.0",
 "files": [
 "Sade-00"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Sade",
+"title": "Your Love Is King",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"Sade-04"
 ],
 "fact": null,
 "source": null
@@ -117846,6 +118074,18 @@
 "files": [
 "Slint- (1)",
 "Slint-01"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Slipknot",
+"title": "Left Behind",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"Slipknot-00"
 ],
 "fact": null,
 "source": null
@@ -129593,6 +129833,18 @@
 "station": "2.0",
 "files": [
 "TammyWynette-01"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Tank",
+"title": "Maybe I Deserve",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"Tank-00"
 ],
 "fact": null,
 "source": null
@@ -156236,6 +156488,18 @@
 },
 {
 "artist": "Twisted Teens",
+"title": "Stalks",
+"album": "The Holy Cross Tigers",
+"year": 2026,
+"station": "WCYT",
+"files": [
+"TwistedTeens-01"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Twisted Teens",
 "title": "When We First Met",
 "album": "The Holy Cross Tigers",
 "year": 2026,
@@ -157166,6 +157430,42 @@
 "station": "WCYT",
 "files": [
 "TYPHOON-04"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Tyrese Gibson",
+"title": "Lately",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"TyreseGibson-02"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Tyrese Gibson",
+"title": "Nobody Else",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"TyreseGibson-00"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Tyrese Gibson",
+"title": "Sweet Lady",
+"album": "",
+"year": null,
+"station": "2.0",
+"files": [
+"TyreseGibson-01"
 ],
 "fact": null,
 "source": null
