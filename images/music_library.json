@@ -156753,12 +156753,48 @@
 },
 {
 "artist": "Twisted Teens",
+"title": "I Spend My Time Crying",
+"album": "The Holy Cross Tigers",
+"year": 2026,
+"station": "WCYT",
+"files": [
+"TwistedTeens-02"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Twisted Teens",
+"title": "Is It Real?",
+"album": "Blame The Clown",
+"year": 2026,
+"station": "WCYT",
+"files": [
+"TwistedTeens-04"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Twisted Teens",
 "title": "Stalks",
 "album": "The Holy Cross Tigers",
 "year": 2026,
 "station": "WCYT",
 "files": [
 "TwistedTeens-01"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Twisted Teens",
+"title": "Twisted Teen",
+"album": "Twisted Teens",
+"year": 2024,
+"station": "WCYT",
+"files": [
+"TwistedTeens-03"
 ],
 "fact": null,
 "source": null
@@ -156774,6 +156810,30 @@
 ],
 "fact": "Twisted Teens' \"When We First Met\" comes from The Holy Cross Tigers on Sub Pop - the New Orleans garage-punk duo of Caspian Hollywell and Ramon \"RJ\" Santos blend the street-level grit of The Gun Club with early-punk urgency and dusty country-blues storytelling.",
 "source": "https://artistrack.com/twisted-teens-when-we-first-met/"
+},
+{
+"artist": "twisted teens",
+"title": "Why Did You Miss It?",
+"album": "Florida Water Blues",
+"year": 2026,
+"station": "WCYT",
+"files": [
+"TwistedTeens-06"
+],
+"fact": null,
+"source": null
+},
+{
+"artist": "Twisted Teens",
+"title": "Wild Connection",
+"album": "Blame The Clown",
+"year": 2026,
+"station": "WCYT",
+"files": [
+"TwistedTeens-05"
+],
+"fact": null,
+"source": null
 },
 {
 "artist": "Two Door Cinema Club",
