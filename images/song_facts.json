@@ -22875,6 +22875,346 @@
     "they might be giants|destination moon": {
       "fact": "\"Destination Moon\" appeared on They Might Be Giants' 1994 album John Henry and was written by John Flansburgh and John Linnell, with Linnell singing. The title has nothing to do with the 1950 space-travel film of the same name. The A.V. Club called it one of the album's standouts.",
       "source": "https://tmbw.net/wiki/Destination_Moon"
+    },
+    "johnny cash|i walk the line": {
+      "fact": "Johnny Cash recorded \"I Walk the Line\" at Sun Studio in Memphis on April 2, 1956. It became his first Billboard country number one, spending six weeks at the top in summer 1956, and also crossed over to the pop chart. The 1956 Sun recording was inducted into the Grammy Hall of Fame in 1998.",
+      "source": "https://en.wikipedia.org/wiki/I_Walk_the_Line"
+    },
+    "lizzo|special": {
+      "fact": "\"Special\" is the title track of Lizzo's fourth studio album, released July 15, 2022. Lizzo has said the album was originally going to be called \"In Case Nobody Told You\" until Max Martin helped her restructure the song's hook, and she renamed the album after the song. The track lists Max Martin, Pop Wansel, Ian Kirkpatrick and Daoud Anthony among its producers.",
+      "source": "https://en.wikipedia.org/wiki/Special_(Lizzo_album)"
+    },
+    "eddie murphy|party all the time": {
+      "fact": "\"Party All the Time\" was the lead single from Eddie Murphy's 1985 debut album How Could It Be. It was produced and co-written by Rick James, and peaked at No. 2 on the Billboard Hot 100, held off the top by Lionel Richie's \"Say You, Say Me.\"",
+      "source": "https://en.wikipedia.org/wiki/Party_All_the_Time"
+    },
+    "al green|i'm still in love with you": {
+      "fact": "The album I'm Still in Love with You was released by Hi Records on October 23, 1972, and produced by Willie Mitchell at Royal Studios in Memphis. It reached No. 4 on the Billboard 200 and No. 1 on the R&B albums chart. The title track spent two weeks at No. 1 on the soul singles chart and reached No. 3 on the Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/I'm_Still_in_Love_with_You_(Al_Green_album)"
+    },
+    "pearl jam|i am mine": {
+      "fact": "\"I Am Mine\" was the first single from Pearl Jam's 2002 album Riot Act, written by Eddie Vedder. It reached No. 43 on the Billboard Hot 100, No. 7 on the Mainstream Rock chart and No. 6 on the Modern Rock chart. Its music video, directed by James Frost, is simply a filmed live performance by the band.",
+      "source": "https://en.wikipedia.org/wiki/I_Am_Mine"
+    },
+    "al green|take me to the river": {
+      "fact": "Al Green and guitarist Mabon \"Teenie\" Hodges wrote \"Take Me to the River,\" and Green first recorded it in Memphis for his 1974 album Al Green Explores Your Mind. Talking Heads later covered it on their 1978 album More Songs About Buildings and Food, made with Brian Eno in the Bahamas. Their version reached No. 26 on the Billboard Hot 100 and was the band's first US Top 30 hit.",
+      "source": "https://en.wikipedia.org/wiki/Take_Me_to_the_River"
+    },
+    "nirvana.|smells like teen spirit": {
+      "fact": "Nirvana recorded \"Smells Like Teen Spirit\" with producer Butch Vig at Sound City Studios in Van Nuys, California, in May 1991. The band cut the basic track in just three takes and used the second one. It was released September 10, 1991, as the lead single from Nevermind, an album made on a budget of about $65,000.",
+      "source": "https://en.wikipedia.org/wiki/Smells_Like_Teen_Spirit"
+    },
+    "adolescents|amoeba": {
+      "fact": "\"Amoeba\" is the signature song of the Adolescents, a band formed in Fullerton, California, in 1980. It appears on their 1981 self-titled debut album, known as The Blue Album, on Frontier Records. An earlier version appeared on the Rodney on the ROQ compilation and became a hit on KROQ, which drew the attention of Frontier founder Lisa Fancher.",
+      "source": "https://en.wikipedia.org/wiki/Amoeba_(song)"
+    },
+    "aretha franklin|rock steady": {
+      "fact": "\"Rock Steady\" was written by Aretha Franklin and released as an Atlantic single in October 1971. It was recorded at Criteria Studios in Miami with The Memphis Horns, and appears on her album Young, Gifted and Black. It reached No. 9 on the Billboard Hot 100 and No. 2 on the soul singles chart.",
+      "source": "https://en.wikipedia.org/wiki/Rock_Steady_(Aretha_Franklin_song)"
+    },
+    "oasis|rock 'n' roll star": {
+      "fact": "\"Rock 'n' Roll Star\" is the opening track of Oasis's 1994 debut album Definitely Maybe. Noel Gallagher wrote it and Liam Gallagher sings lead. The band opened shows with it on the original Definitely Maybe tour and again on their 2008-09 Dig Out Your Soul tour.",
+      "source": "https://en.wikipedia.org/wiki/Rock_'n'_Roll_Star"
+    },
+    "bee gees|jive talkin'": {
+      "fact": "The Bee Gees recorded \"Jive Talkin'\" at Criteria Studios in Miami in early 1975, produced by Arif Mardin. The song's rhythm reportedly came from the sound of the Gibbs' car crossing the Julia Tuttle Causeway on the way to the studio. Blue Weaver played the synthesizer bass line on an ARP 2600, and the single reached No. 1 on the Billboard Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/Jive_Talkin'"
+    },
+    "paul simon|the obvious child": {
+      "fact": "\"The Obvious Child\" was the lead single from Paul Simon's 1990 album The Rhythm of the Saints. The drum parts were played by the Brazilian group Olodum, recorded live in Pelourinho Square in Salvador, Brazil, because Simon felt all ten members would not fit in a conventional studio. Olodum also appeared in the video and performed the song with Simon on Saturday Night Live.",
+      "source": "https://en.wikipedia.org/wiki/The_Obvious_Child"
+    },
+    "pearl jam|black": {
+      "fact": "\"Black\" is the fifth track on Pearl Jam's 1991 debut album Ten, with music by Stone Gossard and lyrics by Eddie Vedder. The band refused to release it as a single, saying it was too personal. It still reached No. 3 on the Mainstream Rock chart without a commercial single release.",
+      "source": "https://en.wikipedia.org/wiki/Black_(Pearl_Jam_song)"
+    },
+    "bill withers|loveley day": {
+      "fact": "\"Lovely Day\" was written by Bill Withers and Skip Scarborough and released in 1977 on the album Menagerie. Near the end, Withers holds a high E for about 18 seconds, one of the longest sustained notes on a US Top 40 hit. It reached No. 30 on the Hot 100 and No. 7 in the UK, and a 1988 remix climbed to No. 4 in the UK.",
+      "source": "https://en.wikipedia.org/wiki/Lovely_Day"
+    },
+    "elvis presley|don't": {
+      "fact": "\"Don't,\" written by Jerry Leiber and Mike Stoller, was recorded by Elvis Presley on September 6, 1957, at Radio Recorders in Hollywood. Released in January 1958 on RCA Victor, it hit No. 1 on the Billboard chart, where it stayed for five weeks. Billboard ranked it the No. 3 song of 1958.",
+      "source": "https://en.wikipedia.org/wiki/Don't_(Elvis_Presley_song)"
+    },
+    "radiohead|faust arp": {
+      "fact": "\"Faust Arp\" is the sixth track on Radiohead's 2007 album In Rainbows and runs just 2:10. It pairs fingerpicked acoustic guitar with strings played by The Millennia Ensemble. The title is a tribute to the German krautrock band Faust.",
+      "source": "https://en.wikipedia.org/wiki/In_Rainbows"
+    },
+    "radiohead|house of cards": {
+      "fact": "\"House of Cards\" is a track from Radiohead's seventh album In Rainbows (2007). Its music video, directed by James Frost, was made without cameras, using lidar and motion-capture scanning. The song received three nominations at the 51st Grammy Awards, including Best Rock Song.",
+      "source": "https://en.wikipedia.org/wiki/House_of_Cards_(Radiohead_song)"
+    },
+    "james brown|out of sight": {
+      "fact": "James Brown released \"Out of Sight\" on Smash Records in July 1964, writing it under the pseudonym Ted Wright. The twelve-bar blues has staccato rhythms and horn riffs that were an important step in the development of funk. It reached No. 24 on the Billboard Hot 100 and gave its name to his 1964 album.",
+      "source": "https://en.wikipedia.org/wiki/Out_of_Sight_(song)"
+    },
+    "bob dylan|mozambique": {
+      "fact": "\"Mozambique\" is a track on Bob Dylan's 1976 album Desire, co-written with Jacques Levy and recorded July 30, 1975, in New York. Emmylou Harris sings backing vocals on it. It was released as a single and reached No. 54 on the Billboard Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/Mozambique_(song)"
+    },
+    "diana ross and the supremes|i hear a symphony": {
+      "fact": "\"I Hear a Symphony\" was written and produced by Holland-Dozier-Holland and released in October 1965. It became the Supremes' sixth number-one hit on the Billboard Hot 100, spending two weeks on top in November 1965. The title track's album followed in February 1966 and topped the Billboard R&B albums chart.",
+      "source": "https://en.wikipedia.org/wiki/I_Hear_a_Symphony"
+    },
+    "gotye|somebody that i used to know": {
+      "fact": "\"Somebody That I Used to Know\" by Gotye (featuring Kimbra) comes from his album Making Mirrors. It spent eight weeks at number one on the US Billboard Hot 100 in 2012 and was the best-selling song of 2012 in the UK. It earned Gotye three Grammy Awards.",
+      "source": "https://en.wikipedia.org/wiki/Somebody_That_I_Used_to_Know"
+    },
+    "al green|let's stay together": {
+      "fact": "\"Let's Stay Together\" was produced by Willie Mitchell and co-written by Al Green, Al Jackson Jr., and Mitchell. It reached number one on the Billboard Hot 100 in early 1972 and topped the R&B chart for nine weeks. The Library of Congress added it to the National Recording Registry in 2010.",
+      "source": "https://en.wikipedia.org/wiki/Let%27s_Stay_Together_(Al_Green_song)"
+    },
+    "etta james|all i could do was cry": {
+      "fact": "\"All I Could Do Was Cry\" was a 1960 Chess-label single for Etta James, written by Billy Davis with Berry Gordy and his sister Gwen Gordy. It reached No. 2 on the Billboard R&B chart and No. 33 on the pop chart. It appears on her debut album, At Last!, and Beyonce later sang it while portraying James in the 2008 film Cadillac Records.",
+      "source": "https://en.wikipedia.org/wiki/All_I_Could_Do_Was_Cry"
+    },
+    "black sabbath|heaven and hell": {
+      "fact": "Heaven and Hell (1980) was Black Sabbath's first album with Ronnie James Dio on vocals. Dio suggested producer Martin Birch, whom he knew from Rainbow, and the band recorded at Criteria Studios in Miami. The album reached No. 28 on the Billboard 200 and went platinum in the US.",
+      "source": "https://en.wikipedia.org/wiki/Heaven_and_Hell_(Black_Sabbath_album)"
+    },
+    "oasis|live forever": {
+      "fact": "\"Live Forever\" was released on 8 August 1994 as Oasis's third single, about a month before their debut album Definitely Maybe. It gave the band their first UK top-10 hit, reaching number 10 in 1994. It climbed to number 8 after the band's 2024 reunion.",
+      "source": "https://en.wikipedia.org/wiki/Live_Forever_(Oasis_song)"
+    },
+    "tom waits|in the neighborhood": {
+      "fact": "\"In the Neighborhood\" appears on Tom Waits's 1983 album Swordfishtrombones, released on Island Records. It was the first album Waits produced himself, and it was recorded at Sunset Sound in Hollywood. NME ranked the album second best of 1983.",
+      "source": "https://en.wikipedia.org/wiki/Swordfishtrombones"
+    },
+    "dionne warwick|do you know the way to san jose": {
+      "fact": "\"Do You Know the Way to San Jose\" was written by Burt Bacharach and Hal David, who had been stationed in San Jose while in the Navy. Dionne Warwick had to be talked into recording it, but it won her first Grammy Award, for Best Female Pop Vocal Performance. It peaked at No. 10 on the Billboard Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/Do_You_Know_the_Way_to_San_Jose"
+    },
+    "dusty springfield|son of a preacher man": {
+      "fact": "\"Son of a Preacher Man\" was written by John Hurley and Ronnie Wilkins, reportedly with Aretha Franklin in mind. Dusty Springfield's version was recorded in Memphis in 1968 with producers Jerry Wexler, Arif Mardin, and Tom Dowd, and released as a single in November 1968. It reached No. 10 on the Billboard Hot 100 and No. 9 in the UK.",
+      "source": "https://en.wikipedia.org/wiki/Son_of_a_Preacher_Man"
+    },
+    "radiohead|all i need": {
+      "fact": "On \"All I Need\" from In Rainbows (2007), Jonny Greenwood wanted to capture the white-noise feel of a band playing loudly in a room. Unable to get that sound in the studio, he had a string section record the parts instead. The track also features synthesisers, glockenspiel, and piano.",
+      "source": "https://en.wikipedia.org/wiki/All_I_Need_(Radiohead_song)"
+    },
+    "bill withers|grandma's hands": {
+      "fact": "\"Grandma's Hands\" is the third track on Bill Withers's 1971 debut album Just As I Am on Sussex Records. Booker T. Jones produced the album, and Booker T. & the M.G.'s members Al Jackson Jr. and Donald \"Duck\" Dunn played on the song. The single reached No. 42 on the Billboard Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/Grandma%27s_Hands"
+    },
+    "pearl jam|corduroy": {
+      "fact": "\"Corduroy\" is the eighth track on Pearl Jam's third album Vitalogy, released November 22, 1994. Although it was never issued as a commercial single, it reached No. 13 on the Billboard Modern Rock Tracks chart. It also appears on the 2004 compilation rearviewmirror.",
+      "source": "https://en.wikipedia.org/wiki/Corduroy_(song)"
+    },
+    "chiffons|one fine day": {
+      "fact": "\"One Fine Day\" was written by Gerry Goffin and Carole King, who first intended it for Little Eva. The Tokens reworked the Goffin-King demo for the Chiffons' recording, which reached No. 5 on the Billboard Hot 100 in 1963. Carole King later recorded her own version, which hit No. 12 in 1980.",
+      "source": "https://en.wikipedia.org/wiki/One_Fine_Day_(song)"
+    },
+    "earth, wind and fire|september": {
+      "fact": "\"September\" was written by Maurice White, Al McKay, and Allee Willis. It first appeared as a new track on the band's first greatest-hits album, The Best of Earth, Wind & Fire, Vol. 1, released in November 1978. It reached No. 8 on the US pop chart and No. 1 on the US R&B chart.",
+      "source": "https://en.wikipedia.org/wiki/The_Best_of_Earth,_Wind_%26_Fire,_Vol._1"
+    },
+    "bob dylan|changing of the guards": {
+      "fact": "\"Changing of the Guards\" opens Bob Dylan's 1978 album Street-Legal, his eighteenth studio album, released June 15, 1978 on Columbia. It was one of the first songs written for the album and was the first one recorded. Released as a single in October 1978, it did not reach the Billboard Top 100.",
+      "source": "https://en.wikipedia.org/wiki/Changing_of_the_Guards"
+    },
+    "radiohead|how to disappear completely": {
+      "fact": "On \"How to Disappear Completely\" from Kid A (2000), Jonny Greenwood arranged the strings by multitracking his ondes Martenot, an early electronic instrument. The Orchestra of St John's recorded the strings in February 2000 in a church near the band's studio. A strings-only version appears on the 2021 Kid A Mnesia reissue.",
+      "source": "https://en.wikipedia.org/wiki/How_to_Disappear_Completely"
+    },
+    "pearl jam|hail, hail": {
+      "fact": "\"Hail, Hail\" was the second single from Pearl Jam's fourth album No Code (1996), following \"Who You Are.\" Eddie Vedder wrote the lyrics, with Stone Gossard, Jeff Ament, and Mike McCready co-writing the music. It reached number nine on both the Mainstream Rock and Modern Rock charts.",
+      "source": "https://en.wikipedia.org/wiki/Hail,_Hail"
+    },
+    "outkast|hey ya!": {
+      "fact": "\"Hey Ya!\" reached No. 1 on the US Billboard Hot 100. It came from OutKast's double album Speakerboxxx/The Love Below, which won Album of the Year at the 2004 Grammy Awards, and the song itself won the Grammy for Best Urban/Alternative Performance.",
+      "source": "https://en.wikipedia.org/wiki/Hey_Ya!"
+    },
+    "madonna|lucky star": {
+      "fact": "\"Lucky Star\" was the fourth single from Madonna's 1983 self-titled debut album and became her first Billboard Hot 100 top-five hit, peaking at number four. It was produced by Reggie Lucas, and Madonna brought in John \"Jellybean\" Benitez to remix it.",
+      "source": "https://en.wikipedia.org/wiki/Lucky_Star_(Madonna_song)"
+    },
+    "al green|tired of being alone": {
+      "fact": "Al Green wrote \"Tired of Being Alone\" in late 1968, and it was produced by Willie Mitchell for the Hi label. Released in 1971 on the album Al Green Gets Next to You, it sold a million copies and was the first of seven consecutive gold singles for Green.",
+      "source": "https://en.wikipedia.org/wiki/Tired_of_Being_Alone"
+    },
+    "pearl jam|just breathe": {
+      "fact": "\"Just Breathe\" was the second single from Pearl Jam's ninth album, Backspacer (2009), written by Eddie Vedder and produced by Brendan O'Brien. In 2014 it became the band's first song certified platinum by the RIAA.",
+      "source": "https://en.wikipedia.org/wiki/Just_Breathe_(Pearl_Jam_song)"
+    },
+    "aretha franklin|don't play that song": {
+      "fact": "Aretha Franklin's version of \"Don't Play That Song (You Lied)\" appeared on her 1970 album Spirit in the Dark, reaching #11 on the Billboard Hot 100 and #1 on the R&B singles chart. Ben E. King first recorded the song in 1962 as the title track of his album Don't Play That Song!, and it was written by Ahmet Ertegun and Betty Nelson.",
+      "source": "https://en.wikipedia.org/wiki/Don%27t_Play_That_Song_(You_Lied)"
+    },
+    "pink|try": {
+      "fact": "\"Try\" was the second single from Pink's sixth studio album, The Truth About Love (2012). It was written by Busbee and Ben West and produced by Greg Kurstin.",
+      "source": "https://en.wikipedia.org/wiki/Try_(Pink_song)"
+    },
+    "bee gees|more than a woman": {
+      "fact": "The Bee Gees wrote \"More Than a Woman\" for the 1977 Saturday Night Fever soundtrack, and the album includes two versions: one by the Bee Gees and one by Tavares. Tavares' version was released as a single and reached #32 in the US.",
+      "source": "https://en.wikipedia.org/wiki/More_Than_a_Woman_(Bee_Gees_song)"
+    },
+    "paul mccartney|calico skies": {
+      "fact": "\"Calico Skies\" is the sixth track on Paul McCartney's 1997 album Flaming Pie. McCartney wrote it while staying on Long Island when Hurricane Bob struck in 1991, and it was recorded in September 1992 with George Martin co-producing.",
+      "source": "https://en.wikipedia.org/wiki/Calico_Skies"
+    },
+    "drifters|on broadway": {
+      "fact": "\"On Broadway\" was written by Barry Mann and Cynthia Weil with Jerry Leiber and Mike Stoller, and the Drifters' version was released in March 1963 and reached #9 on the Billboard Hot 100. The 1963 recording was inducted into the Grammy Hall of Fame in 2013, and George Benson's 1978 cover reached #7 on the Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/On_Broadway_(song)"
+    },
+    "pearl jam|given to fly": {
+      "fact": "\"Given to Fly\" was the lead single from Pearl Jam's fifth album, Yield (1998), with lyrics by Eddie Vedder and music by guitarist Mike McCready. It topped the Billboard Mainstream Rock Tracks chart and peaked at number 21 on the Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/Given_to_Fly"
+    },
+    "aretha franklin|i never loved a man (the way i love you)": {
+      "fact": "Aretha Franklin recorded \"I Never Loved a Man (The Way I Love You)\" on January 24, 1967, at FAME Studios in Muscle Shoals, Alabama, with the studio's rhythm section backing her. It was written by Ronnie Shannon, released in February 1967 on Atlantic, and reached number 9 on the Billboard Hot 100 and number one on the R&B chart.",
+      "source": "https://en.wikipedia.org/wiki/I_Never_Loved_a_Man_(The_Way_I_Love_You)"
+    },
+    "culture club|karma chameleon": {
+      "fact": "\"Karma Chameleon\" from Culture Club's album Colour by Numbers (1983) went to number one in 20 countries. It spent three weeks at the top of the US Billboard Hot 100 in early 1984, taking over from Yes's \"Owner of a Lonely Heart\" before being replaced by Van Halen's \"Jump\".",
+      "source": "https://en.wikipedia.org/wiki/Karma_Chameleon"
+    },
+    "nirvana|sliver": {
+      "fact": "\"Sliver\" was written by Kurt Cobain and Krist Novoselic and released as a non-album single by Sub Pop in September 1990. Much of it was recorded by Jack Endino at Reciprocal Recording in Seattle on July 11, 1990. It was later included on the 1992 compilation Incesticide, and the single re-charted at number 77 in the UK that December.",
+      "source": "https://en.wikipedia.org/wiki/Sliver_(song)"
+    },
+    "andy williams|love theme from \"romeo and juliet\"": {
+      "fact": "Andy Williams recorded his version of the Nino Rota theme in July 1969 for the album Get Together with Andy Williams, released by Columbia Records on October 6, 1969. The tune is best known from Henry Mancini's instrumental single, which reached number 2 on the Billboard Easy Listening chart and number 15 on the Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/Get_Together_with_Andy_Williams"
+    },
+    "al green|call me (come back home)": {
+      "fact": "\"Call Me (Come Back Home)\" was released in January 1973 as a single from Al Green's album Call Me. It was written by Green, Al Jackson Jr. and producer Willie Mitchell, and peaked at number 10 on the Billboard Hot 100 and number 2 on the R&B chart.",
+      "source": "https://en.wikipedia.org/wiki/Call_Me_(Come_Back_Home)"
+    },
+    "justin timberlake|mirrors": {
+      "fact": "\"Mirrors\" was the second single from Justin Timberlake's 2013 album The 20/20 Experience, co-written and produced with Timbaland and Jerome \"J-Roc\" Harmon. The album version runs over eight minutes, and the song reached number one in the UK and number two in the US. Floria Sigismondi directed the music video.",
+      "source": "https://en.wikipedia.org/wiki/Mirrors_(Justin_Timberlake_song)"
+    },
+    "grover washington jr. and bill withers|just the two of us": {
+      "fact": "\"Just the Two of Us\" comes from Grover Washington Jr.'s 1980 album Winelight. Ralph MacDonald and William Salter wrote the instrumental track, and MacDonald then brought in Bill Withers, who wrote the lyrics and sang lead. It reached number 2 on the pop chart and won the Grammy for Best R&B Song.",
+      "source": "https://en.wikipedia.org/wiki/Just_the_Two_of_Us_(Grover_Washington_Jr._song)"
+    },
+    "glen campbell|gentle on my mind": {
+      "fact": "John Hartford wrote and first recorded \"Gentle on My Mind\" on his 1967 album Earthwords & Music. Glen Campbell heard Hartford's version on the radio and recorded his own, which made the song famous. Between the two recordings, the song earned Grammy Awards in 1968, and it entered the Grammy Hall of Fame in 2008.",
+      "source": "https://en.wikipedia.org/wiki/Gentle_on_My_Mind"
+    },
+    "dion|lovers who wander": {
+      "fact": "\"Lovers Who Wander\" was released by Dion in 1962 on Laurie Records and reached number 3 on the Billboard Hot 100. It is the title track of his third solo album, also released in 1962.",
+      "source": "https://en.wikipedia.org/wiki/Lovers_Who_Wander_(song)"
+    },
+    "pearl jam|light years": {
+      "fact": "\"Light Years\" is a track on Pearl Jam's sixth studio album, Binaural, released May 16, 2000. It was the band's first album with drummer Matt Cameron, formerly of Soundgarden, and it was co-produced by Tchad Blake. The title refers to binaural recording techniques used on several tracks, and the album debuted at number two on the Billboard 200.",
+      "source": "https://en.wikipedia.org/wiki/Binaural_(album)"
+    },
+    "prince|musicology": {
+      "fact": "\"Musicology\" is the title track of Prince's 2004 album and was recorded at Paisley Park in November 2002. Critics described it as a tribute to James Brown's style of funk. It won the Grammy Award for Best Traditional R&B Performance at the 47th Annual Grammy Awards.",
+      "source": "https://en.wikipedia.org/wiki/Musicology_(song)"
+    },
+    "aretha franklin|spirit in the dark": {
+      "fact": "Spirit in the Dark was Aretha Franklin's seventeenth studio album, released by Atlantic Records on August 24, 1970, and produced by Tom Dowd, Arif Mardin and Jerry Wexler. The title track reached number 3 on the R&B chart and number 23 on the Hot 100, and backing on several tracks came from the Dixie Flyers.",
+      "source": "https://en.wikipedia.org/wiki/Spirit_in_the_Dark_(song)"
+    },
+    "oasis|slide away": {
+      "fact": "\"Slide Away\" is the tenth track on Oasis's debut album Definitely Maybe (Creation Records, August 1994), written by Noel Gallagher and running 6:32. Gallagher has said he wrote it on a Gibson Les Paul that Johnny Marr sent him. It entered the UK Singles Chart for the first time in 2025, debuting at number 31.",
+      "source": "https://en.wikipedia.org/wiki/Slide_Away_(Oasis_song)"
+    },
+    "peabo bryson and regina belle|a whole new world (aladdin's theme)": {
+      "fact": "The Peabo Bryson and Regina Belle duet from Disney's Aladdin topped the Billboard Hot 100 for one week in March 1993, replacing Whitney Houston's \"I Will Always Love You.\" It was the first song from a Disney animated film to reach number one on that chart.",
+      "source": "https://en.wikipedia.org/wiki/A_Whole_New_World"
+    },
+    "elvis presley|are you lonesome tonight?": {
+      "fact": "\"Are You Lonesome Tonight?\" was written by Roy Turk and Lou Handman in 1926. Elvis Presley's manager, Colonel Tom Parker, suggested it, and Elvis recorded it at RCA Studio B in Nashville on April 4, 1960. It was released on RCA Victor in November 1960 and became his 15th number-one single.",
+      "source": "https://en.wikipedia.org/wiki/Are_You_Lonesome_Tonight%3F"
+    },
+    "bangles|manic monday": {
+      "fact": "Prince wrote \"Manic Monday\" in 1984 and offered it to the Bangles under the pseudonym \"Christopher.\" It was the lead single from their 1986 album Different Light and peaked at number 2 on the Billboard Hot 100, behind Prince and the Revolution's \"Kiss.\" Prince's own version was released on the 2019 compilation Originals.",
+      "source": "https://en.wikipedia.org/wiki/Manic_Monday"
+    },
+    "elvis presley|return to sender": {
+      "fact": "\"Return to Sender\" was written by Otis Blackwell and Winfield Scott for Elvis Presley's 1962 film Girls! Girls! Girls!. Recorded March 27, 1962 at Radio Recorders in Hollywood, it peaked at number 2 on the Billboard Hot 100 and was number one in the UK, where it was the 1962 Christmas number one.",
+      "source": "https://en.wikipedia.org/wiki/Return_to_Sender_(song)"
+    },
+    "blondie|the tide is high": {
+      "fact": "Blondie's \"The Tide Is High\" is a cover of a 1967 song by the Jamaican group the Paragons, written by John Holt. It was the lead single from Blondie's 1980 album Autoamerican and became their third US number one and fifth UK number one.",
+      "source": "https://en.wikipedia.org/wiki/The_Tide_Is_High"
+    },
+    "bob dylan|if not for you": {
+      "fact": "Bob Dylan first recorded \"If Not for You\" in March 1970, then cut a new version on May 1 with George Harrison in the studio. Biographer Clinton Heylin called that session the true starting point of the album New Morning. Harrison released his own version later in 1970 on All Things Must Pass.",
+      "source": "https://en.wikipedia.org/wiki/If_Not_for_You"
+    },
+    "the cars|you might think": {
+      "fact": "The music video for \"You Might Think,\" from The Cars' 1984 album Heartbeat City, cost about $80,000 to produce, nearly triple the average music-video budget of the time.",
+      "source": "https://en.wikipedia.org/wiki/You_Might_Think"
+    },
+    "dire straits|romeo and juliet": {
+      "fact": "\"Romeo and Juliet\" first appeared on Dire Straits' third album, Making Movies (October 1980), and was released as a single in January 1981. Written by Mark Knopfler, it reached number 8 on the UK Singles Chart.",
+      "source": "https://en.wikipedia.org/wiki/Romeo_and_Juliet_(Dire_Straits_song)"
+    },
+    "bob dylan|shelter from the storm": {
+      "fact": "Bob Dylan recorded \"Shelter from the Storm\" on September 17, 1974, at A&R Recording in New York City, and the fifth take was used on Blood on the Tracks (January 1975). The first take from that session was later released on the soundtrack to the 1996 film Jerry Maguire.",
+      "source": "https://en.wikipedia.org/wiki/Shelter_from_the_Storm"
+    },
+    "neil young|after the gold rush": {
+      "fact": "Neil Young made most of After the Gold Rush (1970) in a lead-lined basement studio at his new house in Topanga Canyon, California, to avoid the interruptions of a commercial studio. Early sessions had been held at Sunset Sound in Hollywood. Nils Lofgren and Ralph Molina of Crazy Horse played on the album.",
+      "source": "https://en.wikipedia.org/wiki/After_the_Gold_Rush"
+    },
+    "imagine dragons|radioactive": {
+      "fact": "Imagine Dragons' Radioactive won the Grammy for Best Rock Performance at the 2014 ceremony. It was a sleeper hit that peaked at number 3 on the Billboard Hot 100 and set a then-record by spending 87 weeks on that chart.",
+      "source": "https://en.wikipedia.org/wiki/Radioactive_(Imagine_Dragons_song)"
+    },
+    "cream|strange brew": {
+      "fact": "Strange Brew appears on Cream's 1967 album Disraeli Gears, the first Cream album produced by Felix Pappalardi. Unusually, Eric Clapton sings lead rather than Jack Bruce. The song began as a blues number before being reworked with new lyrics by Pappalardi's partner, Gail Collins.",
+      "source": "https://en.wikipedia.org/wiki/Strange_Brew_(song)"
+    },
+    "outkast|the way you move": {
+      "fact": "The Way You Move was the second single from OutKast's 2003 double album Speakerboxxx/The Love Below. It is a Big Boi track featuring vocals by Sleepy Brown, and Carlton Mahone is credited as producer.",
+      "source": "https://en.wikipedia.org/wiki/The_Way_You_Move"
+    },
+    "naoto ishida|f-zero (ending)": {
+      "fact": "The Super Nintendo launch title F-Zero (1990) had music mostly by Yumiko Kanki. Naoto Ishida wrote just two tracks for it, Big Blue and the Ending Theme.",
+      "source": "https://en.wikipedia.org/wiki/F-Zero_(video_game)"
+    },
+    "aretha franklin|day dreaming": {
+      "fact": "Day Dreaming is the second track on Aretha Franklin's 1972 Atlantic album Young, Gifted and Black, whose title comes from Nina Simone's song. It was released as a single in February 1972.",
+      "source": "https://en.wikipedia.org/wiki/Day_Dreaming_(Aretha_Franklin_song)"
+    },
+    "oasis|don't look back in anger": {
+      "fact": "Released in February 1996, Don't Look Back in Anger became Oasis' second UK number one single. It was the first Oasis single to feature Noel Gallagher rather than his brother Liam on lead vocals.",
+      "source": "https://www.officialcharts.com/songs/oasis-dont-look-back-in-anger/"
+    },
+    "one direction|kiss you": {
+      "fact": "Kiss You is from One Direction's second album, Take Me Home (2012). Its music video, directed by Vaughan Arnell, drew 10.4 million views in its first 24 hours.",
+      "source": "https://en.wikipedia.org/wiki/Kiss_You_(One_Direction_song)"
+    },
+    "platters|twilight time": {
+      "fact": "Twilight Time started as a 1944 instrumental by the Three Suns, with lyrics added later by Buck Ram, who also managed the Platters. The Platters' 1958 recording hit number one on the US pop chart and also topped the R&B chart.",
+      "source": "https://en.wikipedia.org/wiki/Twilight_Time_(1944_song)"
+    },
+    "phil collins|don't lose my number": {
+      "fact": "Don't Lose My Number was released in July 1985 as a single from Phil Collins' album No Jacket Required. It reached number 4 in the US. Collins has said he improvised the lyrics and doesn't fully understand them himself.",
+      "source": "https://en.wikipedia.org/wiki/Don%27t_Lose_My_Number"
+    },
+    "bill withers|lean on me": {
+      "fact": "Bill Withers wrote Lean on Me and released it in 1972 as the lead single from his album Still Bill. It reached number one on the Billboard Hot 100, his only chart-topper there, and the recording was inducted into the Grammy Hall of Fame in 2007.",
+      "source": "https://en.wikipedia.org/wiki/Lean_on_Me_(song)"
+    },
+    "aaron frazer|over you": {
+      "fact": "Over You was the lead single from Aaron Frazer's debut solo album Introducing..., released in January 2021 on Dead Oceans and Easy Eye Sound and produced by Dan Auerbach. Frazer is also the drummer and a singer in Durand Jones & The Indications. The song was later featured on Grey's Anatomy.",
+      "source": "https://mixdownmag.com.au/features/aaron-frazer-on-soul-dan-auerbach-and-the-making-of-his-groovy-debut%E2%80%A8/"
+    },
+    "bob dylan|buckets of rain": {
+      "fact": "Bob Dylan recorded Buckets of Rain in New York in September 1974, and it closes his 1975 album Blood on the Tracks. In 1975 Bette Midler recorded it as a duet with Dylan for her album Songs for the New Depression.",
+      "source": "https://en.wikipedia.org/wiki/Buckets_of_Rain"
+    },
+    "pearl jam|elderly woman behind the counter in a small town": {
+      "fact": "Elderly Woman Behind the Counter in a Small Town is on Pearl Jam's second album, Vs. (1993), which was recorded at The Site in Nicasio, California. Eddie Vedder wrote it, and it began as a poem.",
+      "source": "https://en.wikipedia.org/wiki/Elderly_Woman_Behind_the_Counter_in_a_Small_Town"
+    },
+    "chicago|hard habit to break": {
+      "fact": "Hard Habit to Break was written by Steve Kipner and John Lewis Parker and appears on Chicago 17 (1984), produced by David Foster. Peter Cetera and Bill Champlin share the lead vocals. The single reached number 3 on the Billboard Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/Hard_Habit_to_Break"
+    },
+    "ricky nelson|poor little fool": {
+      "fact": "Ricky Nelson's Poor Little Fool, written by Sharon Sheeley, became the first number one on Billboard's brand-new Hot 100 chart in August 1958. It was Nelson's only number one on the Hot 100.",
+      "source": "https://en.wikipedia.org/wiki/Poor_Little_Fool"
+    },
+    "shinobu tanaka, kazumi totaka|luigi's mansion (staff roll)": {
+      "fact": "The music for the GameCube launch title Luigi's Mansion was composed by Shinobu Tanaka and Kazumi Totaka. Totaka is also known for hiding a short signature tune, Totaka's Song, in many Nintendo games.",
+      "source": "https://en.wikipedia.org/wiki/Luigi%27s_Mansion"
     }
   }
 }
