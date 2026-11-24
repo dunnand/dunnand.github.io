@@ -10,7 +10,7 @@
     // DISPLAY_VERSION on every edit — it forces one redirect to a URL the CDN
     // has never cached, guaranteeing the fresh copy loads. (Mirrors the same
     // pattern homestead_media's script.js uses for APP_VERSION.)
-    const DISPLAY_VERSION = '20261124a';
+    const DISPLAY_VERSION = '20261124c';
     (function() {
       try {
         const k = 'display_version';
@@ -235,6 +235,22 @@
     .station-mode .album-line {
       font-size: 1.1em;
     }
+
+    /* ── Dual-screen view (no ?station): no Recently Played — art + song info get the room ──
+       .bottom is hidden, not removed, so the poll code that fills #point-recent /
+       #wcyt-recent keeps working without null checks. */
+    body:not(.station-mode) .bottom { display: none; }
+    body:not(.station-mode) .station .top { flex: 1; justify-content: center; }
+    body:not(.station-mode) .album-art {
+      width:  min(46vw, 54vh);
+      height: min(46vw, 54vh);
+    }
+    /* Text sized in vh so it scales with the screen along with the art
+       (1080p ≈ artist 50px / title 35px / album 26px) */
+    body:not(.station-mode) .on-air     { font-size: 1.5vh; margin-bottom: 1.4vh; }
+    body:not(.station-mode) .artist     { font-size: 4.6vh; margin-bottom: 0.6vh; }
+    body:not(.station-mode) .song-title { font-size: 3.2vh; margin-bottom: 0.8vh; }
+    body:not(.station-mode) .album-line { font-size: 2.4vh; }
 
     /* ── Bottom: recently played ── */
     .bottom {
