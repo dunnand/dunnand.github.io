@@ -10,7 +10,7 @@
     // DISPLAY_VERSION on every edit — it forces one redirect to a URL the CDN
     // has never cached, guaranteeing the fresh copy loads. (Mirrors the same
     // pattern homestead_media's script.js uses for APP_VERSION.)
-    const DISPLAY_VERSION = '20261022a';
+    const DISPLAY_VERSION = '20261124a';
     (function() {
       try {
         const k = 'display_version';
@@ -215,9 +215,15 @@
       align-items: center;
     }
     .station-mode .album-art {
-      width:  min(70vw, 42vh);
-      height: min(70vw, 42vh);
+      /* header + clock bar now live on the Recently Played side, so the
+         on-air side has the full height to itself */
+      width:  min(44vw, 58vh);
+      height: min(44vw, 58vh);
     }
+    /* Clock bar moves into the Recently Played column — it only needs to fit half the screen */
+    .station-mode .station .clock-bar { border-top: 1px solid #222; }
+    .station-mode .station .clock-bar > div:last-child { display: none; }
+    .station-mode .station .clock-bar #clock { letter-spacing: 4px; }
     .station-mode .artist {
       font-size: 2.3em;
       -webkit-line-clamp: 3;
@@ -1241,9 +1247,14 @@
       const activeEl = document.querySelector(isPoint ? '.station.point' : '.station.wcyt');
       const sideEl   = document.querySelector(isPoint ? '.station.wcyt' : '.station.point');
       const bottom   = activeEl.querySelector('.bottom');
+      const header   = activeEl.querySelector('.header');   // station name, tagline, AUTO/ASSIST + LOG badges
+      const clockBar = document.querySelector('.clock-bar'); // play button, station buttons, clock
       sideEl.innerHTML = '';
       sideEl.className = activeEl.className;
+      // Recently Played side carries all the chrome; the on-air side is just art + song info
+      sideEl.appendChild(header);
       sideEl.appendChild(bottom);
+      sideEl.appendChild(clockBar);
       bottom.querySelector('.panel-label').style.color = isPoint ? '#aaa' : '#666';
     }
 
